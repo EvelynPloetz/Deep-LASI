@@ -52,7 +52,9 @@ with us via ...
    documentation
    example
    sim
-   tutorials
+   about
+.. tutorials
+
    about
    
 Deep-LASI has its documentation hosted on Read the Docs.
