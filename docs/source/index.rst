@@ -33,8 +33,7 @@ To get started with Deep-LASI, please take a look at the :doc:`installation` gui
 Additional :doc:`example` and reference material are provided in the :doc:`documentation` section. 
 
 If you have any questions or problems, if you want to provide feedback about your experience 
-with Deep-LASI or if you have any suggestions on how to further improve the program, please get in touch 
-with us via ... 
+with Deep-LASI or if you have any suggestions on how to further improve the program, please get in touch with us via the `Forum <https://gitlab.com/simon71/deeplasi/-/issues>`_ or by Email.
 
 .. note::
 

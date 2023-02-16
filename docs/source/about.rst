@@ -13,8 +13,8 @@ About Deep-LASI
 
 .. coming soon ...
 
-Acknowledgement
-------------------
+.. Acknowledgement
+.. ------------------
 
 The Fablab
 ~~~~~~~~~~~~~
