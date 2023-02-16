@@ -37,7 +37,7 @@ Data requirements
 
 Data handling
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*Deep-LASI* incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope. Consecutively, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterwards. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. :numref:`data-flow` summarizes the data handling.
+*Deep-LASI* incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope. Consecutively, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterwards. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. |br| :numref:`data-flow` summarizes the data handling.
 
 .. figure:: ./../figures/documents/Fig_1_Data_Handling.png
    :width: 800
@@ -157,10 +157,10 @@ Most data in *Deep-LASI* is stored as global variables in the background to allo
 ..  _import:
 Data Import from OT and TRACY 
 ~~~~~~~~~~~~~~~~~
-This function is for internal use within Fablab only.  
+This function is for internal use within the hosting group only.
 *Deep-LASI* allows for importing FRET data obtained from `Multi-Color Orbital Tracking <https://onlinelibrary.wiley.com/doi/10.1002/smll.202204726>`_ measurements using the setup specific data format. 
 
-*TRACY* was the former software for the evaluation of 1c and 2c FRET traces. *Deep-LASI* allows for importing the formerly exported and evaluated traces, as well as to export new data sets into the old format.
+*TRACY* was the former software for the evaluation of 1c and 2c FRET traces. *Deep-LASI* allows for importing the formerly exported and evaluated traces, as well as exporting new data sets into the old format.
 
 
 --------------------------------------------------------------------
@@ -227,11 +227,11 @@ The dropdown menu *File* (:numref:`file-menu`) controls all steps from loading t
 
 
 **Dropdown Menu Settings.** |br|
-The dropdown menu **Settings** opens a sub-window for entering the camera hardware settings chosen in the experimental setup. The routine asks for the EM Gain factor, the camera baseline in dark counts and the number of photons per camera count for each camera. With this, *Deep-LASI* can convert/display the determined intensity in arbitrary units into Counts per seconds, i.e. Hertz.
+The dropdown menu **Settings** opens a sub-window for entering the camera hardware settings chosen in the experimental setup. The routine asks for the EM Gain factor, the camera baseline in dark counts and the number of photons per camera count for each camera. With this, *Deep-LASI* can convert/display the determined intensity in arbitrary units into Counts per seconds, i.e., in Hertz.
 
 **Dropdown Menu View.** |br|
 The third dropdown menu **View** changes the appearance and settings of graphical interfaces on the different GUI sub-windows of Deep-LASI. |br|
-The sub-tab **Colormap** changes the color palette in 3D plots, e.g. on the Trace GUI surface, which show small zoomed-in areas of 24x24 pixels. These show the area around localized molecules in each channel, surrounded by the background mask, to control for possible impurities in the background. The default colormap is *jet*. |br|
+The sub-tab **Colormap** changes the color palette in 3D plots, e.g., on the Trace GUI surface, which show small zoomed-in areas of 24x24 pixels. These show the area around localized molecules in each channel, surrounded by the background mask, to control for possible impurities in the background. The default colormap is *jet*. |br|
 The **Plot Units** sub-tab controls the y axis of the intensity and FRET panels for individual single-molecule trajectories. Checking/unchecking of the different sub-tabs immediately updates the graphical interface and the way how a single-molecule trace is displayed. **Plot Units** provides the following seven different settings for displaying intensities and FRET trajectories:
 
 ..  csv-table:: Plot Units Entries
@@ -249,14 +249,22 @@ The **Plot Units** sub-tab controls the y axis of the intensity and FRET panels 
 
 #.  The first sub-tab, **Photons(Cam.calibrated)**, converts the intensity axis into the absolut number of photons being detected by the individual cameras during a particular excitation cycle.
 #.  The second sub-tab, **Mean Across Particle Mask**, shows the mean emission intensity of the particle within the detection mask on the y axis.
-#.  The next three sub-tabs serve to correct and display the intensity after correction against direct excitation (**Direct Excitation (alpha)**), spectral crosstalk (**Spectral crosstalk (beta)**) or QY and detection sensitivity (**QY/Det. Eff (gamma)**), respectively. Without determining the correction factors, *Deep-LASI* provides identical plots for the corrected and uncorrected intensities.
-#.  The sub-tab **Raw Trace (no BG subtr.)** activates the display of uncorrected, raw intensity traces without background subtraction.
+#.  The next three sub-tabs serve to correct and show the intensity after correction against direct excitation (**Direct Excitation (alpha)**), spectral crosstalk (**Spectral crosstalk (beta)**) or QY and detection sensitivity (**QY/Det. Eff (gamma)**), respectively. Without determining the correction factors, *Deep-LASI* provides identical plots for the corrected and uncorrected intensities.
+#.  The penultimate sub-tab, **Raw Trace (no BG subtr.)**, activates the display of uncorrected, raw intensity traces, i.e., without background subtraction.
 #.  If the last option **Corrected FRET** is selected, *Deep-LASI* shows Accurate FRET efficiencies for each single-molecule trajectory in case the FRET correction factors have already been determine. Otherwise, the displayed FRET values between Accurate and Apparent FRET are identical.
 
 
-Sub-GUIS
+Main-GUI
 ~~~~~~~~~~~~~~~~~
+Data-analysis with *Deep-LASI* involves consecutive steps, which are accommodated in six different sub-GUIs. The Starting-GUI  incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope. Consecutively, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterwards. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. |br| :numref:`main-gui` summarizes the data handling.
 
+.. figure:: ./../figures/documents/Dummy.png
+   :width: 800
+   :alt: Main GUIs
+   :align: center
+   :name: main-gui
+
+   Workflow summarizing the generic data formats used by *Deep-LASI*, as well as supported data formats for trace import.
 
 --------------------------------------------------------
 
@@ -271,7 +279,7 @@ If mapping is required between two or more cameras, go to **Mapping** from the m
    :alt: Open mapping menu
    :align: center
    :name: mapping menu
-   
+
    Mapping menu
 
 Now the program will ask you to choose a file which could be an image or a series of images as a video file usually taken from a calibration pattern like a zero-mode waveguide. After choosing the file, the image gets open together with some adjusting options, like figure 4.
@@ -281,10 +289,10 @@ Now the program will ask you to choose a file which could be an image or a serie
    :alt: map uploading
    :align: center
    :name: mapping image uploading
-   
+
    Uploading first mapping image
 
-On the window opened for the user, you can use the **Channel Layout** to take the desired field of view. You can take the whole area or select a specific region with the buttons provided for that. There are also the options of rotating or flipping the image, so that all images from various cameras show the same pattern. Then click on OK. The image will be open on the mapping tab, figure 5. 
+On the window opened for the user, you can use the **Channel Layout** to take the desired field of view. You can take the whole area or select a specific region with the buttons provided for that. There are also the options of rotating or flipping the image, so that all images from various cameras show the same pattern. Then click on OK. The image will be open on the mapping tab, figure 5.
 
 .. figure:: ./../figures/documents/Fig_5_Map_Image_Detecting.png
    :width: 400
@@ -294,14 +302,14 @@ On the window opened for the user, you can use the **Channel Layout** to take th
 
    Mapping image loaded to TRacer
 
-With the threshold bar, make sure that enough points are circled and detected by the program. Then continue opening images from other detectors with the same procedure, as shown on images 6 and 7. 
+With the threshold bar, make sure that enough points are circled and detected by the program. Then continue opening images from other detectors with the same procedure, as shown on images 6 and 7.
 
 .. figure:: ./../figures/documents/Fig_6_Map_Second_Channel.png
    :width: 300
    :alt: second map image
    :align: center
    :name: opening second mapping image
-   
+
    Opening the second mapping image
 
 .. figure:: ./../figures/documents/Fig_7_Map_Second_Uploading.png
@@ -309,7 +317,7 @@ With the threshold bar, make sure that enough points are circled and detected by
    :alt: second map uploading
    :align: center
    :name: second map uploading
-   
+
    Adjusting the image for the second mapping image
 
 After opening the mapping images from all the cameras, select which channel you prefer to be the reference channel, like figure 8. In most cases, the first channel is taken as the reference one unless you have a special mapping plan.
@@ -322,15 +330,15 @@ After opening the mapping images from all the cameras, select which channel you 
 
    Performing the mapping step
 
-Then click on **Start Mapping**. The mapping process goes quit fast and gives the mapping result as before and after images like figure 9. It is recommended to check the quality of mapping. In some cases you might have to take new images for this step if the image quality you uploaded was not acceptable which is a rare event! 
-   
+Then click on **Start Mapping**. The mapping process goes quit fast and gives the mapping result as before and after images like figure 9. It is recommended to check the quality of mapping. In some cases you might have to take new images for this step if the image quality you uploaded was not acceptable which is a rare event!
+
 .. figure:: ./../figures/documents/Fig_9_Map_Before_After.png
    :width: 350
    :alt: check mapping
    :align: center
    :name: before and after mapping
-   
-   Mapping result showing the channels overlay before and after mapping 
+
+   Mapping result showing the channels overlay before and after mapping
 
 After mapping, the extraction tab opens showing a detection mask created like the one shown on the top right part of figure 10. This mask is used to calculate the emission intensity of the particle inside the central circle, and also the background within the outer ring. The user has the freedom to change the mask settings when needed. You have the option of saving the created map or loading a previous map from the same mapping menu.
 
@@ -339,21 +347,21 @@ After mapping, the extraction tab opens showing a detection mask created like th
    :alt: created mask
    :align: center
    :name: created mask after mapping
-   
-   The mask created after mapping with adjustment options 
- 
-Loading the data 
+
+   The mask created after mapping with adjustment options
+
+Loading the data
 -------------
- 
-Now you can open the data files from file menu and **Load Image Data** similar to opening the mapping images like shown on figure 11. The order of channels should be the same as mapping order. 
- 
+
+Now you can open the data files from file menu and **Load Image Data** similar to opening the mapping images like shown on figure 11. The order of channels should be the same as mapping order.
+
 .. figure:: ./../figures/documents/Fig_11_Data_Loading.png
    :width: 300
    :alt: loading first channel
    :align: center
    :name: loading first channel data
-   
-   The menu for loading image data 
+
+   The menu for loading image data
 
 TRacer asks you to choose the data files, and you can open all the files from each channel at a time. After a short time, the following window (figure 12) will open to take the measurement parameters. The first box is for the sum of exposure time and frame transfer. For example in case of measuring with the exposure time of 50 ms, and the frame transfer of 2.2 ms, we can enter 52.2.
 
@@ -362,8 +370,8 @@ TRacer asks you to choose the data files, and you can open all the files from ea
    :alt: inserting measurement parameters
    :align: center
    :name: measurement parameters
-   
-   The window for specifying measurement parameters and excitation scheme 
+
+   The window for specifying measurement parameters and excitation scheme
 
 The second box is to get the ALEX sequence used for illuminating the sample. Different combinations of two or three laser excitation can be entered here. Note that for the IR laser, you should only enter the letter ‘I’. The letter ‘G’ works for lasers in green or yellow region. Then you put the slider on the corresponding channel, for example, on the image shown here on the left or right position depending on reading data from first or second channel. It gets three divisions in case of a three-channel experiment.
 
@@ -378,8 +386,8 @@ As the last step here, click on the corresponding channel color from the four op
    :alt: first channel detection
    :align: center
    :name: particles detection
-   
-   Particle detection for the first channel data 
+
+   Particle detection for the first channel data
 
 The sliders below the image are to adjust the display contrast, and detection threshold so that one gets more particles detected. The detected particles are inside a triangle within the image, and the number of them is shown in the box next to the image on the top right position.
 
@@ -390,7 +398,7 @@ Continue opening the data images for the next channel(s) from the same menu, as 
    :alt: loading second channel
    :align: center
    :name: menu for loading second channel
-   
+
    Loading data from the second detector
 
 Each time you load image files, the pop-up window appears asking you about the channel color to extract the data in the correct order.
@@ -400,7 +408,7 @@ Each time you load image files, the pop-up window appears asking you about the c
    :alt: inserting second measurement parameters
    :align: center
    :name: change parameters for the next detector
-   
+
    Updating measurement parameters for the next channel
 
 The example figures show a two-color measurement. As shown on figure 15, we put the slider on the second half to indicate the second channel (the same procedure works for the third channel by putting the slider to the most right position.), and also click on the R to indicate the acceptor channel (red in this case). After a short time the first frame of the second channel overlays on the image from the first one.
@@ -410,8 +418,8 @@ The example figures show a two-color measurement. As shown on figure 15, we put 
    :alt: detection of co-localization
    :align: center
    :name: finding co-localization
-   
-   Detection of particles and their co-localization 
+
+   Detection of particles and their co-localization
 
 The color of triangles show the detected emitters on each corresponding channel and the circles show the co-localized particles. All the numbers are also reported in the small box on the top.
 
@@ -422,8 +430,8 @@ You can decide which particles you want to analyze using the options in the righ
    :alt: start extraction
    :align: center
    :name: performing the extraction
-   
-   Starting the extraction of intensity traces 
+
+   Starting the extraction of intensity traces
 
 Intensity Traces
 -------------
@@ -435,7 +443,7 @@ After the extraction step which might take a while depending on the amount of da
    :alt: trace
    :align: center
    :name: trace look
-   
+
    Exemplary traces for a two-color measurement on the left, and three-color on the right
 
 On figure 18 on the left, you see the time trace of both donor and acceptor in the left upper panel. Because of illuminating the sample using ALEX mode, a lot of information are available on each trace. The gray plot is the total intensity on the donor channel which in theory is expected to have a stable value before a bleaching step. The green trace is the signal of donor after donor excitation, the red trace is the emission of acceptor after donor excitation (FRET), and the dark red is the emission of acceptor after acceptor excitation. You can choose which intensity trace be shown from the right box **Plot Layout** by checking or unchecking the corresponding boxes.
@@ -455,7 +463,7 @@ You can also delete an unwanted category with the trash can icon or uncheck the 
    :alt: categorization options
    :align: center
    :name: categorization table
-   
+
    Navigation and categorization box
 
 For selecting the desired region on each trace for further analysis, you can drag the mouse to make the selected region shadowed, for example from the beginning of a trace until a bleaching step. By clicking on the trace region, the mouse turns to an active cursor for a general selection for example when all the dyes are active. TRacer will use the first bleaching step to calculate the correction factors. If you want to select channel specific regions, press the numbers 1,2,… to indicate the channel with the same order you loaded the images, and then you can select the region by the cursor special to each channel like the example on figure 20 for the red channel as the second one. For other channels the cursor shows the other corresponding letters like B, G, and I.
@@ -465,10 +473,10 @@ For selecting the desired region on each trace for further analysis, you can dra
    :alt: cursor example with two color trace
    :align: center
    :name: example of activated cursor
-   
-   Activated cursor specific for red channel for regio selection 
 
-The next photo shows an example of region selection for both green and red channels. Here the FRET efficiency trace gets the selection until the first bleaching step, and this region will be added to the FRET histogram in the end. 
+   Activated cursor specific for red channel for regio selection
+
+The next photo shows an example of region selection for both green and red channels. Here the FRET efficiency trace gets the selection until the first bleaching step, and this region will be added to the FRET histogram in the end.
 
 The correction factors calculated from each trace are in the **FRET control** box on the lower right corner. If a trace is not suitable for calculating the correction factors, then the median value of the whole data set would be applied on that.
 
@@ -476,8 +484,8 @@ The correction factors calculated from each trace are in the **FRET control** bo
    :width: 450
    :alt: correction factor box
    :align: center
-   :name: correction factor box 
-   
+   :name: correction factor box
+
    Correction factors based on the selected region on a trace
 
 After having all the traces categorized, you can move on to the **Histograms** tab (figure 22), choose the category you want which are the same as you defined (figure 23), and get information about your data as histograms already fitted. Information such as the total signal, background level, count-rate, signal to noise ratio, and bleaching time, figure 24. The fitting results are provided in a table on the right side.
@@ -487,7 +495,7 @@ After having all the traces categorized, you can move on to the **Histograms** t
    :alt: histogram tab
    :align: center
    :name: histogram tab
-   
+
    Histogram tab
 
 .. figure:: ./../figures/documents/Fig_23_Histogram_Tab_Categories.png
@@ -495,43 +503,43 @@ After having all the traces categorized, you can move on to the **Histograms** t
    :alt: same categories in histogram tab
    :align: center
    :name: same categories in histogram tab
-   
-   Categories shown on *Histogram* tab 
+
+   Categories shown on *Histogram* tab
 
 .. figure:: ./../figures/documents/Fig_24_Measurement_Histograms.png
    :width: 450
    :alt: histograms showing measurement details
    :align: center
    :name: histograms showing measurement details
-   
-   Histograms showing measurement details 
+
+   Histograms showing measurement details
 
 Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
 
 .. figure:: ./../figures/documents/Fig_25_FRET_Tab.png
    :width: 300
-   :alt: FRET tab 
+   :alt: FRET tab
    :align: center
    :name: FRET tab
-   
-   FRET tab on the GUI   
-   
+
+   FRET tab on the GUI
+
 .. figure:: ./../figures/documents/Fig_26_FRET_Tab_Categories.png
    :width: 500
-   :alt: FRET tab categories 
+   :alt: FRET tab categories
    :align: center
    :name: choosing categories on FRET tab
-   
+
    Choosing desired category(ies) on *FRET* tab
 
-After choosing the category, you can select from the **Plot Mode** which plot to get. In the example shown on figure 26, you get the histogram of apparent FRET efficiency, like the one in figure 27. 
+After choosing the category, you can select from the **Plot Mode** which plot to get. In the example shown on figure 26, you get the histogram of apparent FRET efficiency, like the one in figure 27.
 
 .. figure:: ./../figures/documents/Fig_27_Result_Histogram.png
    :width: 400
    :alt: apparent FRET histogram
    :align: center
    :name: apparent FRET histogram
-   
+
    An exemplary histogram of apparent FRET efficiency with two populations
 
 There are options in **Display Settings** (see figure 28) to make the frame-wise and/or molecule-wise plot visible, normalize them, and also to fit them by choosing the best fitting method. If sometimes fitting seems so wrong, you can manually insert some values based on what you roughly see on the plot, fix them and fit again. By playing around the fitting gets better, then you can uncheck the fixing boxes and let the program find the best fitting values. You can also change the color of your plot(s) by clicking on the colored rectangle and choose a desired color.
@@ -551,7 +559,7 @@ On the HMM tab, you can again select a category and run the HMM on it. This opti
    :alt: HMM tab
    :align: center
    :name: HMM tab
-   
+
    HMM tab on the software GUI
 
 .. figure:: ./../figures/documents/Fig_30_HMM_Starting.png
@@ -559,7 +567,7 @@ On the HMM tab, you can again select a category and run the HMM on it. This opti
    :alt: starting HMM
    :align: center
    :name: running HMM
-   
+
    Starting HMM analysis on data
 
 Automated Analysis by Deep Learning
@@ -572,7 +580,7 @@ In case you want to save time and not go through all the analysis steps manually
    :alt: Deep learning tab
    :align: center
    :name: Deep learning tab
-   
+
    The automated analysis tab, **Deep Learning**
 
 The simplest way to get your final results is to click on **Magic Button** (figure 32) and the program will do all the steps of categorization, correction, and dynamics analysis for you! All neural network models are chosen automatically dependent on the number of channels in your data set. The first step is the categorization of all traces. Note, that only dynamic traces reaching the confidence threshold (editable the deep learning tab) will be included in the category 'Dynamic (filtered)' and further analyzed. The **Magic Button** simply calls a series of functions which you also have access to individually, namely **Categorize Traces**, **Autocorrect**, **Number of States** and **State Transitions**. For the prediction of state transitions you have more freedom if you call the function separately. For example, you can run the prediction on fully corrected data, choose a specific model in case you have prior knowledge about the system or feed all frames into the state classifier without prior categorization of the trace classifier.
@@ -582,23 +590,23 @@ The simplest way to get your final results is to click on **Magic Button** (figu
    :alt: magic button
    :align: center
    :name: magic button
-   
+
    Deep Learning Tab with Magic Button
 
 After trace classification, auto calculation of all available correction factors is performed. Figure 33 shows the histograms of the extracted direct excitation, crosstalk and gamma factors with the corresponding median, mean, and mode values. Gamma factors are calculated 3-fold for median, mean and mode values of direct excitation and crosstalk to show you the influence of these globally used correction factors on the gamma factor. The total number of traces and frames used for the calculation of each correction factor is displayed above the histograms.
 
 .. figure:: ./../figures/documents/Fig_33_ct_dir_autocalc.png
    :width: 300
-   :alt: ct dir factors 
+   :alt: ct dir factors
    :align: center
    :name: de and ct correction factors
-   
+
 .. figure:: ./../figures/documents/Fig_33_gamma_autocalc.png
    :width: 300
-   :alt: gamma factors 
+   :alt: gamma factors
    :align: center
-   :name: gamma factor 
-   
+   :name: gamma factor
+
    Correction factors histograms
 
 After trace classification and correction, the number of states classifier will predict the most probable number of states for each trace. The corresponding confidence values will be shown in a pop up histogram.
@@ -608,7 +616,7 @@ After trace classification and correction, the number of states classifier will 
    :alt: state number
    :align: center
    :name: state number
-   
+
    Number of states confidence for each trace
 
 The predictions of the number of states classifier are used for model selection of the state transition classifier, which subsequently sort all frames in the dynamic traces into state occupancy. Figures 35 and 36 show a histogram of state-wise FRET efficiency and trace-wise state confidence, respectively.
@@ -618,7 +626,7 @@ The predictions of the number of states classifier are used for model selection 
    :alt: state prediction confidence
    :align: center
    :name: state prediction confidence
-   
+
    State transition confidence
 
 .. figure:: ./../figures/documents/Fig_36_statewise_mean_FRET_histogram.png
@@ -626,7 +634,7 @@ The predictions of the number of states classifier are used for model selection 
    :alt: state-wise mean FRET
    :align: center
    :name: Statewise mean FRET histogram
-   
+
    Statewise mean FRET histogram
 
 After all neural network predictions are completed, the program asks you to choose the number of bins, the confidence threshold and the number of states categories to include in the TDP (Transition Density Plot).
@@ -636,7 +644,7 @@ After all neural network predictions are completed, the program asks you to choo
    :alt: TDP input
    :align: center
    :name: TDP input
-   
+
    TDP input parameters
 
 .. figure:: ./../figures/documents/Fig_38_TDP_LiveFit_Panel.png
@@ -644,13 +652,12 @@ After all neural network predictions are completed, the program asks you to choo
    :alt: TDP
    :align: center
    :name: TDP
-   
+
    TDP with live fit panel
 
 By clicking on **Select ROI**, you can choose a cluster and obtain dynamic information about it. The mean values of dwell time, initial and final FRET, and the number of transitions appear on the rext box to the right. The live fit panel below fits the selected dwell times with an exponential. By choosing the **Fit Selection**, **Fit Upper Triangle** or **Fit Lower Triangle** you can fit the dwell times using the Curve Fitting Toolbox™ from MATLAB (not available in compiled programs!). **Plot Dwell times** will plot the dwell times of the selected transitions in a histogram. **Plot FRET** and **Plot corr. FRET** show you the histogrammed apparent and corrected FRET efficiency of the selection, respectively. In case of 3-color FRET data, the FRET efficiencies of all other dye pairs are shown as well.
 
 Magic button is the fully automated step. You may also intend to take separate and different analysis steps without the magic button. For that, you first need to load a neural network from the same table of **Trace Tools**, figure 41. First choose the closest option to your measurement from the drop-down menu on the right, and then click on **Load Neural Network**. Then with the options provided you can do the necessary analysis on your data and get the results within a couple of minutes. Note that to do the autocorrect, you should first click on **Categorize** and then click on **Autocorrect**. After having the categories made by the software, you always have the option of going through the traces, make any changes, and save the current status of the data set.
-
 
 
 
