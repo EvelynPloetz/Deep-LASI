@@ -148,3 +148,15 @@ If you are interested in generating simulated data and/or re-training the neural
 
 If you encounter any problem during the installation procedure, please
 get in touch with us via the *Issue forum*.
+
+
+Common issues with deep learning features
+--------
+
+If you run into errors while loading the neural netork models your protobuf package might need to be downgraded. Please open your windows command prompt by presssing Win + R or terminal app on Mac and enter:
+
+   .. code-block:: python
+   
+      pip install protobuf==3.20.*
+      
+      
