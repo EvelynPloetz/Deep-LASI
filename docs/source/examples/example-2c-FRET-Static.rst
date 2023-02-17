@@ -1,3 +1,5 @@
+.. _static_2c:
+
 Static 2c FRET Data
 =====
 
