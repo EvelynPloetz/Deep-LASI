@@ -75,7 +75,7 @@ Dynamic 3c FRET
 ~~~~~~~~~~~~~~~~~
 In this example, we show how to analyse dynamic 3c FRET data using Deep-LASI for alternating laser excitation (ALEX). As example we investigate an dynamic DNA origami structure, that is labeled with three fluorophores and coordinated changes in the three inter-dye distances.
 
-.. image:: ./../figures/examples/Dynamic_2c_ALEX.png
+.. image:: ./../figures/examples/Dynamic_3c_ALEX.png
    :target: https://deep-lasi-tutorial.readthedocs.io/en/latest/examples/example-3c-FRET-Dynamic.html
    :width: 800
    :alt: Dynamic 3c FRET Analysis with ALEX
