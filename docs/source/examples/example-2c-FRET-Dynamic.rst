@@ -11,7 +11,7 @@ The following part shows how to use DeepLASI to analyze dynamic 2-color smFRET (
 
 The following part shows all the steps to analyze dynamic 2C smFRET data from L-shaped DNA origami structures with three FRET states as you can see on :numref:`PA1-Dynamic_2c_Origami`.   
 
-.. figure:: ./../figures/examples/PA1-Dynamic_2c_Origami.png
+.. figure:: ./../../figures/examples/PA1-Dynamic_2c_Origami.png
    :width: 400
    :alt: 2c origami 3state
    :align: center
