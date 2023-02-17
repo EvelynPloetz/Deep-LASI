@@ -56,7 +56,7 @@ The following example on :doc:`./examples/example-2c-FRET-Static` describes how 
 Dynamic 2c FRET
 ~~~~~~~~~~~~~~~~~
 
-The following section describes how to analyse dynamic 2c FRET data using Deep-LASI for alternating laser excitation (ALEX). 
+The following section describes how to analyse :doc:`./examples/example-2c-FRET-Dynamic` using Deep-LASI for alternating laser excitation (ALEX). 
 
 .. image:: ./../figures/examples/Dynamic_2c_ALEX.png
    :target: https://deep-lasi-tutorial.readthedocs.io/en/latest/examples/example-2c-FRET-Dynamic.html
@@ -73,7 +73,7 @@ Three-color assays
 
 Dynamic 3c FRET
 ~~~~~~~~~~~~~~~~~
-In this example, we show how to analyse dynamic 3c FRET data using Deep-LASI for alternating laser excitation (ALEX). As example we investigate an dynamic DNA origami structure, that is labeled with three fluorophores and coordinated changes in the three inter-dye distances.
+In this example, we show how to analyse :doc:`./examples/example-3c-FRET-Dynamic` using Deep-LASI for alternating laser excitation (ALEX). As example we investigate an dynamic DNA origami structure, that is labeled with three fluorophores and coordinated changes in the three inter-dye distances.
 
 .. image:: ./../figures/examples/Dynamic_3c_ALEX.png
    :target: https://deep-lasi-tutorial.readthedocs.io/en/latest/examples/example-3c-FRET-Dynamic.html
@@ -110,9 +110,10 @@ In this example, we show how to analyse dynamic 3c FRET data using Deep-LASI for
    :hidden:
    :titlesonly:
 
-..   ./examples/example-steps
-..   ./examples/example-paint
    ./examples/example-2c-FRET-Static
    ./examples/example-2c-FRET-Dynamic
    ./examples/example-3c-FRET-Dynamic
+   
+..   ./examples/example-steps
+..   ./examples/example-paint
 ..   ./examples/example-Colocalization
