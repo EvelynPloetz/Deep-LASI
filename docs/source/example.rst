@@ -56,7 +56,7 @@ The following example on :doc:`./examples/example-2c-FRET-Static` describes how 
 Dynamic 2c FRET
 ~~~~~~~~~~~~~~~~~
 
-The following section describes how to analyse :doc:`./examples/example-2c-FRET-Dynamic` using Deep-LASI for alternating laser excitation (ALEX). 
+The following section describes how to analyse :ref:`dynamic-2c` using Deep-LASI for alternating laser excitation (ALEX). 
 
 .. image:: ./../figures/examples/Dynamic_2c_ALEX.png
    :target: https://deep-lasi-tutorial.readthedocs.io/en/latest/examples/example-2c-FRET-Dynamic.html
