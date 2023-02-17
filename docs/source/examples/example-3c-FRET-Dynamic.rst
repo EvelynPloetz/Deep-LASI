@@ -2,9 +2,12 @@
 
    <br />
 
-Dynamic 2c FRET Data
+Dynamic 3c FRET Data
 =====
+
+.. _dynamic-3c:
+
 
 ... Coming soon ...
 
-HIIIIII
+
