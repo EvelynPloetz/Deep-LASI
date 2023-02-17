@@ -110,8 +110,9 @@ In this example, we show how to analyse dynamic 3c FRET data using Deep-LASI for
    :hidden:
    :titlesonly:
 
-   ./examples/example-steps
-   ./examples/example-paint
+..   ./examples/example-steps
+..   ./examples/example-paint
    ./examples/example-2c-FRET-Static
    ./examples/example-2c-FRET-Dynamic
-   ./examples/example-Colocalization
+   ./examples/example-3c-FRET-Dynamic
+..   ./examples/example-Colocalization
