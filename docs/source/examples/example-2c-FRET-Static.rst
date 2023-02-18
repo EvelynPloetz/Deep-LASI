@@ -38,9 +38,9 @@ Example 1
 ..  _example-data1:
 Sample Design: Static Double-Stranded DNA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The first data set is chosen from a multi-laboratory `benchmark study <https://www.nature.com/articles/s41592-018-0085-0>`_. It contains a mix of two single-molecule data sets of double-labeled DNA molecules. The two samples feature a low (:numref:`fig_DNA` (left)) and intermediate FRET efficiency(:numref:`fig_DNA` (right)) by design, with the attached fluorophore pairs being separated by 23 and 15 base pairs, respectively.
+The first data set is chosen from a multi-laboratory `benchmark study <https://www.nature.com/articles/s41592-018-0085-0>`_. It contains two single-molecule data sets of double-labeled DNA molecules. The two samples feature a low (:numref:`fig_DNA` (left)) and intermediate FRET efficiency(:numref:`fig_DNA` (right)) by design, with the attached fluorophore pairs being separated by 23 and 15 base pairs, respectively.
 
-.. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_1.png
+.. figure:: ./../figures/examples/Static_Twoc_Sub_Figure_1.png
    :width: 700
    :alt: Static 2c DNA 
    :align: center
@@ -51,16 +51,23 @@ The first data set is chosen from a multi-laboratory `benchmark study <https://w
 .. _data-prep1:
 Data preparation 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The DNA molecules were recorded on a TIRF microscope with dual-view inset and alternating laser excitation (:numref:`fig_dualview`). Due to the split camera image, the donor emission after donor excitation (DD) is detected on the left half of the camera, while the acceptor emission after donor excitation (DA) or direction excitation (AA) are recorded on the right half of the camera. To analyse the data, download the raw data from `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_ and save the raw tif-files for (1) the calibration measurement, (2) the low FRET sample and (2) the intermediate FRET sample.
+The DNA molecules were recorded on a TIRF microscope with dual-view inset and alternating laser excitation at an exposure time of 250 ms (:numref:`fig_dualview`). To analyse the data, download the raw data from `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_ and save the raw tif-files for (1) the calibration measurement, (2) the low FRET sample and (2) the intermediate FRET sample.
 
- downloaded tif-files
-.. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_1.png
+.. figure:: ./../figures/documents/Dummy.png
    :width: 700
    :alt: 2c FRET data recorded with ALEX on a split camera
    :align: center
    :name: fig_dualview
 
-In the next step, we generated a map which co-localizes donor-molecules with the FRET partnes in the second half of the camera. For this, we opened the
+In the first step, we need to identify the detection channels, i.e., their position on the camera and the applied laser excitation schemes. For this we can for example use ImageJ to load any of the downloaded tiff-stacks.
+When looking at the movies of the two DNA constructs with alternating laser excitation, we can identify the detection channels best during the red excitation period: frames with red excitation show emission on the left half of the camera (acceptor emission after acceptor excitation), while no emission signal is observed on the right half of the camera (Donor emission after acceptor excitation) due to the mission excitation of the donor molecule. This means, the donor emission after donor excitation (DD) is detected on the right half of the camera, while the acceptor emission after donor excitation (DA) or direction excitation (AA) are recorded on the left half of the camera. Furthermore, we can identify an ALEX cycle starting with red excitation followed by green excitation on for 1 frame each.
+
+.. figure:: ./../figures/documents/Dummy.png
+   :width: 700
+   :alt: Alternation period data recorded with ALEX on a split camera
+   :align: center
+   :name: fig_alternation
+
 
 .. _extraction1:
 Co-Localize Molecules / Trace Extraction
