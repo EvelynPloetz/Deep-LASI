@@ -112,6 +112,7 @@ In this example, we show how to analyse :doc:`./examples/example-3c-FRET-Dynamic
 .. toctree::
    :includehidden:
    :hidden:
+   :maxdepth: 2
 
    ./examples/example-2c-FRET-Static
    ./examples/example-2c-FRET-Dynamic
