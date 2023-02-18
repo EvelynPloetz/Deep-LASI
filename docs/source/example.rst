@@ -46,7 +46,7 @@ The following example on :doc:`./examples/example-2c-FRET-Static` describes how 
 .. We discuss two examples for publicly available sample data from `Hellenkamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_ and `Götz et al., Nat. Meth (2022) <https://www.nature.com/articles/s41467-022-33023-3>`_.
 
 .. figure:: ./../figures/examples/Static_Twoc_ALEX.png
-   :target: https://deep-lasi-tutorial.readthedocs.io/en/latest/example-2c-FRET-Static.html
+   :target: https://deep-lasi-tutorial.readthedocs.io/en/latest/examples/example-2c-FRET-Static.html
    :ref:`static_2c`_
    :width: 500
    :align: center
@@ -107,10 +107,9 @@ In this example, we show how to analyse :doc:`./examples/example-3c-FRET-Dynamic
 .. Workflow for extracking and analyzing fluorescent traces and FRET signatures of diffusing particles from 3D-Orbital Tracking microscopy. (Mieskes et al., 2023, Small)
 
 .. toctree::
-   :hidden:
-   :titlesonly:
+   :includehidden:
 
-   ./example-2c-FRET-Static
+   ./examples/example-2c-FRET-Static
    ./examples/example-2c-FRET-Dynamic
    ./examples/example-3c-FRET-Dynamic
    
