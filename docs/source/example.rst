@@ -106,6 +106,10 @@ In this example, we show how to analyse :doc:`./examples/example-3c-FRET-Dynamic
 ..
 .. Workflow for extracking and analyzing fluorescent traces and FRET signatures of diffusing particles from 3D-Orbital Tracking microscopy. (Mieskes et al., 2023, Small)
 
+.. --------------------------------------------------------------------
+..
+Details
+----------
 
 .. --------------------------------------------------------------------
 
