@@ -7,10 +7,10 @@
 .. Proteins are frequently functioning as oligomers. Photobleaching step analysis allows for investigating the stoichiometry of a particular protein of interest in a molecular assembly, or determining the labeling efficiency of a single protein. Deep-LASI localizes the biomolecule, extract the fluroescence trajectory, analyzes potential bleaching steps by an automated step finding algorithm and determins the number of itensity levels, their brightness and time spend in the different states.
 
 .. .. image:: ./../../figures/examples/Steps_Figure.png
-:target: ./example-steps.rst
-:width: 800
-:alt: Bleaching Step Analysis
-:align: center
+.. :target: ./example-steps.rst
+.. :width: 800
+.. :alt: Bleaching Step Analysis
+.. :align: center
 
 .. PAINT: Dwell time analysis
 .. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -19,10 +19,10 @@
 .. Besides sequence-based multiplexing, variation of binding time and binding frequency allow for visualizing multiple distinct molecular species within a single sample via DNA-PAINT. Deep-LASI allows for extracting time traces and fluorescence characteristics, to determine the ON- and OFF-times associated with time the imager strand spends in the bound state τ :sub:`b` or diffusing τ :sub:`d` in solution according to the chosen DNA sequence.
 
 .. .. image:: ./../../figures/examples/PAINT_Figure.png https://deep-lasi-tutorial.readthedocs.io/en/latest/examples/example-2c-FRET-Static.html
-:target: https://deep-lasi-tutorial.readthedocs.io/en/latest/examples/example-paint.html
-:width: 500
-:alt: PAINT assay
-:align: center
+.. :target: https://deep-lasi-tutorial.readthedocs.io/en/latest/examples/example-paint.html
+.. :width: 500
+.. :alt: PAINT assay
+.. :align: center
 
 .. --------------------------------------------------------------------
 
@@ -81,10 +81,10 @@ In this example, we show how to analyse :doc:`./example-3c-FRET-Dynamic` using D
 .. The following workflow describes how to use Deep-LASI for standard colocalization experiments with up to three detection channels.
 
 .. .. image:: ./../../figures/examples/Co-Localization.png
-:target: https://deep-lasi-tutorial.readthedocs.io/en/latest/examples/example-Colocalization.html
-:width: 250
-:alt: Collocalization between up to three binding partners
-:align: center
+.. :target: https://deep-lasi-tutorial.readthedocs.io/en/latest/examples/example-Colocalization.html
+.. :width: 250
+.. :alt: Collocalization between up to three binding partners
+.. :align: center
 
 |
 
