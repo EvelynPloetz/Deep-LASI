@@ -46,7 +46,7 @@ The following example on :doc:`./examples/example-2c-FRET-Static` describes how 
 .. We discuss two examples for publicly available sample data from `Hellenkamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_ and `Götz et al., Nat. Meth (2022) <https://www.nature.com/articles/s41467-022-33023-3>`_.
 
 .. figure:: ./../figures/examples/Static_Twoc_ALEX.png
-   :target:  ./examples/example-2c-FRET-Static.rst
+   :target:  ./examples/example-2c-FRET-Static
    :width: 500
    :alt: Static 2c FRET Analysis with ALEX
    :align: center
