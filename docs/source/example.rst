@@ -11,6 +11,7 @@ Please **click on the different images** or follow the respective links to visit
 
 .. toctree::
    :includehidden:
+   :hidden:
 
    ./examples/index
    ./examples/example-2c-FRET-Static
