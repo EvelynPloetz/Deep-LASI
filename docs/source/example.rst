@@ -45,11 +45,36 @@ The following example on :doc:`./examples/example-2c-FRET-Static` describes how 
 
 .. We discuss two examples for publicly available sample data from `Hellenkamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_ and `Götz et al., Nat. Meth (2022) <https://www.nature.com/articles/s41467-022-33023-3>`_.
 
-.. figure:: ./../figures/examples/Static_Twoc_ALEX.png
-   :target: https://deep-lasi-tutorial.readthedocs.io/en/latest/examples/example-2c-FRET-Static.html
-   :ref:`static_2c`_
+..  https://deep-lasi-tutorial.readthedocs.io/en/latest/examples/example-2c-FRET-Static.html
+
+.. .. figure:: ./../figures/examples/Static_Twoc_ALEX.png
+   :include: ./examples/example-2c-FRET-Static.rst
    :width: 500
    :align: center
+
+.. image:: ./../figures/examples/Static_Twoc_ALEX.png
+   :target: ./examples/example-2c-FRET-Static.rst
+   :class: rst-clickable
+
+.. include:: ./examples/example-2c-FRET-Static.rst
+   :start-line: 1
+   :end-line: -1
+
+.. raw:: html
+
+   <script>
+   var rstClickable = document.querySelectorAll('.rst-clickable');
+   for (var i = 0; i < rstClickable.length; i++) {
+     rstClickable[i].addEventListener('click', function(event) {
+       var includedFile = event.currentTarget.getAttribute('href');
+       var includedContent = document.querySelector(includedFile).innerHTML;
+       document.getElementById('rst-container').innerHTML = includedContent;
+       event.preventDefault();
+     });
+   }
+   </script>
+
+<div id="rst-container"></div>
 
 |
 
@@ -105,6 +130,9 @@ In this example, we show how to analyse :doc:`./examples/example-3c-FRET-Dynamic
 .. ... coming soon ...
 .. 
 .. Workflow for extracking and analyzing fluorescent traces and FRET signatures of diffusing particles from 3D-Orbital Tracking microscopy. (Mieskes et al., 2023, Small)
+
+
+.. --------------------------------------------------------------------
 
 .. toctree::
    :includehidden:
