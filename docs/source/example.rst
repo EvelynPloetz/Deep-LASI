@@ -7,6 +7,8 @@ Deep-LASI can be employed for different single-molecule assays. In this gallery,
 use Deep-LASI for the different single-molecule assays. Eample data are provided together with each show case.
 Please **click on the different images** or follow the respective links to visit the corresponding example pages. 
 
+.. include:: ./examples/index.rst
+
 .. --------------------------------------------------------------------
 
 .. toctree::
