@@ -47,9 +47,9 @@ The first data sets are chosen from a multi-laboratory `benchmark study <https:/
 .. _data-prep1:
 Data preparation 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The DNA molecules were recorded on a TIRF microscope with dual-view inset and alternating laser excitation at an exposure time of 50 ms (:numref:`dualview`). To analyze the data, we downloaded the raw data from `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_ and saved the raw *.tif* files for (1) the calibration measurement, (2) the low FRET sample and (2) the intermediate FRET sample.
+The DNA molecules were recorded on a TIRF microscope with dual-view inset and alternating laser excitation at an exposure time of 250 ms (:numref:`dualview`). To analyze the data, we downloaded the raw data from `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_ and saved the raw *.tif* files for (1) the calibration measurement, (2) the low FRET sample and (2) the intermediate FRET sample.
 
-.. tip:: @Pooyeh and Simon, can you please check the exposure and frame time. (exposure time is 50 ms and frame transfer 2.2 ms.)
+.. tip:: @Pooyeh and Simon, can you please check the exposure and frame time.
 
 .. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_Alternation.png
    :width: 700
@@ -103,7 +103,7 @@ After generating the transformation matrix via mapping or reloading the already 
 
    Settings for extracting the different emission channels depending on the excitation cycle.
 
-Next, we specified the experimental settings for *Deep-LASI* (:numref:`extraction`, A). We provided the interframe time of 52.2 ms, given by the exposure time and frame time, which are 50 ms and 2.2 ms, together. Next, we specified the excitation cycle 'RG' by typing in the ALEX sequence.
+Next, we specified the experimental settings for *Deep-LASI* (:numref:`extraction`, A). We provided the interframe time of 250 ms, given by the exposure time and frame time, which are 250 ms and xxx ms, together. Next, we specified the excitation cycle 'RG' by typing in the ALEX sequence.
 
 .. note:: Due to coding reasons, *Deep-LASI* recognizes the letters B, G, R, and IR as input for the laser excitation in the ALEX cycle. They are required for the correct selection of laser excitation cycle and visualization in multi-color experiments, later. Yellow excitation is referred to as 'green' (G) excitation.
 
