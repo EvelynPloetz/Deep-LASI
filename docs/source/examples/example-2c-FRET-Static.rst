@@ -1,3 +1,7 @@
+.. |br| raw:: html
+
+   <br />
+
 .. _static_2c:
 
 Static 2c FRET Data
@@ -71,18 +75,19 @@ Next, we need to know, where double-labeled DNA molecules are detected on the tw
 
    Determination of the transformation matrix by mapping the donor on the acceptor channel.
 
-To retrieve the transformation matrix, which translates single molecule localizations in one channel onto the other, we first used *Deep-LASI* to generate a map. For this, we loaded the file *calib20140402_0.tif* from the calibration folder into the software. In the first step (:numref:`fig_calibration`, A), we read in the data from the **yellow** channel (which is on the right half of the movie) into the first channel. For this we loaded the movie via :code:`Open File > Mapping > Create New Map > 1st channel`. *Deep-LASI* can handel input data with full and halved field of views. We choose the right half of the camera for the yellow data and confirm.  In the second step (:numref:`fig_calibration`, B), we load the data for the red channel via :code:`Open File > Mapping > Create New Map > 2nd channel` and choose the left half of the camera.
+To retrieve the transformation matrix, which translates single molecule localizations in one channel onto the other, we first used *Deep-LASI* to generate a map. For this, we loaded the calibration file *calib20140402_0.tif* into the software. |br|
+In the first step (:numref:`calibration`, A), we read in the data from the **yellow** channel (which is on the right half of the movie) into the first channel. For this we loaded the movie via :code:`Open File > Mapping > Create New Map > 1st channel`. *Deep-LASI* can handel input data with full and halved field of views. We choose the right half of the camera for the yellow data and confirm.  In the second step (:numref:`calibration`, B), we load the data for the red channel via :code:`Open File > Mapping > Create New Map > 2nd channel` and choose the left half of the camera.
 
 .. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_DL_Map.png
    :width: 700
    :alt: Workflow to create a map between both channels
    :align: center
-   :name: fig_calibration
+   :name: calibration
 
     Workflow to create a map between both detection channels
 
-After loading the data, *Deep-LASI* shows the averaged image for each detection channel separately and automatically detects single emitters (:numref:`fig_calibration`, C). Using the slider the below the two images, the numbers of localization and potential mis-localizations can be adopted. We chose Channel 2 (red camera) as reference, i.e., *Deep-LASI* warps the image from the *yellow* channel onto the *red* detection channel.
-The results is afterwards shown in a side-by-side image, which depict the overlay of both channels before and after the mapping (:numref:`fig_calibration`, D). Lastly, we're only left with saving the generated map via :code:`Open File > Mapping > Save Map`.
+After loading the data, *Deep-LASI* shows the averaged image for each detection channel separately and automatically detects single emitters (:numref:`calibration`, C). Using the slider the below the two images, the numbers of localization and potential mis-localizations can be adopted. We chose Channel 2 (red camera) as reference, i.e., *Deep-LASI* warps the image from the *yellow* channel onto the *red* detection channel.
+The results is afterwards shown in a side-by-side image, which depict the overlay of both channels before and after the mapping (:numref:`calibration`, D). Lastly, we're left with saving the generated map via :code:`Open File > Mapping > Save Map`.
 
 .. _extraction1:
 Trace Extraction
