@@ -49,6 +49,8 @@ Data preparation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The DNA molecules were recorded on a TIRF microscope with dual-view inset and alternating laser excitation at an exposure time of 250 ms (:numref:`dualview`). To analyse the data, we downloaded the raw data from `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_ and saved the raw tif-files for (1) the calibration measurement, (2) the low FRET sample and (2) the intermediate FRET sample.
 
+.. tip:: @Pooyeh and Simon, can you please check the exposure and frame time.
+
 .. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_Alternation.png
    :width: 700
    :alt: Determination of alternation cycle and mapping when using a dualview inset in the detection path.
@@ -74,30 +76,48 @@ Next, we need to know, where double-labeled DNA molecules are detected on the tw
 
    Determination of the transformation matrix by mapping the donor on the acceptor channel.
 
-To retrieve the transformation matrix, which translates single molecule localizations in one channel onto the other, we first used *Deep-LASI* to generate a map. For this, we loaded the calibration file *calib20140402_0.tif* into the software. In the first step (:numref:`calibration`, A), we read in the data from the **yellow** channel (which is on the right half of the movie) into the first channel. For this we loaded the movie via :code:`File > Mapping > Create New Map > 1st channel`. *Deep-LASI* can handel input data with full and halved field of views. We choose the right half of the camera for the yellow data and confirm.  In the second step (:numref:`calibration`, B), we load the data for the red channel via :code:`File > Mapping > Create New Map > 2nd channel` and choose the left half of the camera.
+To retrieve the transformation matrix, which translates single molecule localizations in one channel onto the other, we first used *Deep-LASI* to generate a map. For this, we loaded the calibration file *calib20140402_0.tif* into the software. In the first step (:numref:`calib`, A), we read in the data from the **yellow** channel (which is on the right half of the movie) into the first channel. For this we loaded the movie via :code:`File > Mapping > Create New Map > 1st channel`. *Deep-LASI* can handel input data with full and halved field of views. We choose the right half of the camera for the yellow data and confirm.  In the second step (:numref:`calib`, B), we load the data for the red channel via :code:`File > Mapping > Create New Map > 2nd channel` and choose the left half of the camera.
 
 .. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_DL_Map.png
    :width: 700
    :alt: Workflow to create a map between both channels
    :align: center
-   :name: calibration
+   :name: calib
 
-    Workflow to create a map between both detection channels.
+   Workflow to create a map between both detection channels.
 
-After loading the data, *Deep-LASI* shows the averaged image for each detection channel separately and automatically detects single emitters (:numref:`calibration`, C). Using the slider the below the two images, the numbers of localization and potential mis-localizations can be adopted. We chose Channel 2 (red camera) as reference, i.e., *Deep-LASI* warps the image from the *yellow* channel onto the *red* detection channel.
-The results is afterwards shown in a side-by-side image, which depict the overlay of both channels before and after the mapping (:numref:`calibration`, D). Lastly, we're left with saving the generated map via :code:`File > Mapping > Save Map`.
+After loading the data, *Deep-LASI* shows the averaged image for each detection channel separately and automatically detects single emitters (:numref:`calib`, C). Using the slider the below the two images, the numbers of localization and potential mis-localizations can be adopted. We chose Channel 2 (red camera) as reference, i.e., *Deep-LASI* warps the image from the *yellow* channel onto the *red* detection channel.
+The results is afterwards shown in a side-by-side image, which depict the overlay of both channels before and after the mapping (:numref:`calib`, D). Lastly, we're left with saving the generated map via :code:`File > Mapping > Save Map`.
 
 
 .. _extraction1:
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-After generating the transformation matrix via mapping, we need to load the actual single-molecule data to obtain the trajectories of individual molecules depending on the laser excitation. *Deep-LASI* can detect single-molecules and extract their traces on a single file basis, which can be saved and added file by file for further analysis. However, *Deep-LASI* also permits to extract traces from raw data files with consecutive numbering. In this example, we proceeded by reading in raw *.tif* files per experiment, i.e., the data files *FSII1a_g30r84t200_0.tif* until *..._6.tif* via :code:`File > Load Image Data > 1st channel`.
+After generating the transformation matrix via mapping, or reloading the already generated map :code:`File > Mapping > Load Prev. Map (Ctrl + M)`, we can load the actual single-molecule data in the next step. To obtain the trajectories of individual molecules depending on the laser excitation, *Deep-LASI* can detect and extract traces on a single file basis. For this it can read single *.tif* files, and saves the extracted traces in separate *.mat* files that can be added file by file for further analysis. However, *Deep-LASI* also permits to extract traces from raw data files with consecutive numbering. In the presented example, we proceeded by reading in all raw *.tif* files per experiment at once, i.e., the data files *FSII1a_g30r84t200_0.tif* until *..._6.tif* or *FSII1b_g30r84t200_0.tif* until *..._6.tif* for the 'low-FRET' and 'intermediate-FRET' sample, respectively. We loaded the data of the first channel (as specified during the mapping process) via :code:`File > Load Image Data > 1st channel` for the yellow channel and selected the files.
 
 .. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_DL_Extraction.png
    :width: 700
    :alt: Settings for extracting the different emission channels depending on the excitation cycle
    :align: center
-   :name: fig_extraction
+   :name: extraction
+
+   Settings for extracting the different emission channels depending on the excitation cycle.
+
+Next, we specified the experimental settings for $Deep-LASI$ (:numref:`extraction`, A). We provided the interframe time of 250 ms, given by the exposure time and frame time, which are 250 ms and XXX ms, together. Next, we specified the excitation cycle 'RG', by typing in the ALEX sequence.
+
+.. note:: Due to coding reasons, *Deep-LASI* recognizes the letters B, G, R and IR as input for the laser excitation, which are required for the correct selection of laser excitation cycle and visualization in multi-color experiments on later GUIs. Yellow excitation is referred to as 'green' (G) excitation.
+
+The ALEX sequence activates a slider, that allows to switch between the specified number of excitation sources and to observe in the image on the left, whether the correct slider position is set. We chose for the yellow excitation cycle by selecting the right position of the slider. *Load frame range* and *Particle detection range* allow for omitting frames (at the beginning or the end) in case of measurement errors or other experimental settings. For reading in ALEX data in this example, we can read in all frames - ranging from 1 to the total number of frames, which is 1000 in the case of the 'low-FRET' sample and 1600 in the case of the 'high-FRET' sample. Selecting the fluorophore in this study is optional and will provide additional meta data to the saved file containing the extracted traces. We finish the read-in process, by selecting the yellow detection channel by pressing the green button (:numref:`extraction`, A).
+
+.. note:: While in 4-color FRET experiments, the channel order from 1 to 4 directly matches the excitation channels, in 3-color or 2-color FRET experiments, in particular, there are different combinations of excitation and detection channels (BG, GR, RIR, BR, BIR, GIR) that will lead to an identical extraction of the single-molecule data as long as the corresponding ALEX sequence is given. The only difference is that *Deep-LASI* will choose different colors when displaying the traces afterwards. *Deep-LASI* will interpret the detection channels in the order of channels presented during the mapping process. For consistency chose for yellow/red excitation.
+
+In the second step, we loaded the data of the second detection channel via :code:`File > Load Image Data > 2nd channel` for the red channel and selected the files. For specifying experimental settings for the red channel (:numref:`extraction`, B), we specified the interframe time of 250 ms and the excitation cycle 'RG', by typing in the ALEX sequence.
+We chose the red excitation cycle by selecting the left position of the slider and selected all frames 1-1000 (1-1600 in case of the 'intermediate-FRET' sample), specified the chosen fluorophore. Lastly, we finish the read-in process, by selecting the red detection channel by pressing the red button (:numref:`extraction`, A).
+
+In the following, *Deep-LASI* automatically reads in the raw data file-by-file, localizes molecules in the donor channel, identifies molecules in the acceptor channel by mapping and extracts the trajectories depending on the excitation cycle of every molecule found. This process is carried out iteratively for the number of files specified and can last several minutes. The progress of the extraction process is shown in the left corner of the GUI, and allows to guesstimate the waiting time. Once the extraction process is finished, save the extracted traces via :code:`File > Save Traces / State (Ctrl + S)`
+
+.. note:: In case an error occurred, try to save the extracted traces anyhow. For some Windows installations, a GUI error occurs at the end of the extraction process, which has no influence on the prior extraction.
+
 
 .. _manual1:
 Manual data analysis and correction
@@ -112,19 +132,19 @@ Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
------------------------------------------------------
+.. -----------------------------------------------------
 
-Overview - Example 2
-------------------
-- :ref:`example-data2`
-- :ref:`data-prep2`
-- :ref:`extraction2`
-- :ref:`automatic2`
-- :ref:`manual2`
-- :ref:`summary2`
+.. Overview - Example 2
+.. ------------------
+.. - :ref:`example-data2`
+.. - :ref:`data-prep2`
+.. - :ref:`extraction2`
+.. - :ref:`automatic2`
+.. - :ref:`manual2`
+.. - :ref:`summary2`
 
------------------------------------------------------
+.. -----------------------------------------------------
 
-Example 2
------------
+.. Example 2
+.. -----------
 
