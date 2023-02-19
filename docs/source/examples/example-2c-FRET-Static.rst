@@ -53,20 +53,20 @@ Data preparation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The DNA molecules were recorded on a TIRF microscope with dual-view inset and alternating laser excitation at an exposure time of 250 ms (:numref:`fig_dualview`). To analyse the data, download the raw data from `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_ and save the raw tif-files for (1) the calibration measurement, (2) the low FRET sample and (2) the intermediate FRET sample.
 
-.. figure:: ./../figures/documents/Dummy.png
+.. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_Alternation.png
    :width: 700
-   :alt: 2c FRET data recorded with ALEX on a split camera
+   :alt: Alternation cycle and position of the detection channels on the camera when using a dualview inset.
    :align: center
    :name: fig_dualview
 
-In the first step, we need to identify the detection channels, i.e., their position on the camera and the applied laser excitation schemes. For this we can for example use ImageJ to load any of the downloaded tiff-stacks.
-When looking at the movies of the two DNA constructs with alternating laser excitation, we can identify the detection channels best during the red excitation period: frames with red excitation show emission on the left half of the camera (acceptor emission after acceptor excitation), while no emission signal is observed on the right half of the camera (Donor emission after acceptor excitation) due to the mission excitation of the donor molecule. This means, the donor emission after donor excitation (DD) is detected on the right half of the camera, while the acceptor emission after donor excitation (DA) or direction excitation (AA) are recorded on the left half of the camera. Furthermore, we can identify an ALEX cycle starting with red excitation followed by green excitation on for 1 frame each.
+In the first step, we need to identify the detection channels, i.e., their position on the camera and the applied laser excitation schemes (:numref:`fig_dualview`). For this we can, for example, use ImageJ to load any of the downloaded tiff-stacks.
+When looking at the movies of the two DNA constructs with alternating laser excitation on a frame-to-frame basis, we can identify the detection channels best during the red excitation period: frames with red excitation show emission on the left half of the camera (acceptor emission after acceptor excitation), while no emission signal is observed on the right half of the camera (Donor emission after acceptor excitation) due to the mission excitation of the donor molecule. This means, the donor emission after donor excitation (DD) is detected on the right half of the camera, while the acceptor emission after donor excitation (DA) or direction excitation (AA) are recorded on the left half of the camera. Furthermore, we can identify an ALEX cycle starting with red excitation followed by green excitation on for 1 frame each (:numref:`fig_dualview`).
 
-.. figure:: ./../figures/documents/Dummy.png
+.. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp.png
    :width: 700
-   :alt: Alternation period data recorded with ALEX on a split camera
+   :alt: 2c FRET data recorded with ALEX on a split camera
    :align: center
-   :name: fig_alternation
+   :name: fig_mapping
 
 
 .. _extraction1:
