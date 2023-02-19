@@ -6,7 +6,7 @@ Static 2c FRET Data
 The following section describes the workflow, when analyzing static, 2-color smFRET (single-molecule Förster Resonance Energy Transfer) data.
 Deep-LASI provides a modular workflow for analysing the data, either manually or automatically. The analysis starts with the co-localization of fluorescent molecules between both channels and trace extraction , the categorization process, the determination of correction factors, the selection of time windows to be analyzed per single time trace, the kinetic analysis, and ends with a summary of the analyzed traces by calculating the distribution of the correction factors, the FRET and stoichiometry values.
 
-We describe how to use *Deep-LASI* for two examples: (1) a publicly available example data set published by by `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_, which was recorded on a split camera, and (2) a static two-color DNA origami sample, which was recorded on two separate cameras.
+We describe how to use *Deep-LASI* for two examples: (1) a publicly available example data set published by `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_, which was recorded on a split camera, and (2) a static two-color DNA origami sample, which was recorded on two separate cameras.
 Further sample data sets can be found, e.g., in `Wanninger et al., BioArxiv (2023) <https://doi.org/10.1101/2023.01.31.526220>`_.
 
 .. We discuss two examples for publicly available sample data from `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_ and `Götz et al., Nat. Meth (2022) <https://www.nature.com/articles/s41467-022-33023-3>`_.
@@ -19,15 +19,6 @@ Overview - Example 1
 - :ref:`automatic`
 - :ref:`manual`
 - :ref:`summary`
-
-Overview - Example 2
-------------------
-- :ref:`example-data2`
-- :ref:`data-prep2`
-- :ref:`extraction2`
-- :ref:`automatic2`
-- :ref:`manual2`
-- :ref:`summary2`
 
 --------------------------------------------------------------------
 
@@ -87,6 +78,15 @@ Plotting and Summary of Results
 
 
 -----------------------------------------------------
+
+Overview - Example 2
+------------------
+- :ref:`example-data2`
+- :ref:`data-prep2`
+- :ref:`extraction2`
+- :ref:`automatic2`
+- :ref:`manual2`
+- :ref:`summary2`
 
 ..  _example_no2:
 Example 2
