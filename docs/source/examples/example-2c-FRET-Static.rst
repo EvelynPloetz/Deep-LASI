@@ -13,12 +13,12 @@ Further sample data sets can be found, e.g., in `Wanninger et al., BioArxiv (202
 
 Overview - Example 1
 ------------------
-- :ref:`example-data`
-- :ref:`data-prep`
-- :ref:`extraction`
-- :ref:`automatic`
-- :ref:`manual`
-- :ref:`summary`
+- :ref:`example-data1`
+- :ref:`data-prep1`
+- :ref:`extraction1`
+- :ref:`automatic1`
+- :ref:`manual1`
+- :ref:`summary1`
 
 --------------------------------------------------------------------
 
