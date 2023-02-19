@@ -66,8 +66,8 @@ Next, we need to know, where double-labeled DNA molecules are detected on the tw
    :align: center
    :name: fig-mapping
 
-To retrieve the matrix, we first used *Deep-LASI* to generate a map which translates single molecule localizations in one channel into the other. For this we loaded the file *calib20140402_0.tif* from the calibration folder. At first we read in the data for the **green** channel, which is on the right half of the movie. For this we loaded the movie for the first channel via :code:`Open File > Mapping > Create New Map > 1st channel`.
-:code:`>> DeepLASI`
+To retrieve the transformation matrix, which translates single molecule localizations in one channel into the other, we first used *Deep-LASI* to generate a map. For this, we loaded the file *calib20140402_0.tif* from the calibration folder into the software. In the first step (:numref:`fig-calibration`), we read in the data for the **green** channel (which is on the right half of the movie). For this we loaded the movie for the first channel via :code:`Open File > Mapping > Create New Map > 1st channel`.
+
 
 .. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_DL_Map.png
    :width: 700
