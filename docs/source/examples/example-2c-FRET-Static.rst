@@ -31,7 +31,7 @@ Sample Design: Static Double-Stranded DNA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The first data set is chosen from a multi-laboratory `benchmark study <https://www.nature.com/articles/s41592-018-0085-0>`_. It contains two single-molecule data sets of double-labeled DNA molecules. The two samples feature a low (:numref:`fig_DNA` (left)) and intermediate FRET efficiency(:numref:`fig_DNA` (right)) by design, with the attached fluorophore pairs being separated by 23 and 15 base pairs, respectively.
 
-.. figure:: ./../figures/examples/Static_Twoc_Sub_Figure_1.png
+.. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_1.png
    :width: 700
    :alt: Static 2c DNA 
    :align: center
