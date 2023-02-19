@@ -43,37 +43,37 @@ The first data set are chosen from a multi-laboratory `benchmark study <https://
 .. _data-prep1:
 Data preparation 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The DNA molecules were recorded on a TIRF microscope with dual-view inset and alternating laser excitation at an exposure time of 250 ms (:numref:`fig-dualview`). To analyse the data, we downloaded the raw data from `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_ and saved the raw tif-files for (1) the calibration measurement, (2) the low FRET sample and (2) the intermediate FRET sample.
+The DNA molecules were recorded on a TIRF microscope with dual-view inset and alternating laser excitation at an exposure time of 250 ms (:numref:`fig_dualview`). To analyse the data, we downloaded the raw data from `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_ and saved the raw tif-files for (1) the calibration measurement, (2) the low FRET sample and (2) the intermediate FRET sample.
 
 .. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_Alternation.png
    :width: 700
    :alt: Alternation cycle and position of the detection channels on the camera when using a dualview inset.
    :align: center
-   :name: fig-dualview
+   :name: fig_dualview
 
-In the first step, we need to identify the detection channels, i.e., their position on the camera and the applied laser excitation schemes (:numref:`fig-dualview`). For this we can, for example, use ImageJ to load any of the downloaded movies encoding the single-molecule data of the two DNA constructs.
-When looking at the tiff-stack with alternating laser excitation on a frame-to-frame basis, we can identify the detection channels best during the red excitation period: frames with red excitation show emission on the left half of the camera (acceptor emission after acceptor excitation), while no emission signal is observed on the right half of the camera (Donor emission after acceptor excitation) due to the mission excitation of the donor molecule. This means, the donor emission after donor excitation (DD) is detected on the right half of the camera, while the acceptor emission after donor excitation (DA) or direction excitation (AA) is recorded on the left half of the camera. Furthermore, we can identify an ALEX cycle starting with red excitation followed by green excitation for 1 frame each (:numref:`fig-dualview`).
+In the first step, we need to identify the detection channels, i.e., their position on the camera and the applied laser excitation schemes (:numref:`fig_dualview`). For this we can, for example, use ImageJ to load any of the downloaded movies encoding the single-molecule data of the two DNA constructs.
+When looking at the tiff-stack with alternating laser excitation on a frame-to-frame basis, we can identify the detection channels best during the red excitation period: frames with red excitation show emission on the left half of the camera (acceptor emission after acceptor excitation), while no emission signal is observed on the right half of the camera (Donor emission after acceptor excitation) due to the mission excitation of the donor molecule. This means, the donor emission after donor excitation (DD) is detected on the right half of the camera, while the acceptor emission after donor excitation (DA) or direction excitation (AA) is recorded on the left half of the camera. Furthermore, we can identify an ALEX cycle starting with red excitation followed by green excitation for 1 frame each (:numref:`fig_dualview`).
 
 
 .. _localization1:
 Co-Localizion of Molecules
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Next, we need to know, where double-labeled DNA molecules are detected on the two field of views of the camera, i.e., which pixel on the red channel corresponds to a pixel on the green detection channel (:numref:`fig-mapping`). While differences in magnification will not be observed on a single camera, there can be still a slight tilt or shift between the two images due to the alignment of dual-view inset.
+Next, we need to know, where double-labeled DNA molecules are detected on the two field of views of the camera, i.e., which pixel on the red channel corresponds to a pixel on the green detection channel (:numref:`fig_mapping`). While differences in magnification will not be observed on a single camera, there can be still a slight tilt or shift between the two images due to the alignment of dual-view inset.
 
-.. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekam_Map.png
+.. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_Map.png
    :width: 250
    :alt: 2c FRET data recorded with ALEX on a split camera
    :align: center
-   :name: fig-mapping
+   :name: fig_mapping
 
-To retrieve the transformation matrix, which translates single molecule localizations in one channel into the other, we first used *Deep-LASI* to generate a map. For this, we loaded the file *calib20140402_0.tif* from the calibration folder into the software. In the first step (:numref:`fig-calibration`), we read in the data for the **green** channel (which is on the right half of the movie). For this we loaded the movie for the first channel via :code:`Open File > Mapping > Create New Map > 1st channel`.
+To retrieve the transformation matrix, which translates single molecule localizations in one channel into the other, we first used *Deep-LASI* to generate a map. For this, we loaded the file *calib20140402_0.tif* from the calibration folder into the software. In the first step (:numref:`fig_calibration`), we read in the data for the **green** channel (which is on the right half of the movie). For this we loaded the movie for the first channel via :code:`Open File > Mapping > Create New Map > 1st channel`.
 
 
 .. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_DL_Map.png
    :width: 700
    :alt: Workflow to create a map between both channels
    :align: center
-   :name: fig-calibration
+   :name: fig_calibration
 
 .. _extraction1:
 Trace Extraction
@@ -83,7 +83,7 @@ Trace Extraction
    :width: 700
    :alt: Settings for extracting the different emission channels depending on the excitation cycle
    :align: center
-   :name: fig-extraction
+   :name: fig_extraction
 
 .. _manual1:
 Manual data analysis and correction
