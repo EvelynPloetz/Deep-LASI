@@ -15,9 +15,10 @@ Overview - Example 1
 ------------------
 - :ref:`example-data1`
 - :ref:`data-prep1`
+- :ref:`localization1`
 - :ref:`extraction1`
-- :ref:`automatic1`
 - :ref:`manual1`
+- :ref:`automatic1`
 - :ref:`summary1`
 
 --------------------------------------------------------------------
@@ -29,7 +30,7 @@ Example 1
 ..  _example-data1:
 Sample Design: Static Double-Stranded DNA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The first data set is chosen from a multi-laboratory `benchmark study <https://www.nature.com/articles/s41592-018-0085-0>`_. It contains two single-molecule data sets of double-labeled DNA molecules. The two samples feature a low (:numref:`fig_DNA` (left)) and intermediate FRET efficiency(:numref:`fig_DNA` (right)) by design, with the attached fluorophore pairs being separated by 23 and 15 base pairs, respectively.
+The first data set are chosen from a multi-laboratory `benchmark study <https://www.nature.com/articles/s41592-018-0085-0>`_. It contains two single-molecule data sets of double-labeled DNA molecules. The two samples feature a low (:numref:`fig_DNA`, left) and intermediate FRET efficiency(:numref:`fig_DNA`, right) by design, with the attached fluorophore pairs being separated by 23 and 15 base pairs, respectively.
 
 .. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_1.png
    :width: 700
@@ -42,7 +43,7 @@ The first data set is chosen from a multi-laboratory `benchmark study <https://w
 .. _data-prep1:
 Data preparation 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The DNA molecules were recorded on a TIRF microscope with dual-view inset and alternating laser excitation at an exposure time of 250 ms (:numref:`fig-dualview`). To analyse the data, download the raw data from `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_ and save the raw tif-files for (1) the calibration measurement, (2) the low FRET sample and (2) the intermediate FRET sample.
+The DNA molecules were recorded on a TIRF microscope with dual-view inset and alternating laser excitation at an exposure time of 250 ms (:numref:`fig-dualview`). To analyse the data, we downloaded the raw data from `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_ and saved the raw tif-files for (1) the calibration measurement, (2) the low FRET sample and (2) the intermediate FRET sample.
 
 .. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_Alternation.png
    :width: 700
@@ -50,26 +51,46 @@ The DNA molecules were recorded on a TIRF microscope with dual-view inset and al
    :align: center
    :name: fig-dualview
 
-In the first step, we need to identify the detection channels, i.e., their position on the camera and the applied laser excitation schemes (:numref:`fig-dualview`). For this we can, for example, use ImageJ to load any of the downloaded tiff-stacks.
-When looking at the movies of the two DNA constructs with alternating laser excitation on a frame-to-frame basis, we can identify the detection channels best during the red excitation period: frames with red excitation show emission on the left half of the camera (acceptor emission after acceptor excitation), while no emission signal is observed on the right half of the camera (Donor emission after acceptor excitation) due to the mission excitation of the donor molecule. This means, the donor emission after donor excitation (DD) is detected on the right half of the camera, while the acceptor emission after donor excitation (DA) or direction excitation (AA) are recorded on the left half of the camera. Furthermore, we can identify an ALEX cycle starting with red excitation followed by green excitation on for 1 frame each (:numref:`fig-dualview`).
+In the first step, we need to identify the detection channels, i.e., their position on the camera and the applied laser excitation schemes (:numref:`fig-dualview`). For this we can, for example, use ImageJ to load any of the downloaded movies encoding the single-molecule data of the two DNA constructs.
+When looking at the tiff-stack with alternating laser excitation on a frame-to-frame basis, we can identify the detection channels best during the red excitation period: frames with red excitation show emission on the left half of the camera (acceptor emission after acceptor excitation), while no emission signal is observed on the right half of the camera (Donor emission after acceptor excitation) due to the mission excitation of the donor molecule. This means, the donor emission after donor excitation (DD) is detected on the right half of the camera, while the acceptor emission after donor excitation (DA) or direction excitation (AA) is recorded on the left half of the camera. Furthermore, we can identify an ALEX cycle starting with red excitation followed by green excitation for 1 frame each (:numref:`fig-dualview`).
 
-.. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp.png
-   :width: 300
+
+.. _localization1:
+Co-Localizion of Molecules
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Next, we need to know, where double-labeled DNA molecules are detected on the two field of views of the camera, i.e., which pixel on the red channel corresponds to a pixel on the green detection channel (:numref:`fig-mapping`). While differences in magnification will not be observed on a single camera, there can be still a slight tilt or shift between the two images due to the alignment of dual-view inset.
+
+.. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekam_Map.png
+   :width: 250
    :alt: 2c FRET data recorded with ALEX on a split camera
    :align: center
-   :name: fig_mapping
+   :name: fig-mapping
 
+To retrieve the matrix, we first used *Deep-LASI* to generate a map which translates single molecule localizations in one channel into the other. For this we loaded the file *calib20140402_0.tif* from the calibration folder. At first we read in the data for the **green** channel, which is on the right half of the movie. For this we loaded the movie for the first channel via :code:`Open File > Mapping > Create New Map > 1st channel`.
+:code:`>> DeepLASI`
+
+.. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_DL_Map.png
+   :width: 700
+   :alt: Workflow to create a map between both channels
+   :align: center
+   :name: fig-calibration
 
 .. _extraction1:
-Co-Localize Molecules / Trace Extraction
+Trace Extraction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_DL_Extraction.png
+   :width: 700
+   :alt: Settings for extracting the different emission channels depending on the excitation cycle
+   :align: center
+   :name: fig-extraction
+
+.. _manual1:
+Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _automatic1:
 Automatic data analysis and correction
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. _manual1:
-Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _summary1:
