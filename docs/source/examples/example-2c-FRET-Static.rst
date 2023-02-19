@@ -49,7 +49,7 @@ Data preparation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The DNA molecules were recorded on a TIRF microscope with dual-view inset and alternating laser excitation at an exposure time of 50 ms (:numref:`dualview`). To analyze the data, we downloaded the raw data from `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_ and saved the raw *.tif* files for (1) the calibration measurement, (2) the low FRET sample and (2) the intermediate FRET sample.
 
-.. tip:: @Pooyeh and Simon, can you please check the exposure and frame time.
+.. tip:: @Pooyeh and Simon, can you please check the exposure and frame time. (exposure time is 50 ms and frame transfer 2.2 ms.)
 
 .. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_Alternation.png
    :width: 700
