@@ -103,7 +103,7 @@ After generating the transformation matrix via mapping or reloading the already 
 
    Settings for extracting the different emission channels depending on the excitation cycle.
 
-Next, we specified the experimental settings for *Deep-LASI* (:numref:`extraction`, A). We provided the interframe time of 250 ms, given by the exposure time and frame time, which are 250 ms and XXX ms, together. Next, we specified the excitation cycle 'RG' by typing in the ALEX sequence.
+Next, we specified the experimental settings for *Deep-LASI* (:numref:`extraction`, A). We provided the interframe time of 52.2 ms, given by the exposure time and frame time, which are 50 ms and 2.2 ms, together. Next, we specified the excitation cycle 'RG' by typing in the ALEX sequence.
 
 .. note:: Due to coding reasons, *Deep-LASI* recognizes the letters B, G, R, and IR as input for the laser excitation in the ALEX cycle. They are required for the correct selection of laser excitation cycle and visualization in multi-color experiments, later. Yellow excitation is referred to as 'green' (G) excitation.
 
