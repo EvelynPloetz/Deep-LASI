@@ -9,7 +9,7 @@ Dynamic 2c FRET Data
 
 Here you can see how to use DeepLASI to analyze dynamic 2-color smFRET (single-molecule Förster Resonance Energy Transfer) data measured with alternating laser excitation (ALEX). DeepLASI provides you with the options of analyzing your data either automatically using the deep learning neural network or manually. The analysis usually starts with detecting the co-localized FRET pairs within the field of view from both cameras and extracting their intensity traces, followed by sorting the traces into helpful categories, and determining the correction factors. Afterwards, you can continue the analysis steps for the kinetics of the sample system and visualize the whole data on various plots and histograms.   
 
-The following part shows all the steps to analyze dynamic 2C smFRET data from L-shaped DNA origami structures with three FRET states. The example data together with further data sets are accessible in `Wanninger et al., BioArxiv (2023) <https://doi.org/10.1101/2023.01.31.526220>`_.
+The following part shows all the steps to analyze dynamic 2C smFRET data from L-shaped DNA origami structures with two FRET states. The example data together with further data sets are accessible in `Wanninger et al., BioArxiv (2023) <https://doi.org/10.1101/2023.01.31.526220>`_.
 
 Overview - Example
 ------------------
@@ -30,7 +30,7 @@ Example
 Sample Design: Dynamic L-Shaped DNA Origami
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The described data set is from smTIRF measurement with DNA origami structure as you can see on :numref:`dyn-2c-origami-3state`. The origami is labeled with Cy3B (donor) and Atto647N (acceptor).The donor is attached to the flexible tether with a 7.5 nt overhang binding freely among three single-stranded binding sites.The energy transfer is expected between a high FRET State 1 (12 o'clock), a low FRET State 3 (6 o'clock), and an intermediate FRET State 2 (9 o'clock).   
+The described data set is from smTIRF measurement with DNA origami structure as you can see on :numref:`dyn-2c-origami-3state`. The origami is labeled with Cy3B (donor) and Atto647N (acceptor).The donor is attached to the flexible tether with a 7.5 nt overhang binding freely between single-stranded binding sites.The energy transfer is expected between a high FRET State 1 (12 o'clock) and a low FRET State 2 (6 o'clock).   
 
 .. figure:: ./../../figures/examples/PA1-Dynamic_2c_Origami.png
    :width: 400
