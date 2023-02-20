@@ -44,6 +44,8 @@ The described data set is from smTIRF measurement with DNA origami structure as 
 Data preparation 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+The origami structures were measured on a smTIRF microscope with two separate EMCCD cameras and ALEX at an exposure time of 50 ms. The resulting data would then be videos of consecutive frames from each channel with .tif file format. You can find a couple of example raw data on `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_. 
+
 .. _localization:
 Co-Localization of Molecules 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
