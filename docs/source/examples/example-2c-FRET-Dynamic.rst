@@ -131,13 +131,13 @@ Plotting and Summary of Results
    :name: TDP_selection_and_livefit
    
 .. figure:: ./../../figures/examples/11_DataCorrection_DirEx_Crosstalk.png
-   :width: 400
+   :width: 500
    :alt: de_and_ct
    :align: center
    :name: correction_factors_DE_and_CT   
 
 .. figure:: ./../../figures/examples/12_DataCorrection_Gamma.png
-   :width: 400
+   :width: 500
    :alt: gamma_factor
    :align: center
    :name: correction_factor_gamma_factor
