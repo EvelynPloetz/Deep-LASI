@@ -67,13 +67,13 @@ Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ./../../figures/examples/1_MainGUI.png
-   :width: 300
+   :width: 450
    :alt: mainGUI
    :align: center
    :name: mainGUI
 
 .. figure:: ./../../figures/examples/2_DeepLearningTab.png
-   :width: 300
+   :width: 450
    :alt: DeepLearning_tab
    :align: center
    :name: DeepLearning_tab
@@ -85,7 +85,7 @@ Automatic data analysis and correction
    :name: ModelSelection_for_categorization
 
 .. figure:: ./../../figures/examples/4_CategorizedTraces.png
-   :width: 300
+   :width: 450
    :alt: after_categorization
    :align: center
    :name: categorized_traces
@@ -101,43 +101,43 @@ Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ./../../figures/examples/6_StateConfidence_Histogram.png
-   :width: 300
+   :width: 350
    :alt: state-confidence-histogram
    :align: center
    :name: tracewise_state_confidence_histogram
   
 .. figure:: ./../../figures/examples/7_Statewise_MeanFRET.png
-   :width: 300
+   :width: 350
    :alt: statewise-meanFRET
    :align: center
    :name: statewise-meanFRET_histogram
 
 .. figure:: ./../../figures/examples/8_TDP_Input.png
-   :width: 300
+   :width: 350
    :alt: TDP_input
    :align: center
    :name: TDP_input
    
 .. figure:: ./../../figures/examples/9_TDP_generated.png
-   :width: 300
+   :width: 400
    :alt: TDP_generated
    :align: center
    :name: TDP_generated
    
 .. figure:: ./../../figures/examples/10_TDP_PopulationSelection_and_LiveFit.png
-   :width: 300
+   :width: 400
    :alt: TDP_selection_and_fit
    :align: center
    :name: TDP_selection_and_livefit
    
 .. figure:: ./../../figures/examples/11_DataCorrection_DirEx_Crosstalk.png
-   :width: 300
+   :width: 400
    :alt: de_and_ct
    :align: center
    :name: correction_factors_DE_and_CT   
 
 .. figure:: ./../../figures/examples/12_DataCorrection_Gamma.png
-   :width: 300
+   :width: 400
    :alt: gamma_factor
    :align: center
    :name: correction_factor_gamma_factor
