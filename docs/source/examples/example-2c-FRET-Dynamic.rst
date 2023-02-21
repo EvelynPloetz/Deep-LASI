@@ -66,6 +66,36 @@ Manual data analysis and correction
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: ./../../figures/examples/1_MainGUI.png
+   :width: 300
+   :alt: mainGUI
+   :align: center
+   :name: mainGUI
+
+.. figure:: ./../../figures/examples/2_DeepLearningTab.png
+   :width: 300
+   :alt: DeepLearning_tab
+   :align: center
+   :name: DeepLearning_tab
+
+.. figure:: ./../../figures/examples/3_TraceCategorization_ModelSelection.png
+   :width: 300
+   :alt: ModelSelection_for_categorization
+   :align: center
+   :name: ModelSelection_for_categorization
+
+.. figure:: ./../../figures/examples/4_CategorizedTraces.png
+   :width: 300
+   :alt: after_categorization
+   :align: center
+   :name: categorized_traces
+
+.. figure:: ./../../figures/examples/5_StateTransitions_ModelSelection.png
+   :width: 300
+   :alt: model_and_input
+   :align: center
+   :name: StateTransition_ModelSelection
+   
 ..  _summary:
 Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
