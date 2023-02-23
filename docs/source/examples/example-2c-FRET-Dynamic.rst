@@ -203,7 +203,7 @@ Manual data analysis and correction
    :name: apparent FRET
 
 .. figure:: ./../../figures/examples/PA24_corr_FRET.png
-   :width: 500
+   :width: 400
    :alt: corr FRET
    :align: center
    :name: corrected FRET
@@ -215,7 +215,7 @@ Manual data analysis and correction
    :name: HMM starting
 
 .. figure:: ./../../figures/examples/PA26_TDP_dwell_time.png
-   :width: 500
+   :width: 600
    :alt: HMM results
    :align: center
    :name: HMM resulting graphs
