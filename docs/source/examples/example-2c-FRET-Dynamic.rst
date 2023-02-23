@@ -54,13 +54,21 @@ Co-Localization of Molecules
 
 When using two separate detection paths, there might be the chance of some discrepancy between the cameras regarding to chromatic and spherical aberrations or cameras misalignment like shifts, rotatoin, or magnification. To make sure that double-labeled species are detected, a correct linking of same molecule emitters accross the detection channels is needed. DeepLASI uses makes a coordinate transformation map to get rid of any potential difference. For more details about mapping, please refer to the section  :doc:`./examples/example-2c-FRET-Static` 
 
-.. figure:: ./../../figures/examples/PA_mapping_menu.png
+.. figure:: ./../../figures/examples/PA1_mapping_menu.png
    :width: 550
    :alt: mapping menu
    :align: center
    :name: mapping menu
    
    Mapping menu on DeepLASI
+
+.. figure:: ./../../figures/examples/PA2_map_image_loading.png
+   :width: 400
+   :alt: map image load
+   :align: center
+   :name: map image loading
+
+
 
 ..  _extraction:
 Trace Extraction
