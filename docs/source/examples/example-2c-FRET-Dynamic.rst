@@ -193,6 +193,24 @@ When using two separate detection paths, there might be the chance of some discr
    :alt: app FRET
    :align: center
    :name: apparent FRET
+
+.. figure:: ./../../figures/examples/PA24_corr_FRET.png
+   :width: 500
+   :alt: corr FRET
+   :align: center
+   :name: corrected FRET
+
+.. figure:: ./../../figures/examples/PA25_HMM_run.png
+   :width: 500
+   :alt: HMM satrt
+   :align: center
+   :name: HMM starting
+
+.. figure:: ./../../figures/examples/PA26_TDP_dwell_time.png
+   :width: 500
+   :alt: HMM results
+   :align: center
+   :name: HMM resulting graphs
    
 ..  _extraction:
 Trace Extraction
