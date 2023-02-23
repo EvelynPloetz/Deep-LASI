@@ -93,13 +93,13 @@ When using two separate detection paths, there might be the chance of some discr
    :name: start mapping
 
 .. figure:: ./../../figures/examples/PA7_before_after_map.png
-   :width: 500
+   :width: 600
    :alt: check mapping
    :align: center
    :name: befor_after mapping
 
 .. figure:: ./../../figures/examples/PA8_save_map.png
-   :width: 500
+   :width: 400
    :alt: save map
    :align: center
    :name: save map
@@ -151,7 +151,7 @@ Trace Extraction
    :name: extraction begin
 
 .. figure:: ./../../figures/examples/PA16_trace_look.png
-   :width: 500
+   :width: 600
    :alt: 2c trace
    :align: center
    :name: 2c trace look
@@ -161,31 +161,31 @@ Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ./../../figures/examples/PA17_categorization.png
-   :width: 500
+   :width: 400
    :alt: categorize
    :align: center
    :name: categorization
 
 .. figure:: ./../../figures/examples/PA18_mask_checking.png
-   :width: 500
+   :width: 400
    :alt: mask check
    :align: center
    :name: mask checking
 
 .. figure:: ./../../figures/examples/PA19_dye_active_region.png
-   :width: 500
+   :width: 600
    :alt: region
    :align: center
    :name: region selection
 
 .. figure:: ./../../figures/examples/PA20_correction_factor_box.png
-   :width: 500
+   :width: 550
    :alt: correction factors
    :align: center
    :name: correction factors calculation
 
 .. figure:: ./../../figures/examples/PA21_manually_categorized.png
-   :width: 500
+   :width: 450
    :alt: manual categorize
    :align: center
    :name: manually categorized
@@ -197,10 +197,10 @@ Manual data analysis and correction
    :name: apparent FRET
 
 .. figure:: ./../../figures/examples/PA23_correction_factors_fit.png
-   :width: 500
-   :alt: app FRET
+   :width: 650
+   :alt: factors
    :align: center
-   :name: apparent FRET
+   :name: correction factors
 
 .. figure:: ./../../figures/examples/PA24_corr_FRET.png
    :width: 400
