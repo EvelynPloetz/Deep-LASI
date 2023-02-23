@@ -140,6 +140,10 @@ When using two separate detection paths, there might be the chance of some discr
    :align: center
    :name: colocalized particles
 
+..  _extraction:
+Trace Extraction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. figure:: ./../../figures/examples/PA15_mask_and_start_extract.png
    :width: 500
    :alt: extracting
@@ -151,6 +155,10 @@ When using two separate detection paths, there might be the chance of some discr
    :alt: 2c trace
    :align: center
    :name: 2c trace look
+   
+..  _manual:
+Manual data analysis and correction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ./../../figures/examples/PA17_categorization.png
    :width: 500
@@ -212,14 +220,6 @@ When using two separate detection paths, there might be the chance of some discr
    :align: center
    :name: HMM resulting graphs
    
-..  _extraction:
-Trace Extraction
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-..  _manual:
-Manual data analysis and correction
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 ..  _automatic:
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
