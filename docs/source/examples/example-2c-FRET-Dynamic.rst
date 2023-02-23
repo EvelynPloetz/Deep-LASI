@@ -63,13 +63,137 @@ When using two separate detection paths, there might be the chance of some discr
    Mapping menu on DeepLASI
 
 .. figure:: ./../../figures/examples/PA2_map_image_loading.png
-   :width: 400
+   :width: 500
    :alt: map image load
    :align: center
    :name: map image loading
 
+.. figure:: ./../../figures/examples/PA3_map_image_loaded.png
+   :width: 500
+   :alt: map image loaded
+   :align: center
+   :name: map image loaded
 
+.. figure:: ./../../figures/examples/PA4_map_image_loading1.png
+   :width: 500
+   :alt: map image loading
+   :align: center
+   :name: second map image loading
 
+.. figure:: ./../../figures/examples/PA5_map_image_flipping.png
+   :width: 500
+   :alt: map image flip
+   :align: center
+   :name: map image flipping
+
+.. figure:: ./../../figures/examples/PA6_start_mapping.png
+   :width: 500
+   :alt: start mapping
+   :align: center
+   :name: start mapping
+
+.. figure:: ./../../figures/examples/PA7_before_after_map.png
+   :width: 500
+   :alt: check mapping
+   :align: center
+   :name: befor_after mapping
+
+.. figure:: ./../../figures/examples/PA8_save_map.png
+   :width: 500
+   :alt: save map
+   :align: center
+   :name: save map
+ 
+.. figure:: ./../../figures/examples/PA9_data_image_upload.png
+   :width: 500
+   :alt: data upload
+   :align: center
+   :name: first channel data upload
+
+.. figure:: ./../../figures/examples/PA10_measurement_parameters.png
+   :width: 500
+   :alt: measurement_parameters
+   :align: center
+   :name: measurement_parameters
+
+.. figure:: ./../../figures/examples/PA11_particle_detection.png
+   :width: 500
+   :alt: particle detection
+   :align: center
+   :name: particle detection
+
+.. figure:: ./../../figures/examples/PA12_data_image_load1.png
+   :width: 500
+   :alt: data upload1
+   :align: center
+   :name: second channel data upload
+ 
+.. figure:: ./../../figures/examples/PA13_measurement_parameter1.png
+   :width: 500
+   :alt: second measurement parameters
+   :align: center
+   :name: second measurement parameters
+
+.. figure:: ./../../figures/examples/PA14_colocal_detection.png
+   :width: 500
+   :alt: colocal particles
+   :align: center
+   :name: colocalized particles
+
+.. figure:: ./../../figures/examples/PA15_mask_and_start_extract.png
+   :width: 500
+   :alt: extracting
+   :align: center
+   :name: extraction begin
+
+.. figure:: ./../../figures/examples/PA16_trace_look.png
+   :width: 500
+   :alt: 2c trace
+   :align: center
+   :name: 2c trace look
+
+.. figure:: ./../../figures/examples/PA17_categorization.png
+   :width: 500
+   :alt: categorize
+   :align: center
+   :name: categorization
+
+.. figure:: ./../../figures/examples/PA18_mask_checking.png
+   :width: 500
+   :alt: mask check
+   :align: center
+   :name: mask checking
+
+.. figure:: ./../../figures/examples/PA19_dye_active_region.png
+   :width: 500
+   :alt: region
+   :align: center
+   :name: region selection
+
+.. figure:: ./../../figures/examples/PA20_correction_factor_box.png
+   :width: 500
+   :alt: correction factors
+   :align: center
+   :name: correction factors calculation
+
+.. figure:: ./../../figures/examples/PA21_manually_categorized.png
+   :width: 500
+   :alt: manual categorize
+   :align: center
+   :name: manually categorized
+   
+.. figure:: ./../../figures/examples/PA22_app_FRET.png
+   :width: 500
+   :alt: app FRET
+   :align: center
+   :name: apparent FRET
+
+.. figure:: ./../../figures/examples/PA23_correction_factors_fit.png
+   :width: 500
+   :alt: app FRET
+   :align: center
+   :name: apparent FRET
+   
 ..  _extraction:
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
