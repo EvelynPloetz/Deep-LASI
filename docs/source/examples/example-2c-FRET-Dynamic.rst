@@ -58,7 +58,7 @@ When using two separate detection paths like the present example, there might be
 
 To perform the mapping step, we used zero-mode waveguide (ZMW) as a calibration pattern which was illuminated by the wide-field lamp on the microscope. The ZMW was then imaged on both channels and with the steps shown on :numref:`mapping menu`, we opened the images one by one and used them to calibrate both channels. You can take the same steps as we did with the following instructions.  
 
-From *file* menu, go to *Mapping*, and *Create New Map*, then click on *1st channel*.
+From *file* menu, go to *Mapping*, and *Create New Map*, then click on *1st channel*. With the opened window, you can open the zmw image saved from the first channel which in our case is the *.tif* file from the donor or green camera.
 
 .. figure:: ./../../figures/examples/PA1_mapping_menu.png
    :width: 550
@@ -68,7 +68,7 @@ From *file* menu, go to *Mapping*, and *Create New Map*, then click on *1st chan
    
    Mapping steps on DeepLASI
 
-
+On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW image. Like the case on :numref:`map image loading`, we clicked on *Full* to load the whole field of view, and then clicked on *OK*. 
 
 .. figure:: ./../../figures/examples/PA2_map_image_loading.png
    :width: 500
