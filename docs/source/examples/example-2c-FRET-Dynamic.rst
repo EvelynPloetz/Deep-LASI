@@ -46,9 +46,9 @@ The described data set is from smTIRF measurement with DNA origami structure as 
 Data preparation 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The origami structures were measured on a smTIRF microscope with two separate EMCCD cameras, one for the donor and one for the acceptor. ALEX was used to excite the donor and acceptor fluorophores alternatively at an exposure time of 50 ms, and the frame transfer time of the cameras was set to 2.2 ms. The resulting data would then be videos of consecutive frames from each channel with *.tif* file format. You can find a couple of example raw data on `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_. 
+The origami structures were measured on a smTIRF microscope with two separate EMCCD cameras, one for the donor and one for the acceptor. ALEX was used to excite the donor and acceptor fluorophores alternatively at an exposure time of 50 ms, also the frame transfer time of the cameras was set to 2.2 ms. The resulting data would then be videos of consecutive frames from each channel with *.tif* file format. You can find a couple of example raw data on `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_. 
 
-*(Maybe a figure here similar to what we have for static 2C to show the two cameras and excitation scheme, GR)*
+.. warning:: Maybe a figure here similar to what we have for static 2C to show the two cameras and excitation scheme, GR.
 
 .. _localization:
 Co-Localization of Molecules 
