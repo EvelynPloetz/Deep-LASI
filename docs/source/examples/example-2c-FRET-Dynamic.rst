@@ -56,13 +56,18 @@ Co-Localization of Molecules
 
 When using two separate detection paths like the present example, there might be the chance of some discrepancy between the cameras' fields of view resulting from chromatic and spherical aberrations or cameras misalignment regarding to shifts, rotatoin, or magnification difference. To make sure that double-labeled species are detected, a correct linking of same molecule emitters accross the detection channels is needed. DeepLASI makes a coordinate transformation map to get rid of any potential difference. For more details about mapping, please refer to the section :doc:`./examples/example-2c-FRET-Static` 
 
+To perform the mapping step, we used zero-mode waveguide (ZMW) as a calibration pattern which was illuminated by the wide-field lamp on the microscope. The ZMW was then imaged on both channels and with the steps shown on :numref:`mapping menu`, we opened the images one by one and used them to calibrate both channels. You can take the same steps as we did with the following instructions.  
+
+From *file* menu, go to *Mapping*, and *Create New Map*, then click on *1st channel*.
 .. figure:: ./../../figures/examples/PA1_mapping_menu.png
    :width: 550
    :alt: mapping menu
    :align: center
    :name: mapping menu
    
-   Mapping menu on DeepLASI
+   Mapping steps on DeepLASI
+
+
 
 .. figure:: ./../../figures/examples/PA2_map_image_loading.png
    :width: 500
