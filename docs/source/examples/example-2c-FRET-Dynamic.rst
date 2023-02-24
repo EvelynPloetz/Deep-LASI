@@ -66,7 +66,7 @@ From *file* menu, go to *Mapping*, and *Create New Map*, then click on *1st chan
    :align: center
    :name: mapping menu
    
-   Mapping steps on DeepLASI
+   Mapping steps on DeepLASI for loading the first channel image 
 
 On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW image. Here we clicked on *Full* to load the whole camera field of view. No rotation or flipping of the image was needed, so we clicked on *OK* as you can see on :numref:`first map preview`.
 
@@ -88,11 +88,15 @@ DeepLASI shows the loaded image on the *Mapping* tab under the part *Channel1*. 
 
    The mapping image from the first channel loaded on the *Mapping* tab 
 
+To load the corresponding image from the second camera (the acceptor channel), we took the same steps from the file menu, as you can see on :numref:`second map image loading`. This time under the menu *Create New Map*, we chose the *2nd Channel*. 
+
 .. figure:: ./../../figures/examples/PA4_map_image_loading1.png
    :width: 500
    :alt: map image loading
    :align: center
    :name: second map image loading
+
+   Mapping steps on DeepLASI for loading the second channel image 
 
 .. figure:: ./../../figures/examples/PA5_map_image_flipping.png
    :width: 500
