@@ -76,7 +76,8 @@ On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW
    :align: center
    :name: first map preview
 
-
+   Pop-up window for adjusting the first mapping image
+   
 .. figure:: ./../../figures/examples/PA3_map_image_loaded.png
    :width: 500
    :alt: map image loaded
