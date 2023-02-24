@@ -68,7 +68,7 @@ From *file* menu, go to *Mapping*, and *Create New Map*, then click on *1st chan
    
    Mapping steps on DeepLASI
 
-On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW image. Like the case on :numref:`first map preview`, we clicked on *Full* to load the whole field of view, and then clicked on *OK*. 
+On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW image. Here we clicked on *Full* to load the whole camera field of view, and then clicked on *OK* as you can see on :numref:`first map preview`.
 
 .. figure:: ./../../figures/examples/PA2_map_image_loading.png
    :width: 500
