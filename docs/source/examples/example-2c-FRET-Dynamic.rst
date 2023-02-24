@@ -98,11 +98,15 @@ To load the corresponding image from the second camera (the acceptor channel), w
 
    Mapping steps on DeepLASI for loading the second channel image 
 
+Like the previous time, a window appears regarding to loading the mapping image file, this time recorded by the second camera. After choosing the image file, the same *Channel Position* window will open. To have the best overlay to the ZMW image from the first channel, we took the whole field of view by clicking on *Full* and no rotation again. The only obvious difference is that the current image is flipped horizontally compared to the first one. You can see the mentioned difference by checking the cross sign on the already loaded image which is on the top right side (:numref:`map image flipping`,left), and compare it to the position of the cross on the new image preview, which is on the top left area (:numref:`map image flipping`,right). After checking the *Horizontal Flip* box, we clicked on *OK*.    
+
 .. figure:: ./../../figures/examples/PA5_map_image_flipping.png
    :width: 500
    :alt: map image flip
    :align: center
    :name: map image flipping
+
+   Comparing and adjusting the second mapping image to the first one
 
 .. figure:: ./../../figures/examples/PA6_start_mapping.png
    :width: 500
