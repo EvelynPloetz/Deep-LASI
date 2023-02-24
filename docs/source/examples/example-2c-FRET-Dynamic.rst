@@ -68,7 +68,7 @@ From *file* menu, go to *Mapping*, and *Create New Map*, then click on *1st chan
    
    Mapping steps on DeepLASI
 
-On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW image. Here we clicked on *Full* to load the whole camera field of view, and then clicked on *OK* as you can see on :numref:`first map preview`.
+On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW image. Here we clicked on *Full* to load the whole camera field of view. No rotation or flipping of the image was needed, so we clicked on *OK* as you can see on :numref:`first map preview`.
 
 .. figure:: ./../../figures/examples/PA2_map_image_loading.png
    :width: 500
@@ -77,12 +77,16 @@ On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW
    :name: first map preview
 
    Pop-up window for adjusting the first mapping image
-   
+
+DeepLASI shows the loaded image on the *Mapping* tab under the part *Channel1*. As you can see on :numref:`map image loaded`, the bright spots are detected with a white circle around them. You can change the detection threshold using the bar right under the image. By taking more spots into account, the mapping process would be performed more efficiently.  
+
 .. figure:: ./../../figures/examples/PA3_map_image_loaded.png
    :width: 500
    :alt: map image loaded
    :align: center
    :name: map image loaded
+
+   The mapping image from the first channel loaded on the *Mapping* tab 
 
 .. figure:: ./../../figures/examples/PA4_map_image_loading1.png
    :width: 500
