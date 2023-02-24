@@ -38,7 +38,8 @@ The described data set is from smTIRF measurement with DNA origami structure as 
    :align: center
    :name: dyn-2c-origami-3state
    
-   L-shaped DNA origami structure labeled with Atto647N and Cy3B. The donor is attached to a tether that can freely bind to any of the two binding strands. **(we need a 2c 2state sample image here)**  
+   L-shaped DNA origami structure labeled with Atto647N and Cy3B. The donor is attached to a tether that can freely bind to any of the two binding strands.
+.. warning:: We need a 2c 2state sample image here.  
 
 .. _data-prep:
 Data preparation 
