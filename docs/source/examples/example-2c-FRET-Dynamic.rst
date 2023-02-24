@@ -59,6 +59,7 @@ When using two separate detection paths like the present example, there might be
 To perform the mapping step, we used zero-mode waveguide (ZMW) as a calibration pattern which was illuminated by the wide-field lamp on the microscope. The ZMW was then imaged on both channels and with the steps shown on :numref:`mapping menu`, we opened the images one by one and used them to calibrate both channels. You can take the same steps as we did with the following instructions.  
 
 From *file* menu, go to *Mapping*, and *Create New Map*, then click on *1st channel*.
+
 .. figure:: ./../../figures/examples/PA1_mapping_menu.png
    :width: 550
    :alt: mapping menu
