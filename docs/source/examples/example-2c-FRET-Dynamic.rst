@@ -54,7 +54,7 @@ The origami structures were measured on a smTIRF microscope with two separate EM
 Co-Localization of Molecules 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When using two separate detection paths, there might be the chance of some discrepancy between the cameras regarding to chromatic and spherical aberrations or cameras misalignment like shifts, rotatoin, or magnification. To make sure that double-labeled species are detected, a correct linking of same molecule emitters accross the detection channels is needed. DeepLASI uses makes a coordinate transformation map to get rid of any potential difference. For more details about mapping, please refer to the section  :doc:`./examples/example-2c-FRET-Static` 
+When using two separate detection paths like the present example, there might be the chance of some discrepancy between the cameras' fields of view resulting from chromatic and spherical aberrations or cameras misalignment regarding to shifts, rotatoin, or magnification difference. To make sure that double-labeled species are detected, a correct linking of same molecule emitters accross the detection channels is needed. DeepLASI makes a coordinate transformation map to get rid of any potential difference. For more details about mapping, please refer to the section :doc:`./examples/example-2c-FRET-Static` 
 
 .. figure:: ./../../figures/examples/PA1_mapping_menu.png
    :width: 550
