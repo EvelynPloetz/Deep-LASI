@@ -234,7 +234,9 @@ By using the *Navigation* slider we clicked through the traces one by one to che
    :align: center
    :name: categorization chart
    
-   Navigation and categorization box useful for traces navigation and categorization 
+   Navigation and categorization box for traces navigation and categorization 
+
+The first step for the categorization is to make sure if we are taking the single molecule traces into account. We usually get a first hint by just looking at the masks. A single molecule being detected in the middle of the mask like the one on :numref:`mask checking` on the left is what we consider as asingle molecule. But if you check the example on the right side of the figure, we are having more than one molecule in the middle, also molecules sitting on the background ring which will mess up with the background calculation 
 
 .. figure:: ./../../figures/examples/PA18_mask_checking.png
    :width: 400
