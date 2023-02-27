@@ -118,7 +118,7 @@ Now you can see both images on the corresponding pannels, and they look having t
 
    Starting the mapping step after having both zmw images loaded
 
-Mapping takes usually a couple seconds. Afterwards, DeepLASI opens a *Map Result* window showing the channels overlay before and after mapping. It is recommended to check the overlay quality at this point. The result is fine most of the times like the example on :numref:`check befor_after mapping`, but if the mapping result was not satisfactory, we would capture new images from the zmw on both cameras, and redo the mapping step. 
+Mapping takes usually a couple seconds. Afterwards, DeepLASI opens a *Map Result* window showing the channels overlay before and after mapping. It is recommended to check the overlay quality at this point. The result is fine most of the times like the example on :numref:`check befor_after mapping`, but if the mapping result was not satisfactory, we would capture new images from the ZMW on both cameras, and repeat the mapping step. 
 
 .. figure:: ./../../figures/examples/PA7_before_after_map.png
    :width: 600
