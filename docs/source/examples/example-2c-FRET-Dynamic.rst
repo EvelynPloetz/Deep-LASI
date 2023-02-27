@@ -148,6 +148,8 @@ After finishing the mapping process, we continued with opening the data files on
    
    The file menu path to load the data images from the first channel
 
+On the opened window to select the data files, we selected all the image files from the green channel which were in total 70 Tiff files meaning that the smTIRF measurement was carried out on 70 surface points.
+
 .. figure:: ./../../figures/examples/PA10_measurement_parameters.png
    :width: 500
    :alt: measurement_parameters
