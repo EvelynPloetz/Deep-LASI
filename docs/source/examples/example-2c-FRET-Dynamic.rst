@@ -158,11 +158,15 @@ On the opened window to select the data files, we selected all the image files f
    
    Setting the measurement parameters to load the data from the green channel
 
+Now the particle detection pannel appears on the *Extraction* tab showing the detected molecules inside green triangles, and the number of them in a black box on the top right pannel as you can see on :numref:`particle detection preview`. With the sliders provided below the image, we lowered the *Display contrast* to see the single molecules distribution on the surface better, and also the *Detection Threshold* to have more particles detected.
+
 .. figure:: ./../../figures/examples/PA11_particle_detection.png
    :width: 500
    :alt: particle detection
    :align: center
-   :name: particle detection
+   :name: particle detection preview
+   
+   Particles detected on the first data file from the channel data
 
 .. figure:: ./../../figures/examples/PA12_data_image_load1.png
    :width: 500
