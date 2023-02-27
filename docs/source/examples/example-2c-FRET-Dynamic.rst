@@ -168,17 +168,25 @@ Now the particle detection pannel appears on the *Extraction* tab showing the de
    
    Particles detected on the first data file from the channel data
 
+Then we took the same steps to open the data images from the second camera as :numref:`second channel data upload` shows. The 70 data files from the second channel corresponding to the ones from the first one were selected.
+
 .. figure:: ./../../figures/examples/PA12_data_image_load1.png
    :width: 500
    :alt: data upload1
    :align: center
    :name: second channel data upload
- 
+   
+   The file menu path to load the data images from the second channel
+
+On the *Measurement Parameters* pop-up window (:numref:`second measurement parameters`), we set the slider to the right indicating the acceptor channel, and without changing anything else, clicked on *R*. 
+
 .. figure:: ./../../figures/examples/PA13_measurement_parameter1.png
    :width: 500
    :alt: second measurement parameters
    :align: center
    :name: second measurement parameters
+   
+   Setting the measurement parameters to load the data from the red channel
 
 .. figure:: ./../../figures/examples/PA14_colocal_detection.png
    :width: 500
