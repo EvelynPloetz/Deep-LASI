@@ -137,12 +137,16 @@ After mapping is successfully finished, we go to mapping menu to save the map fi
    :name: save map file
    
    The mapping menu to save the created map or loading a previously saved one
- 
+
+After finishing the mapping process, we continued with opening the data files on the program. From the file menu we went to *Load Image Data*, and clicked on *1st channel*, as shown on :numref:`first channel data upload`.
+
 .. figure:: ./../../figures/examples/PA9_data_image_upload.png
    :width: 500
    :alt: data upload
    :align: center
    :name: first channel data upload
+   
+   The file menu path to load the data images from the first channel
 
 .. figure:: ./../../figures/examples/PA10_measurement_parameters.png
    :width: 500
