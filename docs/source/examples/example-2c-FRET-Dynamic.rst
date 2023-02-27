@@ -212,11 +212,15 @@ On the *Mask Settings* pannel we did not change anything (:numref:`extraction be
    
    The mask created for intensity traces extraction with adjustment options (top), and trace extraction settings (low)
 
+Depending on the data size, the extraction step might take some time from a couple of minutes to hours. When it is done, a final data file with the format *.tdat* will be saved in the data folder by the program, and the first trace appears on the *Traces* tab. As you can see on :numref:`2c trace look`, the intensity-time pannel shows the following four intensity traces: The total intensity in the green channel in gray, the donor emission after donor excitation in green, the acceptor emission after donor excitation in bright red, and the acceptor emission after acceptor excitation in dark red. On the middle pannel you can see the mask surrounding every detected molecule accross every channel. On the right you can see a total number of 6100 traces were extracted from the loaded data. Everything is now ready for us to start the manual analysis by categorizing the traces first.     
+
 .. figure:: ./../../figures/examples/PA16_trace_look.png
    :width: 600
    :alt: 2c trace
    :align: center
    :name: 2c trace look
+   
+   Exemplary trace for a two-color smTIRF measurement, and all different pannels on the *Traces* tab
    
 ..  _manual:
 Manual data analysis and correction
