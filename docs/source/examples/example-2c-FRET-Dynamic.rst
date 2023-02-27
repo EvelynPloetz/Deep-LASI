@@ -128,11 +128,15 @@ Mapping takes usually a couple seconds. Afterwards, DeepLASI opens a *Map Result
    
    Mapping result showing the channels overlay before and after mapping
 
+After mapping is successfully finished, we go to mapping menu to save the map file in the data folder by clicking on *Save Map*. You can see the path on :numref:`save map file`. At a later time, if the map is needed, we can simply go to mapping menu and click on *Load Prev. Map* to open a previously saved one.  
+
 .. figure:: ./../../figures/examples/PA8_save_map.png
    :width: 400
    :alt: save map
    :align: center
-   :name: save map
+   :name: save map file
+   
+   The mapping menu to save the created map or loading a previously saved one
  
 .. figure:: ./../../figures/examples/PA9_data_image_upload.png
    :width: 500
