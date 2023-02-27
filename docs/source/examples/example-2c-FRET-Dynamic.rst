@@ -108,15 +108,15 @@ After choosing the image file, the same *Channel Position* window will open. To 
 
    Comparing and adjusting the second mapping image to the first one
 
-Now you can see both images on the corresponding pannels, and they look having the same pattern at least by eye. It means that the criteria chosen for loading the mapping images were correct. On the *Mapping Controls* pannel (:numref:`start mapping`), we did not change the reference channel, so by default it assumes the first (donor) channel to be the reference, and will map the second channel based on the first one. Then, we clicked on *Start Mapping*. 
+Now you can see both images on the corresponding pannels, and they look having the same pattern at least by eye. It means that the criteria chosen for loading the mapping images were correct. On the *Mapping Controls* pannel (:numref:`start 2C mapping`), we did not change the reference channel, so by default it assumes the first (donor) channel to be the reference, and will map the second channel based on the first one. Then, we clicked on *Start Mapping*. 
 
 .. figure:: ./../../figures/examples/PA6_start_mapping.png
    :width: 500
    :alt: start mapping
    :align: center
-   :name: start mapping
+   :name: start 2C mapping
 
-
+   Starting the mapping step after having both zmw images loaded
 
 .. figure:: ./../../figures/examples/PA7_before_after_map.png
    :width: 600
