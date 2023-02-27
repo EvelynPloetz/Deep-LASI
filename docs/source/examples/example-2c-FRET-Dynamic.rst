@@ -226,11 +226,15 @@ Depending on the data size, the extraction step might take some time from a coup
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+By using the *Navigation* slider we clicked through the traces one by one to check their individual features and attribute them to one or several categories created in the *Classification* chart (:numref:`categorization chart`). 
+
 .. figure:: ./../../figures/examples/PA17_categorization.png
    :width: 400
    :alt: categorize
    :align: center
-   :name: categorization
+   :name: categorization chart
+   
+   Navigation and categorization box useful for traces navigation and categorization 
 
 .. figure:: ./../../figures/examples/PA18_mask_checking.png
    :width: 400
