@@ -148,13 +148,15 @@ After finishing the mapping process, we continued with opening the data files on
    
    The file menu path to load the data images from the first channel
 
-On the opened window to select the data files, we selected all the image files from the green channel which were in total 70 Tiff files meaning that the smTIRF measurement was carried out on 70 surface points.
+On the opened window to select the data files, we selected all the image files from the green channel which were in total 70 Tiff files meaning that the smTIRF measurement was carried out on 70 areas of the sample surface. Then the *Measurement Parameters* pop-up window opens to insert the details of the experiment. As you can see on :numref:`measurement_parameters`, for *Interframe time*, we typed in 52.2 which is the sum of laser exposure time (50 ms) and frame transfer (2.2 ms). The illumination used for the measurement was the alternation of yellow and red lasers, so for the *ALEX sequence* we entered GR. Then we clicked on the empty line right after the ALEX box, the slider will show up and we put the slider on the left to determine the first channel. We captured 1000 frames on each camera, having two of them, every data file will contain 2000 frames from first and second channel alternatively, and because our first frame is always a dark one, we loaded the frames from the second one untill the end. So, we entered *2 to 2000* for the both frame range rows (loading & particle detection). Then we clicked on G specifying the donor channel.   
 
 .. figure:: ./../../figures/examples/PA10_measurement_parameters.png
    :width: 500
    :alt: measurement_parameters
    :align: center
    :name: measurement_parameters
+   
+   Setting the measurement parameters to load the data from the green channel
 
 .. figure:: ./../../figures/examples/PA11_particle_detection.png
    :width: 500
