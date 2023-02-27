@@ -166,7 +166,7 @@ Now the particle detection pannel appears on the *Extraction* tab showing the de
    :align: center
    :name: particle detection preview
    
-   Particles detected on the first data file from the channel data
+   Particles detected from the first data file recorded by the first channel
 
 Then we took the same steps to open the data images from the second camera as :numref:`second channel data upload` shows. The 70 data files from the second channel corresponding to the ones from the first one were selected.
 
@@ -188,11 +188,17 @@ On the *Measurement Parameters* pop-up window (:numref:`second measurement param
    
    Setting the measurement parameters to load the data from the red channel
 
+The red emitters from the first data file appear on the same particle detection pannel that we had for green molecules. You can use the sliders again to adjust the display contrast and the detection threshold this time for the second channel. The detected molecules are trapped inside the red triangles, and the number of them together with the number of co-localized molecules are shown in the black box.
+The lowest slider is also now active to choose either of the channels as the current channel view(:numref:`colocalized GR particles`).  
+
 .. figure:: ./../../figures/examples/PA14_colocal_detection.png
    :width: 500
    :alt: colocal particles
    :align: center
-   :name: colocalized particles
+   :name: colocalized GR particles
+   
+   Particles detected from the first data file recorded by the second channel and the co-localizations
+   
 
 ..  _extraction:
 Trace Extraction
