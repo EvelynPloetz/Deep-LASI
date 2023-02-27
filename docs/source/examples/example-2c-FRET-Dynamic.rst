@@ -198,7 +198,6 @@ The red emitters from the first data file appear on the same particle detection 
    
    Particles detected from the first data file recorded by the second channel and the co-localizations
    
-
 ..  _extraction:
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
