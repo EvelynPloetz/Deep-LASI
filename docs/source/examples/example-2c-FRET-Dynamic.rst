@@ -266,11 +266,15 @@ You can see on :numref:`correction factors calculation` how the trace will look 
    
    Selected region on the intensity and FRET efficiency traces, categorization, and correctin factors determination
 
+We clicked through all the 6100 traces the same way described above, and finished the categorization. We ended up with categories shown on :numref:`manually categorized`. 
+
 .. figure:: ./../../figures/examples/PA21_manually_categorized.png
    :width: 450
    :alt: manual categorize
    :align: center
    :name: manually categorized
+   
+   Categories manually created for the two-color two-state DNA origami sample
    
 .. figure:: ./../../figures/examples/PA22_app_FRET.png
    :width: 500
