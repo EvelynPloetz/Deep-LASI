@@ -285,7 +285,9 @@ After categorization, we went to the *Histograms* tab to plot the results. As yo
    :name: apparent FRET plotting criteria
    
    The settings to plot the apparent FRET efficiency of the dynamic category
-   
+
+With the mentioned settings the histogram of apparent FRET efficiency appears like the left pannel of :numref:`apparent FRET`. You can see the two FRET populations as we expected for the dynamic DNA origami sample.  
+
 .. figure:: ./../../figures/examples/PA22_app_FRET.png
    :width: 500
    :alt: app FRET
