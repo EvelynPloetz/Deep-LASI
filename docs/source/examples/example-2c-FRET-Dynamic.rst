@@ -236,14 +236,15 @@ By using the *Navigation* slider we clicked through the traces one by one to che
    
    Navigation and categorization box for traces navigation and categorization 
 
-The first step for the categorization is to make sure if we are taking the single molecule traces into account. We usually get a first hint by just looking at the masks. A single molecule being detected in the middle of the mask like the one on :numref:`mask checking` on the left is what we consider as asingle molecule. But if you check the example on the right side of the figure, we are having more than one molecule in the middle, also molecules sitting on the background ring which will mess up with the background calculation 
+The first step for the categorization is to make sure if we are taking the single molecule traces into account. We usually get a first hint by just looking at the masks. A single molecule being detected in the middle of the mask like the one on :numref:`mask checking` on the left is what we consider as a single molecule, and keep the corresponding trace in categories helpful for further analysis. But if you check the example on the right side of the figure, you see there are more than one molecule in the middle, also molecules sitting on the background ring will mess up with the background calculation. Either of these is enough for us to trash the trace extracted from this spot.  
 
 .. figure:: ./../../figures/examples/PA18_mask_checking.png
    :width: 400
    :alt: mask check
    :align: center
    :name: mask checking
-
+   
+   DeepLASI makes a mask around each emitter for intensity trace extraction and background calculation. An example of a single detected molecule is shown on the left.A molecule distribution like the case on the right, makes the whole trace unuseful.
 
 .. figure:: ./../../figures/examples/PA19_dye_active_region.png
    :width: 600
