@@ -246,11 +246,15 @@ The first step for the categorization is to make sure if we are taking the singl
    
    DeepLASI makes a mask around each emitter for intensity trace extraction and background calculation. An example of a single detected molecule is shown on the left.A molecule distribution like the case on the right, makes the whole trace unuseful.
 
+After ensuring that a single molecule is inside the mask and there is no interference for the background calculation, we checked the traces. A nice indicator of a single molecule trace in our experiment is to see one single bleaching step, if this is met, we continue with selecting the regions that the flourophores are active. For region selection, we click anywhere on a trace to have the mouse as an active cursor, then we pressed the key *1* on the keyboard to have the cursor active for the first (green) channel. Then as you can see on :numref:`green-red region selection` on the left, we dragged the mouse from the beginnig to the end of the trace, because the Cy3B is active throughout the whole trace. You can also see the selected region shadowed in green. Then we pressed the key *2* fro the second channel, and as you can see on the right side of :numref:`green-red region selection`, we selected the red region from the trace beginning until the bleaching step of Atto 647N.      
+
 .. figure:: ./../../figures/examples/PA19_dye_active_region.png
    :width: 600
    :alt: region
    :align: center
-   :name: region selection
+   :name: green-red region selection
+   
+   Selecting the trace regions where the donor or acceptor dye is active, shown on the left and right side of the figure respectively.
 
 .. figure:: ./../../figures/examples/PA20_correction_factor_box.png
    :width: 550
