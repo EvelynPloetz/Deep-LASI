@@ -276,6 +276,8 @@ We clicked through all the 6100 traces the same way described above, and finishe
    
    Categories manually created for the two-color two-state DNA origami sample
    
+After categorization, we went to the *Histograms* tab to plot the results.   
+   
 .. figure:: ./../../figures/examples/PA22_app_FRET.png
    :width: 500
    :alt: app FRET
