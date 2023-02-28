@@ -244,6 +244,7 @@ The first step for the categorization is to make sure if we are taking the singl
    :align: center
    :name: mask checking
 
+
 .. figure:: ./../../figures/examples/PA19_dye_active_region.png
    :width: 600
    :alt: region
