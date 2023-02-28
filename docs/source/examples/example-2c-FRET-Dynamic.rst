@@ -256,11 +256,15 @@ After ensuring that a single molecule is inside the mask and there is no interfe
    
    Selecting the trace regions where the donor or acceptor dye is active, shown on the left and right side of the figure respectively.
 
+You can see on :numref:`correction factors calculation` how the trace will look if we have both green and red regions selected. Also the FRET efficiency trace gets the selected region until the first bleaching step. A faster way of region selection that we usually do is to only activate the mouse and without pressing *1* or *2*, select the region of traces that both dyes are active. Meaning that with the general cursor we start dragging the mouse from the desired beginning time until the first bleaching step. After the region selection, DeepLASI determines whatever correction factor possible to calculate, and updates the values in the box named *FRET controls* as you can see in the bottom right of the figure. In this example because the acceptor got bleached first, the program calculated the gamma and crosstalk correction factors. In the *Classification* box, you can see that we put the example trace in the categories of *Manual Selection*, *GR Beta*, *GR Gamma*, *G Bleach*, and *R Bleach*. 
+
 .. figure:: ./../../figures/examples/PA20_correction_factor_box.png
    :width: 550
    :alt: correction factors
    :align: center
    :name: correction factors calculation
+   
+   Selected region on the intensity and FRET efficiency traces, categorization, and correctin factors determination
 
 .. figure:: ./../../figures/examples/PA21_manually_categorized.png
    :width: 450
