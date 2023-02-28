@@ -276,7 +276,15 @@ We clicked through all the 6100 traces the same way described above, and finishe
    
    Categories manually created for the two-color two-state DNA origami sample
    
-After categorization, we went to the *Histograms* tab to plot the results.   
+After categorization, we went to the *Histograms* tab to plot the results. As you can see on :numref:`apparent FRET plotting criteria`, we first chose the *Dynamic* category by clicking on the plus sign beside it, then for the *Plot Mode* we chose the *FRET Efficiency (apparent)* to be the x axis, and on the *Display Settings* we chose the histogrma type to be *framewise*.
+
+.. figure:: ./../../figures/examples/PA27_app_FRET_plotting.png
+   :width: 500
+   :alt: app FRET plotting
+   :align: center
+   :name: apparent FRET plotting criteria
+   
+   The settings to plot the apparent FRET efficiency of the dynamic category
    
 .. figure:: ./../../figures/examples/PA22_app_FRET.png
    :width: 500
