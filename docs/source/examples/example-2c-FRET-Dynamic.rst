@@ -333,7 +333,8 @@ After a short while, the left plot of :numref:`HMM resulting graphs` appears ins
    :alt: HMM results
    :align: center
    :name: HMM resulting graphs
-   
+
+
 ..  _automatic:
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
