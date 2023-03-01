@@ -46,6 +46,7 @@ with Deep-LASI or if you have any suggestions on how to further improve the prog
    :maxdepth:1
    :hidden:
 
+   index
    starter
    installation
    documentation
