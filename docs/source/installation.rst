@@ -111,7 +111,10 @@ Python installation and integration into MATLAB (Windows)
 ~~~~~~~~~
 
 Please install Python with version 3.7-3.10 at https://www.python.org/downloads/ and check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version.
-**Important: When installing Python, check the box "Add Python 3.X to Path", choose "Customize installation", klick next and check the box "Install for all Users". This will change the installation path to "C:\ProgramFiles\PythonXX", which is neccessary for MATLAB to automatically find the Python executable.**
+
+   .. note::
+   Important: When installing Python, check the box "Add Python 3.X to Path", choose "Customize installation", klick next and check the box "Install for all Users". This will change the installation path to "C:\ProgramFiles\PythonXX", which is neccessary for MATLAB to automatically find the Python executable.
+   
 After installation you can check the MATLAB integration by entering the following command into the MATLAB Command Window:
 
    .. code-block:: python
