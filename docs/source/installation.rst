@@ -21,6 +21,7 @@ If you have access to a MATLAB license, please download and install MATLAB at ht
 If you plan to use the compiled standalone version of Deep-LASI, please download and install MATLAB Runtime R2022b for your system at https://de.mathworks.com/products/compiler/matlab-runtime.html
 
 The earliest MATLAB version required is R2019a.
+
 The latest MATLAB version DeepLASI is tested on is R2022b.
 
 Installation on Mac
@@ -113,7 +114,9 @@ Python installation and integration into MATLAB (Windows)
 Please install Python with version 3.7-3.10 at https://www.python.org/downloads/ and check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version.
 
    .. note::
-   Important: When installing Python, check the box "Add Python 3.X to Path", choose "Customize installation", klick next and check the box "Install for all Users". This will change the installation path to "C:\ProgramFiles\PythonXX", which is neccessary for MATLAB to automatically find the Python executable.
+   Important: When installing Python, check the box "Add Python 3.X to Path", choose "Customize installation", 
+   klick next and check the box "Install for all Users". This will change the installation path to "C:\ProgramFiles\PythonXX", 
+   which is neccessary for MATLAB to automatically find the Python executable.
    
 After installation you can check the MATLAB integration by entering the following command into the MATLAB Command Window:
 
