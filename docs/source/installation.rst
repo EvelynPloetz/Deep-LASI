@@ -153,10 +153,32 @@ get in touch with us via the *Issue forum*.
 Common issues with deep learning features
 --------
 
-If you run into errors while loading the neural netork models your protobuf package might need to be downgraded. Please open your windows command prompt by presssing Win + R or terminal app on Mac and enter:
+If you run into errors while trying to use neural netorks, your protobuf package might need to be downgraded and/or your h5py package is incompatible. 
+
+Installing a compatible version of protobuf
+~~~~~~~~~
+
+Please open your windows command prompt by presssing Win + R or terminal app on Mac and enter:
 
    .. code-block:: python
    
       pip install protobuf==3.20.*
       
-      
+Installing the latest version of h5py
+~~~~~~~~~
+
+Please open your windows command prompt by presssing Win + R or terminal app on Mac and enter:
+
+   .. code-block:: python
+   
+      pip install h5py --force-reinstall
+
+
+Common issues with installing python packages on Windows
+--------
+
+If you installed Python as a user install, i.e. you did not check the box 'Install for all users' during the installation procedure, you may run into errors regarding access rights when installing packages with pip. If you do not want to reinstall python for all users please make the installation of the Python package a user install by adding the --user option:
+
+   .. code-block:: python
+   
+      pip install name_of_python_package --user
