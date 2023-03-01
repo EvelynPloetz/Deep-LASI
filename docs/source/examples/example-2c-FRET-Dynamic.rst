@@ -336,9 +336,13 @@ After a short while, the left plot of :numref:`HMM resulting graphs` appears ins
    
    TDP plot with analysis options and dwell time fitting
 
+If you have been following the manual analysis steps, you might know now how much time it can take to analyse the data from one day of measurement. If such amount of time feels too much, DeepLASI offers you automatic data analysis as follows.
+
 ..  _automatic:
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 
 .. figure:: ./../../figures/examples/1_MainGUI.png
    :width: 550
