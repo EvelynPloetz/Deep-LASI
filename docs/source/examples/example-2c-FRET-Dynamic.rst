@@ -286,7 +286,7 @@ After categorization, we went to the *Histograms* tab to plot the results. As yo
    
    The settings to plot the apparent FRET efficiency of the dynamic category
 
-With the mentioned settings the histogram of apparent FRET efficiency appears like the left pannel of :numref:`apparent FRET`. You can see the two FRET populations as we expected for the dynamic DNA origami sample. Then for fitting the result, we set the *Fit Method* as *Gauss2*, and then clicked on *Fit Plot*. The fitteing result is shown on the right side of :numref:`apparent FRET`. You get all the fitting values as a box attached to the histogram. 
+With the mentioned settings the histogram of apparent FRET efficiency appears like the left pannel of :numref:`apparent FRET`. You can see the two FRET populations as we expected for the dynamic DNA origami sample. Then for fitting the result, we set the *Fit Method* to *Gauss2*, and then clicked on *Fit Plot*. The fitteing result is shown on the right side of :numref:`apparent FRET`. You get all the fitting values as a box attached to the histogram. 
 
 .. figure:: ./../../figures/examples/PA22_app_FRET.png
    :width: 600
@@ -296,11 +296,15 @@ With the mentioned settings the histogram of apparent FRET efficiency appears li
    
    Apparent FRET efficiency histogram with the fitting result.
 
+To get the corrected FRET efficiencies, we plotted each correction factor by choosing the desired one from the list of parameters in *Plot Mode* as shown previously on :numref:`apparent FRET plotting criteria` in the middle part. For the direct excitaion factor, we clicked on *Direct Excitation factor (Alpha)*, and selected the category **G Bleach** since we need the donor bleaching step for this calculation. The resulting plot with its fitting is shown on :numref:`all correction factors` on the left. For fitting we chose *Gauss1* from the *Fit Method* section, the value of 0.124 was reported after the fitting. Also from *Histogram Normalization*, the option *Unary* was selected to normalize the plot. To plot the other two correction factors we selected the category **R Bleach** because the acceptor bleaching step is needed for them to be determined. Then in *Plot Mode* we clicked on *Spectral Crosstalk corr factor (Beta)*. With the same steps for plot fitting and normalization, the middle pannel of :numref:`all correction factors` and final value of 0.12 was obtained.     
+
 .. figure:: ./../../figures/examples/PA23_correction_factors_fit.png
    :width: 650
    :alt: factors
    :align: center
-   :name: correction factors
+   :name: all correction factors
+   
+   Correction factors plotted and fitted. From left to right, direct excitation, spectral crosstalk, and detection efficiency correction factors.
 
 .. figure:: ./../../figures/examples/PA24_corr_FRET.png
    :width: 400
