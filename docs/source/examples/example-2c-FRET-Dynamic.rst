@@ -344,7 +344,7 @@ Automatic data analysis and correction
 
 In the following section you will be guided through the automated analysis steps for dynamic 2-color smFRET data. This is an additional program using pre-trained deep neural networks which makes your analysis time way shorter and more joyful!
 
-To perform automated analysis, we need to load already extracted traces. Meaning that the steps described in the manual analysis section from mapping to trace extraction would be all the same. On :numref:`mainGUI` you can see the traces that were extracted and manually analyzed in the above sections. Here all the 6100 traces are in the *Uncategorized* category meaning that no analysis was performed on them. To start the analysis, we clicked on the button *Deep Learning*.   
+To perform automated analysis, we need to load already extracted traces. Meaning that the steps described in the manual analysis section from mapping to trace extraction would be all the same. On :numref:`mainGUI` you can see the traces that were extracted and manually analyzed in the above sections. Here all the 6100 traces are in the *Uncategorized* category meaning that no analysis was performed on them. To start the automatic analysis, we first clicked on the button *Deep Learning*.   
 
 .. figure:: ./../../figures/examples/1_MainGUI_click.png
    :width: 550
@@ -352,13 +352,19 @@ To perform automated analysis, we need to load already extracted traces. Meaning
    :align: center
    :name: mainGUI
    
-   The main GUI of DeepLASI on the tab *Traces*
+   The main GUI of DeepLASI on the *Traces* tab showing the loaded data traces
+
+On the opened pannel as shown on :numref:`DeepLearning_tab` you can see the *Magic Button* in bright pink color. Now you can just click on it to enjoy the resulting graphs one after another. 
 
 .. figure:: ./../../figures/examples/2_DeepLearningTab.png
    :width: 550
    :alt: DeepLearning_tab
    :align: center
    :name: DeepLearning_tab
+   
+   The *Magic button* under the *Deep Learning* tab
+
+After clicking on *Magic Button* a window like the one on 
 
 .. figure:: ./../../figures/examples/3_TraceCategorization_ModelSelection.png
    :width: 300
