@@ -354,7 +354,7 @@ To perform automated analysis, we need to load already extracted traces. Meaning
    
    The main GUI of DeepLASI on the *Traces* tab showing the loaded data traces
 
-On the opened pannel as shown on :numref:`DeepLearning_tab` you can see the *Magic Button* in bright pink color. Now you can just click on it to enjoy the resulting graphs one after another. 
+On the opened pannel as shown on :numref:`DeepLearning_tab` you can see the *Magic Button* in bright pink color. Now you can just click on it to enjoy the resulting graphs being open one after another. 
 
 .. figure:: ./../../figures/examples/2_DeepLearningTab.png
    :width: 550
@@ -364,7 +364,7 @@ On the opened pannel as shown on :numref:`DeepLearning_tab` you can see the *Mag
    
    The *Magic button* under the *Deep Learning* tab
 
-After clicking on *Magic Button* a window like the one on :numref:`ModelSelection_for_categorization` opens to take the neural network model in from the user. In one of the options provided fits to your data, you can select the particular one, or you can select the first option called *Auto select* as we did. 
+We have also the option of automatically analyze the traces in a couple separated steps depending on our analysis needs. In the present described example, we clicked on *Categorize Traces*, then a window like the one on :numref:`ModelSelection_for_categorization` opens to take in the neural network model from the user. If one of the options provided fits to your measurement, you can select the particular one, otherwise you can select the first option called *Auto select* as we did, and click on *OK*. 
 
 .. figure:: ./../../figures/examples/3_TraceCategorization_ModelSelection_click.png
    :width: 300
@@ -374,11 +374,17 @@ After clicking on *Magic Button* a window like the one on :numref:`ModelSelectio
    
    Model selection window to specify the fitting neural network to the data type
 
+After a short while the traces get categorized as shown on :numref:`categorized_traces`, and if you click through the traces, you can see the regions of trace being selected by the program. The user can always go through the traces after automatically analyzed to make desired changes, and save the changes on the data file. 
+
 .. figure:: ./../../figures/examples/4_CategorizedTraces.png
    :width: 600
    :alt: after_categorization
    :align: center
    :name: categorized_traces
+   
+   The example data traces categorized automatically
+
+To continue the analysis regarding to the kinetics of the sample, a next window like the one on :numref:`StateTransition_ModelSelection` opens to take in the neural network from the user. We selected the *2-color-2 states* 
 
 .. figure:: ./../../figures/examples/5_StateTransitions_ModelSelection.png
    :width: 300
