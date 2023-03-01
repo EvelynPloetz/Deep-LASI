@@ -32,7 +32,7 @@ Overview
 --------------------------------------------------------------------
 
 ..  _data-format:
-Data requirements
+Data processing
 -------------------
 
 Data handling
@@ -173,7 +173,7 @@ Starting Deep-LASI
 ~~~~~~~~~~~~~~~~~
 To evaluate your experimental data with *Deep-LASI*, please open the program from the MATLAB command window by typing in :code:`>> DeepLASI`. It will open the core-program responsible for data import, trace extraction, as well as and manual selection and sorting. After a couple of seconds, the Start-GUI of the program will open as shown in :numref:`open-program`.
 
-.. figure:: ./../figures/documents/Tracer_FirstPage.png
+.. figure:: ./../figures/documents/Fig_2_Tracer_FirstPage.png
    :width: 650
    :alt: Open Deep-LASI
    :align: center
@@ -217,7 +217,7 @@ The dropdown menu *File* (:numref:`file-menu`) controls all steps from loading t
 
 #. **Quit** terminates the program.
 
-.. figure:: ./../figures/documents/Fig_2_Open_Mapping_Menu.png
+.. figure:: ./../figures/documents/Fig_3_Open_Mapping_Menu.png
    :width: 300
    :alt: Open mapping menu
    :align: center
@@ -225,14 +225,21 @@ The dropdown menu *File* (:numref:`file-menu`) controls all steps from loading t
 
    TRacer file menu
 
-
 **Dropdown Menu Settings.** |br|
-The dropdown menu **Settings** opens a sub-window for entering the camera hardware settings chosen in the experimental setup. The routine asks for the EM Gain factor, the camera baseline in dark counts and the number of photons per camera count for each camera. With this, *Deep-LASI* can convert/display the determined intensity in arbitrary units into Counts per seconds, i.e., in Hertz.
+The dropdown menu *Settings* (:numref:`settings-menu`) opens a sub-window for entering the camera hardware settings chosen in the experimental setup. The routine asks for the EM Gain factor, the camera baseline in dark counts and the number of photons per camera count for each camera. With this, *Deep-LASI* can convert/display the determined intensity instead of arbitrary units in Counts per seconds, i.e., in Hertz.
+
+.. figure:: ./../figures/documents/Fig_4_Dropdown_Settings.png
+   :width: 300
+   :alt: Open settings menu
+   :align: center
+   :name: settings-menu
+
+   TRacer settings menu
 
 **Dropdown Menu View.** |br|
-The third dropdown menu **View** changes the appearance and settings of graphical interfaces on the different GUI sub-windows of Deep-LASI. |br|
-The sub-tab **Colormap** changes the color palette in 3D plots, e.g., on the Trace GUI surface, which show small zoomed-in areas of 24x24 pixels. These show the area around localized molecules in each channel, surrounded by the background mask, to control for possible impurities in the background. The default colormap is *jet*. |br|
-The **Plot Units** sub-tab controls the y axis of the intensity and FRET panels for individual single-molecule trajectories. Checking/unchecking of the different sub-tabs immediately updates the graphical interface and the way how a single-molecule trace is displayed. **Plot Units** provides the following seven different settings for displaying intensities and FRET trajectories:
+The third dropdown menu **View** controls the appearance and settings of the graphical interfaces on the different GUI sub-windows of Deep-LASI. |br|
+The sub-tab *Colormap* changes the color palette in 3D plots, e.g., on the Trace GUI surface (which shows small zoomed-in areas of 24x24 pixels) or the Extraction GUI surface (which shows the average projection of localized molecules). In both cases, localized molecules are highlighted. The default colormap is *jet*, which can be exchange by other standard color maps from MATLAB. |br|
+The *Plot Units* sub-tab controls the y axis of the intensity and FRET panels for individual single-molecule trajectories. Checking/unchecking of the different sub-tabs immediately updates the graphical interface and the way how a single-molecule trace is displayed. **Plot Units** provides the following seven different settings for displaying intensities and FRET trajectories:
 
 ..  csv-table:: Plot Units Entries
    :widths: 15, 200
@@ -247,8 +254,8 @@ The **Plot Units** sub-tab controls the y axis of the intensity and FRET panels 
 
 .. tip:: @ Simon, what precisely is plotted, i.e. which axis is changed and how ??
 
-#.  The first sub-tab, **Photons(Cam.calibrated)**, converts the intensity axis into the absolut number of photons being detected by the individual cameras during a particular excitation cycle.
-#.  The second sub-tab, **Mean Across Particle Mask**, shows the mean emission intensity of the particle within the detection mask on the y axis.
+#.  The first sub-tab, **Photons(Cam.calibrated)**, converts the intensity axis into the absolut number of photons being detected by the individual cameras during a particular excitation cycle. It updates the intensity axis of extracted single-molecule traces on the *Traces GUI$ window.
+#.  The second sub-tab, **Mean Across Particle Mask**, shows the mean emission intensity of the particle within the detection mask after trace extraction on the y axis of the single-molecule traces on the *Traces GUI$ window.
 #.  The next three sub-tabs serve to correct and show the intensity after correction against direct excitation (**Direct Excitation (alpha)**), spectral crosstalk (**Spectral crosstalk (beta)**) or QY and detection sensitivity (**QY/Det. Eff (gamma)**), respectively. Without determining the correction factors, *Deep-LASI* provides identical plots for the corrected and uncorrected intensities.
 #.  The penultimate sub-tab, **Raw Trace (no BG subtr.)**, activates the display of uncorrected, raw intensity traces, i.e., without background subtraction.
 #.  If the last option **Corrected FRET** is selected, *Deep-LASI* shows Accurate FRET efficiencies for each single-molecule trajectory in case the FRET correction factors have already been determine. Otherwise, the displayed FRET values between Accurate and Apparent FRET are identical.
