@@ -371,6 +371,8 @@ After clicking on *Magic Button* a window like the one on :numref:`ModelSelectio
    :alt: ModelSelection_for_categorization
    :align: center
    :name: ModelSelection_for_categorization
+   
+   Model selection window to specify the fitting neural network to the data type
 
 .. figure:: ./../../figures/examples/4_CategorizedTraces.png
    :width: 600
