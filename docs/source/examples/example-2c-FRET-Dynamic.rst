@@ -326,14 +326,15 @@ To get dynamic information about the sample, we went to *HMM* tab, selected the 
    
    Steps for running HMM on dynamic data 
 
-After a short while, the left plot of :numref:`HMM resulting graphs` appears inside the pannle *Transition Density Plot*. Then we clicked on the button *Select ROI* to encircle the desired region of interest. You can draw any circle around a cluster on the plot by dragging the mouse around it as we did on the lower cluster showing transitions from high to low FRET efficiencies. 
+After a short while, the left plot of :numref:`HMM resulting graphs` appears inside the pannle *Transition Density Plot*. Then we clicked on the button *Select ROI* to encircle the desired region of interest. You can draw any circle around a cluster on the plot by dragging the mouse around it as we did on the lower cluster showing transitions from high to low FRET efficiencies. On the most right pannel the dwell time grapg with its fit will appear giving all the fitting values. The dwell time based on the transitions cluster we selected are then 1.9 s. 
 
 .. figure:: ./../../figures/examples/PA26_TDP_dwell_time.png
    :width: 600
    :alt: HMM results
    :align: center
    :name: HMM resulting graphs
-
+   
+   TDP plot with analysis options and dwell time fitting
 
 ..  _automatic:
 Automatic data analysis and correction
