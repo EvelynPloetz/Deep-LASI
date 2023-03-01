@@ -364,9 +364,9 @@ On the opened pannel as shown on :numref:`DeepLearning_tab` you can see the *Mag
    
    The *Magic button* under the *Deep Learning* tab
 
-After clicking on *Magic Button* a window like the one on 
+After clicking on *Magic Button* a window like the one on :numref:`ModelSelection_for_categorization` opens to take the neural network model in from the user. In one of the options provided fits to your data, you can select the particular one, or you can select the first option called *Auto select* as we did. 
 
-.. figure:: ./../../figures/examples/3_TraceCategorization_ModelSelection.png
+.. figure:: ./../../figures/examples/3_TraceCategorization_ModelSelection_click.png
    :width: 300
    :alt: ModelSelection_for_categorization
    :align: center
