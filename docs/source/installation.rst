@@ -3,14 +3,14 @@ Installation
 
 .. _installation:
 
-Deep-LASI is a MATLAB program that uses deep learning for automated data analysis from Python libraries.
+DeepLASI is a MATLAB program that uses deep learning for automated data analysis from Python libraries.
 In order to use the automated data analysis with the pretrained deep neural networks make sure you installed the required software packages below.
 
 System compatibility
 ------------
 
-Deep-Lasi is compatible with Windows and Mac OS. It has been extensively tested for Mac OS x86 systems. For new Macs using the M1 or M2 CPUs, the deep learning features are not available until MathWorks releases a native MATLAB version. Deep-LASI can still be used using Parallels on M1/M2 Macs.
-Deep-LASI has not been installed on a Linux systems so far. If you encounter any problem, please
+DeepLasi is compatible with Windows and Mac OS. It has been extensively tested for Mac OS x86 systems. For new Macs using the M1 or M2 CPUs, the deep learning features are not available until MathWorks releases a native MATLAB version. DeepLASI can still be used using Parallels on M1/M2 Macs.
+DeepLASI has not been installed on a Linux systems so far. If you encounter any problem, please
 get in touch with us via the *Issue forum*.
 
 MATLAB Installation
@@ -18,9 +18,10 @@ MATLAB Installation
 
 If you have access to a MATLAB license, please install MATLAB, which can be found at https://de.mathworks.com/products/matlab.html.
 
-If you plan to use the compiled version of Deep-LASI, please install MATLAB Runtime R2022b for your system, which can be found athttps://de.mathworks.com/products/compiler/matlab-runtime.html
+If you plan to use the compiled standalone version of Deep-LASI, please install MATLAB Runtime R2022b for your system, which can be found athttps://de.mathworks.com/products/compiler/matlab-runtime.html
 
-The latest MATLAB version Deep-LASI is tested on is R2022b.
+The earliest MATLAB version required is R2019a.
+The latest MATLAB version DeepLASI is tested on is R2022b.
 
 Installation on Mac
 ------------
