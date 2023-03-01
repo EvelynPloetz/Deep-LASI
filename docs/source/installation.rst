@@ -16,9 +16,9 @@ get in touch with us via the *Issue forum*.
 MATLAB Installation
 --------
 
-If you have access to a MATLAB license, please install MATLAB, which can be found at https://de.mathworks.com/products/matlab.html.
+If you have access to a MATLAB license, please download and install MATLAB at https://de.mathworks.com/products/matlab.html.
 
-If you plan to use the compiled standalone version of Deep-LASI, please install MATLAB Runtime R2022b for your system, which can be found athttps://de.mathworks.com/products/compiler/matlab-runtime.html
+If you plan to use the compiled standalone version of Deep-LASI, please download and install MATLAB Runtime R2022b for your system at https://de.mathworks.com/products/compiler/matlab-runtime.html
 
 The earliest MATLAB version required is R2019a.
 The latest MATLAB version DeepLASI is tested on is R2022b.
