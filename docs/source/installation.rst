@@ -133,7 +133,7 @@ If no version or path information is shown, link Python directy by providing the
    
       pyversion 'your/path/to/python/python.exe'
 
-Installing Python packages on Windows
+Installing deep learning features on Windows
 ^^^^^^^^^^
 
 TensorFlow
