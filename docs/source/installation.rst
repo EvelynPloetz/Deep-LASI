@@ -60,6 +60,7 @@ Installing Python packages on Mac OS
 ~~~~~~~~~~~~~~~~~~~~~~
 
 **TensorFlow**
+
 For deep learning features, the TensorFlow package needs to be installed for the Python environment integrated into MATLAB.
 The easiest way to install TensorFlow is to open the Terminal app (Path: /System/Applications/Utilities/Terminal.app) and enter the following command:
 
@@ -76,6 +77,7 @@ You can check the successfull installation and integration into MATLAB by restar
 You are now ready to use Deep-LASI.
 
 **Packages for simulations and training new neural network models**
+
 If you are interested in generating simulated data and/or re-training the neural network models, additional Python packages are required and installed by entering the following commands into the terminal application:
 
    .. code-block:: python
@@ -131,9 +133,10 @@ If no version or path information is shown, link Python directy by providing the
       pyversion 'your/path/to/python/python.exe'
 
 Installing Python packages on Windows
-
 ~~~~~~~~~
+
 **TensorFlow**
+
 For deep learning features, the TensorFlow package needs to be installed for the Python environment integrated into MATLAB.
 The easiest way to install TensorFlow is to open the windows command prompt by presssing Win + R to open the Run box, then type "cmd" and hit Enter to open it or pressing Win + X (or right-click the Start button) and choose Command Prompt from the menu. 
 Next, enter the following command:
@@ -151,6 +154,7 @@ You can check the successfull installation and integration into MATLAB by restar
 You are now ready to use Deep-LASI.
 
 **Packages for simulations and training new neural network models**
+
 If you are interested in generating simulated data and/or re-training the neural network models, additional Python packages are required and installed by entering the following commands into the terminal application:
 
    .. code-block:: python
