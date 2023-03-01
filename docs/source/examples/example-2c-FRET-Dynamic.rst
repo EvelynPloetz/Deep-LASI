@@ -294,7 +294,7 @@ With the mentioned settings the histogram of apparent FRET efficiency appears li
    :align: center
    :name: apparent FRET
    
-   Apparent FRET efficiency histogram with the fitting result.
+   Apparent FRET efficiency histogram with the fitting result
 
 To get the corrected FRET efficiencies, we plotted each correction factor by choosing the desired one from the list of parameters in *Plot Mode* as shown previously on :numref:`apparent FRET plotting criteria` in the middle part. For the direct excitaion factor, we clicked on *Direct Excitation factor (Alpha)*, and selected the category **G Bleach** since we need the donor bleaching step for this calculation. The resulting plot with its fitting is shown on :numref:`all correction factors` on the left. For fitting we chose *Gauss1* from the *Fit Method* section, the value of 0.124 was reported after the fitting. Also from *Histogram Normalization*, the option *Unary* was selected to normalize the plot. To plot the other two correction factors we selected the category **R Bleach** because the acceptor bleaching step is needed for them to be determined. Then in *Plot Mode* we clicked on *Spectral Crosstalk corr factor (Beta)*. With the same steps for plot fitting and normalization, the middle pannel of :numref:`all correction factors` and final value of 0.12 was obtained. Then we clicked on *Detection Efficiency corr factor (Gamma)* to get its distribution histogram. Taking steps similar to the previous case, the plot was fitted and normalized with the final value of 0.75 for the gamma factor, like :numref:`all correction factors` on the right.      
 
@@ -306,11 +306,15 @@ To get the corrected FRET efficiencies, we plotted each correction factor by cho
    
    Correction factors plotted and fitted. From left to right, direct excitation, spectral crosstalk, and detection efficiency correction factors.
 
+To plot the corrected FRET efficiency, we selected the category *Dynamic* again, clicked on the *FRET Efficiency (corrected)*, fitted the plot with *Gauss2* fitting method, and normalized it. You can see the resulting plot on :numref:`corrected FRET hist` with the two final values of 0.141 and 0.810 for the two FRET efficiencies. 
+
 .. figure:: ./../../figures/examples/PA24_corr_FRET.png
    :width: 400
    :alt: corr FRET
    :align: center
-   :name: corrected FRET
+   :name: corrected FRET hist
+   
+   Corrected FRET efficiency histogram with the fitting result
 
 .. figure:: ./../../figures/examples/PA25_HMM_run.png
    :width: 500
