@@ -326,6 +326,8 @@ To get dynamic information about the sample, we went to *HMM* tab, selected the 
    
    Steps for running HMM on dynamic data 
 
+After a short while, the left plot of :numref:`HMM resulting graphs` appears inside the pannle *Transition Density Plot*. Then we clicked on the button *Select ROI* to encircle the desired region of interest. 
+
 .. figure:: ./../../figures/examples/PA26_TDP_dwell_time.png
    :width: 600
    :alt: HMM results
