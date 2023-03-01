@@ -316,11 +316,15 @@ To plot the corrected FRET efficiency, we selected the category *Dynamic* again,
    
    Corrected FRET efficiency histogram with the fitting result
 
+To get dynamic information about the sample, we went to *HMM* tab, selected the dynamic category (:numref:`corrected FRET hist`), and clicked on *Start HMM*.
+
 .. figure:: ./../../figures/examples/PA25_HMM_run.png
    :width: 500
    :alt: HMM satrt
    :align: center
    :name: HMM starting
+   
+   Steps for running HMM on dynamic data 
 
 .. figure:: ./../../figures/examples/PA26_TDP_dwell_time.png
    :width: 600
