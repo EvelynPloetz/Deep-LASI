@@ -342,7 +342,9 @@ If you have been following the manual analysis steps, you might know now how muc
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+In the following section you will be guided through the automated analysis steps for dynamic 2-color smFRET data. This is an additional program using pre-trained deep neural networks which makes your analysis time way shorter and more joyful!
 
+To perform automated analysis, we need to load already extracted traces. Meaning that the steps described in the manual analysis section from mapping to trace extraction would be all the same.  
 
 .. figure:: ./../../figures/examples/1_MainGUI.png
    :width: 550
