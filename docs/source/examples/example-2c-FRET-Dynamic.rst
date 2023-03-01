@@ -346,11 +346,13 @@ In the following section you will be guided through the automated analysis steps
 
 To perform automated analysis, we need to load already extracted traces. Meaning that the steps described in the manual analysis section from mapping to trace extraction would be all the same. On :numref:`mainGUI` you can see the traces that were extracted and manually analyzed in the above sections. Here all the 6100 traces are in the *Uncategorized* category meaning that no analysis was performed on them. To start the analysis, we clicked on the button *Deep Learning*.   
 
-.. figure:: ./../../figures/examples/1_MainGUI.png
+.. figure:: ./../../figures/examples/1_MainGUI_click.png
    :width: 550
    :alt: mainGUI
    :align: center
    :name: mainGUI
+   
+   The main GUI of DeepLASI on the tab *Traces*
 
 .. figure:: ./../../figures/examples/2_DeepLearningTab.png
    :width: 550
