@@ -344,7 +344,7 @@ Automatic data analysis and correction
 
 In the following section you will be guided through the automated analysis steps for dynamic 2-color smFRET data. This is an additional program using pre-trained deep neural networks which makes your analysis time way shorter and more joyful!
 
-To perform automated analysis, we need to load already extracted traces. Meaning that the steps described in the manual analysis section from mapping to trace extraction would be all the same.  
+To perform automated analysis, we need to load already extracted traces. Meaning that the steps described in the manual analysis section from mapping to trace extraction would be all the same. On :numref:`mainGUI` you can see the traces that were extracted and manually analyzed in the above sections. Here all the 6100 traces are in the *Uncategorized* category meaning that no analysis was performed on them. To start the analysis, we clicked on the button *Deep Learning*.   
 
 .. figure:: ./../../figures/examples/1_MainGUI.png
    :width: 550
