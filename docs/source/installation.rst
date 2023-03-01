@@ -111,7 +111,7 @@ To run Deep-LASI on Windows, the following software packages are required:
 
 
 Python installation and integration into MATLAB (Windows)
-~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^
 
 Please install Python with version 3.7-3.10 at https://www.python.org/downloads/ and check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version.
 
@@ -134,9 +134,10 @@ If no version or path information is shown, link Python directy by providing the
       pyversion 'your/path/to/python/python.exe'
 
 Installing Python packages on Windows
-~~~~~~~~~
+^^^^^^^^^^
 
-**TensorFlow**
+TensorFlow
+""""""""""
 
 For deep learning features, the TensorFlow package needs to be installed for the Python environment integrated into MATLAB.
 The easiest way to install TensorFlow is to open the windows command prompt by presssing Win + R to open the Run box, then type "cmd" and hit Enter to open it or pressing Win + X (or right-click the Start button) and choose Command Prompt from the menu. 
@@ -154,7 +155,8 @@ You can check the successfull installation and integration into MATLAB by restar
 
 You are now ready to use Deep-LASI.
 
-**Packages for simulations and training new neural network models**
+Packages for simulations and training new neural network models
+""""""""""
 
 If you are interested in generating simulated data and/or re-training the neural network models, additional Python packages are required and installed by entering the following commands into the terminal application:
 
@@ -176,7 +178,7 @@ Common issues with deep learning features
 If you run into errors while trying to use neural netorks, your protobuf package might need to be downgraded and/or your h5py package is incompatible. 
 
 Installing a compatible version of protobuf
-~~~~~~~~~
+^^^^^^^^^^
 
 Please open your windows command prompt by presssing Win + R or terminal app on Mac and enter:
 
@@ -185,7 +187,7 @@ Please open your windows command prompt by presssing Win + R or terminal app on 
       pip install protobuf==3.20.*
       
 Installing the latest version of h5py
-~~~~~~~~~
+^^^^^^^^^^
 
 Please open your windows command prompt by presssing Win + R or terminal app on Mac and enter:
 
