@@ -123,7 +123,7 @@ The automated data analysis is carried out on the *Traces* GUI, which includes a
 ..  _mapping:
 Mapping
 ~~~~~~~~~~~~~~~~~
-Before loading data into *Deep-LASI*, one needs to consider the experimental requirements. In the case that single-color data has been acquired, the data can be directly loaded into the software and single-channel traces can be extracted, as described in :ref:`extraction_doc`. In the case, that more than one detection channel has been employed, we need to know where the emission of labeled molecules is detected on the different field-of-views (FOV) of the cameras, i.e., which pixels on one channel correspond to a pixels on the other. (:numref:`mapping_idea`).
+Before loading data into *Deep-LASI*, one needs to consider the experimental requirements. In the case that single-color data has been acquired, the data can be directly loaded into the software, and single-channel traces can be extracted, as described in :ref:`extraction_doc`. In the case that more than one detection channel has been employed, we need to know where the emission of labeled molecules is detected on the different field-of-views (FOV) of the cameras, i.e., which pixels on one channel correspond to pixels on the other (:numref:`mapping_idea`).
 
 .. figure:: ./../figures/documents/Fig_6_Main_GUI_Mapping.png
    :width: 500
@@ -133,10 +133,10 @@ Before loading data into *Deep-LASI*, one needs to consider the experimental req
 
    Mapping between multiple detection channels copes with differences between the FOV due to translation, rotation, and magnification.
 
-For mapping the different channels onto each other, please go to to the dropdown menu *File* and choose
-:code:`> File > Mapping > Create New Map` and load the reference data stepwise into *Deep-LASI* by clicking on :code:`> 1st channel'. The first channel refers to the FOV with the most blue-shifted emission, e.g. blue emission in an BGR ALEX excitation scheme. In the case that you use a split camera for two detection channels, you need to load the movie twice for the two corresponding channels separately and select the corresponding halves of the FOV in a consecutive step.
+For mapping the different channels onto each other, please go to the dropdown menu *File* and choose
+:code:`> File > Mapping > Create New Map` and load the reference data stepwise into *Deep-LASI* by clicking on :code:`> 1st channel`. The first channel refers to the FOV with the most blue-shifted emission, e.g., blue emission in a BGR ALEX excitation scheme. In the case that you use a split camera for two detection channels, you need to load the movie twice for the two corresponding channels separately and select the corresponding halves of the FOV in a consecutive step.
 
-Next, the program will ask you to choose a file which could be an image or a series of images as a video file. This reference data should contains structures or emitters with multiple co-localization on the various cameras. This could be, for example, a cover-slide with multi-colored beads or DNA origami structures with multiple labels. The emitters should be dense (but well separated) and widely spread over the entire FOV, such that aberrations in all areas of the FOV can be correctly translated between the different detection channels.
+Next, the program will ask you to choose a file which could be an image or a series of images as a video file. This reference data should contain structures or emitters with multiple co-localization on the various cameras. This could be, for example, a cover slide with multi-colored beads or DNA origami structures with multiple labels. The emitters should be dense (but well separated) and widely spread over the entire FOV, such that aberrations in all areas of the FOV can be correctly translated between the different detection channels.
 
 .. figure:: ./../figures/documents/Fig_7_Map_Image_Uploading.png
    :width: 450
@@ -146,7 +146,7 @@ Next, the program will ask you to choose a file which could be an image or a ser
 
    Uploading first mapping image
 
-After choosing the file, *Deep-LASI* opens a window (:numref:`channel_position`), which allows you to determine the correct position of the detection channel. You can use the **Channel Layout** to select the correct halve of the camera or full width of the camera. **Rotation** and **Flip** allow you to take into account if your camera image is flipped or rotated compared to your reference channel. After selection, please confirm to open the image on the mapping tab, as shown in :numref:`channel_position`.
+After choosing the file, *Deep-LASI* opens a window (:numref:`channel_position`), which allows you to determine the correct position of the detection channel. You can use the **Channel Layout** to select the correct half of the camera or the full width of the camera. **Rotation** and **Flip** allow you to take into account if your camera image is flipped or rotated compared to your reference channel. After selection, please confirm **OK** to open the image on the mapping tab, as shown in :numref:`channel_position`.
 
 .. figure:: ./../figures/documents/Fig_8_Map_Image_Detecting.png
    :width: 400
@@ -156,9 +156,9 @@ After choosing the file, *Deep-LASI* opens a window (:numref:`channel_position`)
 
    Selection of recognized emitters in the first detection channel by *Deep-LASI*
 
-After loading, use the threshold bar below the loaded image to make sure that enough points are detected (indicated by the white circle) by *Deep-LASI*. once you're satisfied continue to load data for the remaining detection channels by Then continue opening images from other detectors by selecting the :code:`> 2nd channel` etc. via the same procedure, as shown on :numref:`channel_position` and :numref:`mapping_gui`.
+After loading, use the threshold bar below the loaded image to make sure that enough points are detected (indicated by the white circle) by *Deep-LASI*. Next, continue opening the following images from other detectors by selecting the :code:`> 2nd channel`, etc., via the same procedure, as shown in :numref:`channel_position` and :numref:`mapping_gui`.
 
-Once you opened all mapping images to assign the detection windows, please select afterwards which channel you prefer to be the reference channel, as shown in :numref:`mapping_start`. In most cases, the first channel is taken as the reference, unless you have a special mapping plan. In the case that your experience a lot of photo-bleaching, mapping onto the channels with the most emitters might be advisable.
+Once you have loaded all mapping images to assign the detection windows, please select afterwards which channel you prefer to be the reference channel, as shown in :numref:`mapping_start`. In most cases, the first channel is taken as the reference unless you have a special mapping plan. In the case that you experience a lot of photo-bleaching, mapping onto the channels with the most emitters might be advisable.
 
 .. figure:: ./../figures/documents/Fig_9_Mapping_Starting.png
    :width: 450
@@ -168,10 +168,7 @@ Once you opened all mapping images to assign the detection windows, please selec
 
    Performing the mapping step.
 
-Once you confirm your selection by clicking on **Start Mapping**, *Deep-LASI* aligns the different channels compared to the chosen reference channel and warps the presented images. *Deep-LASI* describes this mapping process by a affine transformation matrix, taking translation, rotation and scaling into account.
-
-After a successful mapping process, the Extraction-GUI opens automatically. The mapping process itself is fast and visualizes the mapping results as comparison of image overlays before and after the mapping procedure (:numref:`before_after`). To save the transformation matrix, i.e., the mapping result for any trace extraction later on, finally save the map clicking on :code:`> File > Mapping > Save Map`.
-It is recommended to check the quality of mapping. In some cases you might have to rerun the mapping, by choosing (1) a different reference channel (e.g., if too many localizations in the different FOVs obscure the mapping process) or (2) a new data set of images (e.g., if too little localizations impede a representative mapping of aberrant images).
+Once you confirm your selection by clicking on **Start Mapping**, *Deep-LASI* aligns the different channels compared to the chosen reference channel and warps the presented images. *Deep-LASI* describes this mapping process by an affine transformation matrix, taking translation, rotation, and scaling into account.
 
 .. figure:: ./../figures/documents/Fig_10_Map_Before_After.png
    :width: 350
@@ -181,6 +178,7 @@ It is recommended to check the quality of mapping. In some cases you might have 
 
    Mapping result showing the channels overlay before and after mapping
 
+After a successful mapping process, the Extraction-GUI opens automatically. The mapping process itself is fast and visualizes the mapping results as a comparison of image overlays before and after the mapping procedure (:numref:`before_after`). To save the transformation matrix, i.e., the mapping result for any trace extraction later on, finally save the generated map (stored in the memory of *Deep-LASI* at this point) by clicking on :code:`> File > Mapping > Save Map`. It is recommended to check the quality of mapping. In some cases, you might have to rerun the mapping process by choosing (1) a different reference channel (e.g., if too many localizations in the different FOVs obscure the mapping process) or (2) a new data set of images (e.g., if too little localizations impede a representative mapping of aberrant images).
 
 -----------------------------------------------
 
