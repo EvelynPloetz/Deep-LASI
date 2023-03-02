@@ -7,13 +7,8 @@
    :hidden:
 
    documentation
-    .. toctree::
-        :maxdepth:2
-        :hidden:
-
-        docu/data
-        docu/opening
-
+    - :ref:`data-format`
+    - :ref:`opening`
    manual_analysis
    automatic_analysis
 
