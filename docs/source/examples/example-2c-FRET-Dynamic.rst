@@ -451,12 +451,16 @@ Right after selecting the cluster, the resulting values including the dwell time
    :name: TDP_selection_and_livefit
    
    Selecting TDP clusters to achieve live fitting results
-   
+
+Finally, all correction factors are plotted as histograms with their mean, median, and mode values reported on them. As you can see on :numref:`correction_factors_DE_and_CT`, the moleculewise direct excitation and spectral crosstalk are shown on the left and right side of the window respectively. The statistical information about them are also presented.
+
 .. figure:: ./../../figures/examples/11_DataCorrection_DirEx_Crosstalk.png
    :width: 500
    :alt: de_and_ct
    :align: center
-   :name: correction_factors_DE_and_CT   
+   :name: correction_factors_DE_and_CT
+   
+   The histograms of direct excitation and spectral crosstalk correction factors reported with statistics
 
 .. figure:: ./../../figures/examples/12_DataCorrection_Gamma.png
    :width: 500
