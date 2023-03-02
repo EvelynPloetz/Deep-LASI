@@ -32,7 +32,7 @@ Overview
 --------------------------------------------------------------------
 
 --------------------------------------------------------------------
-.. Contains section on Data requirements ..
+.. Contains section on Processing single molecule data ..
 .. include:: ./docu/opening.rst
 --------------------------------------------------------------------
 
@@ -566,5 +566,12 @@ By clicking on **Select ROI**, you can choose a cluster and obtain dynamic infor
 
 Magic button is the fully automated step. You may also intend to take separate and different analysis steps without the magic button. For that, you first need to load a neural network from the same table of **Trace Tools**, figure 41. First choose the closest option to your measurement from the drop-down menu on the right, and then click on **Load Neural Network**. Then with the options provided you can do the necessary analysis on your data and get the results within a couple of minutes. Note that to do the autocorrect, you should first click on **Categorize** and then click on **Autocorrect**. After having the categories made by the software, you always have the option of going through the traces, make any changes, and save the current status of the data set.
 
+-----------------------------------------------
 
+.. toctree::
+   :maxdepth:1
+   :hidden:
+
+   data
+   opening
 
