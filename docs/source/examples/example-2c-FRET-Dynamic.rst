@@ -108,7 +108,7 @@ After choosing the image file, the same *Channel Position* window will open. To 
 
    Comparing and adjusting the second mapping image to the first one
 
-Now you can see both images on the corresponding pannels, and they look having the same pattern at least by eye. It means that the criteria chosen for loading the mapping images were correct. On the *Mapping Controls* pannel (:numref:`start 2C mapping`), we did not change the reference channel, so by default it assumes the first (donor) channel to be the reference, and will map the second channel based on the first one. Then, we clicked on *Start Mapping*. 
+Now you can see both images on the corresponding panels, and they look having the same pattern at least by eye. It means that the criteria chosen for loading the mapping images were correct. On the *Mapping Controls* panel (:numref:`start 2C mapping`), we did not change the reference channel, so by default it assumes the first (donor) channel to be the reference, and will map the second channel based on the first one. Then, we clicked on *Start Mapping*. 
 
 .. figure:: ./../../figures/examples/PA6_start_mapping.png
    :width: 500
@@ -158,7 +158,7 @@ On the opened window to select the data files, we selected all the image files f
    
    Setting the measurement parameters to load the data from the green channel
 
-Now the particle detection pannel appears on the *Extraction* tab showing the detected molecules inside green triangles, and the number of them in a black box on the top right pannel as you can see on :numref:`particle detection preview`. With the sliders provided below the image, we lowered the *Display contrast* to see the single molecules distribution on the surface better, and also the *Detection Threshold* to have more particles detected.
+Now the particle detection panel appears on the *Extraction* tab showing the detected molecules inside green triangles, and the number of them in a black box on the top right panel as you can see on :numref:`particle detection preview`. With the sliders provided below the image, we lowered the *Display contrast* to see the single molecules distribution on the surface better, and also the *Detection Threshold* to have more particles detected.
 
 .. figure:: ./../../figures/examples/PA11_particle_detection.png
    :width: 500
@@ -188,7 +188,7 @@ On the *Measurement Parameters* pop-up window (:numref:`second measurement param
    
    Setting the measurement parameters to load the data from the red channel
 
-The red emitters from the first data file appear on the same particle detection pannel that we had for green molecules. You can use the sliders again to adjust the display contrast and the detection threshold this time for the second channel. The detected molecules are trapped inside the red triangles, and the number of them together with the number of co-localized molecules are shown in the black box. The lowest slider is also now active to choose either of the channels as the current channel view (:numref:`colocalized GR particles`).  
+The red emitters from the first data file appear on the same particle detection panel that we had for green molecules. You can use the sliders again to adjust the display contrast and the detection threshold this time for the second channel. The detected molecules are trapped inside the red triangles, and the number of them together with the number of co-localized molecules are shown in the black box. The lowest slider is also now active to choose either of the channels as the current channel view (:numref:`colocalized GR particles`).  
 
 .. figure:: ./../../figures/examples/PA14_colocal_detection.png
    :width: 500
@@ -202,7 +202,7 @@ The red emitters from the first data file appear on the same particle detection 
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-On the *Mask Settings* pannel we did not change anything (:numref:`extraction begin`). On the *Method* part, we selected *wavelet* for the *Particle Detection*, *Colocalized only* for the *Trace Selection*, and also left the frame range to be 2 to 2000 for the *Frame Selection*. Then we clicked on *Extract Traces*.
+On the *Mask Settings* panel we did not change anything (:numref:`extraction begin`). On the *Method* part, we selected *wavelet* for the *Particle Detection*, *Colocalized only* for the *Trace Selection*, and also left the frame range to be 2 to 2000 for the *Frame Selection*. Then we clicked on *Extract Traces*.
 
 .. figure:: ./../../figures/examples/PA15_mask_and_start_extract.png
    :width: 500
@@ -212,7 +212,7 @@ On the *Mask Settings* pannel we did not change anything (:numref:`extraction be
    
    The mask created for intensity traces extraction with adjustment options (top), and trace extraction settings (low)
 
-Depending on the data size, the extraction step might take some time from a couple of minutes to hours. When it is done, a final data file with the format *.tdat* will be saved in the data folder by the program, and the first trace appears on the *Traces* tab. As you can see on :numref:`2c trace look`, the intensity-time pannel shows the following four intensity traces: The total intensity in the green channel in gray, the donor emission after donor excitation in green, the acceptor emission after donor excitation in bright red, and the acceptor emission after acceptor excitation in dark red. On the middle pannel you can see the mask surrounding every detected molecule accross every channel. On the right you can see a total number of 6100 traces were extracted from the loaded data. Everything is now ready for us to start the manual analysis by categorizing the traces first.     
+Depending on the data size, the extraction step might take some time from a couple of minutes to hours. When it is done, a final data file with the format *.tdat* will be saved in the data folder by the program, and the first trace appears on the *Traces* tab. As you can see on :numref:`2c trace look`, the intensity-time panel shows the following four intensity traces: The total intensity in the green channel in gray, the donor emission after donor excitation in green, the acceptor emission after donor excitation in bright red, and the acceptor emission after acceptor excitation in dark red. On the middle panel you can see the mask surrounding every detected molecule accross every channel. On the right you can see a total number of 6100 traces were extracted from the loaded data. Everything is now ready for us to start the manual analysis by categorizing the traces first.     
 
 .. figure:: ./../../figures/examples/PA16_trace_look.png
    :width: 600
@@ -220,7 +220,7 @@ Depending on the data size, the extraction step might take some time from a coup
    :align: center
    :name: 2c trace look
    
-   Exemplary trace for a two-color smTIRF measurement, and all different pannels on the *Traces* tab
+   Exemplary trace for a two-color smTIRF measurement, and all different panels on the *Traces* tab
    
 ..  _manual:
 Manual data analysis and correction
@@ -286,7 +286,7 @@ After categorization, we went to the *Histograms* tab to plot the results. As yo
    
    The settings to plot the apparent FRET efficiency of the dynamic category
 
-With the mentioned settings the histogram of apparent FRET efficiency appears like the left pannel of :numref:`apparent FRET`. You can see the two FRET populations as we expected for the dynamic DNA origami sample. Then for fitting the result, we set the *Fit Method* to *Gauss2*, and then clicked on *Fit Plot*. The fitteing result is shown on the right side of :numref:`apparent FRET`. You get all the fitting values as a box attached to the histogram. 
+With the mentioned settings the histogram of apparent FRET efficiency appears like the left panel of :numref:`apparent FRET`. You can see the two FRET populations as we expected for the dynamic DNA origami sample. Then for fitting the result, we set the *Fit Method* to *Gauss2*, and then clicked on *Fit Plot*. The fitteing result is shown on the right side of :numref:`apparent FRET`. You get all the fitting values as a box attached to the histogram. 
 
 .. figure:: ./../../figures/examples/PA22_app_FRET.png
    :width: 600
@@ -296,7 +296,7 @@ With the mentioned settings the histogram of apparent FRET efficiency appears li
    
    Apparent FRET efficiency histogram with the fitting result
 
-To get the corrected FRET efficiencies, we plotted each correction factor by choosing the desired one from the list of parameters in *Plot Mode* as shown previously on :numref:`apparent FRET plotting criteria` in the middle part. For the direct excitaion factor, we clicked on *Direct Excitation factor (Alpha)*, and selected the category **G Bleach** since we need the donor bleaching step for this calculation. The resulting plot with its fitting is shown on :numref:`all correction factors` on the left. For fitting we chose *Gauss1* from the *Fit Method* section, the value of 0.124 was reported after the fitting. Also from *Histogram Normalization*, the option *Unary* was selected to normalize the plot. To plot the other two correction factors we selected the category **R Bleach** because the acceptor bleaching step is needed for them to be determined. Then in *Plot Mode* we clicked on *Spectral Crosstalk corr factor (Beta)*. With the same steps for plot fitting and normalization, the middle pannel of :numref:`all correction factors` and final value of 0.12 was obtained. Then we clicked on *Detection Efficiency corr factor (Gamma)* to get its distribution histogram. Taking steps similar to the previous case, the plot was fitted and normalized with the final value of 0.75 for the gamma factor, like :numref:`all correction factors` on the right.      
+To get the corrected FRET efficiencies, we plotted each correction factor by choosing the desired one from the list of parameters in *Plot Mode* as shown previously on :numref:`apparent FRET plotting criteria` in the middle part. For the direct excitaion factor, we clicked on *Direct Excitation factor (Alpha)*, and selected the category **G Bleach** since we need the donor bleaching step for this calculation. The resulting plot with its fitting is shown on :numref:`all correction factors` on the left. For fitting we chose *Gauss1* from the *Fit Method* section, the value of 0.124 was reported after the fitting. Also from *Histogram Normalization*, the option *Unary* was selected to normalize the plot. To plot the other two correction factors we selected the category **R Bleach** because the acceptor bleaching step is needed for them to be determined. Then in *Plot Mode* we clicked on *Spectral Crosstalk corr factor (Beta)*. With the same steps for plot fitting and normalization, the middle panel of :numref:`all correction factors` and final value of 0.12 was obtained. Then we clicked on *Detection Efficiency corr factor (Gamma)* to get its distribution histogram. Taking steps similar to the previous case, the plot was fitted and normalized with the final value of 0.75 for the gamma factor, like :numref:`all correction factors` on the right.      
 
 .. figure:: ./../../figures/examples/PA23_correction_factors_fit.png
    :width: 650
@@ -326,7 +326,7 @@ To get dynamic information about the sample, we went to *HMM* tab, selected the 
    
    Steps for running HMM on dynamic data 
 
-After a short while, the left plot of :numref:`HMM resulting graphs` appears inside the pannle *Transition Density Plot*. Then we clicked on the button *Select ROI* to encircle the desired region of interest. You can draw any circle around a cluster on the plot by dragging the mouse around it as we did on the lower cluster showing transitions from high to low FRET efficiencies. On the most right pannel the dwell time grapg with its fit will appear giving all the fitting values. The dwell time based on the transitions cluster we selected are then 3.1 s. 
+After a short while, the left plot of :numref:`HMM resulting graphs` appears inside the pannle *Transition Density Plot*. Then we clicked on the button *Select ROI* to encircle the desired region of interest. You can draw any circle around a cluster on the plot by dragging the mouse around it as we did on the lower cluster showing transitions from high to low FRET efficiencies. On the most right panel the dwell time grapg with its fit will appear giving all the fitting values. The dwell time based on the transitions cluster we selected are then 3.1 s. 
 
 .. figure:: ./../../figures/examples/PA26_TDP_dwell_time.png
    :width: 600
@@ -354,7 +354,7 @@ To perform automated analysis, we need to load already extracted traces. Meaning
    
    The main GUI of DeepLASI on the *Traces* tab showing the loaded data traces
 
-On the opened pannel as shown on :numref:`DeepLearning_tab` you can see the *Magic Button* in bright pink color. Now you can just click on it to enjoy the resulting graphs being open one after another. 
+On the opened panel as shown on :numref:`DeepLearning_tab` you can see the *Magic Button* in bright pink color. Now you can just click on it to enjoy the resulting graphs being open one after another. 
 
 .. figure:: ./../../figures/examples/2_DeepLearningTab.png
    :width: 550
