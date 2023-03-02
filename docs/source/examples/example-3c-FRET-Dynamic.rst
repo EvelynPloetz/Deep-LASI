@@ -11,4 +11,23 @@ Here you can see how to use DeepLASI to analyze dynamic 3-color smFRET (single-m
 
 The following part shows all the steps to analyze dynamic 3C smFRET data from L-shaped DNA origami structures with two (or three?) FRET states. The example data together with further data sets are accessible in Wanninger et al., BioArxiv (2023).
 
+Overview - Example
+------------------
+- :ref:`example-data`
+- :ref:`data-prep`
+- :ref:`localization`
+- :ref:`extraction`
+- :ref:`manual`
+- :ref:`automatic`
+- :ref:`summary`
+
+--------------------------------------------------------------------
+
+Example
+-----------
+
+..  _example-data:
+Sample Design: Dynamic L-Shaped DNA Origami
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
