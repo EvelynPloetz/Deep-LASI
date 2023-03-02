@@ -165,10 +165,10 @@ This function is for internal use within the hosting group only.
 
 --------------------------------------------------------------------
 
+..  _opening:
 Processing Single-Molecule Data
 -------------
 
-..  _opening:
 Starting Deep-LASI
 ~~~~~~~~~~~~~~~~~
 To evaluate your experimental data with *Deep-LASI*, please open the program from the MATLAB command window by typing in :code:`>> DeepLASI`. It will open the core-program responsible for data import, trace extraction, as well as and manual selection and sorting. After a couple of seconds, the Start-GUI of the program will open as shown in :numref:`open-program`.
