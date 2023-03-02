@@ -412,7 +412,7 @@ After analysis gets finished, DeepLASI reports its confidence level for predicti
    
    The DeepLASI confidence level for determinig the states on each trace
 
-Another resulting histogram is the apparent FRET efficiency to give a quick overview of the existing FRET populations. It is the mean FRET efficiency observed on the states found along the traces. 
+Another resulting histogram is the apparent FRET efficiency to give a quick overview of the existing FRET populations. It is the mean FRET efficiency observed on the states found along the traces(:numref:`statewise-meanFRET_histogram`). 
 
 .. figure:: ./../../figures/examples/7_Statewise_MeanFRET.png
    :width: 350
@@ -422,11 +422,15 @@ Another resulting histogram is the apparent FRET efficiency to give a quick over
    
    The histogram of apparent FRET efficiency averaged for each state
 
-.. figure:: ./../../figures/examples/8_TDP_Input.png
+Before the program generates the TDP plot, a window like :numref:`TDP_input` pops up to take in the desired number of bins and confidence threshold from the user. We set the number of bins to 100 and the threshold on 0, then clicked on *Generate Transition Density Plot*.
+
+.. figure:: ./../../figures/examples/8_TDP_Input_click.png
    :width: 350
    :alt: TDP_input
    :align: center
    :name: TDP_input
+   
+   The GUI asking for TDP options
    
 .. figure:: ./../../figures/examples/9_TDP_generated.png
    :width: 400
