@@ -20,9 +20,9 @@ Overview
 .. - :ref:`extraction`
 .. - :ref:`man-categorization`
 .. - :ref:`man-selection`
-.. - :ref:`man-kinetics`
-.. - :ref:`man-histograms`
-.. - :ref:`man-statistics`
+.. - :ref:`hmm`
+.. - :ref:`histograms`
+.. - :ref:`statistics`
 .. - :ref:`auto-analysis`
 
 --------------------------------------------------------------------
@@ -194,7 +194,7 @@ Basic functionalities of *Deep-LASI* such as data handling, program settings, or
    *Settings*,"Access to Camera Settings"
    *View*,   "Appearance of the GUI, Graphs and Data representation"
    *Tools*,  "Programs for accessing/simulating single-molecule data, and training Neural Networks"
-   *Help*,   "Contact data for help in case of problems"
+   *Help*,   "Direct link to the Documentation in case of problems"
    *Reset*,  "Restart of Deep-LASI and clearance of all variable of the program"
 
 
@@ -207,7 +207,7 @@ The dropdown menu *File* (:numref:`file-menu`) controls all steps from loading t
 
 #. Using the **Load Traces/State** routine, previously extracted and potentially already evaluated traces can be reloaded into *Deep-LASI*.
 
-#. The **Add Traces/State** routine allows to add further extracted traces to already loaded traces. This function is especially useful for merge traces from various measurements. Please make sure that only traces with identical experimental settings (i.e., number of frames, exposure time and in particular laser excitation)  can be merged.
+#. The **Add Traces/State** routine allows to add further extracted traces to already loaded traces. This function is especially useful for merge traces from various measurements. Please make sure that only traces with identical experimental settings (i.e.D, number of frames, exposure time and in particular laser excitation)  can be merged.
 
 #. **Save Traces/State** to save desired changes on traces for example in case of having done analysis steps.
 
@@ -260,24 +260,50 @@ The *Plot Units* sub-tab controls the y axis of the intensity and FRET panels fo
 #.  The penultimate sub-tab, **Raw Trace (no BG subtr.)**, activates the display of uncorrected, raw intensity traces, i.e., without background subtraction.
 #.  If the last option **Corrected FRET** is selected, *Deep-LASI* shows Accurate FRET efficiencies for each single-molecule trajectory in case the FRET correction factors have already been determine. Otherwise, the displayed FRET values between Accurate and Apparent FRET are identical.
 
+**Dropdown Menu Tools.** |br|
+The forth dropdown menu **Tools** opens the subpanels for simulating single-molecules traces and training of neural networks. A detailed description of its functionalities, workflow and usages is given in the :doc:`sim` section.
+
+**Dropdown Help Help.** |br|
+In the case of problems or errors, help can be found in the dropdown menu **Help* which provides a direct link opening this Online documentation of Deep-LASI.
+
+**Dropdown Help Reset.** |br|
+When finishing the analysis of one data set, the change to the next data set can lead to errors, in particular when they differ with respect to laser alternation, imaging modalities or number of emitters. In this case, please reset the program. DeepLASI will reset all temporal variables in the background, refresh the graphical interface and restart the program.s
 
 Main-GUI
 ~~~~~~~~~~~~~~~~~
-Data-analysis with *Deep-LASI* involves consecutive steps, which are accommodated in six different sub-GUIs. The Starting-GUI  incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope. Consecutively, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterwards. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. |br| :numref:`main-gui` summarizes the data handling.
+Data-analysis with *Deep-LASI* involves consecutive steps in the workflow (:numref:`main-workflow`), which are accommodated in six different sub-GUIs. The Starting-GUI incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope and maps corresponding pixels between camera onto each other (see section :ref:`mapping`). Next, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterwards, as described in more details in section :ref:`extraction`. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. Equally, already extracted traces can be loaded into Deep-LASI for further data analysis.
 
-.. figure:: ./../figures/documents/Dummy.png
+.. figure:: ./../figures/documents/Fig_5_Main_GUIs-Flow.png
    :width: 800
    :alt: Main GUIs
    :align: center
-   :name: main-gui
+   :name: main-workflow
 
    Workflow summarizing the generic data formats used by *Deep-LASI*, as well as supported data formats for trace import.
+
+The main data handling is carried out on the *Traces* GUI (:numref:`main-workflow`), where we can choose between manual or automated data analysis. Conventional data analysis, includes sorting, categorization and trace preparation (as described in section :ref:`manual`) before handing over the preselected traces for Hidden-Markov modeling on the *HMM* GUI followed by dwelltime analysis and TDPs. The Sub-Window *Histograms* allows for summarizing the analyzed data via histograms with respect to, e.g., frame-, molecule-, and state-wise histograms, or the global FRET correction factors (:numref:`main-workflow`). The sub-window *Statistics* on selected molecule groups with respect to, e.g., average brightness, background, SNR etc. |br|
+The automated data analysis is carried out on the *Traces* GUI, which includes and automated selection, sorting, and categoriziation process prior to an automated kinetics analysis based on deep-learning. The data is afterwards automatically summarized by state-of-the-art dwell-time analysis and TDPs.
+
+.. Overview
+.. ------------------
+.. - :ref:`data-format`
+.. - :ref:`opening`
+.. - :ref:`mapping`
+.. - :ref:`extraction`
+.. - :ref:`man-categorization`
+.. - :ref:`man-selection`
+.. - :ref:`hmm`
+.. - :ref:`histograms`
+.. - :ref:`statistics`
+.. - :ref:`auto-analysis`
+
+
 
 --------------------------------------------------------
 
 ..  _mapping:
 Mapping
--------------
+~~~~~~~~~~~~~~~~~
 
 If mapping is required between two or more cameras, go to **Mapping** from the menu under file. Then choose ‘Create New Map’ and the ‘First Channel’. You can see the path on figure 3.
 
