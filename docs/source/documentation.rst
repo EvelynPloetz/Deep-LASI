@@ -14,8 +14,8 @@ A step-wise description of how to analyze different single-molecule data with *D
 
 Overview
 ------------------
-.. - :ref:`data-format`
-.. - :ref:`opening`
+- :ref:`data-format`
+- :ref:`opening`
 .. - :ref:`mapping`
 .. - :ref:`extraction`
 .. - :ref:`manual_analysis`
