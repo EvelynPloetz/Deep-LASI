@@ -33,7 +33,7 @@ Overview
 
 --------------------------------------------------------------------
 .. Contains section on Data requirements ..
-.. .. include:: ./docu/opening.rst
+.. include:: ./docu/opening.rst
 --------------------------------------------------------------------
 
 ..  _opening:
