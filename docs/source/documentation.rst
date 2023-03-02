@@ -201,7 +201,7 @@ Basic functionalities of *Deep-LASI* such as data handling, program settings, or
 **Dropdown Menu File.** |br|
 The dropdown menu *File* (:numref:`file-menu`) controls all steps from loading the experimental data, over mapping, background correction, trace extraction and saving of traces. Moreover, it facilitates the import and export of different data formats as described in the :ref:`data-format` section. The dropdown menu hosts seven sub-routines:
 
-#. The sub-routines in **Mapping** are used to match the corresponding image pixels between up to four different cameras. They allow the user to generate, save and reload maps containing the transformation matrices between the channels. A description of how to map the detection channels is given below in the :ref:`data-format` section.
+#. The sub-routines in **Mapping** are used to match the corresponding image pixels between up to four different cameras. They allow the user to generate, save and reload maps containing the transformation matrices between the channels. A description of how to map the detection channels is given below in the :ref:`mapping` section.
 
 #. **Load Image Data** facilitates the read-in of data files per detection channels. The data needs to be read in consecutively starting with Channel 1 being the most 'blue'-shifted detection channel and Channel 4 the most 'red'-shifted detection channel. Data loading is possible for a single file per channel, but also for multiple files at once. Please make sure: (1) that the numbers of loaded files per detection channel match and (2) that the files have consecutive numbering, so that corresponding movies are loaded.
 
@@ -234,7 +234,7 @@ The dropdown menu *Settings* (:numref:`settings-menu`) opens a sub-window for en
    :align: center
    :name: settings-menu
 
-   TRacer settings menu
+   *Deep-LASI* settings menu
 
 **Dropdown Menu View.** |br|
 The third dropdown menu **View** controls the appearance and settings of the graphical interfaces on the different GUI sub-windows of Deep-LASI. |br|
