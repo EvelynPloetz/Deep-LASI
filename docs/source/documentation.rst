@@ -18,15 +18,15 @@ Overview
 ------------------
 - :ref:`data-format`
 - :ref:`opening`
-.. - :ref:`mapping`
-.. - :ref:`extraction`
-.. - :ref:`manual_analysis`
-.. - :ref:`man-categorization`
-.. - :ref:`man-selection`
-.. - :ref:`hmm`
-.. - :ref:`histograms`
-.. - :ref:`statistics`
-.. - :ref:`auto-analysis`
+- :ref:`mapping`
+- :ref:`extraction`
+- :ref:`manual_analysis`
+- :ref:`man-categorization`
+- :ref:`man-selection`
+- :ref:`hmm`
+- :ref:`histograms`
+- :ref:`statistics`
+- :ref:`auto-analysis`
 
 --------------------------------------------------------------------
 .. Contains section on Data requirements ..
@@ -44,7 +44,7 @@ Processing Single-Molecule Data
 
 Main-GUI
 ~~~~~~~~~~~~~~~~~
-Data-analysis with *Deep-LASI* involves consecutive working steps (:numref:`main-workflow`), which are accommodated in six different sub-GUIs. The Starting-GUI incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope and maps corresponding pixels between camera onto each other (see section on  :ref:`mapping`). Next, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterwards, as described in more details in section :ref:`extraction`. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. Equally, already extracted traces can be loaded into Deep-LASI for further data analysis.
+Data-analysis with *Deep-LASI* involves consecutive working steps (:numref:`main-workflow`), which are accommodated in six different sub-GUIs. The Starting-GUI incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope and maps corresponding pixels between camera onto each other (see section on  :ref:`mapping`). Next, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterwards, as described in more details in section :ref:`extraction`. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. Equally, already extracted traces can be loaded into *Deep-LASI* for further data analysis.
 
 .. figure:: ./../figures/documents/Fig_5_Main_GUIs-Flow.png
    :width: 800

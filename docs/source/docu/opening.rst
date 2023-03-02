@@ -14,9 +14,9 @@ To evaluate your experimental data with *Deep-LASI*, please open the program fro
    :align: center
    :name: open-program
 
-   The Main-GUI of Deep-LASI has six sub-windows for data processing and analysis.
+   The Main-GUI of *Deep-LASI* has six sub-windows for data processing and analysis.
 
-Deep-LASI shows one empty Main-GUI together with six integrated sub-windows for analyzing the data and one menubar for handling the data reading, the settings of the program, the simulation of single-molecule data and training of (new) neural networks.
+*Deep-LASI* shows one empty Main-GUI together with six integrated sub-windows for analyzing the data and one menubar for handling the data reading, the settings of the program, the simulation of single-molecule data and training of (new) neural networks.
 
 Menu Bar
 ~~~~~~~~~~~~~~~~~
@@ -30,7 +30,7 @@ Basic functionalities of *Deep-LASI* such as data handling, program settings, or
    *View*,   "Appearance of the GUI, Graphs and Data representation"
    *Tools*,  "Programs for accessing/simulating single-molecule data, and training Neural Networks"
    *Help*,   "Direct link to the Documentation in case of problems"
-   *Reset*,  "Restart of Deep-LASI and clearance of all variable of the program"
+   *Reset*,  "Restart of *Deep-LASI* and clearance of all variable of the program"
 
 
 **Dropdown Menu File.** |br|
@@ -72,7 +72,7 @@ The dropdown menu *Settings* (:numref:`settings-menu`) opens a sub-window for en
    *Deep-LASI* settings menu
 
 **Dropdown Menu View.** |br|
-The third dropdown menu *View* controls the appearance and settings of the graphical interfaces on the different GUI sub-windows of Deep-LASI. |br|
+The third dropdown menu *View* controls the appearance and settings of the graphical interfaces on the different GUI sub-windows of *Deep-LASI*. |br|
 The sub-tab *Colormap* changes the color palette in 3D plots, e.g., on the Trace GUI surface (which shows small zoomed-in areas of 24x24 pixels) or the Extraction GUI surface (which shows the average projection of localized molecules). In both cases, localized molecules are highlighted. The default colormap is *jet*, which can be exchanged by other standard color maps from MATLAB. |br|
 The *Plot Units* sub-tab controls the y-axis of the intensity and FRET panels for individual single-molecule trajectories. Checking/unchecking the different sub-tabs immediately updates the graphical interface and the way how a single-molecule trace is displayed. The sub-tab **Plot Units** provides the following seven different settings for displaying intensities and FRET trajectories:
 
@@ -99,7 +99,7 @@ The *Plot Units* sub-tab controls the y-axis of the intensity and FRET panels fo
 The fourth dropdown menu *Tools* opens the subpanels for simulating single-molecule traces and training of neural networks. A detailed description of its functionalities, workflow, and usage is given in the :doc:`sim` Chapter.
 
 **Dropdown Menu Help.** |br|
-In the case of problems or errors, help can be found in the dropdown menu *Help*, which provides a direct link opening this Online documentation of Deep-LASI.
+In the case of problems or errors, help can be found in the dropdown menu *Help*, which provides a direct link opening this Online documentation of *Deep-LASI*.
 
 **Dropdown Menu Reset.** |br|
 When finishing the analysis of one data set, a change to a new data set can create errors, in particular, if they differ with respect to laser alternation, imaging modalities, or the number of emitters. In this case, please reload the program via the *Reset* button. DeepLASI will reset all temporal variables in the background, refresh the graphical interface and restart the program.
