@@ -54,7 +54,7 @@ The origami structures were measured on a smTIRF microscope with two separate EM
 Co-Localization of Molecules 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When using two separate detection paths like the present example, there might be the chance of some discrepancy between the cameras' fields of view resulting from chromatic and spherical aberrations or cameras misalignment regarding to shifts, rotatoin, or magnification difference. To make sure that double-labeled species are detected, a correct linking of same molecule emitters accross the detection channels is needed. DeepLASI makes a coordinate transformation map to get rid of any potential difference. For more details about mapping, please refer to the section :doc:`./examples/example-2c-FRET-Static` 
+When using two separate detection paths like the present example, there might be the chance of some discrepancy between the cameras' fields of view resulting from chromatic and spherical aberrations or cameras misalignment regarding to shifts, rotation, or magnification difference. To make sure that double-labeled species are detected, a correct linking of same molecule emitters across the detection channels is needed. DeepLASI makes a coordinate transformation map to get rid of any potential difference. For more details about mapping, please refer to the section :doc:`./examples/example-2c-FRET-Static` 
 
 To perform the mapping step, we used zero-mode waveguide (ZMW) as a calibration pattern which was illuminated by the wide-field lamp on the microscope. The ZMW was then imaged on both channels and with the steps shown on :numref:`mapping menu`, we opened the images one by one and used them to calibrate both channels. You can take the same steps as we did with the following instructions.  
 
@@ -98,7 +98,7 @@ To load the corresponding image from the second camera (the acceptor channel), w
 
    Mapping steps on DeepLASI for loading the second channel image 
 
-After choosing the image file, the same *Channel Position* window will open. To have the maximum overlay to the ZMW image from the first channel, we took the whole field of view by clicking on *Full* and no rotation again. The only obvious difference is that the current image is flipped horizontally compared to the first one. You can see the mentioned difference by checking the cross sign on the already loaded image which is on the top right side (:numref:`map image flipping`,left), and compare it to the position of the cross on the new image preview, which is on the top left area (:numref:`map image flipping`,right). After checking the *Horizontal Flip* box, we clicked on *OK*.    
+After choosing the image file, the same *Channel Position* window will open. To have the maximum overlay to the ZMW image from the first channel, we took the whole field of view by clicking on *Full* and no rotation again. The only obvious difference is that the current image is flipped horizontally compared to the first one. You can see the mentioned difference by checking the cross sign on the already loaded image which is on the top right side (:numref:`map image flipping`, left), and compare it to the position of the cross on the new image preview, which is on the top left area (:numref:`map image flipping`, right). After checking the *Horizontal Flip* box, we clicked on *OK*.    
 
 .. figure:: ./../../figures/examples/PA5_map_image_flipping.png
    :width: 500
@@ -116,7 +116,7 @@ Now you can see both images on the corresponding panels, and they look having th
    :align: center
    :name: start 2C mapping
 
-   Starting the mapping step after having both zmw images loaded
+   Starting the mapping step after having both ZMW images loaded
 
 Mapping takes usually a couple seconds. Afterwards, DeepLASI opens a *Map Result* window showing the channels overlay before and after mapping. It is recommended to check the overlay quality at this point. The result is fine most of the times like the example on :numref:`check befor_after mapping`, but if the mapping result was not satisfactory, we would capture new images from the ZMW on both cameras, and repeat the mapping step. 
 
@@ -148,7 +148,7 @@ After finishing the mapping process, we continued with opening the data files on
    
    The file menu path to load the data images from the first channel
 
-On the opened window to select the data files, we selected all the image files from the green channel which were in total 70 Tiff files meaning that the smTIRF measurement was carried out on 70 areas of the sample surface. Then the *Measurement Parameters* pop-up window appears to take in the details of the experiment. As you can see on :numref:`measurement_parameters`, for *Interframe time*, we typed in 52.2 which is the sum of laser exposure time (50 ms) and frame transfer (2.2 ms). The illumination used for the measurement was the alternation of yellow and red lasers, so for the *ALEX sequence* we entered GR. Then we clicked on the empty line right after the ALEX box, the slider will show up and we put the slider on the left to determine the first channel. We had captured 1000 frames on each camera, having two of them, every data file contains 2000 frames in total, and because our first frame is always a dark one, we loaded the frames from the second one untill the end. So, we entered *2 to 2000* for the both frame range rows (loading & particle detection). Then we clicked on G to specify the donor channel.   
+On the opened window to select the data files, we selected all the image files from the green channel which were in total 70 Tiff files meaning that the smTIRF measurement was carried out on 70 areas of the sample surface. Then the *Measurement Parameters* pop-up window appears to take in the details of the experiment. As you can see on :numref:`measurement_parameters`, for *Interframe time*, we typed in 52.2 which is the sum of laser exposure time (50 ms) and frame transfer (2.2 ms). The illumination used for the measurement was the alternation of yellow and red lasers, so for the *ALEX sequence* we entered GR. Then we clicked on the empty line right after the ALEX box, the slider will show up and we put the slider on the left to determine the first channel. We had captured 1000 frames on each camera, having two of them, every data file contains 2000 frames in total, and because our first frame is always a dark one, we loaded the frames from the second one until the end. So, we entered *2 to 2000* for the both frame range rows (loading & particle detection). Then we clicked on G to specify the donor channel.   
 
 .. figure:: ./../../figures/examples/PA10_measurement_parameters.png
    :width: 500
@@ -212,7 +212,7 @@ On the *Mask Settings* panel we did not change anything (:numref:`extraction beg
    
    The mask created for intensity traces extraction with adjustment options (top), and trace extraction settings (low)
 
-Depending on the data size, the extraction step might take some time from a couple of minutes to hours. When it is done, a final data file with the format *.tdat* will be saved in the data folder by the program, and the first trace appears on the *Traces* tab. As you can see on :numref:`2c trace look`, the intensity-time panel shows the following four intensity traces: The total intensity in the green channel in gray, the donor emission after donor excitation in green, the acceptor emission after donor excitation in bright red, and the acceptor emission after acceptor excitation in dark red. On the middle panel you can see the mask surrounding every detected molecule accross every channel. On the right you can see a total number of 6100 traces were extracted from the loaded data. Everything is now ready for us to start the manual analysis by categorizing the traces first.     
+Depending on the data size, the extraction step might take some time from a couple of minutes to hours. When it is done, a final data file with the format *.tdat* will be saved in the data folder by the program, and the first trace appears on the *Traces* tab. As you can see on :numref:`2c trace look`, the intensity-time panel shows the following four intensity traces: The total intensity in the green channel in gray, the donor emission after donor excitation in green, the acceptor emission after donor excitation in bright red, and the acceptor emission after acceptor excitation in dark red. On the middle panel you can see the mask surrounding every detected molecule across every channel. On the right you can see a total number of 6100 traces were extracted from the loaded data. Everything is now ready for us to start the manual analysis by categorizing the traces first.     
 
 .. figure:: ./../../figures/examples/PA16_trace_look.png
    :width: 600
@@ -244,9 +244,9 @@ The first step for the categorization is to make sure if we are taking the singl
    :align: center
    :name: mask checking
    
-   DeepLASI makes a mask around each emitter for intensity trace extraction and background calculation. An example of a single detected molecule is shown on the left.A molecule distribution like the case on the right, makes the whole trace unuseful.
+   DeepLASI makes a mask around each emitter for intensity trace extraction and background calculation. An example of a single detected molecule is shown on the left. A molecule distribution like the case on the right, makes the whole trace worthless.
 
-After ensuring that a single molecule is inside the mask and there is no interference for the background calculation, we checked the traces. A nice indicator of a single molecule trace in our experiment is to see one single bleaching step, if this is met, we continue with selecting the regions that the flourophores are active. For region selection, we click anywhere on a trace to have the mouse as an active cursor, then we pressed the key *1* on the keyboard to have the cursor active for the first (green) channel. Then as you can see on :numref:`green-red region selection` on the left, we dragged the mouse from the beginnig to the end of the trace, because the Cy3B is active throughout the whole trace. You can also see the selected region shadowed in green. Then we pressed the key *2* fro the second channel, and as you can see on the right side of :numref:`green-red region selection`, we selected the red region from the trace beginning until the bleaching step of Atto 647N.      
+After ensuring that a single molecule is inside the mask and there is no interference for the background calculation, we checked the traces. A nice indicator of a single molecule trace in our experiment is to see one single bleaching step, if this is met, we continue with selecting the regions that the fluorophores are active. For region selection, we click anywhere on a trace to have the mouse as an active cursor, then we pressed the key *1* on the keyboard to have the cursor active for the first (green) channel. Then as you can see on :numref:`green-red region selection` on the left, we dragged the mouse from the beginning to the end of the trace, because the Cy3B is active throughout the whole trace. You can also see the selected region shadowed in green. Then we pressed the key *2* fro the second channel, and as you can see on the right side of :numref:`green-red region selection`, we selected the red region from the trace beginning until the bleaching step of Atto 647N.      
 
 .. figure:: ./../../figures/examples/PA19_dye_active_region.png
    :width: 600
@@ -276,7 +276,7 @@ We clicked through all the 6100 traces the same way described above, and finishe
    
    Categories manually created for the two-color two-state DNA origami sample
    
-After categorization, we went to the *Histograms* tab to plot the results. As you can see on :numref:`apparent FRET plotting criteria`, we first chose the *Dynamic* category by clicking on the plus sign beside it, then for the *Plot Mode* we chose the *FRET Efficiency (apparent)* to be the x axis, and on the *Display Settings* we chose the histogrma type to be *framewise*.
+After categorization, we went to the *Histograms* tab to plot the results. As you can see on :numref:`apparent FRET plotting criteria`, we first chose the *Dynamic* category by clicking on the plus sign beside it, then for the *Plot Mode* we chose the *FRET Efficiency (apparent)* to be the x axis, and on the *Display Settings* we chose the histogram type to be *framewise*.
 
 .. figure:: ./../../figures/examples/PA27_app_FRET_plotting.png
    :width: 300
@@ -286,7 +286,7 @@ After categorization, we went to the *Histograms* tab to plot the results. As yo
    
    The settings to plot the apparent FRET efficiency of the dynamic category
 
-With the mentioned settings the histogram of apparent FRET efficiency appears like the left panel of :numref:`apparent FRET`. You can see the two FRET populations as we expected for the dynamic DNA origami sample. Then for fitting the result, we set the *Fit Method* to *Gauss2*, and then clicked on *Fit Plot*. The fitteing result is shown on the right side of :numref:`apparent FRET`. You get all the fitting values as a box attached to the histogram. 
+With the mentioned settings the histogram of apparent FRET efficiency appears like the left panel of :numref:`apparent FRET`. You can see the two FRET populations as we expected for the dynamic DNA origami sample. Then for fitting the result, we set the *Fit Method* to *Gauss2*, and then clicked on *Fit Plot*. The fitting result is shown on the right side of :numref:`apparent FRET`. You get all the fitting values as a box attached to the histogram. 
 
 .. figure:: ./../../figures/examples/PA22_app_FRET.png
    :width: 600
@@ -296,7 +296,7 @@ With the mentioned settings the histogram of apparent FRET efficiency appears li
    
    Apparent FRET efficiency histogram with the fitting result
 
-To get the corrected FRET efficiencies, we plotted each correction factor by choosing the desired one from the list of parameters in *Plot Mode* as shown previously on :numref:`apparent FRET plotting criteria` in the middle part. For the direct excitaion factor, we clicked on *Direct Excitation factor (Alpha)*, and selected the category **G Bleach** since we need the donor bleaching step for this calculation. The resulting plot with its fitting is shown on :numref:`all correction factors` on the left. For fitting we chose *Gauss1* from the *Fit Method* section, the value of 0.124 was reported after the fitting. Also from *Histogram Normalization*, the option *Unary* was selected to normalize the plot. To plot the other two correction factors we selected the category **R Bleach** because the acceptor bleaching step is needed for them to be determined. Then in *Plot Mode* we clicked on *Spectral Crosstalk corr factor (Beta)*. With the same steps for plot fitting and normalization, the middle panel of :numref:`all correction factors` and final value of 0.12 was obtained. Then we clicked on *Detection Efficiency corr factor (Gamma)* to get its distribution histogram. Taking steps similar to the previous case, the plot was fitted and normalized with the final value of 0.75 for the gamma factor, like :numref:`all correction factors` on the right.      
+To get the corrected FRET efficiencies, we plotted each correction factor by choosing the desired one from the list of parameters in *Plot Mode* as shown previously on :numref:`apparent FRET plotting criteria` in the middle part. For the direct excitation factor, we clicked on *Direct Excitation factor (Alpha)*, and selected the category **G Bleach** since we need the donor bleaching step for this calculation. The resulting plot with its fitting is shown on :numref:`all correction factors` on the left. For fitting we chose *Gauss1* from the *Fit Method* section, the value of 0.124 was reported after the fitting. Also from *Histogram Normalization*, the option *Unary* was selected to normalize the plot. To plot the other two correction factors we selected the category **R Bleach** because the acceptor bleaching step is needed for them to be determined. Then in *Plot Mode* we clicked on *Spectral Crosstalk corr factor (Beta)*. With the same steps for plot fitting and normalization, the middle panel of :numref:`all correction factors` and final value of 0.12 was obtained. Then we clicked on *Detection Efficiency corr factor (Gamma)* to get its distribution histogram. Taking steps similar to the previous case, the plot was fitted and normalized with the final value of 0.75 for the gamma factor, like :numref:`all correction factors` on the right.      
 
 .. figure:: ./../../figures/examples/PA23_correction_factors_fit.png
    :width: 650
@@ -326,7 +326,7 @@ To get dynamic information about the sample, we went to *HMM* tab, selected the 
    
    Steps for running HMM on dynamic data 
 
-After a short while, the left plot of :numref:`HMM resulting graphs` appears inside the pannle *Transition Density Plot*. Then we clicked on the button *Select ROI* to encircle the desired region of interest. You can draw any circle around a cluster on the plot by dragging the mouse around it as we did on the lower cluster showing transitions from high to low FRET efficiencies. On the most right panel the dwell time grapg with its fit will appear giving all the fitting values. The dwell time based on the transitions cluster we selected are then 3.1 s. 
+After a short while, the left plot of :numref:`HMM resulting graphs` appears inside the panel *Transition Density Plot*. Then we clicked on the button *Select ROI* to encircle the desired region of interest. You can draw any circle around a cluster on the plot by dragging the mouse around it as we did on the lower cluster showing transitions from high to low FRET efficiencies. On the most right panel the dwell time graph with its fit will appear giving all the fitting values. The dwell time based on the transitions cluster we selected are then 3.1 s. 
 
 .. figure:: ./../../figures/examples/PA26_TDP_dwell_time.png
    :width: 600
@@ -336,7 +336,7 @@ After a short while, the left plot of :numref:`HMM resulting graphs` appears ins
    
    TDP plot with analysis options and dwell time fitting
 
-If you have been following the manual analysis steps, you might know now how much time it can take to analyse the data from one day of measurement. If such amount of time feels too much, DeepLASI offers you automatic data analysis as follows.
+If you have been following the manual analysis steps, you might know now how much time it can take to analyze the data from one day of measurement. If such amount of time feels too much, DeepLASI offers you automatic data analysis as follows.
 
 ..  _automatic:
 Automatic data analysis and correction
@@ -410,7 +410,7 @@ After analysis gets finished, DeepLASI reports its confidence level for predicti
    :align: center
    :name: tracewise_state_confidence_histogram
    
-   The DeepLASI confidence level for determinig the states on each trace
+   The DeepLASI confidence level for determining the states on each trace
 
 Another resulting histogram is the apparent FRET efficiency to give a quick overview of the existing FRET populations. It is the mean FRET efficiency observed on the states found along the traces(:numref:`statewise-meanFRET_histogram`). 
 
@@ -432,7 +432,7 @@ Before the program generates the TDP plot, a window like :numref:`TDP_input` pop
    
    The GUI asking for TDP options
 
-Then the TDP is generated like :numref:`TDP_generated`. To select the uppre cluster, we first clicked on *Select ROI*, and dragged the mouse around the cluster. 
+Then the TDP is generated like :numref:`TDP_generated`. To select the upper cluster, we first clicked on *Select ROI*, and dragged the mouse around the cluster. 
 
 .. figure:: ./../../figures/examples/9_TDP_generated_click.png
    :width: 400
@@ -442,7 +442,7 @@ Then the TDP is generated like :numref:`TDP_generated`. To select the uppre clus
    
    The generated TDP opened in a window with various fitting and plotting options 
 
-Right after selecting the cluster, the resulting values including the dwell time, initial and final FRET efficiencies, number of transitions, and all fitting details appear inside the box on the right side of the window as you can see on :numref:`TDP_selection_and_livefit`. If you change your selection, all the presented results would be updated imediately.
+Right after selecting the cluster, the resulting values including the dwell time, initial and final FRET efficiencies, number of transitions, and all fitting details appear inside the box on the right side of the window as you can see on :numref:`TDP_selection_and_livefit`. If you change your selection, all the presented results would be updated immediately.
 
 .. figure:: ./../../figures/examples/10_TDP_PopulationSelection_and_LiveFit.png
    :width: 400
@@ -462,7 +462,7 @@ Finally, all correction factors are plotted as histograms with their mean, media
    
    The histograms of direct excitation and spectral crosstalk correction factors reported with statistics
 
-Also the detection efficiency correction factor (gamma factor) calculated based on the mean, median, and mode values of direct excitation and spectral crosstalk factors is calculated and reported on a separate window like :numref:`correction_factor_gamma_factor`. Cmparing the resulting factors with what we obtained from manual analysis shows that the median values of correction factors are usually a better estimation for our data set.
+Also the detection efficiency correction factor (gamma factor) calculated based on the mean, median, and mode values of direct excitation and spectral crosstalk factors is calculated and reported on a separate window like :numref:`correction_factor_gamma_factor`. Comparing the resulting factors with what we obtained from manual analysis shows that the median values of correction factors are usually a better estimation for our data set.
 
 .. figure:: ./../../figures/examples/12_DataCorrection_Gamma.png
    :width: 500
