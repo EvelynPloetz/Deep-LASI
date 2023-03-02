@@ -28,7 +28,7 @@ Overview
 --------------------------------------------------------------------
 .. Contains section on Data requirements .. I still need to find out how
 .. to outsource code via include + while include it at the right spot in the toctree
-.. .. include:: ./docu/data.rst
+.. include:: ./docu/data.rst
 --------------------------------------------------------------------
 
 ..  _data-format:
