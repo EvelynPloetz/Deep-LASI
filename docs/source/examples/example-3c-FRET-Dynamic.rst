@@ -30,4 +30,27 @@ Example
 Sample Design: Dynamic L-Shaped DNA Origami
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. _data-prep:
+Data preparation 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _localization:
+Co-Localization of Molecules 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+..  _extraction:
+Trace Extraction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+..  _manual:
+Manual data analysis and correction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+..  _automatic:
+Automatic data analysis and correction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+..  _summary:
+Plotting and Summary of Results
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
