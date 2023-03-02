@@ -431,12 +431,16 @@ Before the program generates the TDP plot, a window like :numref:`TDP_input` pop
    :name: TDP_input
    
    The GUI asking for TDP options
-   
-.. figure:: ./../../figures/examples/9_TDP_generated.png
+
+Then the TDP is generated like :numref:`TDP_generated`. To select the uppre cluster, we first clicked on *Select ROI*, and dragged the mouse around the cluster. 
+
+.. figure:: ./../../figures/examples/9_TDP_generated_click.png
    :width: 400
    :alt: TDP_generated
    :align: center
    :name: TDP_generated
+   
+   The generated TDP opened in window with various fitting and plotting options 
    
 .. figure:: ./../../figures/examples/10_TDP_PopulationSelection_and_LiveFit.png
    :width: 400
