@@ -400,12 +400,20 @@ To continue the analysis regarding to the kinetics of the sample, a next window 
 Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+In this section, the resulting graphs after the automatic analysis are listed and presented.
+
+After analysis gets finished, DeepLASI reports its confidence level for predicting existing states on each trace. As you can see the histogram from our data on :numref:`tracewise_state_confidence_histogram`, such confidence level of the neural network is quit high and close to 1. The statistics shown on the y axis is also quit convenient.
+
 .. figure:: ./../../figures/examples/6_StateConfidence_Histogram.png
    :width: 350
    :alt: state-confidence-histogram
    :align: center
    :name: tracewise_state_confidence_histogram
-  
+   
+   The DeepLASI confidence level for determinig the states on each trace
+
+
+
 .. figure:: ./../../figures/examples/7_Statewise_MeanFRET.png
    :width: 350
    :alt: statewise-meanFRET
