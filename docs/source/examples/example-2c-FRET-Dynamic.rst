@@ -384,7 +384,7 @@ After a short while the traces get categorized as shown on :numref:`categorized_
    
    The example data traces categorized automatically
 
-To continue the analysis regarding to the kinetics of the sample, a next window like the one on :numref:`StateTransition_ModelSelection` opens to take in the neural network from the user. We selected the *2-color-2 states* 
+To continue the analysis regarding to the kinetics of the sample, a next window like the one on :numref:`StateTransition_ModelSelection` opens to take in the neural network from the user. We selected the *2-color-2 states* and clicked on *Use raw traces*.
 
 .. figure:: ./../../figures/examples/5_StateTransitions_ModelSelection.png
    :width: 300
