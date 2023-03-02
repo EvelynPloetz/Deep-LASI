@@ -18,6 +18,7 @@ Overview
 - :ref:`opening`
 .. - :ref:`mapping`
 .. - :ref:`extraction`
+.. - :ref:`manual_analysis`
 .. - :ref:`man-categorization`
 .. - :ref:`man-selection`
 .. - :ref:`hmm`
@@ -26,11 +27,13 @@ Overview
 .. - :ref:`auto-analysis`
 
 --------------------------------------------------------------------
-.. Contains section on Data requirements .. I still need to find out how
-.. to outsource code via include + while include it at the right spot in the toctree
+.. Contains section on Data requirements ..
 .. include:: ./docu/data.rst
 --------------------------------------------------------------------
 
+--------------------------------------------------------------------
+.. Contains section on Data requirements ..
+.. .. include:: ./docu/opening.rst
 --------------------------------------------------------------------
 
 ..  _opening:
@@ -139,7 +142,7 @@ When finishing the analysis of one data set, the change to the next data set can
 
 Main-GUI
 ~~~~~~~~~~~~~~~~~
-Data-analysis with *Deep-LASI* involves consecutive working steps (:numref:`main-workflow`), which are accommodated in six different sub-GUIs. The Starting-GUI incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope and maps corresponding pixels between camera onto each other (see section :ref:`mapping`). Next, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterwards, as described in more details in section :ref:`extraction`. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. Equally, already extracted traces can be loaded into Deep-LASI for further data analysis.
+Data-analysis with *Deep-LASI* involves consecutive working steps (:numref:`main-workflow`), which are accommodated in six different sub-GUIs. The Starting-GUI incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope and maps corresponding pixels between camera onto each other (see section on  :ref:`mapping`). Next, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterwards, as described in more details in section :ref:`extraction`. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. Equally, already extracted traces can be loaded into Deep-LASI for further data analysis.
 
 .. figure:: ./../figures/documents/Fig_5_Main_GUIs-Flow.png
    :width: 800
@@ -149,7 +152,7 @@ Data-analysis with *Deep-LASI* involves consecutive working steps (:numref:`main
 
    Workflow summarizing the generic data formats used by *Deep-LASI*, as well as supported data formats for trace import.
 
-The main data handling is carried out on the *Traces* GUI (:numref:`main-workflow`), where we can choose between manual or automated data analysis. Conventional data analysis, includes sorting, categorization and trace preparation (as described in section :ref:`manual`) before handing over the preselected traces for Hidden-Markov modeling on the *HMM* GUI followed by dwelltime analysis and TDPs. The Sub-Window *Histograms* allows for summarizing the analyzed data via histograms with respect to, e.g., frame-, molecule-, and state-wise histograms, or the global FRET correction factors (:numref:`main-workflow`). The sub-window *Statistics* on selected molecule groups with respect to, e.g., average brightness, background, SNR etc. |br|
+The main data handling is carried out on the *Traces* GUI (:numref:`main-workflow`). Here, you can choose between manual or automated data analysis. Conventional data analysis, includes sorting, categorization and trace preparation (as described in section :ref:`manual_analysis`) before handing over the preselected traces for Hidden-Markov modeling on the *HMM* GUI followed by dwelltime analysis and TDPs. The Sub-Window *Histograms* allows for summarizing the analyzed data via histograms with respect to, e.g., frame-, molecule-, and state-wise histograms, or the global FRET correction factors (:numref:`main-workflow`). The sub-window *Statistics* on selected molecule groups with respect to, e.g., average brightness, background, SNR etc. |br|
 The automated data analysis is carried out on the *Traces* GUI, which includes and automated selection, sorting, and categoriziation process prior to an automated kinetics analysis based on deep-learning. The data is afterwards automatically summarized by state-of-the-art dwell-time analysis and TDPs.
 
 .. Overview
@@ -249,6 +252,7 @@ After mapping, the extraction tab opens showing a detection mask created like th
 
    The mask created after mapping with adjustment options
 
+..  _extraction:
 Loading the data
 -------------
 
@@ -332,8 +336,12 @@ You can decide which particles you want to analyze using the options in the righ
 
    Starting the extraction of intensity traces
 
-Intensity Traces
+..  _manual_analysis:
+Manual data analysis
 -------------
+
+Intensity Traces
+~~~~~~~~~~~~~~~~~~~~
 
 After the extraction step which might take a while depending on the amount of data loaded, the resulting traces will open on the next tab called **Traces** as shown on figure 18 for both two- and three-color measurements. You can see on the left side that 6100 two-color traces were extracted from the loaded data set.
 
