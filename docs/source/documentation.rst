@@ -2,16 +2,6 @@
 
    <br />
 
-.. toctree::
-..   :maxdepth:2
-..  :hidden:
-
-..   documentation
-..    - :ref:`data-format`
-..    - :ref:`opening`
-..   manual_analysis
-..   automatic_analysis
-
 -----------------------------------------------
 
 Documentation
@@ -40,7 +30,6 @@ Overview
 
 --------------------------------------------------------------------
 .. Contains section on Data requirements ..
-
 ..  _data-format:
 Data requirements
 -------------------
@@ -48,6 +37,9 @@ Data requirements
 
 --------------------------------------------------------------------
 .. Contains section on Processing single molecule data ..
+..  _opening:
+Processing Single-Molecule Data
+-------------
 .. include:: docu/opening.rst
 
 --------------------------------------------------------------------
