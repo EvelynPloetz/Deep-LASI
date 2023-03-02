@@ -24,8 +24,8 @@ A step-wise description of how to analyze different single-molecule data with *D
 
 Overview
 ------------------
-- :ref:`data-format`
-- :ref:`opening`
+.. - :ref:`data-format`
+.. - :ref:`opening`
 .. - :ref:`mapping`
 .. - :ref:`extraction`
 .. - :ref:`manual_analysis`
@@ -38,11 +38,7 @@ Overview
 
 --------------------------------------------------------------------
 .. Contains section on Data requirements ..
-.. .. include:: docu/data.rst
-
-.. raw:: html
-
-   {% include "docu/data.rst" %}
+.. include:: docu/data.rst
 
 --------------------------------------------------------------------
 .. Contains section on Processing single molecule data ..
