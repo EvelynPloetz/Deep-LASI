@@ -28,11 +28,11 @@ Overview
 
 --------------------------------------------------------------------
 .. Contains section on Data requirements ..
-.. include:: docu/data.rst
+.. include:: docu/data.txt
 
 --------------------------------------------------------------------
 .. Contains section on Processing single molecule data ..
-.. include:: docu/opening.rst
+.. include:: docu/opening.txt
 
 --------------------------------------------------------------------
 ..  _opening:
