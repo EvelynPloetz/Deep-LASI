@@ -229,7 +229,7 @@ The dropdown menu *File* (:numref:`file-menu`) controls all steps from loading t
 The dropdown menu *Settings* (:numref:`settings-menu`) opens a sub-window for entering the camera hardware settings chosen in the experimental setup. The routine asks for the EM Gain factor, the camera baseline in dark counts and the number of photons per camera count for each camera. With this, *Deep-LASI* can convert/display the determined intensity instead of arbitrary units in Counts per seconds, i.e., in Hertz.
 
 .. figure:: ./../figures/documents/Fig_4_Dropdown_Settings.png
-   :width: 300
+   :width: 650
    :alt: Open settings menu
    :align: center
    :name: settings-menu
@@ -296,8 +296,6 @@ The automated data analysis is carried out on the *Traces* GUI, which includes a
 .. - :ref:`histograms`
 .. - :ref:`statistics`
 .. - :ref:`auto-analysis`
-
-
 
 --------------------------------------------------------
 
