@@ -37,7 +37,6 @@ Data requirements
 
 --------------------------------------------------------------------
 .. Contains section on Processing single molecule data ..
-..  _opening:
 Processing Single-Molecule Data
 -------------
 .. include:: docu/opening.rst
