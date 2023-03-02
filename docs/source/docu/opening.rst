@@ -156,9 +156,9 @@ After choosing the file, *Deep-LASI* opens a window (:numref:`channel_position`)
 
    Selection of recognized emitters in the first detection channel by *Deep-LASI*
 
-After loading, use the threshold bar below the loaded image to make sure that enough points are detected (indicated by the white cicle) by *Deep-LASI*. once you're satisfied continue to load data for the remaining detection channels by Then continue opening images from other detectors by selecting the :code:`> 2nd channel` etc. via the same procedure, as shown on :numref:`channel_position` and :numref:`mapping_gui`.
+After loading, use the threshold bar below the loaded image to make sure that enough points are detected (indicated by the white circle) by *Deep-LASI*. once you're satisfied continue to load data for the remaining detection channels by Then continue opening images from other detectors by selecting the :code:`> 2nd channel` etc. via the same procedure, as shown on :numref:`channel_position` and :numref:`mapping_gui`.
 
-Once you opened all mapping images to assign the detection windows, please select afterwards which channel you prefer to be the reference channel, as shown in :numref:`mapping_start`. In most cases, the first channel is taken as the reference, unless you have a special mapping plan. In the case that your experience a lot of photobleaching, mapping onto the channels with the most emitters might be advisable.
+Once you opened all mapping images to assign the detection windows, please select afterwards which channel you prefer to be the reference channel, as shown in :numref:`mapping_start`. In most cases, the first channel is taken as the reference, unless you have a special mapping plan. In the case that your experience a lot of photo-bleaching, mapping onto the channels with the most emitters might be advisable.
 
 .. figure:: ./../figures/documents/Fig_9_Mapping_Starting.png
    :width: 450
@@ -170,8 +170,8 @@ Once you opened all mapping images to assign the detection windows, please selec
 
 Once you confirm your selection by clicking on **Start Mapping**, *Deep-LASI* aligns the different channels compared to the chosen reference channel and warps the presented images. *Deep-LASI* describes this mapping process by a affine transformation matrix, taking translation, rotation and scaling into account.
 
-After a succesful mapping process, the Extraction-GUI opens automatically. The mapping process itself is fast and visualizes the mapping results as comparison of image overlays before and after the mapping procedure (:numref:`before_after`). To save the transformation matrix, i.e., the mapping result for any trace extraction later on, finally save the map clicking on :code:`> File > Mapping > Save Map`.
-It is recommended to check the quality of mapping. In some cases you might have to rerun the mapping, by choosing (1) a different reference channel (e.g., if too many localizations in the different FOVs obscure the mapping process) or (2) a new data set of images (e.g., if too little localizations impede a representative mapping of abberated images).
+After a successful mapping process, the Extraction-GUI opens automatically. The mapping process itself is fast and visualizes the mapping results as comparison of image overlays before and after the mapping procedure (:numref:`before_after`). To save the transformation matrix, i.e., the mapping result for any trace extraction later on, finally save the map clicking on :code:`> File > Mapping > Save Map`.
+It is recommended to check the quality of mapping. In some cases you might have to rerun the mapping, by choosing (1) a different reference channel (e.g., if too many localizations in the different FOVs obscure the mapping process) or (2) a new data set of images (e.g., if too little localizations impede a representative mapping of aberrant images).
 
 .. figure:: ./../figures/documents/Fig_10_Map_Before_After.png
    :width: 350
