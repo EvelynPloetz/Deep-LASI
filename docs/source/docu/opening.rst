@@ -96,7 +96,7 @@ The *Plot Units* sub-tab controls the y-axis of the intensity and FRET panels fo
 #.  If the last option, **Corrected FRET**, is selected, *Deep-LASI* shows Accurate FRET efficiencies for each single-molecule trajectory in case the FRET correction factors have already been determined. Otherwise, the displayed FRET values between Accurate and Apparent FRET are identical.
 
 **Dropdown Menu Tools.** |br|
-The fourth dropdown menu *Tools* opens the subpanels for simulating single-molecule traces and training of neural networks. A detailed description of its functionalities, workflow, and usage is given in the :doc:`sim` Chapter.
+The fourth dropdown menu *Tools* opens the sub-panels for simulating single-molecule traces and training of neural networks. A detailed description of its functionalities, workflow, and usage is given in the :doc:`sim` Chapter.
 
 **Dropdown Menu Help.** |br|
 In the case of problems or errors, help can be found in the dropdown menu *Help*, which provides a direct link opening this Online documentation of *Deep-LASI*.
@@ -116,94 +116,75 @@ Data-analysis with *Deep-LASI* involves consecutive working steps (:numref:`main
 
    Workflow summarizing the generic data formats used by *Deep-LASI*, as well as supported data formats for trace import.
 
-The main data handling is carried out on the *Traces* GUI (:numref:`main-workflow`). Here, you can choose between manual or automated data analysis. Conventional data analysis, includes sorting, categorization and trace preparation (as described in section :ref:`manual_analysis`) before handing over the preselected traces for Hidden-Markov modeling on the *HMM* GUI followed by dwelltime analysis and TDPs. The Sub-Window *Histograms* allows for summarizing the analyzed data via histograms with respect to, e.g., frame-, molecule-, and state-wise histograms, or the global FRET correction factors (:numref:`main-workflow`). The sub-window *Statistics* on selected molecule groups with respect to, e.g., average brightness, background, SNR etc. |br|
-The automated data analysis is carried out on the *Traces* GUI, which includes and automated selection, sorting, and categoriziation process prior to an automated kinetics analysis based on deep-learning. The data is afterwards automatically summarized by state-of-the-art dwell-time analysis and TDPs.
+The main data handling is carried out on the *Traces* GUI (:numref:`main-workflow`). Here, you can choose between manual or automated data analysis. Conventional data analysis, includes sorting, categorization and trace preparation (as described in section :ref:`manual_analysis`) before handing over the preselected traces for Hidden-Markov modeling on the *HMM* GUI followed by dwell time analysis and TDPs. The Sub-Window *Histograms* allows for summarizing the analyzed data via histograms with respect to, e.g., frame-, molecule-, and state-wise histograms, or the global FRET correction factors (:numref:`main-workflow`). The sub-window *Statistics* on selected molecule groups with respect to, e.g., average brightness, background, SNR etc. |br|
+The automated data analysis is carried out on the *Traces* GUI, which includes and automated selection, sorting, and categorization process prior to an automated kinetics analysis based on deep-learning. The data is afterwards automatically summarized by state-of-the-art dwell-time analysis and TDPs.
 
 
 ..  _mapping:
 Mapping
 ~~~~~~~~~~~~~~~~~
-Before loading data into *Deep-LASI*, one need to consider the experimental requirements. In the case, single-color data has been acquired, the data can directly be loaded into the software and single-channel traces can be extracted, as described in :ref:`extraction_doc`. In the case, that more than one detection channel has been employed, we need to know where the emission of labeled molecules are detected on the different field-of-views (FOV) of the camera, i.e., which pixels on one channel correspond to a pixels on the other (:numref:`gui_mapping`).
+Before loading data into *Deep-LASI*, one needs to consider the experimental requirements. In the case that single-color data has been acquired, the data can be directly loaded into the software and single-channel traces can be extracted, as described in :ref:`extraction_doc`. In the case, that more than one detection channel has been employed, we need to know where the emission of labeled molecules is detected on the different field-of-views (FOV) of the cameras, i.e., which pixels on one channel correspond to a pixels on the other. (:numref:`mapping_idea`).
 
 .. figure:: ./../figures/documents/Fig_6_Main_GUI_Mapping.png
    :width: 500
    :alt: Mapping
    :align: center
-   :name: gui_mapping
+   :name: mapping_idea
 
-   Mapping between multiple detection channels copes with translation, rotation, and magnification.
+   Mapping between multiple detection channels copes with differences between the FOV due to translation, rotation, and magnification.
 
-For mapping the different channels onto each other, an
+For mapping the different channels onto each other, please go to to the dropdown menu *File* and choose
+:code:`> File > Mapping > Create New Map` and load the reference data stepwise into *Deep-LASI* by clicking on :code:`> 1st channel'. The first channel refers to the FOV with the most blue-shifted emission, e.g. blue emission in an BGR ALEX excitation scheme. In the case that you use a split camera for two detection channels, you need to load the movie twice for the two corresponding channels separately and select the corresponding halves of the FOV in a consecutive step.
 
-If mapping is required between two or more cameras, go to **Mapping** from the menu under file. Then choose ‘Create New Map’ and the ‘First Channel’. You can see the path on figure 3.
+Next, the program will ask you to choose a file which could be an image or a series of images as a video file. This reference data should contains structures or emitters with multiple co-localization on the various cameras. This could be, for example, a cover-slide with multi-colored beads or DNA origami structures with multiple labels. The emitters should be dense (but well separated) and widely spread over the entire FOV, such that aberrations in all areas of the FOV can be correctly translated between the different detection channels.
 
-.. figure:: ./../figures/documents/Fig_3_Mapping_Menu.png
-   :width: 600
-   :alt: Open mapping menu
-   :align: center
-   :name: mapping menu
-
-   Mapping menu
-
-Now the program will ask you to choose a file which could be an image or a series of images as a video file usually taken from a calibration pattern like a zero-mode waveguide. After choosing the file, the image gets open together with some adjusting options, like figure 4.
-
-.. figure:: ./../figures/documents/Fig_4_Map_Image_Uploading.png
+.. figure:: ./../figures/documents/Fig_7_Map_Image_Uploading.png
    :width: 450
    :alt: map uploading
    :align: center
-   :name: mapping image uploading
+   :name: channel_position
 
    Uploading first mapping image
 
-On the window opened for the user, you can use the **Channel Layout** to take the desired field of view. You can take the whole area or select a specific region with the buttons provided for that. There are also the options of rotating or flipping the image, so that all images from various cameras show the same pattern. Then click on OK. The image will be open on the mapping tab, figure 5.
+After choosing the file, *Deep-LASI* opens a window (:numref:`channel_position`), which allows you to determine the correct position of the detection channel. You can use the **Channel Layout** to select the correct halve of the camera or full width of the camera. **Rotation** and **Flip** allow you to take into account if your camera image is flipped or rotated compared to your reference channel. After selection, please confirm to open the image on the mapping tab, as shown in :numref:`channel_position`.
 
-.. figure:: ./../figures/documents/Fig_5_Map_Image_Detecting.png
+.. figure:: ./../figures/documents/Fig_8_Map_Image_Detecting.png
    :width: 400
    :alt: map detection
    :align: center
-   :name: mapping image detection
+   :name: mapping_gui
 
-   Mapping image loaded to *Deep-LASI*
+   Selection of recognized emitters in the first detection channel by *Deep-LASI*
 
-With the threshold bar, make sure that enough points are circled and detected by the program. Then continue opening images from other detectors with the same procedure, as shown on images 6 and 7.
+After loading, use the threshold bar below the loaded image to make sure that enough points are detected (indicated by the white cicle) by *Deep-LASI*. once you're satisfied continue to load data for the remaining detection channels by Then continue opening images from other detectors by selecting the :code:`> 2nd channel` etc. via the same procedure, as shown on :numref:`channel_position` and :numref:`mapping_gui`.
 
-.. figure:: ./../figures/documents/Fig_6_Map_Second_Channel.png
-   :width: 300
-   :alt: second map image
-   :align: center
-   :name: opening second mapping image
+Once you opened all mapping images to assign the detection windows, please select afterwards which channel you prefer to be the reference channel, as shown in :numref:`mapping_start`. In most cases, the first channel is taken as the reference, unless you have a special mapping plan. In the case that your experience a lot of photobleaching, mapping onto the channels with the most emitters might be advisable.
 
-   Opening the second mapping image
-
-.. figure:: ./../figures/documents/Fig_7_Map_Second_Uploading.png
-   :width: 400
-   :alt: second map uploading
-   :align: center
-   :name: second map uploading
-
-   Adjusting the image for the second mapping image
-
-After opening the mapping images from all the cameras, select which channel you prefer to be the reference channel, like figure 8. In most cases, the first channel is taken as the reference one unless you have a special mapping plan.
-
-.. figure:: ./../figures/documents/Fig_8_Mapping_Starting.png
+.. figure:: ./../figures/documents/Fig_9_Mapping_Starting.png
    :width: 450
    :alt: start mapping
    :align: center
-   :name: start mapping
+   :name: mapping_start
 
-   Performing the mapping step
+   Performing the mapping step.
 
-Then click on **Start Mapping**. The mapping process goes quit fast and gives the mapping result as before and after images like figure 9. It is recommended to check the quality of mapping. In some cases you might have to take new images for this step if the image quality you uploaded was not acceptable which is a rare event!
+Once you confirm your selection by clicking on **Start Mapping**, *Deep-LASI* aligns the different channels compared to the chosen reference channel and warps the presented images. *Deep-LASI* describes this mapping process by a affine transformation matrix, taking translation, rotation and scaling into account.
 
-.. figure:: ./../figures/documents/Fig_9_Map_Before_After.png
+After a succesful mapping process, the Extraction-GUI opens automatically. The mapping process itself is fast and visualizes the mapping results as comparison of image overlays before and after the mapping procedure (:numref:`before_after`). To save the transformation matrix, i.e., the mapping result for any trace extraction later on, finally save the map clicking on :code:`> File > Mapping > Save Map`.
+It is recommended to check the quality of mapping. In some cases you might have to rerun the mapping, by choosing (1) a different reference channel (e.g., if too many localizations in the different FOVs obscure the mapping process) or (2) a new data set of images (e.g., if too little localizations impede a representative mapping of abberated images).
+
+.. figure:: ./../figures/documents/Fig_10_Map_Before_After.png
    :width: 350
    :alt: check mapping
    :align: center
-   :name: before and after mapping
+   :name: before_after
 
    Mapping result showing the channels overlay before and after mapping
 
-After mapping, the extraction tab opens showing a detection mask created like the one shown on the top right part of figure 10. This mask is used to calculate the emission intensity of the particle inside the central circle, and also the background within the outer ring. The user has the freedom to change the mask settings when needed. You have the option of saving the created map or loading a previous map from the same mapping menu.
+
+-----------------------------------------------
+
+showing a detection mask created like the one shown on the top right part of figure 10. This mask is used to calculate the emission intensity of the particle inside the central circle, and also the background within the outer ring. The user has the freedom to change the mask settings when needed. You have the option of saving the created map or loading a previous map from the same mapping menu.
 
 .. figure:: ./../figures/documents/Fig_10_Map_Saving.png
    :width: 400
