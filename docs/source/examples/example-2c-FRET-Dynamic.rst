@@ -462,9 +462,13 @@ Finally, all correction factors are plotted as histograms with their mean, media
    
    The histograms of direct excitation and spectral crosstalk correction factors reported with statistics
 
+Also the detection efficiency correction factor (gamma factor) calculated based on the mean, median, and mode values of direct excitation and spectral crosstalk factors is calculated and reported on a separate window like :numref:`correction_factor_gamma_factor`. Cmparing the resulting factors with what we obtained from manual analysis shows that the median values of correction factors are usually a better estimation for our data set.
+
 .. figure:: ./../../figures/examples/12_DataCorrection_Gamma.png
    :width: 500
    :alt: gamma_factor
    :align: center
    :name: correction_factor_gamma_factor
+   
+   The histograms of detection efficiency correction factor reported with statistics
    
