@@ -354,7 +354,7 @@ To perform automated analysis, we need to load already extracted traces. Meaning
    
    The main GUI of DeepLASI on the *Traces* tab showing the loaded data traces
 
-On the opened panel as shown on :numref:`DeepLearning_tab` you can see the *Magic Button* in bright pink color. Now you can just click on it to enjoy the resulting graphs being open one after another. 
+On the opened panel as shown on :numref:`DeepLearning_tab` you can see the *Magic Button* in bright pink color. Now you can just click on it to enjoy the resulting graphs appearing one after another. So, all the results shown in the following parts would open at once in separate windows. But, because one could also achieve the same results with a several automatic analysis steps, depending on the analysis needs we can decide which analysis step the DeepLASI should perform for us. For example, sometimes we need the DeepLASI to only categorize the data, or just make the TDP plot for the dynamics of a specific category.  
 
 .. figure:: ./../../figures/examples/2_DeepLearningTab.png
    :width: 550
@@ -364,7 +364,7 @@ On the opened panel as shown on :numref:`DeepLearning_tab` you can see the *Magi
    
    The *Magic button* under the *Deep Learning* tab
 
-We have also the option of automatically analyze the traces in a couple separated steps depending on our analysis needs. In the present described example, we clicked on *Categorize Traces*, then a window like the one on :numref:`ModelSelection_for_categorization` opens to take in the neural network model from the user. If one of the options provided fits to your measurement, you can select the particular one, otherwise you can select the first option called *Auto select* as we did, and click on *OK*. 
+We have the option of automatically analyze the traces in a couple separated steps. In the present described example, we clicked on *Categorize Traces*, then a window like the one on :numref:`ModelSelection_for_categorization` opens to take in the neural network model from the user. If one of the options provided fits to your measurement, you can select the particular one, otherwise you can select the first option called *Auto select* as we did, and click on *OK*. 
 
 .. figure:: ./../../figures/examples/3_TraceCategorization_ModelSelection_click.png
    :width: 300
