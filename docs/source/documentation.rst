@@ -14,6 +14,14 @@ Documentation
 To start learning how to use *Deep-LASI*, we recommend, first, reading through the :doc:`starter` and :doc:`example` sections. 
 A step-wise description of how to analyze different single-molecule data with *Deep-LASI* is given for selected showcases in the :doc:`example` in detail.
 
+--------------------------------------------------------------------
+.. Contains section on Data requirements ..
+.. include:: docu/data.rst
+
+--------------------------------------------------------------------
+.. Contains section on Processing single molecule data ..
+.. include:: docu/opening.rst
+
 Overview
 ------------------
 - :ref:`data-format`
@@ -28,13 +36,6 @@ Overview
 .. - :ref:`statistics`
 .. - :ref:`auto-analysis`
 
---------------------------------------------------------------------
-.. Contains section on Data requirements ..
-.. include:: docu/data.rst
-
---------------------------------------------------------------------
-.. Contains section on Processing single molecule data ..
-.. include:: docu/opening.rst
 
 --------------------------------------------------------------------
 ..  _opening:
