@@ -440,13 +440,17 @@ Then the TDP is generated like :numref:`TDP_generated`. To select the uppre clus
    :align: center
    :name: TDP_generated
    
-   The generated TDP opened in window with various fitting and plotting options 
-   
+   The generated TDP opened in a window with various fitting and plotting options 
+
+Right after selecting the cluster, the resulting values including the dwell time, initial and final FRET efficiencies, number of transitions, and all fitting details appear inside the box on the right side of the window as you can see on :numref:`TDP_selection_and_livefit`. If you change your selection, all the presented results would be updated imediately.
+
 .. figure:: ./../../figures/examples/10_TDP_PopulationSelection_and_LiveFit.png
    :width: 400
    :alt: TDP_selection_and_fit
    :align: center
    :name: TDP_selection_and_livefit
+   
+   Selecting TDP clusters to achieve live fitting results
    
 .. figure:: ./../../figures/examples/11_DataCorrection_DirEx_Crosstalk.png
    :width: 500
