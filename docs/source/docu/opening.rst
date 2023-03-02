@@ -139,7 +139,7 @@ For mapping the different channels onto each other, please go to the dropdown me
 Next, the program will ask you to choose a file which could be an image or a series of images as a video file. This reference data should contain structures or emitters with multiple co-localization on the various cameras. This could be, for example, a cover slide with multi-colored beads or DNA origami structures with multiple labels. The emitters should be dense (but well separated) and widely spread over the entire FOV, such that aberrations in all areas of the FOV can be correctly translated between the different detection channels.
 
 .. figure:: ./../figures/documents/Fig_7_Map_Image_Uploading.png
-   :width: 450
+   :width: 500
    :alt: map uploading
    :align: center
    :name: channel_position
@@ -149,7 +149,7 @@ Next, the program will ask you to choose a file which could be an image or a ser
 After choosing the file, *Deep-LASI* opens a window (:numref:`channel_position`), which allows you to determine the correct position of the detection channel. You can use the **Channel Layout** to select the correct half of the camera or the full width of the camera. **Rotation** and **Flip** allow you to take into account if your camera image is flipped or rotated compared to your reference channel. After selection, please confirm **OK** to open the image on the mapping tab, as shown in :numref:`channel_position`.
 
 .. figure:: ./../figures/documents/Fig_8_Map_Image_Detecting.png
-   :width: 400
+   :width: 500
    :alt: map detection
    :align: center
    :name: mapping_gui
@@ -161,7 +161,7 @@ After loading, use the threshold bar below the loaded image to make sure that en
 Once you have loaded all mapping images to assign the detection windows, please select afterwards which channel you prefer to be the reference channel, as shown in :numref:`mapping_start`. In most cases, the first channel is taken as the reference unless you have a special mapping plan. In the case that you experience a lot of photo-bleaching, mapping onto the channels with the most emitters might be advisable.
 
 .. figure:: ./../figures/documents/Fig_9_Mapping_Starting.png
-   :width: 450
+   :width: 800
    :alt: start mapping
    :align: center
    :name: mapping_start
@@ -171,7 +171,7 @@ Once you have loaded all mapping images to assign the detection windows, please 
 Once you confirm your selection by clicking on **Start Mapping**, *Deep-LASI* aligns the different channels compared to the chosen reference channel and warps the presented images. *Deep-LASI* describes this mapping process by an affine transformation matrix, taking translation, rotation, and scaling into account.
 
 .. figure:: ./../figures/documents/Fig_10_Map_Before_After.png
-   :width: 350
+   :width: 500
    :alt: check mapping
    :align: center
    :name: before_after
