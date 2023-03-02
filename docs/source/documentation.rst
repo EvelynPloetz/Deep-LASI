@@ -2,6 +2,16 @@
 
    <br />
 
+.. toctree::
+   :maxdepth:2
+   :hidden:
+
+   documentation
+   docu/data
+   docu/opening
+   manual_analysis
+   automatic_analysis
+
 -----------------------------------------------
 
 Documentation
@@ -13,14 +23,6 @@ Documentation
 
 To start learning how to use *Deep-LASI*, we recommend, first, reading through the :doc:`starter` and :doc:`example` sections. 
 A step-wise description of how to analyze different single-molecule data with *Deep-LASI* is given for selected showcases in the :doc:`example` in detail.
-
---------------------------------------------------------------------
-.. Contains section on Data requirements ..
-.. include:: docu/data.rst
-
---------------------------------------------------------------------
-.. Contains section on Processing single molecule data ..
-.. include:: docu/opening.rst
 
 Overview
 ------------------
@@ -36,6 +38,13 @@ Overview
 .. - :ref:`statistics`
 .. - :ref:`auto-analysis`
 
+--------------------------------------------------------------------
+.. Contains section on Data requirements ..
+.. include:: docu/data.rst
+
+--------------------------------------------------------------------
+.. Contains section on Processing single molecule data ..
+.. include:: docu/opening.rst
 
 --------------------------------------------------------------------
 ..  _opening:
@@ -256,7 +265,7 @@ After mapping, the extraction tab opens showing a detection mask created like th
 
 ..  _extraction:
 Loading the data
--------------
+~~~~~~~~~~~~~
 
 Now you can open the data files from file menu and **Load Image Data** similar to opening the mapping images like shown on figure 11. The order of channels should be the same as mapping order.
 
@@ -479,6 +488,7 @@ On the HMM tab, you can again select a category and run the HMM on it. This opti
 
    Starting HMM analysis on data
 
+..  _automatic_analysis:
 Automated Analysis by Deep Learning
 -------------
 
