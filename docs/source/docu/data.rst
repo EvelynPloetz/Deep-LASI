@@ -1,7 +1,3 @@
-..  _data-format:
-Data requirements
--------------------
-
 Data handling
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *Deep-LASI* incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope. Consecutively, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterwards. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. |br| :numref:`data-flow` summarizes the data handling.

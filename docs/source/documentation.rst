@@ -3,14 +3,14 @@
    <br />
 
 .. toctree::
-   :maxdepth:2
-   :hidden:
+..   :maxdepth:2
+..  :hidden:
 
-   documentation
-    - :ref:`data-format`
-    - :ref:`opening`
-   manual_analysis
-   automatic_analysis
+..   documentation
+..    - :ref:`data-format`
+..    - :ref:`opening`
+..   manual_analysis
+..   automatic_analysis
 
 -----------------------------------------------
 
@@ -40,6 +40,10 @@ Overview
 
 --------------------------------------------------------------------
 .. Contains section on Data requirements ..
+
+..  _data-format:
+Data requirements
+-------------------
 .. include:: docu/data.rst
 
 --------------------------------------------------------------------
