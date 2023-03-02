@@ -364,7 +364,9 @@ On the opened panel as shown on :numref:`DeepLearning_tab` you can see the *Magi
    
    The *Magic button* under the *Deep Learning* tab
 
-We have the option of automatically analyze the traces in a couple separated steps. In the present described example, we clicked on *Categorize Traces*, then a window like the one on :numref:`ModelSelection_for_categorization` opens to take in the neural network model from the user. If one of the options provided fits to your measurement, you can select the particular one, otherwise you can select the first option called *Auto select* as we did, and click on *OK*. 
+In the present described example, we performed the automatic analysis steps once at a time to show you the user analysis freedom beside the *Magic Button* power.
+
+We first clicked on *Categorize Traces*, then a window like the one on :numref:`ModelSelection_for_categorization` opens to take in the neural network model from the user. If one of the options provided fits to your measurement, you can select that particular one, otherwise you can select the first option called *Auto select* as we did, and click on *OK*. 
 
 .. figure:: ./../../figures/examples/3_TraceCategorization_ModelSelection_click.png
    :width: 300
@@ -374,7 +376,7 @@ We have the option of automatically analyze the traces in a couple separated ste
    
    Model selection window to specify the fitting neural network to the data type
 
-After a short while the traces get categorized as shown on :numref:`categorized_traces`, and if you click through the traces, you can see the regions of trace being selected by the program. The user can always go through the traces after automatically analyzed to make desired changes, and save the changes on the data file. 
+After a short while the traces get categorized as shown on :numref:`categorized_traces`, and if you click through the traces, you can see the regions on each trace being selected by the program. The user can always go through the traces after automatically been analyzed to make desired changes, and save the changes on the data file. With automatic categorization, the bleaching steps and consequently the correction factors would also be defined in the program.  
 
 .. figure:: ./../../figures/examples/4_CategorizedTraces.png
    :width: 600
