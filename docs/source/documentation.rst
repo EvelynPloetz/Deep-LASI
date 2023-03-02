@@ -38,7 +38,11 @@ Overview
 
 --------------------------------------------------------------------
 .. Contains section on Data requirements ..
-.. include:: docu/data.rst
+.. .. include:: docu/data.rst
+
+.. raw:: html
+
+   {% include "docu/data.rst" %}
 
 --------------------------------------------------------------------
 .. Contains section on Processing single molecule data ..
