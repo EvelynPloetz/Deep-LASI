@@ -28,12 +28,12 @@ Overview
 
 --------------------------------------------------------------------
 .. Contains section on Data requirements ..
-.. include:: ./docu/data.rst
+.. include:: docu/data.rst
 --------------------------------------------------------------------
 
 --------------------------------------------------------------------
 .. Contains section on Processing single molecule data ..
-.. include:: ./docu/opening.rst
+.. include:: docu/opening.rst
 --------------------------------------------------------------------
 
 ..  _opening:
@@ -569,9 +569,9 @@ Magic button is the fully automated step. You may also intend to take separate a
 -----------------------------------------------
 
 .. toctree::
-   :maxdepth:1
+   :maxdepth:2
    :hidden:
 
-   data
-   opening
+   docu/data
+   docu/opening
 
