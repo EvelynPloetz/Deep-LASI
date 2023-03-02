@@ -4,14 +4,6 @@
 
 -----------------------------------------------
 
-.. toctree::
-   :maxdepth:2
-   :local:
-   :hidden:
-
-   docu/data.rst
-   docu/opening.rst
-
 Documentation
 =====
 
