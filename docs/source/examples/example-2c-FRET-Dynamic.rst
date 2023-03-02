@@ -412,13 +412,15 @@ After analysis gets finished, DeepLASI reports its confidence level for predicti
    
    The DeepLASI confidence level for determinig the states on each trace
 
-
+Another resulting histogram is the apparent FRET efficiency to give a quick overview of the existing FRET populations. It is the mean FRET efficiency observed on the states found along the traces. 
 
 .. figure:: ./../../figures/examples/7_Statewise_MeanFRET.png
    :width: 350
    :alt: statewise-meanFRET
    :align: center
    :name: statewise-meanFRET_histogram
+   
+   The histogram of apparent FRET efficiency averaged for each state
 
 .. figure:: ./../../figures/examples/8_TDP_Input.png
    :width: 350
