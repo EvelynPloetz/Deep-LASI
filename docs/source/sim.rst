@@ -9,7 +9,7 @@ Please refer to the :doc:`installation` guide for the required python packages.
 Simulation of Traces
 ------------
 
-In the top bar of DeepLASI, click on 'Tools' and 'Simlate Data'. The following input dialog will open:
+In the top bar of DeepLASI, click on 'Tools' and 'Simulate Data'. The following input dialog will open:
 
 .. figure:: ./../figures/documents/Simulation_Parameters.png
    :width: 400
@@ -22,7 +22,7 @@ You can choose the total number traces to be simulated (before balancing), the t
 Training deep neural network models
 ------------
 
-After generating simulated data sets you can start training new classifiers. In the top bar of DeepLASI, click on 'Tools' and 'Train'. The following input dialog will open:
+After generating simulated data sets you can start training new classifiers. In the top bar of DeepLASI, click on 'Tools' and 'Train Neural Network'. The following input dialog will open:
 
 .. figure:: ./../figures/documents/Training_Parameters.png
    :width: 400
