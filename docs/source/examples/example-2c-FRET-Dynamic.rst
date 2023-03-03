@@ -236,12 +236,6 @@ By using the *Navigation* slider we clicked through the traces one by one to che
    
    Navigation and categorization box for traces navigation and categorization 
 
-.. figure:: ./../../figures/examples/testtt.png
-   :width: 400
-   :alt: test
-   :align: center
-   :name: testtttttt
-
 The first step for the categorization is to make sure if we are taking the single molecule traces into account. We usually get a first hint by just looking at the masks. A single molecule being detected in the middle of the mask like the one on :numref:`mask checking` on the left is what we consider as a single molecule, and keep the corresponding trace in categories helpful for further analysis. But if you check the example on the right side of the figure, you see there are more than one molecule in the middle, also molecules sitting on the background ring will mess up with the background calculation. Either of these is enough for us to trash the trace extracted from this spot.  
 
 .. figure:: ./../../figures/examples/PA18_mask_checking.png
