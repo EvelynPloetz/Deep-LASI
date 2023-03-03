@@ -74,7 +74,7 @@ Finally, install all needed Python packages using the conda command instead of p
    
       conda install tensorflow==2.8.0
       
-If you close your terminal in the installation process, reactivate your environment before installing addtional packages via:
+If you close your terminal during the installation process or want to install additional packages, reactivate your environment first via:
 
    .. code-block:: python
 
