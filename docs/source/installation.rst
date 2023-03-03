@@ -11,7 +11,7 @@ The source code is more frequently updated than the standalone version and certa
 System compatibility
 ------------
 
-DeepLasi is compatible with Windows and Mac OS. It has been extensively tested for Mac OS x86 systems. For new Macs using the M1 or M2 CPUs, the deep learning features are not available until MathWorks releases a native MATLAB version. DeepLASI can still be used using Parallels on M1/M2 Macs.
+DeepLasi is compatible with Windows and Mac OS. It has been extensively tested for Mac OS x86 systems. For new Macs using the M1 or M2 CPUs, please follow the instructions in the 'Installation on ARM Macs (M1/M2)'.
 DeepLASI has not been installed on a Linux systems so far. If you encounter any problem, please
 get in touch with us via the *Issue forum*.
 
@@ -43,9 +43,46 @@ To run Deep-LASI on Mac OS, the following software packages are required:
 * TensorFlow 2.8.0 (Python package)
 
 
-Python installation and integration into MATLAB (Mac OS)
+Python installation on Intel Macs
 ^^^^^^^^^^^^^^^^^^^^
-Please install Python version 3.7-3.10 at https://www.python.org/downloads/ and check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version.
+
+Please install Python version 3.7-3.10 at https://www.python.org/downloads/ and check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version. If you have Conda installed, you can also create a new python environment with the specified Python version.
+
+Python installation on ARM Macs (M1/M2)
+^^^^^^^^^^^^^^^^^^^^
+
+Since there is not yet a stable MATLAB version running natively on ARM Macs, MATLAB and all dependencies have to be installed and executed via the rosetta environment. While this is done automatically for all MATLAB versions, it must be done manually for Python. First, download and install Conda by typing the following commands in your Terminal app:
+
+   .. code-block:: python
+   
+      curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
+      bash Mambaforge-$(uname)-$(uname -m).sh
+      
+or download and install via the Miniconda website: https://docs.conda.io/en/latest/miniconda.html
+
+Next, create a new python environment emulating a x86 architecture by typing the following commands with the MATLAB compatible Python version (here: 3.9):
+
+   .. code-block:: python
+   
+      CONDA_SUBDIR=osx-64 conda create -n rosetta python=3.9
+      conda activate rosetta
+      conda config --env --set subdir osx-64
+
+Activate the environment via:
+
+   .. code-block:: python
+   
+      conda activate rosetta
+      
+Finally, install all needed Python packages using the conda command instead of pip, e.g.:
+
+   .. code-block:: python
+   
+      conda install tensorflow==2.8.0
+      
+Checking for correct integration into MATLAB
+""""""""""""""""""""""
+
 After installation you can check the MATLAB integration by entering the following command into the MATLAB Command Window:
 
    .. code-block:: python
@@ -68,10 +105,9 @@ If no version or path information is shown or an incompatible Python version is 
    
       pyversion 'your/path/to/python/python.exe'
 
-Installing deep learning features on Mac OS
-^^^^^^^^^^^^^^^^^^^^
 
-**TensorFlow**
+TensorFlow
+^^^^^^^^^^^^^^^^^^^^
 
 For deep learning features, the TensorFlow package needs to be installed for the Python environment integrated into MATLAB.
 The easiest way to install TensorFlow is to open the Terminal app (Path: /System/Applications/Utilities/Terminal.app) and enter the following command:
@@ -88,7 +124,8 @@ You can check the successfull installation and integration into MATLAB by restar
 
 You are now ready to use Deep-LASI.
 
-**Packages for simulations and training new neural network models**
+Packages for simulations and training new neural network models
+^^^^^^^^^^^^^^^^^^^^
 
 If you are interested in generating simulated data and/or re-training the neural network models, additional Python packages are required and installed by entering the following commands into the terminal application:
 
@@ -102,6 +139,10 @@ If you are interested in generating simulated data and/or re-training the neural
 
 If you encounter any problem during the installation procedure, please
 get in touch with us via the *Issue forum*.
+
+
+'Installation on ARM Macs (M1/M2)'
+
 
 Installation on Windows
 ------------
@@ -145,7 +186,7 @@ If no version or path information is shown or you did not install Python for all
    
       pyversion 'your/path/to/python/python.exe'
 
-Installing deep learning features on Windows
+Installation of deep learning features on Windows
 ^^^^^^^^^^
 
 TensorFlow
