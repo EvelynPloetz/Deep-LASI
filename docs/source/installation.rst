@@ -5,6 +5,8 @@ Installation
 
 DeepLASI is a MATLAB program that uses deep learning for automated data analysis from Python libraries.
 In order to use the automated data analysis with the pretrained deep neural networks make sure you installed the required software packages below.
+We recommend running DeepLASI with a MATLAB license and only use the compiled version if no license is available.
+The source code is more frequently updated than the standalone version and certain features like generating new training data sets and training new models are not supported in the standalone version.
 
 System compatibility
 ------------
