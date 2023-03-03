@@ -51,7 +51,7 @@ Please install Python version 3.7-3.10 at https://www.python.org/downloads/ and 
 Python installation on ARM Macs (M1/M2)
 ^^^^^^^^^^^^^^^^^^^^
 
-Since there is not yet a stable MATLAB version running natively on ARM Macs, MATLAB and all dependencies have to be installed and executed via the rosetta environment. While this is done automatically for all MATLAB versions, it must be done manually for Python. First, download and install Conda by typing the following commands in your Terminal app:
+Since a native MATLAB version for ARM Macs is still in development, MATLAB and all dependencies have to be installed and executed via the rosetta environment. While this is done automatically for all MATLAB versions, it must be done manually for Python. First, download and install Conda by typing the following commands in your Terminal app:
 
    .. code-block:: python
    
