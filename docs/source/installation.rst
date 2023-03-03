@@ -56,15 +56,11 @@ Example output for Python 3.9 installed on Mac OS:
 
    .. code-block:: python
    
-   version: '3.9'
-   
-   executable: '/Library/Developer/CommandLineTools/usr/bin/python3'
-   
-   library: '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/libpython3.9.dylib'
-   
-   home: '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9'
-   
-   isloaded: 0
+      version: '3.9'
+      executable: '/Library/Developer/CommandLineTools/usr/bin/python3'
+      library: '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/libpython3.9.dylib'
+      home: '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9'
+      isloaded: 0
    
 If no version or path information is shown or an incompatible Python version is loaded (e.g. due to multiple Python versions installed on your computer), link Python directy by entering the path to your Python executable:
 
