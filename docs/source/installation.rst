@@ -45,7 +45,7 @@ To run Deep-LASI on Mac OS, the following software packages are required:
 
 Python installation and integration into MATLAB (Mac OS)
 ^^^^^^^^^^^^^^^^^^^^
-Please install Python with version 3.7-3.10 at https://www.python.org/downloads/ and check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version.
+Please install Python version 3.7-3.10 at https://www.python.org/downloads/ and check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version.
 After installation you can check the MATLAB integration by entering the following command into the MATLAB Command Window:
 
    .. code-block:: python
