@@ -67,18 +67,18 @@ Next, create a new python environment emulating a x86 architecture by typing the
       CONDA_SUBDIR=osx-64 conda create -n rosetta python=3.9
       conda activate rosetta
       conda config --env --set subdir osx-64
-
-Activate the environment via:
-
-   .. code-block:: python
-   
-      conda activate rosetta
       
 Finally, install all needed Python packages using the conda command instead of pip, e.g.:
 
    .. code-block:: python
    
       conda install tensorflow==2.8.0
+      
+If you close your terminal in the installation process, reactivate your environment before installing addtional packages via:
+
+   .. code-block:: python
+
+      conda activate rosetta
 
 TensorFlow
 ^^^^^^^^^^^^^^^^^^^^
