@@ -204,3 +204,13 @@ If you installed Python as a user install, i.e. you did not check the box 'Insta
    .. code-block:: python
    
       pip install name_of_python_package --user
+
+
+Pomegranate installation for hidden Markov models
+--------
+
+For both Windows and Mac systems, install the pomegranate package by typing the following into the Command Prompt/Terminal:
+
+   .. code-block:: python
+   
+      pip install pomegranate
