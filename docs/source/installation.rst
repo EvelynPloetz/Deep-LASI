@@ -79,32 +79,6 @@ Finally, install all needed Python packages using the conda command instead of p
    .. code-block:: python
    
       conda install tensorflow==2.8.0
-      
-Checking for correct integration into MATLAB
-^^^^^^^^^^^^^^^^^^^^
-
-After installation you can check the MATLAB integration by entering the following command into the MATLAB Command Window:
-
-   .. code-block:: python
-      
-      pyversion
-      
-Example output for Python 3.9:
-
-   .. code-block:: python
-   
-      version: '3.9'
-      executable: 'path/to/python/executable/python3'
-      library: 'path/to/python/library/3.9/lib/libpython3.9.dylib'
-      home: 'path/to/python/environment'
-      isloaded: 0
-   
-If no version or path information is shown or an incompatible Python version is loaded (e.g. due to multiple Python versions installed on your computer), link Python directy by entering the path to your Python executable in your MATLAB Command Window:
-
-   .. code-block:: python
-   
-      pyversion 'your/path/to/python/python.exe'
-
 
 TensorFlow
 ^^^^^^^^^^^^^^^^^^^^
@@ -141,7 +115,30 @@ If you encounter any problem during the installation procedure, please
 get in touch with us via the *Issue forum*.
 
 
-'Installation on ARM Macs (M1/M2)'
+Checking for correct integration into MATLAB
+^^^^^^^^^^^^^^^^^^^^
+
+After installation you can check the MATLAB integration by entering the following command into the MATLAB Command Window:
+
+   .. code-block:: python
+      
+      pyversion
+      
+Example output for Python 3.9:
+
+   .. code-block:: python
+   
+      version: '3.9'
+      executable: 'path/to/python/executable/python3'
+      library: 'path/to/python/library/3.9/lib/libpython3.9.dylib'
+      home: 'path/to/python/environment'
+      isloaded: 0
+   
+If no version or path information is shown or an incompatible Python version is loaded (e.g. due to multiple Python versions installed on your computer), link Python directy by entering the path to your Python executable in your MATLAB Command Window:
+
+   .. code-block:: python
+   
+      pyversion 'your/path/to/python/python.exe'
 
 
 Installation on Windows
