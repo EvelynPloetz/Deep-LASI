@@ -211,7 +211,7 @@ Please open your windows command prompt by presssing Win + R or terminal app on 
 Common issues with installing python packages on Windows
 """"""""""
 
-If you installed Python as a user install, i.e. you did not check the box 'Install for all users' during the installation procedure, you may run into errors regarding access rights when installing packages with pip. If you do not want to reinstall python for all users please make the installation of the Python package a user install by adding the --user option:
+You may run into errors regarding access rights when installing packages with pip. If your access is denied please make the installation of the Python package a user install by adding the --user option:
 
    .. code-block:: python
    
