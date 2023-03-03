@@ -81,7 +81,7 @@ Finally, install all needed Python packages using the conda command instead of p
       conda install tensorflow==2.8.0
       
 Checking for correct integration into MATLAB
-""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^
 
 After installation you can check the MATLAB integration by entering the following command into the MATLAB Command Window:
 
