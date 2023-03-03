@@ -38,6 +38,14 @@ Data preparation
 Co-Localization of Molecules 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: ./../../figures/examples/1_3c_mapping_menu_1.png
+   :width: 550
+   :alt: 3c mapping menu
+   :align: center
+   :name: 3c mapping menu
+   
+   Mapping steps on DeepLASI for loading the first channel image
+
 ..  _extraction:
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
