@@ -58,9 +58,9 @@ Since a native MATLAB version for ARM Macs is still in development, MATLAB and a
       curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
       bash Mambaforge-$(uname)-$(uname -m).sh
       
-or download and install via the Miniconda website: https://docs.conda.io/en/latest/miniconda.html
+or download and install from the Miniconda website: https://docs.conda.io/en/latest/miniconda.html
 
-Next, create a new python environment emulating a x86 architecture by typing the following commands with the MATLAB compatible Python version (here: 3.9):
+Next, create a new environment (here: rosetta) by typing the following commands with the MATLAB compatible Python version (here: 3.9):
 
    .. code-block:: python
    
@@ -74,7 +74,7 @@ Finally, install all needed Python packages using the conda command instead of p
    
       conda install tensorflow==2.8.0
       
-If you close your terminal during the installation process or want to install additional packages, reactivate your environment first via:
+If you close your terminal during the installation process or want to install additional packages, reactivate your environment first:
 
    .. code-block:: python
 
