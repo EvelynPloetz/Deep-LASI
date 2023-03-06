@@ -184,7 +184,7 @@ After a successful mapping process, the Extraction-GUI opens automatically. The 
 ..  _extraction_doc:
 Trace extraction
 ~~~~~~~~~~~~~
-While single color data can be directly loaded into *Deep-LASI*, multi-color assays require a mapping procedure first. Once this map is available and saved, you can start to extract experimental data anytime (:numref:`extraction_idea`).
+While single color data can be directly loaded into *Deep-LASI*, multi-color assays require a mapping procedure first. Once this map is available and saved, you can start to extract experimental data anytime. As shown in :numref:`extraction_idea`, *Deep-LASI* will match the fluorescence signature from your single fluorophores during different excitation cycles and detection channels and allows you to select which molecules you actually want to evaluate.
 
 .. figure:: ./../figures/documents/Fig_11_Trace_Extraction.png
    :width: 500
@@ -194,7 +194,11 @@ While single color data can be directly loaded into *Deep-LASI*, multi-color ass
 
    Trace extraction of molecules with one, two, or three labels and selected reference channel or co-localizing molecules only
 
-To start this process, please either reload the earlier derived map via :code:`> File > Mapping > Open Map`. Once the map is successfully loaded, you are directly forwarded to the section sub-GUI **Extraction** showing a detection mask created like the one shown on the top right part of :numref:`screenshot_extraction`. This mask is used to calculate the emission intensity of the particle inside the central circle, and also the background within the outer ring. The user has the freedom to change the mask settings when needed. You have the option of saving the created map or loading a previous map from the same mapping menu.
+To start this process, please reload the earlier derived map via :code:`> File > Mapping > Open Map`. Once the map is successfully loaded, you are directly forwarded to the sub-GUI **Extraction** showing a detection mask created like the one shown on the top right part of :numref:`screenshot_extraction`. Alternatively you were directly forwarded after the :ref:`mapping` (Please don't forget to save the generated map in this case).
+
+.. :tip:: until here. 
+
+This mask is used to calculate the emission intensity of the particle inside the central circle, and also the background within the outer ring. The user has the freedom to change the mask settings when needed. You have the option of saving the created map or loading a previous map from the same mapping menu.
 
 .. figure:: ./../figures/documents/Fig_11_Map_Saving.png
    :width: 400
