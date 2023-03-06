@@ -37,6 +37,7 @@ Data requirements
 .. include:: docu/data.rst
 
 --------------------------------------------------------------------
+
 .. Contains section on Processing single molecule data ..
 
 ..  _opening:
@@ -45,6 +46,7 @@ Processing Single-Molecule Data
 .. include:: docu/opening.rst
 
 --------------------------------------------------------
+
 .. Contains section on Manual Data analysis on Traces GUI ..
 
 ..  _manual_analysis:
@@ -53,12 +55,17 @@ Manual data analysis
 .. include:: docu/manual.rst
 
 --------------------------------------------------------
+
 .. Contains section on Manual Data analysis on Traces GUI ..
 
 ..  _automatic_analysis:
 Automated Analysis by Deep Learning
 -------------
 .. include:: docu/automatic.rst
+
+--------------------------------------------------------
+
+.. Contains section on Statistics ..
 
 ..  _statistics:
 Statistics
