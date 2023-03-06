@@ -60,3 +60,8 @@ Automated Analysis by Deep Learning
 -------------
 .. include:: docu/automatic.rst
 
+..  _statistics:
+Statistics
+-------------
+.. include:: docu/statistics.rst
+
