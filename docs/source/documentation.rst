@@ -29,8 +29,8 @@ Overview
 - :ref:`auto-analysis`
 
 --------------------------------------------------------------------
-.. Contains section on Data requirements ..
 
+.. Contains section on Data requirements ..
 ..  _data-format:
 Data requirements
 -------------------
@@ -39,7 +39,6 @@ Data requirements
 --------------------------------------------------------------------
 
 .. Contains section on Processing single molecule data ..
-
 ..  _opening:
 Processing Single-Molecule Data
 -------------
@@ -48,7 +47,6 @@ Processing Single-Molecule Data
 --------------------------------------------------------
 
 .. Contains section on Manual Data analysis on Traces GUI ..
-
 ..  _manual_analysis:
 Manual data analysis
 -------------
@@ -57,7 +55,6 @@ Manual data analysis
 --------------------------------------------------------
 
 .. Contains section on Manual Data analysis on Traces GUI ..
-
 ..  _automatic_analysis:
 Automated Analysis by Deep Learning
 -------------
@@ -66,7 +63,6 @@ Automated Analysis by Deep Learning
 --------------------------------------------------------
 
 .. Contains section on Statistics ..
-
 ..  _statistics:
 Statistics
 -------------

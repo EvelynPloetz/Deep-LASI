@@ -106,7 +106,7 @@ When finishing the analysis of one data set, a change to a new data set can crea
 
 Main-GUI
 ~~~~~~~~~~~~~~~~~
-Data-analysis with *Deep-LASI* involves consecutive working steps (:numref:`main-workflow`), which are accommodated in six different sub-GUIs. The Starting-GUI incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope and maps corresponding pixels between camera onto each other (see section on  :ref:`mapping`). Next, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterwards, as described in more details in section :ref:`extraction_doc`. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. Equally, already extracted traces can be loaded into *Deep-LASI* for further data analysis.
+Data-analysis with *Deep-LASI* involves consecutive working steps (:numref:`main-workflow`), which are accommodated in six different sub-GUIs as shown in :numref:`open-program`. The Starting-GUI incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope and maps corresponding pixels between camera onto each other (see section on  :ref:`mapping`). Next, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterwards, as described in more details in section :ref:`extraction_doc`. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. Equally, already extracted traces can be loaded into *Deep-LASI* for further data analysis.
 
 .. figure:: ./../figures/documents/Fig_5_Main_GUIs-Flow.png
    :width: 800
@@ -181,20 +181,30 @@ Once you confirm your selection by clicking on **Start Mapping**, *Deep-LASI* al
 After a successful mapping process, the Extraction-GUI opens automatically. The mapping process itself is fast and visualizes the mapping results as a comparison of image overlays before and after the mapping procedure (:numref:`before_after`). To save the transformation matrix, i.e., the mapping result for any trace extraction later on, finally save the generated map (stored in the memory of *Deep-LASI* at this point) by clicking on :code:`> File > Mapping > Save Map`. It is recommended to check the quality of mapping. In some cases, you might have to rerun the mapping process by choosing (1) a different reference channel (e.g., if too many localizations in the different FOVs obscure the mapping process) or (2) a new data set of images (e.g., if too little localizations impede a representative mapping of aberrant images).
 
 -----------------------------------------------
+..  _extraction_doc:
+Trace extraction
+~~~~~~~~~~~~~
+While single color data can be directly loaded into *Deep-LASI*, multi-color assays require a mapping procedure first. Once this map is available and saved, you can start to extract experimental data anytime (:numref:`extraction_idea`).
 
-showing a detection mask created like the one shown on the top right part of figure 10. This mask is used to calculate the emission intensity of the particle inside the central circle, and also the background within the outer ring. The user has the freedom to change the mask settings when needed. You have the option of saving the created map or loading a previous map from the same mapping menu.
-
-.. figure:: ./../figures/documents/Fig_10_Map_Saving.png
-   :width: 400
-   :alt: created mask
+.. figure:: ./../figures/documents/Fig_11_Trace_Extraction.png
+   :width: 500
+   :alt: Extraction
    :align: center
-   :name: created mask after mapping
+   :name: extraction_idea
+
+   Trace extraction of molecules with one, two, or three labels and selected reference channel or co-localizing molecules only
+
+To start this process, please either reload the earlier derived map via :code:`> File > Mapping > Open Map`. Once the map is successfully loaded, you are directly forwarded to the section sub-GUI **Extraction** showing a detection mask created like the one shown on the top right part of :numref:`screenshot_extraction`. This mask is used to calculate the emission intensity of the particle inside the central circle, and also the background within the outer ring. The user has the freedom to change the mask settings when needed. You have the option of saving the created map or loading a previous map from the same mapping menu.
+
+.. figure:: ./../figures/documents/Fig_11_Map_Saving.png
+   :width: 400
+   :alt: Extraction GUI Screenshot
+   :align: center
+   :name: screenshot_extraction
 
    The mask created after mapping with adjustment options
 
-..  _extraction_doc:
-Loading the data
-~~~~~~~~~~~~~
+
 
 Now you can open the data files from file menu and **Load Image Data** similar to opening the mapping images like shown on figure 11. The order of channels should be the same as mapping order.
 
