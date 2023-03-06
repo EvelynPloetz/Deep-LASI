@@ -151,7 +151,7 @@ Next, the program will ask you to choose a file which could be an image or a ser
 
    Uploading first mapping image
 
-After choosing the file, *Deep-LASI* opens a window (:numref:`channel_position`), which allows you to determine the correct position of the detection channel. You can use the **Channel Layout** to select the correct half of the camera or the full width of the camera. **Rotation** and **Flip** allow you to take into account if your camera image is flipped or rotated compared to your reference channel. After selection, please confirm **OK** to open the image on the mapping tab, as shown in :numref:`channel_position`.
+After choosing the calibration file, *Deep-LASI* opens a window (:numref:`channel_position`), which allows you to determine the correct position of the detection channel. You can use the **Channel Layout** to select the correct half of the camera or the full width of the camera. **Rotation** and **Flip** allow you to take into account if your camera image is flipped or rotated compared to your reference channel. After selection, please confirm **OK** to open the image on the mapping tab, as shown in :numref:`channel_position`.
 
 .. figure:: ./../figures/documents/Fig_8_Map_Image_Detecting.png
    :width: 500
@@ -204,11 +204,7 @@ While single color data can be directly loaded into *Deep-LASI*, multi-color ass
 ..  _loading_doc:
 Loading
 ~~~~~~~~~~~~~
-To start this process, please reload the earlier derived map via :code:`> File > Mapping > Open Map`. Once the map is successfully loaded, you are directly forwarded to the sub-GUI **Extraction** showing a detection mask created like the one shown on the top right part of :numref:`screenshot_extraction`. Alternatively you were directly forwarded after the :ref:`mapping` (Please don't forget to save the generated map in this case).
-
-.. :tip:: until here.
-
-This mask is used to calculate the emission intensity of the particle inside the central circle, and also the background within the outer ring. The user has the freedom to change the mask settings when needed. You have the option of saving the created map or loading a previous map from the same mapping menu.
+To start this process, please reload the earlier derived map via :code:`> File > Mapping > Open Map`. Once the map is successfully loaded, you are directly forwarded to the sub-GUI **Extraction** showing a detection mask created like the one shown on the top right part of :numref:`screenshot_extraction`. Alternatively you were directly forwarded after the :ref:`mapping` (Please don't forget to save the generated map in this case). This mask is used to calculate the emission intensity of the particle inside the central circle, and also the background within the outer ring. The user has the freedom to change the mask settings when needed.
 
 .. figure:: ./../figures/documents/Fig_11_Map_Saving.png
    :width: 400
@@ -218,7 +214,7 @@ This mask is used to calculate the emission intensity of the particle inside the
 
    The mask created after mapping with adjustment options
 
-
+.. tip:: @Evelyn: until here.
 
 Now you can open the data files from file menu and **Load Image Data** similar to opening the mapping images like shown on figure 11. The order of channels should be the same as mapping order.
 
