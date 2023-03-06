@@ -191,7 +191,7 @@ After a successful mapping process, the Extraction-GUI opens automatically. The 
 Trace extraction
 ~~~~~~~~~~~~~
 
-While single color data can be directly loaded into *Deep-LASI*, multi-color assays require a mapping procedure first. Once this map is available and saved, you can start to extract experimental data anytime. As shown in :numref:`extraction_idea`, *Deep-LASI* will match the fluorescence signature from your single fluorophores during different excitation cycles and detection channels and allows you to select which molecules you actually want to evaluate.
+While single color data can be directly loaded into *Deep-LASI*, multi-color assays require a mapping procedure first. Once this map is available and saved, you can start to extract experimental data anytime. As shown in :numref:`extraction_idea`, *Deep-LASI* will match the fluorescence signature from your single fluorophores during different excitation cycles and detection channels (once you specified the single-molecule assay) and allows you to select which labeled molecules you actually want to evaluate. For this, you first need to step-wise read-in the experimental data, as described in the :ref:`loading_doc` section. Next, *Deep-LASI* will generate a projection for each channel, i.e. the corresponding *.tif-file, showing the maximum intensity per pixel in the FOV. *Deep-LASI* will localize single emitters in each of the selected channels and superimpose the three maps afterwards showing the localized molecules in the individual channels. In the last step of the extraction process, *Deep-LASI* allows you to select, whether you want to export all traces (i.e., the trajectories of single-, double- or triple-labeled molecules), traces of only co-localizing molecules (i.e., molecules having the maximum number of traces) or molecules that have a specific label in a reference a channel. After a successful extraction process, you are directly forwarded to the third sub-GUI **Traces**, where you need to save the extracted traces first, before continuing with any data analysis. 
 
 .. figure:: ./../figures/documents/Fig_11_Trace_Extraction.png
    :width: 500
@@ -199,8 +199,11 @@ While single color data can be directly loaded into *Deep-LASI*, multi-color ass
    :align: center
    :name: extraction_idea
 
-   Trace extraction of molecules with one, two, or three labels and selected reference channel or co-localizing molecules only
+   Trace extraction of molecules with one, two, or three labels and selection whether trajectories for all molecules, co-localizing molecules only or molecules that show emission in a specific channel shall be generated.
 
+..  _loading_doc:
+Loading
+~~~~~~~~~~~~~
 To start this process, please reload the earlier derived map via :code:`> File > Mapping > Open Map`. Once the map is successfully loaded, you are directly forwarded to the sub-GUI **Extraction** showing a detection mask created like the one shown on the top right part of :numref:`screenshot_extraction`. Alternatively you were directly forwarded after the :ref:`mapping` (Please don't forget to save the generated map in this case).
 
 .. :tip:: until here.
