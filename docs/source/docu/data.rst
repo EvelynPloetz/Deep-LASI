@@ -16,6 +16,8 @@ Data handling
 
    Workflow summarizing the generic data formats used by *Deep-LASI*, as well as supported data formats for trace import.
 
+-----------------------------------------------
+
 Supported Data Formats
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *Deep-LASI* was developed to handle movie files containing single-molecule data. Nevertheless, it can also import recorded data from other sources (see below). We are happy to support further standard image formats to make *Deep-LASI* compatible with other systems and software packages. For more specialized / home-built setups and data formats, we recommend first reading the :ref:`custom-file` section before getting in touch with us in the Forum and/or via ...
@@ -38,6 +40,7 @@ To analyze data files from localization microscopy extracted and generated with 
 
 The vast number of different commercial and custom-built microscope setups makes it fairly impossible to host all data and file formats that could be analyzed in *Deep-LASI*. We, therefore, designed a spot in the file type selection for a custom read-in routine. These routines are saved in the *import folder* and must be a MATLAB file (*.m*) with a specific structure which can be found in all other import functions.
 
+-----------------------------------------------
 
 Saved File Formats
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -58,6 +61,7 @@ Files ending with *.tdat are generated after mapping different detection channel
 
 Files ending with *.npz refer to simulated single-molecule traces as described in the :doc:`sim` page. They are read in directly for trace analysis.
 
+-----------------------------------------------
 
 ..  _data-structure:
 Data structure
@@ -122,6 +126,7 @@ Most data in *Deep-LASI* is stored as global variables in the background to allo
 ..    userdef.fix_sigma, "1",     ""
 ..    userdef.learn_mu,  "1",     ""
 
+-----------------------------------------------
 
 ..  _import:
 Data Import from OT and TRACY
