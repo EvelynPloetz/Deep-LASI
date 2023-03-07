@@ -13,20 +13,20 @@ The following part shows all the steps to analyze dynamic 2C smFRET data from L-
 
 Overview - Example
 ------------------
-- :ref:`example-data`
-- :ref:`data-prep`
-- :ref:`localization`
-- :ref:`extraction`
-- :ref:`manual`
-- :ref:`automatic`
-- :ref:`summary`
+- :ref:`example-data_2c_d`
+- :ref:`data-prep_2c_d`
+- :ref:`localization_2c_d`
+- :ref:`extraction_2c_d`
+- :ref:`manual_2c_d`
+- :ref:`automatic_2c_d`
+- :ref:`summary_2c_d`
 
 --------------------------------------------------------------------
 
 Example
 -----------
 
-..  _example-data:
+..  _example-data_2c_d:
 Sample Design: Dynamic L-Shaped DNA Origami
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -42,7 +42,7 @@ The described data set is from smTIRF measurement with DNA origami structure as 
    
    L-shaped DNA origami structure labeled with Atto647N and Cy3B. The donor is attached to a tether that can freely bind to any of the two binding strands.
 
-.. _data-prep:
+.. _data-prep_2c_d:
 Data preparation 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -50,7 +50,7 @@ The origami structures were measured on a smTIRF microscope with two separate EM
 
 .. warning:: Maybe a figure here similar to what we have for static 2C to show the two cameras and excitation scheme, GR.
 
-.. _localization:
+.. _localization_2c_d:
 Co-Localization of Molecules 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -198,7 +198,7 @@ The red emitters from the first data file appear on the same particle detection 
    
    Particles detected from the first data file recorded by the second channel and the co-localizations
    
-..  _extraction:
+..  _extraction_2c_d:
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -222,7 +222,7 @@ Depending on the data size, the extraction step might take some time from a coup
    
    Exemplary trace for a two-color smTIRF measurement, and all different panels on the *Traces* tab
    
-..  _manual:
+..  _manual_2c_d:
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -338,7 +338,7 @@ After a short while, the left plot of :numref:`HMM resulting graphs` appears ins
 
 If you have been following the manual analysis steps, you might know now how much time it can take to analyze the data from one day of measurement. If such amount of time feels too much, DeepLASI offers you automatic data analysis as follows.
 
-..  _automatic:
+..  _automatic_2c_d:
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -396,7 +396,7 @@ To continue the analysis regarding to the kinetics of the sample, a next window 
    
    Model selection window to specify the fitting neural network to the dynamic transitions
    
-..  _summary:
+..  _summary_2c_d:
 Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
