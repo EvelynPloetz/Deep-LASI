@@ -30,7 +30,7 @@ Example
 Sample Design: Dynamic L-Shaped DNA Origami
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The described data set is from smTIRF measurement with DNA origami structure as you can see on :numref:``. The origami is labeled with Atto 488 (donor), Cy3B (donor/acceptor), and Atto647N (acceptor). The yellow dye (Cy3B) is attached to the flexible tether binding freely among three single-stranded binding sites, with 7 nt overhang on both 6 and 12 o'clock binding positions, and a 8 nt, 1 mismatch overhang on the 9 o'clock position. The energy transfer is expected to be distributed within a high, medium, and low FRET for each dye pair of blue/yellow and yellow/red. However, the FRET between blue/red pair is expected to be static because both dyes are attached directly to the origami.
+The described data set is from smTIRF measurement with DNA origami structure as you can see on :numref:`FIGURE`. The origami is labeled with Atto 488 (donor), Cy3B (donor/acceptor), and Atto647N (acceptor). The yellow dye (Cy3B) is attached to the flexible tether binding freely among three single-stranded binding sites, with 7 nt overhang on both 6 and 12 o'clock binding positions, and a 8 nt, 1 mismatch overhang on the 9 o'clock position. The energy transfer is expected to be distributed within a high, medium, and low FRET for each dye pair of blue/yellow and yellow/red. However, the FRET between blue/red pair is expected to be static because both dyes are attached directly to the origami.
 
 .. _data-prep_3c:
 Data preparation 
