@@ -44,6 +44,10 @@ The origami structures were measured on a smTIRF microscope with three separate 
 Co-Localization of Molecules 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+When using three separate cameras like the example described here, there might be the chance of some discrepancy among the cameras’ fields of view resulting from aberrations or cameras misalignment. To make sure that tripple-labeled species are detected, a correct linking of same molecule emitters across the detection channels is needed. DeepLASI makes a coordinate transformation map to get rid of any potential difference.
+
+In order to map all cameras, please follow the steps explained in the section **Co-Localization of Molecules, 2c-FRET-Dynamic, linking**, because the necessary steps for loading the ZMW images are the same untill :numref:`map image flipping`. The only difference would be that you do not need to flip the image from the second camera, and you need to continue loading the ZMW image also from the third channel (with horizontal flipping). If you have loaded the mapping images correctly, you will have the three panels as   
+
 .. figure:: ./../../figures/examples/1_3c_mapping_menu_1.png
    :width: 550
    :alt: 3c mapping menu
