@@ -16,6 +16,7 @@ Overview - Example
 - :ref:`example-data_2c_d`
 - :ref:`data-prep_2c_d`
 - :ref:`localization_2c_d`
+- :ref:`loading-data_2c_d`
 - :ref:`extraction_2c_d`
 - :ref:`manual_2c_d`
 - :ref:`automatic_2c_d`
@@ -137,6 +138,10 @@ After mapping is successfully finished, we go to mapping menu to save the map fi
    :name: save map file
    
    The mapping menu to save the created map or loading a previously saved one
+   
+..  _loading-data_2c_d:
+Loading the Data
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 After finishing the mapping process, we continued with opening the data files on the program. From the file menu we went to *Load Image Data*, and clicked on *1st channel*, as shown on :numref:`first channel data upload`.
 
