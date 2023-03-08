@@ -71,15 +71,15 @@ After having the cameras mapped with respect to the first channel, we continued 
    
    Setting the measurement parameters to load the data from the first (blue) channel  
 
-Now on the *Extraction* tab the detected particles will be marked inside blue triangles. We continued with loading the data files from the second and third channels followed by moving the slider on the *Measurement Parameters* window one step to the right side each time, and also choosing the proper detection color, meaning clicking on **G** and **R** with the corresponding position of the slider (middle and most right respectively). The detected particles accross each channel will be inside triangles with matching colors to the channels, and all the co-localized ones will be inside white circles representing the structures with all three dyes on them, like :numref:``.  
+Now on the *Extraction* tab the detected particles will be marked inside blue triangles. We continued with loading the data files from the second and third channels followed by moving the slider on the *Measurement Parameters* window one step to the right side each time, and also choosing the proper detection color, meaning clicking on **G** and **R** with the corresponding position of the slider (middle and most right respectively). The detected particles accross each channel will be inside triangles with matching colors to the channels, and all the co-localized ones will be inside white circles representing the structures with all three dyes on them, like :numref:`3c_all_particle_detected`.  
 
-.. figure:: ./../../figures/examples/.png
+.. figure:: ./../../figures/examples/3_3c_all_particle_detection.png
    :width: 500
-   :alt: 
+   :alt: 3c_particle_detection
    :align: center
-   :name: 
+   :name: 3c_all_particle_detected
    
-   caption 
+   Particles detected from the first data file on all three cameras and the co-localizations 
 
 ..  _extraction_3c:
 Trace Extraction
