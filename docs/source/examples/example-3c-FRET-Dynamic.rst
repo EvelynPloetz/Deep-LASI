@@ -71,6 +71,8 @@ After having the cameras mapped with respect to the first channel, we continued 
    
    Setting the measurement parameters to load the data from the first (blue) channel  
 
+Now on the *Extraction* tab the detected particles will be marked inside blue triangles. We continued with loading the data files from the second and third channels followed by moving the slider on the *Measurement Parameters* window one step to the right side each time, and also choosing the proper detection color, meaning clicking on **G** and **R** with the corresponding position of the slider (middle and most right respectively).  
+
 ..  _extraction_3c:
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
