@@ -61,7 +61,9 @@ Mapping the three channels are quit similar to the two-channel situation. In ord
 Loading the Data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-After having the cameras mapped with respect to the first channel, we continued with loading the data files. Like mapping step, loading the raw data from three cameras is similar to that from two cameras with some little difference that are explained here. 
+After having the cameras mapped with respect to the first channel, we continued with loading the data files. Like mapping step, loading the raw data from three cameras is similar to that from two cameras with some little difference that are explained here. To see how to laod the data please first check the section **Loading the Data, 2c-FRET-Dynamic, linking**. On the first *Measurement Parameters* window opened to take in the measurement settings, we first filled in the boxes like :numref:`` to match the experiment details.
+
+
 
 ..  _extraction_3c:
 Trace Extraction
