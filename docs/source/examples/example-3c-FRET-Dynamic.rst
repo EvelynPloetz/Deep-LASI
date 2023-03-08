@@ -49,8 +49,8 @@ When using three separate cameras like the example described here, there might b
 
 Mapping the three channels are quit similar to the two-channel situation. In order to map all cameras, please follow the steps explained in the section **Co-Localization of Molecules, 2c-FRET-Dynamic, linking** , because the necessary workflow for loading the ZMW images are the same untill :numref:`map image flipping`. The difference would be that you do not need to flip the image from the second camera (as you would clearly recognize by looking at it), and you need to continue loading the ZMW image also from the third channel (now with horizontal flipping). If you have loaded the mapping images correctly, you will see the three panels similar to :numref:`three zmw loaded`. Then you can click on *Start Mapping* like we did. Please also follow the final steps in **Co-Localization of Molecules, 2c-FRET-Dynamic, linking** to check the mapping quality and save the created map.     
 
-.. figure:: ./../../figures/examples/3c_three_zmw_loaded.png
-   :width: 550
+.. figure:: ./../../figures/examples/1_3c_three_zmw_loaded.png
+   :width: 600
    :alt: 3_zmw loaded
    :align: center
    :name: three zmw loaded
