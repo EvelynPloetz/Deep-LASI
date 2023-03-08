@@ -61,10 +61,10 @@ Mapping the three channels are quit similar to the two-channel situation. In ord
 Loading the Data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-After having the cameras mapped with respect to the first channel, we continued with loading the data files. Like mapping step, loading the raw data from three cameras is similar to that from two cameras with some little difference that are explained here. To see how to load the data please first check the section **Loading the Data, 2c-FRET-Dynamic, linking**. On the first *Measurement Parameters* window opened to take in the measurement settings, we first filled in the boxes like :numref:`3c_measurement_parameters1` to match the experimental details.
+After having the cameras mapped with respect to the first channel, we continued with loading the data files. Like mapping step, loading the raw data from three cameras is similar to that from two cameras with some little difference that are explained here. To see how to load the data please first check the section **Loading the Data, 2c-FRET-Dynamic, linking**. After selecting all the data files, on the first *Measurement Parameters* window opened, we first filled in the boxes like :numref:`3c_measurement_parameters1` to match the experimental details. The *Interframe time* is still 52.2 ms. The ALEX sequence is BGR in the current example because the three lasers were alternating one after another. Then we set the slider to the very left side to determine the first detection channel. After selecting the desired frame range, we clicked on **B** for the detection color.
 
 .. figure:: ./../../figures/examples/2_3c_measurement_parameters_1.png
-   :width: 500
+   :width: 600
    :alt: 3_measurement parameters1
    :align: center
    :name: 3c_measurement_parameters1
