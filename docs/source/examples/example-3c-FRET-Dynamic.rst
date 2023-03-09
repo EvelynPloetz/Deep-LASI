@@ -95,6 +95,8 @@ In order to extract the traces, we continued like the section **Trace Extraction
    
    Exemplary trace for a three-color smTIRF measurement
 
+The first panel shows the intensity traces from all channels after blue laser excitation. The gray trace is the total intensity in the blue channel, the dark blue is the blue dye emission after blue excitation, the light blue shows the yellow dye emission (BY FRET), and the pink is the red dye emission (BR FRET) all after blue excitation. The second panel shows the intensity traces from green and red channels after yellow laser excitation. 
+
 ..  _manual_3c:
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
