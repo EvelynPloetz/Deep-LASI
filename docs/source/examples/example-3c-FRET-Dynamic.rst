@@ -101,7 +101,15 @@ The first panel shows the intensity traces from all channels after blue laser ex
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For a detailed desciption of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**. The analysis steps are mostly the same, and if there is any special case for the three-color data, it will be explained here.
+For a detailed desciption of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**. The analysis steps are mostly the same, and if there is any special case for the three-color data, it will be explained here. :numref:`3c_trace_regions`
+
+.. figure:: ./../../figures/examples/5_3c_trace_regions.png
+   :width: 750
+   :alt: 3c trace selection
+   :align: center
+   :name: 3c_trace_regions 
+   
+   Selected regions on the intensity and FRET efficiency traces for the example trace shown above 
 
 ..  _automatic_3c:
 Automatic data analysis and correction
