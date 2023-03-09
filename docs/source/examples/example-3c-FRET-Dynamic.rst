@@ -85,13 +85,13 @@ Now on the *Extraction* tab the detected particles will be marked inside blue tr
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In order to extract the traces, we continued like the section **Trace Extraction, 2c-FRET-Dynamic, linking**, with the only difference in the *Frame Selection* part, that we left it to be from 2 to 3000. An example of the extracted traces is shown on :numref:``
+In order to extract the traces, we continued like the section **Trace Extraction, 2c-FRET-Dynamic, linking**, with the only difference in the *Frame Selection* part, that we left it to be from 2 to 3000. An example of the extracted traces is shown on :numref:`3c_trace_look `.
 
-.. figure:: ./../../figures/examples/.png
+.. figure:: ./../../figures/examples/4_3c_trace_example.png
    :width: 600
-   :alt: 
+   :alt: 3c trace look
    :align: center
-   :name: 
+   :name: 3c_trace_look 
    
    caption
 
