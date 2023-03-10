@@ -123,3 +123,4 @@ In the following section you can see the automated analysis steps for dynamic 3-
 Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+In this section, the resulting graphs and information after the automatic analysis by the DeepLASI are listed and shown.
