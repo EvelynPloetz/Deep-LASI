@@ -149,3 +149,11 @@ In this section, the resulting graphs and information after the automatic analys
    
    caption
    
+.. figure:: ./../../figures/examples/9_3c_TDP_generated.png
+   :width: 600
+   :alt: 3c TDP generated
+   :align: center
+   :name: 3c_TDPs_generated
+   
+   caption
+   
