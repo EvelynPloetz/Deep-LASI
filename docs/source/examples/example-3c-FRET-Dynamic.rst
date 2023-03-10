@@ -101,7 +101,7 @@ The first panel shows the intensity traces from all channels after blue laser ex
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For a detailed desciption of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**. The analysis steps are mostly the same, and if there is any special case for the three-color data, it will be explained here, otherwise the final results will be shown. As explained for the two-color data you can select the active region for each dye on each trace by pressing 1, 2, and 3 because of having three channels now, and just drag the cursor to select the desired region. You can see an example of a 3C trace with the regions selected on the upper two panels on :numref:`3c_trace_regions`. The FRET efficiency trace is automatically shadowed within the time range that all the three dyes are active. Pressing the E key also works for region selecting and categorizing.  
+For a detailed desciption of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**. The analysis steps are mostly the same, and if there is any special case for the three-color data, it will be explained here, otherwise the final results will be shown. As explained for the two-color data you can select the active region for each dye on each trace by pressing 1, 2, and 3 because of having three channels now, and then drag the cursor to select the desired region. You can see an example of a 3C trace with the regions selected on the upper two panels on :numref:`3c_trace_regions`. The FRET efficiency trace is automatically shadowed during the time range that all the three dyes are active. Pressing the *E* key also works for region selecting and categorizing.  
 
 .. figure:: ./../../figures/examples/5_3c_trace_regions.png
    :width: 750
@@ -111,7 +111,9 @@ For a detailed desciption of manual analysis steps please see the section **Manu
    
    Selected regions on the intensity and FRET efficiency traces for the example trace shown above 
 
-After categorization of all traces, we continued with plotting the FRET efficiencies for each dye pair on the origami structure, and extracted the dynamic information of the system with the following results. :numref:`3c_trace_regions` shows the apparent and corrected FRET efficiencies for each dye pair (BY, BR, and YR). 
+After categorization of all traces, we continued with plotting the apparent FRET efficiencies for each dye pair on the origami structure, and extracted the dynamic information of the system with the following results. :numref:`3c_trace_regions` shows the apparent and corrected FRET efficiencies for each dye pair (BY, BR, and YR). 
+
+**Put app FRET histograms here too**
 
 .. figure:: ./../../figures/examples/13_corr_fret.png
    :width: 700
