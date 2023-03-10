@@ -111,7 +111,7 @@ For a detailed desciption of manual analysis steps please see the section **Manu
    
    Selected regions on the intensity and FRET efficiency traces for the example trace shown above 
 
-After categorization of all traces, we continued with plotting the FRET efficiencies for each dye pair on the origami structure, and extracted the dynamic information of the system with the following results.
+After categorization of all traces, we continued with plotting the FRET efficiencies for each dye pair on the origami structure, and extracted the dynamic information of the system with the following results. :numref:`3c_trace_regions` shows the apparent and corrected FRET efficiencies for each dye pair (BY, BR, and YR). 
 
 ..  _automatic_3c:
 Automatic data analysis and correction
