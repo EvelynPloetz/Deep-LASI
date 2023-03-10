@@ -165,3 +165,19 @@ In this section, the resulting graphs and information after the automatic analys
    
    caption
    
+.. figure:: ./../../figures/examples/11_3c_de_ct.png
+   :width: 600
+   :alt: 3c de_ct
+   :align: center
+   :name: 3c_de_ct
+   
+   caption
+
+.. figure:: ./../../figures/examples/12_3c_gamma.png
+   :width: 600
+   :alt: 3c gamma
+   :align: center
+   :name: 3c_gamma_factor
+   
+   caption
+   
