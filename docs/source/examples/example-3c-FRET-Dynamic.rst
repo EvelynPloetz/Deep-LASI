@@ -124,3 +124,11 @@ Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this section, the resulting graphs and information after the automatic analysis by the DeepLASI are listed and shown.
+
+.. figure:: ./../../figures/examples/6_3c_confidence_results.png
+   :width: 650
+   :alt: confidence level
+   :align: center
+   :name: 3c_confidence level
+   
+   caption
