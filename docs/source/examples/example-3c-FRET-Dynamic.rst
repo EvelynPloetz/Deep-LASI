@@ -174,7 +174,7 @@ In this section, the resulting graphs and information after the automatic analys
    caption
 
 .. figure:: ./../../figures/examples/12_3c_gamma.png
-   :width: 600
+   :width: 700
    :alt: 3c gamma
    :align: center
    :name: 3c_gamma_factor
