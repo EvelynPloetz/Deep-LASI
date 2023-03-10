@@ -132,3 +132,11 @@ In this section, the resulting graphs and information after the automatic analys
    :name: 3c_confidence level
    
    caption
+
+.. figure:: ./../../figures/examples/7_3c_app_fret.png
+   :width: 650
+   :alt: 3c app fret
+   :align: center
+   :name: 3c apparent fret
+   
+   caption
