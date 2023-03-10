@@ -140,3 +140,12 @@ In this section, the resulting graphs and information after the automatic analys
    :name: 3c apparent fret
    
    caption
+
+.. figure:: ./../../figures/examples/8_3c_TDP_options.png
+   :width: 600
+   :alt: 3c TDP option
+   :align: center
+   :name: 3c_TDP_generating_option
+   
+   caption
+   
