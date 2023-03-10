@@ -142,7 +142,7 @@ In this section, the resulting graphs and information after the automatic analys
    caption
 
 .. figure:: ./../../figures/examples/8_3c_TDP_options.png
-   :width: 400
+   :width: 300
    :alt: 3c TDP option
    :align: center
    :name: 3c_TDP_generating_option
