@@ -134,7 +134,7 @@ In this section, the resulting graphs and information after the automatic analys
    caption
 
 .. figure:: ./../../figures/examples/7_3c_app_fret.png
-   :width: 650
+   :width: 700
    :alt: 3c app fret
    :align: center
    :name: 3c apparent fret
@@ -142,7 +142,7 @@ In this section, the resulting graphs and information after the automatic analys
    caption
 
 .. figure:: ./../../figures/examples/8_3c_TDP_options.png
-   :width: 600
+   :width: 400
    :alt: 3c TDP option
    :align: center
    :name: 3c_TDP_generating_option
