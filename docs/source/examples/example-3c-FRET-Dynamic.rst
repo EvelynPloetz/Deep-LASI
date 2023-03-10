@@ -128,7 +128,7 @@ Automatic data analysis and correction
 In the following section you can see the automated analysis steps for dynamic 3-color smFRET data. This part is also very similar to the section **Automatic data analysis and correction, 2c-FRET-Dynamic, linking**, so please have a look at that part first, and try to take the similar steps to analyze the current data. However, any difference between the 2 and 3 color cases will be explained here.
 
 .. figure:: ./../../figures/examples/14_3c_categorization_model.png
-   :width: 700
+   :width: 300
    :alt: 3c model selection 
    :align: center
    :name: 3c_categorization_model
