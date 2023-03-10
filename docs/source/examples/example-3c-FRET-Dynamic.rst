@@ -157,3 +157,11 @@ In this section, the resulting graphs and information after the automatic analys
    
    caption
    
+.. figure:: ./../../figures/examples/10_3c_dwell_time_fit.png
+   :width: 600
+   :alt: 3c YR dwell time
+   :align: center
+   :name: 3c_YR_dwell_time
+   
+   caption
+   
