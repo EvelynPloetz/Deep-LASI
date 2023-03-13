@@ -200,14 +200,16 @@ You can see an example of the kinetic information extracted for the YR FRET pair
    :name: 3c_YR_dwell_time
    
    Selected TDP cluster to achieve live fitting results
-   
+
+In the end, all correction factors are plotted as histograms with their mean, median, and mode values reported on them. As you can see on :numref:`3c_de_ct` and :numref:`3c_gamma_factor`, the moleculewise direct excitation, spectral crosstalk, and gamma factor are shown. The statistical information about them are also presented.
+
 .. figure:: ./../../figures/examples/11_3c_de_ct.png
    :width: 600
    :alt: 3c de_ct
    :align: center
    :name: 3c_de_ct
    
-   caption
+   The histograms of direct excitation and spectral crosstalk correction factors reported with statistics
 
 .. figure:: ./../../figures/examples/12_3c_gamma.png
    :width: 700
@@ -215,5 +217,5 @@ You can see an example of the kinetic information extracted for the YR FRET pair
    :align: center
    :name: 3c_gamma_factor
    
-   caption
+   The histograms of detection efficiency correction factor reported with statistics
    
