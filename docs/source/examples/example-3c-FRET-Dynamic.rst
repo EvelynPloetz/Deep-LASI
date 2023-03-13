@@ -113,13 +113,11 @@ For a detailed desciption of manual analysis steps please see the section **Manu
 
 After categorization of all traces, we continued with plotting the apparent FRET efficiencies for each dye pair on the origami structure, and extracted the dynamic information of the system with the following results. :numref:`3c_trace_regions` shows the apparent and corrected FRET efficiencies for each dye pair (BY, BR, and YR). 
 
-**Put app FRET histograms here too**
-
-.. figure:: ./../../figures/examples/13_corr_fret.png
+.. figure:: ./../../figures/examples/15_3c_app_and_corr_fret.png
    :width: 700
-   :alt: 3c corr fret 
+   :alt: 3c app_corr fret 
    :align: center
-   :name: 3c_corrected_FRET
+   :name: 3c_apparent_corrected_FRET
    
    caption
 
