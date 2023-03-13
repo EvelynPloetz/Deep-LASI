@@ -180,14 +180,16 @@ To generate the TDP plot, on the window like :numref:`3c_TDP_generating_option` 
    :name: 3c_TDP_generating_option
    
    The GUI asking for TDP options
-   
+
+As you can see on :numref:`3c_TDPs_generated`, the TDP for each dye pair is generated. We can easily select any desired cluster among all the transitions to extract the rates or dwell time information. 
+
 .. figure:: ./../../figures/examples/9_3c_TDP_generated.png
-   :width: 700
+   :width: 750
    :alt: 3c TDP generated
    :align: center
    :name: 3c_TDPs_generated
    
-   caption
+   The generated TDP opened in separated windows for the existing FRET pairs
    
 .. figure:: ./../../figures/examples/10_3c_dwell_time_fit.png
    :width: 500
