@@ -127,6 +127,8 @@ After categorization of all traces, we continued with plotting the FRET efficien
    
    Apparent FRET efficiency (top row), and coorected FRET efficiency histograms with the fitting result
 
+The HMM tab on the DeepLASI works properly for the two-color data. In the case of three-color data, we can get the dynamic results from the neural network inserted in the program, so you can see the resulting kinetic information on the automatic analysis section which follows. 
+
 ..  _automatic_3c:
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
