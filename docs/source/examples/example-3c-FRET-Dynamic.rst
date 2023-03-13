@@ -133,16 +133,18 @@ The HMM tab on the DeepLASI works properly for the two-color data. In the case o
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the following section you can see the automated analysis steps for dynamic 3-color smFRET data. This part is also very similar to the section **Automatic data analysis and correction, 2c-FRET-Dynamic, linking**, so please have a look at that part first, and try to take the similar steps to analyze the current data. However, any difference between the 2 and 3 color cases will be explained here.
+In the following section you can see the automated analysis steps for dynamic 3-color smFRET data. This part is also very similar to the section **Automatic data analysis and correction, 2c-FRET-Dynamic, linking**, so please have a look at that part first, and try to take the similar steps to analyze the current data. Although, any difference between the 2 and 3 color cases will be explained here.
+
+So, we first load the extracted traces to be analyzed. To start the automatic analysis, we first clicked on the button *Deep Learning*. You can now click on *Magic Button*, or perform the automatic analysis in several separate steps. For the latter case, the program will ask you too choose the neural network model like :numref:`3c_categorization_model`. As shown on the figure, we selected the *3-color ALEX* and clicked on *OK*.
 
 .. figure:: ./../../figures/examples/14_3c_categorization_model.png
-   :width: 300
+   :width: 250
    :alt: 3c model selection 
    :align: center
    :name: 3c_categorization_model
    
-   caption
-
+   Model selection window to specify the fitting neural network to the data
+   
 ..  _summary_3c:
 Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
