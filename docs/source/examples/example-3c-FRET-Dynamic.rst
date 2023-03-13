@@ -151,13 +151,17 @@ Plotting and Summary of Results
 
 In this section, the resulting graphs and information after the automatic analysis by the DeepLASI are listed and shown.
 
+One of the first results that DeepLASI reports is the confidence level in predicting the number of states in the traces, as you can see for the current data on :numref:`3c_confidence level`. 
+
 .. figure:: ./../../figures/examples/6_3c_confidence_results.png
    :width: 650
    :alt: confidence level
    :align: center
    :name: 3c_confidence level
    
-   caption
+   The confidence level histogram for the number of states (left) and the states prediction (right)
+
+The resulting histograms of the apparent FRET efficiency to give a quick overview of the existing FRET population(s) for each pair is shown on :numref:`3c apparent fret`. It is the mean FRET efficiency observed on the states found along the traces.
 
 .. figure:: ./../../figures/examples/7_3c_app_fret.png
    :width: 700
@@ -165,7 +169,7 @@ In this section, the resulting graphs and information after the automatic analys
    :align: center
    :name: 3c apparent fret
    
-   caption
+   The histograms of apparent FRET efficiency averaged for each state, labeled for each FRET pair
 
 .. figure:: ./../../figures/examples/8_3c_TDP_options.png
    :width: 300
