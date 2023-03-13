@@ -91,7 +91,7 @@ Then on the *Extraction* tab the detected particles will be marked inside blue t
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In order to extract the traces, we continued like the section **Trace Extraction, 2c-FRET-Dynamic, linking**, with the only difference in the *Frame Selection* part, that we left it to be from 2 to 3000, and in total 7990 traces were extracted. An example of the extracted traces is shown on :numref:`3c_trace_n2665`. Here you can see three panels, the upper two ones are fluorescence intensity traces, and the lowest one is the FRET efficiency trace.
+In order to extract the traces, we continued like the section **Trace Extraction, 2c-FRET-Dynamic, linking**, with the only difference in the *Frame Selection* part, that we left it to be from 2 to 3000, and in total 7990 traces were extracted. An example of the extracted traces is shown on :numref:`3c_trace_n2665`. Here you can see three panels, the upper two ones are fluorescence intensity traces, and the lowest one is the trace of FRET efficiency.
 
 .. figure:: ./../../figures/examples/4_3c_trace_2665.png
    :width: 750
@@ -101,13 +101,13 @@ In order to extract the traces, we continued like the section **Trace Extraction
    
    Exemplary trace for a three-color smTIRF measurement
 
-The first panel shows the intensity traces from all channels after blue laser excitation. The gray trace is the total intensity in the blue channel, the dark blue is the blue dye emission after blue excitation, the light blue shows the yellow dye emission (BY FRET), and the pink is the red dye emission (BR FRET) all after blue excitation. The second panel shows the intensity traces from green and red channels after corresponding laser excitations. So again, the gray trace is the total intensity in the green channel, the green one is the yellow dye emission, and the orange is the red dye emission both after yellow laser excitation. The red trace is the red dye fluorescence after red exctation. Also the FRET efficiency traces are shown on the last panel in blue for the BY, orange for the YR, and pink for the BR FRET pairs.
+The first panel shows the intensity traces from all channels after blue laser excitation. The gray line is the total intensity in the blue channel, the dark blue is the blue dye emission after blue excitation, the light blue shows the yellow dye emission (BY FRET), and the pink is the red dye emission (BR FRET) all after blue excitation. The second panel shows the intensity traces from green and red channels after corresponding laser excitations. So again, the gray trace is the total intensity in the green channel, the green one is the yellow dye emission, and the orange is the red dye emission both after yellow laser excitation. The red trace is the red dye fluorescence after red exctation. Also the FRET efficiency traces are shown on the last panel in blue for the BY, orange for the YR, and pink for the BR FRET pairs.
 
 ..  _manual_3c:
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For a detailed desciption of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**. The analysis steps are mostly the same, and if there is any special case for the three-color data, it will be explained here, otherwise the final results will be shown. As explained for the two-color data you can select the active region for each dye on each trace by pressing 1, 2, and 3 because of having three channels now, and then drag the cursor to select the desired region. You can see an example of a 3C trace with the regions selected on the upper two panels on :numref:`3c_trace_regions`. The FRET efficiency trace is automatically shadowed during the time range that all the three dyes are active. Pressing the *E* key also works for region selecting and categorizing.  
+For a detailed description of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**. The analysis steps are mostly the same, and if there is any special case for the three-color data, it will be explained here, otherwise the final results will be shown. As explained for the two-color data, you can select the active region for each dye on each trace by pressing 1, 2, and 3 because of having three individual channels now, and then drag the cursor to select the desired region. You can see an example of a 3C trace with the regions selected on the upper two panels on :numref:`3c_trace_regions`. The FRET efficiency trace is automatically shadowed during the time range that all the three dyes are active. Pressing the *E* key also works for region selection and categorization by the program.  
 
 .. figure:: ./../../figures/examples/5_3c_trace_regions.png
    :width: 750
@@ -117,7 +117,7 @@ For a detailed desciption of manual analysis steps please see the section **Manu
    
    Selected regions on the intensity and FRET efficiency traces for the example trace shown above 
 
-After categorization of all traces, we continued with plotting the apparent FRET efficiencies for each dye pair on the origami structure, and extracted the dynamic information of the system with the following results. :numref:`3c_trace_regions` shows the apparent and corrected FRET efficiencies for each dye pair (BY, BR, and YR). 
+After categorization of all traces, we continued with plotting the FRET efficiencies for each dye pair on the origami structure, and also extracted the dynamic information of the system. :numref:`3c_trace_regions` shows the apparent and corrected FRET efficiencies for each dye pair (BY, BR, and YR) with the fitting results. 
 
 .. figure:: ./../../figures/examples/15_3c_app_and_corr_fret.png
    :width: 700
@@ -125,7 +125,7 @@ After categorization of all traces, we continued with plotting the apparent FRET
    :align: center
    :name: 3c_apparent_corrected_FRET
    
-   caption
+   Apparent FRET efficiency (top row), and coorected FRET efficiency histograms with the fitting result
 
 ..  _automatic_3c:
 Automatic data analysis and correction
