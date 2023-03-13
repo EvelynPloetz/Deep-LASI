@@ -171,13 +171,15 @@ The resulting histograms of the apparent FRET efficiency to give a quick overvie
    
    The histograms of apparent FRET efficiency averaged for each state, labeled for each FRET pair
 
+To generate the TDP plot, on the window like :numref:`3c_TDP_generating_option` popping up to take in the desired number of bins and confidence threshold from the user. We left the number of bins to 100 and the threshold on 0, selected the *3 states*, and then clicked on *Generate Transition Density Plot*.
+
 .. figure:: ./../../figures/examples/8_3c_TDP_options.png
    :width: 300
    :alt: 3c TDP option
    :align: center
    :name: 3c_TDP_generating_option
    
-   caption
+   The GUI asking for TDP options
    
 .. figure:: ./../../figures/examples/9_3c_TDP_generated.png
    :width: 700
