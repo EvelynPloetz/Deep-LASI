@@ -190,14 +190,16 @@ As you can see on :numref:`3c_TDPs_generated`, the TDP for each dye pair is gene
    :name: 3c_TDPs_generated
    
    The generated TDP opened in separated windows for the existing FRET pairs
-   
+
+You can see an example of the kinetic information extracted for the YR FRET pair on :numref:`3c_YR_dwell_time` with the selected cluster on the right side of the graph. The fitted dwell time for these transitions is calculated as 0.67 s.
+
 .. figure:: ./../../figures/examples/10_3c_dwell_time_fit.png
    :width: 500
    :alt: 3c YR dwell time
    :align: center
    :name: 3c_YR_dwell_time
    
-   caption
+   Selected TDP cluster to achieve live fitting results
    
 .. figure:: ./../../figures/examples/11_3c_de_ct.png
    :width: 600
