@@ -89,8 +89,6 @@ The *Plot Units* sub-tab controls the y-axis of the intensity and FRET panels fo
    *Raw Trace (no BG subtr.)*,    "Intensity without background correction"
    *Corrected FRET*,              "Display of accurate FRET instead of apparent FRET"
 
-.. tip:: @ Simon, what precisely is plotted, i.e. which axis is changed and how ??
-
 #.  The first sub-tab, **Photons(Cam.calibrated)**, converts the intensity axis into the absolute number of photons being detected by the individual cameras during a particular excitation cycle. It updates the intensity axis of extracted single-molecule traces on the *Traces GUI$ window.
 #.  The second sub-tab, **Mean Across Particle Mask**, shows the mean emission intensity of the particle within the detection mask after trace extraction on the y-axis of the single-molecule traces on the *Traces GUI$ window.
 #.  The next three sub-tabs serve to correct and show the intensity after correction against direct excitation (**Direct Excitation (alpha)**), spectral crosstalk (**Spectral crosstalk (beta)**) or QY and detection sensitivity (**QY/Det. Eff (gamma)**), respectively. Without determining the correction factors, *Deep-LASI* provides identical plots for the corrected and uncorrected intensities.
@@ -191,7 +189,7 @@ After a successful mapping process, the Extraction-GUI opens automatically. The 
 Trace extraction
 ~~~~~~~~~~~~~
 
-While single color data can be directly loaded into *Deep-LASI*, multi-color assays require a mapping procedure first. Once this map is available and saved, you can start to extract experimental data anytime. As shown in :numref:`extraction_idea`, *Deep-LASI* will match the fluorescence signature from your single fluorophores during different excitation cycles and detection channels (once you specified the single-molecule assay) and allows you to select which labeled molecules you actually want to evaluate. For this, you first need to step-wise read-in the experimental data, as described in the :ref:`loading_doc` section. Next, *Deep-LASI* will generate a projection for each channel, i.e. the corresponding *.tif-file, showing the maximum intensity per pixel in the FOV. *Deep-LASI* will localize single emitters in each of the selected channels and superimpose the three maps afterwards showing the localized molecules in the individual channels. In the last step of the extraction process, *Deep-LASI* allows you to select, whether you want to export all traces (i.e., the trajectories of single-, double- or triple-labeled molecules), traces of only co-localizing molecules (i.e., molecules having the maximum number of traces) or molecules that have a specific label in a reference a channel. After a successful extraction process, you are directly forwarded to the third sub-GUI **Traces**, where you need to save the extracted traces first, before continuing with any data analysis.
+While single color data can be directly loaded into *Deep-LASI*, multi-color assays require a mapping procedure first. Once this map is available and saved, you can start to extract experimental data anytime. As shown in :numref:`extraction_idea`, *Deep-LASI* will match the fluorescence signature from your single fluorophores during different excitation cycles and detection channels (once you specified the single-molecule assay) and allows you to select which labeled molecules you actually want to evaluate. For this, you first need to step-wise read-in the experimental data, as described in the :ref:`loading_doc` section. Next, *Deep-LASI* will generate a projection for each channel, i.e. the corresponding *.tif-file*, showing the maximum intensity per pixel in the FOV. *Deep-LASI* will localize single emitters in each of the selected channels and superimpose the three maps afterwards showing the localized molecules in the individual channels. In the last step of the extraction process, *Deep-LASI* allows you to select, whether you want to export all traces (i.e., the trajectories of single-, double- or triple-labeled molecules), traces of only co-localizing molecules (i.e., molecules having the maximum number of traces) or molecules that have a specific label in a reference a channel. After a successful extraction process, you are directly forwarded to the third sub-GUI **Traces**, where you need to save the extracted traces first, before continuing with any data analysis.
 
 .. figure:: ./../figures/documents/Fig_11_Trace_Extraction.png
    :width: 500
@@ -201,10 +199,11 @@ While single color data can be directly loaded into *Deep-LASI*, multi-color ass
 
    Trace extraction of molecules with one, two, or three labels and selection whether trajectories for all molecules, co-localizing molecules only or molecules that show emission in a specific channel shall be generated.
 
-..  _loading_doc:
-Loading
+..  _extraction_modes:
+Extraction modes
 ~~~~~~~~~~~~~
-To start this process, please reload the earlier derived map via :code:`> File > Mapping > Open Map`. Once the map is successfully loaded, you are directly forwarded to the sub-GUI **Extraction** showing a detection mask created like the one shown on the top right part of :numref:`screenshot_extraction`. Alternatively you were directly forwarded after the :ref:`mapping` (Please don't forget to save the generated map in this case). This mask is used to calculate the emission intensity of the particle inside the central circle, and also the background within the outer ring. The user has the freedom to change the mask settings when needed.
+To start the extraction process, reload the earlier derived map via :code:`> File > Mapping > Open Map`. Once the map is successfully loaded, you are directly forwarded to the sub-GUI **Extraction** showing a detection mask created like the one shown on the top right part of :numref:`screenshot_extraction`. |br|
+Alternatively, you were directly forwarded after the :ref:`mapping` (Please don't forget to save the generated map in this case). This mask is used to calculate the emission intensity of the particle inside the central circle, and also the background within the outer ring. The user has the freedom to change the mask settings when needed.
 
 .. figure:: ./../figures/documents/Fig_11_Map_Saving.png
    :width: 400
@@ -214,41 +213,44 @@ To start this process, please reload the earlier derived map via :code:`> File >
 
    The mask created after mapping with adjustment options
 
-.. tip:: @Evelyn: until here.
+Before data loading and trace extraction, you first need to consider which kind of experiment has been carried out. *Deep-LASI* supports the following 3 types of measurement modes:
 
-Now you can open the data files from file menu and **Load Image Data** similar to opening the mapping images like shown on figure 11. The order of channels should be the same as mapping order.
+#. 2- and 3- color measurements with alternating laser excitation
+#. multi-color measurements with constant laser excitation for a fixed number of frames
 
-.. figure:: ./../figures/documents/Fig_11_Data_Loading.png
-   :width: 300
-   :alt: loading first channel
-   :align: center
-   :name: loading first channel data
+*ALEX excitation*|br|
+In the case of ALEX excitation load the data files after mapping the channels, as also described in detail in the :doc:`example` section. Select one *.tif-file* or multiple files via :code:`> File > Load Image Data > Channel 1` and let *Deep-LASI* read-in the data.
 
-   The menu for loading image data
-
-*Deep-LASI* asks you to choose the data files, and you can open all the files from each channel at a time. After a short time, the following window (figure 12) will open to take the measurement parameters. The first box is for the sum of exposure time and frame transfer. For example in case of measuring with the exposure time of 50 ms, and the frame transfer of 2.2 ms, we can enter 52.2.
+Next, specify the measurement parameters of the ALEX experiment (:numref:`doc_measurement_parameters`), such as the inter frame time and alternation cycle. The inter frame time should include the exposure time and frame transfer time, e.g., when measuring a frame transfer time of 2.2 ms for and exposure time of 50 ms by the emCCD camera, the total inter-frame time amounts to 52.2 ms.
 
 .. figure:: ./../figures/documents/Fig_12_Measurement_Parameters.png
    :width: 400
    :alt: inserting measurement parameters
    :align: center
-   :name: measurement parameters
+   :name: doc_measurement_parameters
 
    The window for specifying measurement parameters and excitation scheme
 
-The second box is to get the ALEX sequence used for illuminating the sample. Different combinations of two or three laser excitation can be entered here. Note that for the IR laser, you should only enter the letter ‘I’. The letter ‘G’ works for lasers in green or yellow region. Then you put the slider on the corresponding channel, for example, on the image shown here on the left or right position depending on reading data from first or second channel. It gets three divisions in case of a three-channel experiment.
+For the laser alternation, please specify the letters B (blue), G (green/yellow), R (red) and I (infrared) for the four excitation channels. Different excitation schemes of two or three lasers can be entered here, such as RGB, RG, GB, etc. Next, please select the slider to choose the corresponding first detection channel (e.g., the left or right position on a split camera used as the donor detection channel). The slider has 2 positions for a 2c-ALEX experiments, it automatically shows 3 positions in the case of a specified 3c-ALEX experiment.
 
-Then choose which frames you want to load on the program by using the **Load frame range**. Also depending on the experiment, you can choose the range of desired frames for detecting the particles and extracting their intensity traces. *Deep-LASI* takes all the frames by default and you can change them as you wish.
-
-The option of choosing the dye does nothing at the moment, but a library of various dyes could be added to the program so that dye specific information help us with a more complete analysis.
+Then choose which frames you want to load on the program by using the **Load frame range**. Also depending on the experiment, you can choose the range of desired frames for detecting the particles and extracting their intensity traces. *Deep-LASI* takes all the frames by default.
 
 As the last step here, click on the corresponding channel color from the four options provided. Now *Deep-LASI* opens the first data file from the range that you selected, like figure 13.
+
+
+
+
+
+*ALEX excitation*|br|
+In the case of ALEX excitation load the data files after mapping the channels, as also described in detail in the :doc:`example` section. Select one *.tif-file* or multiple files via :code:`> File > Load Image Data > Channel 1` and let *Deep-LASI* read-in the data.
+
+
 
 .. figure:: ./../figures/documents/Fig_13_Detecting_Particles.png
    :width: 400
    :alt: first channel detection
    :align: center
-   :name: particles detection
+   :name: doc_particles_detection
 
    Particle detection for the first channel data
 
@@ -260,7 +262,7 @@ Continue opening the data images for the next channel(s) from the same menu, as 
    :width: 300
    :alt: loading second channel
    :align: center
-   :name: menu for loading second channel
+   :name: doc_menu_loading_second_channel
 
    Loading data from the second detector
 
@@ -284,9 +286,10 @@ The example figures show a two-color measurement. As shown on figure 15, we put 
 
    Detection of particles and their co-localization
 
-..  _extraction_modes:
-Extraction modes
-~~~~~~~~~~~~~
+.. tip:: @Evelyn: until here.
+
+
+
 The color of triangles show the detected emitters on each corresponding channel and the circles show the co-localized particles. All the numbers are also reported in the small box on the top.
 
 You can decide which particles you want to analyze using the options in the right box **Trace Selection** and then click on **Extract Traces**. In the example shown on figure 17 only the co-localized particles are considered to study their FRET.
@@ -298,3 +301,7 @@ You can decide which particles you want to analyze using the options in the righ
    :name: performing the extraction
 
    Starting the extraction of intensity traces
+
+..  _loading_doc:
+Loading
+~~~~~~~~~~~~~
