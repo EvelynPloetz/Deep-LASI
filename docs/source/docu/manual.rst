@@ -7,7 +7,7 @@
 ..  _loading_doc:
 Loading
 ~~~~~~~~~~~~~
-<to be added>
+Having extracted all traces, or in the case you wish to re-evaluate data, load the data into the soft ware. <to be continued>
 
 Intensity Traces
 ~~~~~~~~~~~~~~~~~~~~

@@ -290,7 +290,7 @@ And lastly, specify in the **Trace selection** panel, which traces you wish to e
 
 .. note:: In the case, that an error occurs at the end of the data extraction, try to save the extracted traces anyway. Errors are reported for certain Windows installation, that we are currently investigating.
 
-.. tip:: @Simon: Please describe here, what you implemented, and how/what we need to fill in, in order to extract traces with constant laser excitaion with different lasers for fixed frame ranges!
-
 *Constant excitation* |br|
 In the case of constant laser excitation, we need to consider different experimental schemes again. In the case that multiple detection channels have been employed during constant excitation with one laser source, ...
+
+.. tip:: @Simon: Please describe here, what you implemented, and how/what we need to fill in, in order to extract traces with constant laser excitaion with different lasers for fixed frame ranges!
