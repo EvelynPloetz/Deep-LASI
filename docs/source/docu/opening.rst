@@ -202,8 +202,7 @@ While single color data can be directly loaded into *Deep-LASI*, multi-color ass
 ..  _extraction_modes:
 Extraction modes
 ~~~~~~~~~~~~~
-To start the extraction process, reload the earlier derived map via :code:`> File > Mapping > Open Map`. Once the map is successfully loaded, you are directly forwarded to the sub-GUI **Extraction** showing a detection mask created like the one shown on the top right part of :numref:`screenshot_extraction`. |br|
-Alternatively, you were directly forwarded after the :ref:`mapping` (Please don't forget to save the generated map in this case). This mask is used to calculate the emission intensity of the particle inside the central circle, and also the background within the outer ring. The user has the freedom to change the mask settings when needed.
+To start the extraction process, reload the earlier derived map via :code:`> File > Mapping > Open Map`. Once the map is successfully loaded, you are directly forwarded to the sub-GUI **Extraction** showing a detection mask created like the one shown on the top right part of :numref:`screenshot_extraction`. Alternatively, you were directly forwarded after the :ref:`mapping` process (please don't forget to save the generated map in this case before proceeding with the extraction).
 
 .. figure:: ./../figures/documents/Fig_11_Map_Saving.png
    :width: 400
@@ -213,13 +212,13 @@ Alternatively, you were directly forwarded after the :ref:`mapping` (Please don'
 
    The mask created after mapping with adjustment options
 
-Before data loading and trace extraction, you first need to consider which kind of experiment has been carried out. *Deep-LASI* supports the following 3 types of measurement modes:
+Before data loading and trace extraction, you first need to consider which kind of experiment has been carried out. *Deep-LASI* supports the following types of measurement modes:
 
 #. multi-color measurements with alternating laser excitation
 #. multi-color measurements with constant laser excitation for a fixed number of frames
 
 *ALEX excitation* |br|
-In the case of ALEX excitation load the data files after mapping the channels, as also described in detail in the :doc:`example` section. Select one *.tif-file* or multiple files via :code:`> File > Load Image Data > Channel 1` and let *Deep-LASI* read-in the data.
+In the case of ALEX excitation load the data files after mapping the channels, as described in detail in the :doc:`example` section. Select one *.tif-file* or multiple files via :code:`> File > Load Image Data > Channel 1` and let *Deep-LASI* read-in the data.
 
 Next, specify the measurement parameters of the ALEX experiment (:numref:`doc_measurement_parameters`), such as the inter frame time and alternation cycle. The inter frame time should include the exposure time and frame transfer time, e.g., when measuring a frame transfer time of 2.2 ms for and exposure time of 50 ms by the emCCD camera, the total inter-frame time amounts to 52.2 ms.
 
@@ -231,9 +230,9 @@ Next, specify the measurement parameters of the ALEX experiment (:numref:`doc_me
 
    The window for specifying measurement parameters and excitation scheme
 
-For the laser alternation, please specify the letters B (blue), G (green/yellow), R (red) and I (infrared) for the four excitation channels. Different excitation schemes of two or three lasers can be entered here, such as RGB, RG, GB, etc. Next, please select the slider to choose the corresponding first detection channel (e.g., the left or right position on a split camera used as the donor detection channel). The slider has 2 positions for a 2c-ALEX experiments, it automatically shows 3 positions in the case of a specified 3c-ALEX experiment.
+For the laser alternation, please specify alternation sequence, using the letters B (blue), G (green/yellow), R (red) and I (infrared) for the four excitation channels. Different excitation schemes of up to three lasers can be entered here, such as RGB, RG, GB, etc. Next, select the slider to choose the corresponding detection channel (e.g., the left or right position on a split camera used as the donor detection channel). In case the alternation during an ALEX experiment is not fully synchronized, the slider allows you to set the correct starting frame with the corresponding detection channel. In this case one needs to load it single *tif.-files* and select the correct alternation sequence / starting frame. The slider has 2 positions for a 2c-ALEX experiments, it automatically shows 3 positions in the case of a specified 3c-ALEX experiment.
 
-Then choose which frames you want to load on the program by using the **Load frame range**. Also depending on the experiment, you can choose the range of desired frames for detecting the particles and extracting their intensity traces. *Deep-LASI* takes all the frames by default. As the last step here, click on the corresponding channel color from the four options provided to confirm the detection channel. Now *Deep-LASI* opens the first data file from the files that you selected, as shown in :numref:`doc_particles_detection`.
+Next, please choose which frames you want to load on the program by using the **Load frame range** box. Depending on the experiment, you can choose the range of desired frames for detecting the particles and extracting their intensity traces. *Deep-LASI* takes all the frames by default. As the last step here, click on the corresponding channel color from the four options to confirm the detection channel. *Deep-LASI* will open the first data file from the files that you selected, as shown in :numref:`doc_particles_detection`, and create an average projection for particle detection next.
 
 .. figure:: ./../figures/documents/Fig_13_Detecting_Particles.png
    :width: 400
@@ -243,9 +242,9 @@ Then choose which frames you want to load on the program by using the **Load fra
 
    Particle detection for the first channel data
 
-The sliders below the image enable to adjust the brightness/contrast settings , the detection threshold to register particles and two change between different detection channels. Set the slides such that you maximize the number of detected molecules. Localized particles are marked by triangles superimposed to the image, and their localization number is shown in the balck box aside to the image on the top right position.
+The sliders below the image allow for adjusting the brightness/contrast settings, the detection threshold to register particles and to change between detection channels during the later extraction steps. Set the slides such that you maximize the number of detected molecules. Localized particles are marked by triangles superimposed to the image, and their localization number is shown in the black box aside the image on the top right position.
 
-In the next steps, please repeat loading the recorded data by selecting the corresponding *tif.files* or set of files via :code:`> File > Load Image Data > Channel 2` etc. Each time you load image files, the pop-up window will ask you about the detection channel color to extract the data in the correct order.
+In the next steps, please repeat loading the recorded data of the other detection channels by selecting the corresponding *tif.files* or set of files via :code:`> File > Load Image Data > Channel 2` etc. Each time you load image files, the pop-up window will ask you about the detection channel color to extract the data in the correct order.
 
 .. figure:: ./../figures/documents/Fig_15_Measurement_Parameters_Second_Chan.png
    :width: 300
@@ -255,7 +254,7 @@ In the next steps, please repeat loading the recorded data by selecting the corr
 
    Updating measurement parameters for the next channel
 
-As shown in :numref:`doc_second_channel`, put the slider on the second half to indicate the second channel (the same procedure works for the third channel by putting the slider to the most right position.), and also click on the red button labeled with 'R' (as specified in the alternation cycle box to confirm the acceptor channel (red in this case). After a short time the average imaging of the specified, loaded frames of the second channel overlays on the image from the first one.
+As shown in :numref:`doc_second_channel`, put the slider on the second half of the slider position to indicate the second channel (the same procedure works for the third channel by putting the slider to the most right position.). Reasoning behind this step is again to provide the freedom to select the correct excitation, and also click on the red button labeled with 'R' (as specified in the alternation cycle box to confirm the acceptor channel (red in this case). After a short time the average imaging of the specified, loaded frames of the second channel overlays on the image from the first one.
 
 .. figure:: ./../figures/documents/Fig_16_Detecting_Colocal.png
    :width: 400
@@ -267,8 +266,10 @@ As shown in :numref:`doc_second_channel`, put the slider on the second half to i
 
 ..tip: Add case for constant excitation scheme here
 
-*Constant excitation*|br|
+*Constant excitation* |br|
 In the case of ALEX excitation load the data files after mapping the channels, as also described in detail in the :doc:`example` section. Select one *.tif-file* or multiple files via :code:`> File > Load Image Data > Channel 1` and let *Deep-LASI* read-in the data.
+
+This mask is used to calculate the emission intensity of the particle inside the central circle, and also the background within the outer ring. The user has the freedom to change the mask settings when needed.
 
 
 ..tip: Continue with co-localization and extraction
