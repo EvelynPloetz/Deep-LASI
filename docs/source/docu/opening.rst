@@ -207,7 +207,7 @@ Extraction modes
 To start the extraction process, reload the earlier derived map via :code:`> File > Mapping > Open Map`. Once the map is successfully loaded, you are directly forwarded to the sub-GUI **Extraction** showing a detection mask created like the one shown on the top right part of :numref:`screenshot_extraction`. Alternatively, you were directly forwarded after the :ref:`mapping` process (please don't forget to save the generated map in this case before proceeding with the extraction).
 
 .. figure:: ./../figures/documents/Fig_11_Map_Saving.png
-   :width: 400
+   :width: 800
    :alt: Extraction GUI Screenshot
    :align: center
    :name: screenshot_extraction
@@ -225,7 +225,7 @@ In the case of ALEX excitation load the data files after mapping the channels, a
 Next, specify the measurement parameters of the ALEX experiment (:numref:`doc_measurement_parameters`), such as the inter frame time and alternation cycle. The inter frame time should include the exposure time and frame transfer time, e.g., when measuring a frame transfer time of 2.2 ms for and exposure time of 50 ms by the emCCD camera, the total inter-frame time amounts to 52.2 ms.
 
 .. figure:: ./../figures/documents/Fig_12_Measurement_Parameters.png
-   :width: 400
+   :width: 500
    :alt: inserting measurement parameters
    :align: center
    :name: doc_measurement_parameters
@@ -237,7 +237,7 @@ Please specify the sequence of the laser excitation using the letters B (blue), 
 Next, please choose which frames you want to load on the program by using the **Load frame range** box. Depending on the experiment, you can choose the range of desired frames for detecting the particles and extracting their intensity traces. *Deep-LASI* takes all the frames by default. As the last step here, click on the corresponding channel color from the four options to confirm the detection channel. *Deep-LASI* will open the first data file from the files that you selected, as shown in :numref:`doc_particles_detection`, and create an average projection for particle detection next.
 
 .. figure:: ./../figures/documents/Fig_13_Detecting_Particles.png
-   :width: 400
+   :width: 500
    :alt: first channel detection
    :align: center
    :name: doc_particles_detection
@@ -249,7 +249,7 @@ The sliders below the image allow for adjusting the brightness/contrast settings
 In the next steps, please repeat loading the recorded data of the other detection channels by selecting the corresponding *tif.files* or set of files via :code:`> File > Load Image Data > Channel 2` etc. Each time you load image files, the pop-up window will ask you about the detection channel color to extract the data in the correct order.
 
 .. figure:: ./../figures/documents/Fig_14_Measurement_Parameters_Second_Chan.png
-   :width: 300
+   :width: 500
    :alt: inserting second measurement parameters
    :align: center
    :name: doc_second_channel
@@ -259,23 +259,24 @@ In the next steps, please repeat loading the recorded data of the other detectio
 As shown in :numref:`doc_second_channel`, put the slider on the second half of the slider position to indicate the second channel (the same procedure works for the third channel by putting the slider to the most right position). Reasoning behind this step is again to provide the freedom to select the correct excitation. Afterward click on the red button labeled with 'R' (as specified in the alternation cycle box to confirm the acceptor channel. After a short time the average imaging of the specified, loaded frames of the second channel overlays on the image from the first one.
 
 .. figure:: ./../figures/documents/Fig_15_Detecting_Colocal.png
-   :width: 400
+   :width: 500
    :alt: detection of co-localization
    :align: center
    :name: doc_find_co-localization
 
    Detection of particles and their co-localization
 
-..tip: @Simon: Please specify in the following section, how the values of the Masks are defined!
+.. tip:: @Simon: Please specify in the following section, how the values of the Masks are defined!
 
 Once all desired channels are loaded and all detection channels have been identified, you need to specify, how you want to extract traces and which traces you wish to select for extraction. First of all, select the settings in the **Mask setting** panel, how the background and intensity of the single emitters shall be extracted. The **PSF** box specifies the diameter of the PSF of a single emitter. The **BG inner** box notes the distance between the emitter and the ring-like area in which the background around single emitters will be determined. The **BG outer** box provides the width of the ring used to determine the background.
 
-..tip: @Simon: Please specify in the following section, how the methods are implemented!
+.. tip:: @Simon: Please specify in the following section, how the methods are implemented!
 
 Next, specify which methods for particle detection shall be employed:
-#. **Wavelet** detection (see for example `Messer et al. <https://iopscience.iop.org/article/10.1088/1367-2630/ac4ad5>`_ or `XXX et al. <https://www.nature.com/articles/s41467-022-28703-z>`_)
-#. **Intensity Thresholding**
-#. **IMregMax** + Radial C...**
+
+#. **Wavelet** detection (see for example `Messer et al. <https://iopscience.iop.org/article/10.1088/1367-2630/ac4ad5>`_ or `Ganjalizadeh et al. <https://www.nature.com/articles/s41467-022-28703-z>`_)
+#. **Intensity Thresholding** which takes a 2sigma difference in signal
+#. **IMregMax** + Radial C...** which takes ....
 
 And lastly, specify in the **Trace selection ** panel, which traces you wish to extract. As indicated by the colors of the triangles (:numref:`doc_find_co-localization`) for each corresponding channel, you can extract either (1) all detected emitters independent of the detection channels (e.g., Donor only, acceptor only as well as FRET pairs), or (2) only co-localizing molecules as indicated by the white circles (e.g., only FRET species) or (3) extract the intensity in reference to a selected channel, which could be donor only together with FRET species. The panel **Frame selection** allows for setting the frame range, in which traces shall be extracted. In the case, you wish to export the mapped single-molecule maps display in the *Extraction* GUI before you finally extract the traces, press the *Export the Warped Image* button at bottom of the GUI, otherwise click on *Extract Traces*. *Deep-LASI* will now automatically extract traces movie-by-movie wise for the file you have selected earlier. This process can last several moments, but is fully automatically carried out. Once the extraction process is finished, save the traces via :code:`> File > Save Traces`
 
@@ -287,9 +288,9 @@ And lastly, specify in the **Trace selection ** panel, which traces you wish to 
 
    Starting the extraction of intensity traces
 
-..note: In the case, that an error occurs at the end of the data extraction, try to save the extracted traces anyway. Errors are reported for certain Windows installation, that we are currently investigating.
+.. note:: In the case, that an error occurs at the end of the data extraction, try to save the extracted traces anyway. Errors are reported for certain Windows installation, that we are currently investigating.
 
-..tip: @Simon: Please describe here, what you implemented, and how/what we need to fill in, in order to extract traces with constant laser excitaion with different lasers for fixed frame ranges!
+.. tip:: @Simon: Please describe here, what you implemented, and how/what we need to fill in, in order to extract traces with constant laser excitaion with different lasers for fixed frame ranges!
 
 *Constant excitation* |br|
 In the case of constant laser excitation, we need to consider different experimental schemes again. In the case that multiple detection channels have been employed during constant excitation with one laser source, ...
