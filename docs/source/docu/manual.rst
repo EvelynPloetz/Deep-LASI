@@ -4,9 +4,9 @@
 
 -----------------------------------------------
 
-Single-molecule data analysis using *Deep-LASI* is carried out in an fully automatic way. However, for new experimental systems, e.g., when studying a new protein system with unknown folding behavior, it is highly advisable, to analyse the data step-wise by hand and inspect the recorded traces by eye.
+Single-molecule data analysis using *Deep-LASI* is carried out in an fully automatic way. However, for new experimental systems, e.g., when studying a new protein system with unknown folding behavior, it is highly advisable, to not directly go for an automatic analysis but to analyse the data step-wise by hand and inspect the recorded traces by eye.
 
-The following section gives, therefore, an overview first on about how to use *Deep-LASI* manually to sort, categorize and prepare single-molecule data using the sub-GUI *Traces* (:numref:`trace_gui`) for later evaluation, e.g. by Hidden-Markov analysis, etc.
+The following section gives, therefore, an overview first on how to use *Deep-LASI* manually to sort, categorize and prepare single-molecule data using the sub-GUI *Traces* (:numref:`trace_gui`) for later evaluation, e.g. by Hidden-Markov analysis, etc. Automatic data evaluation is described in the separate section :ref:`auto-analysis`
 
 .. figure:: ./../figures/documents/Traces_Manual.png
    :width: 650
@@ -19,11 +19,14 @@ The following section gives, therefore, an overview first on about how to use *D
 ..  _loading_doc:
 Loading
 ~~~~~~~~~~~~~
-Starting point of any data evaluation is the loading process. Once you extracted all traces from a new single-moelcule experiment, or in the case you wish to re-evaluate data, load the data into the soft ware via :code:`> File > Load Traces`. In case you recorded multiple datasets with alternating laser excitation but deviating starting frame, please first extract the traces per single movies and load the extracted traces file-wise consecutively via :code:`> File > Add Traces`.
+Starting point of any data evaluation is the loading process. Once you extracted all traces from a new single-molecule experiment, or in the case you wish to re-evaluate data, load the data into the software via :code:`> File > Load Traces`. In case you recorded multiple datasets with alternating laser excitation but deviating starting frame, please first extract the traces per single movies and load the extracted traces file-wise consecutively via :code:`> File > Add Traces`.
 
-Intensity Traces
+.. - :ref:`manual_analysis`
+.. - :ref:`man-categorization`
+.. - :ref:`man-selection`
+
+Traces GUI
 ~~~~~~~~~~~~~~~~~~~~
-
 After the extraction or loading step, the resulting traces will open/show up on the sub-GUI called **Traces** as shown in :numref:`trace_look` for example for two- or three-color FRET measurements.
 
 .. figure:: ./../figures/documents/Fig_18_Trace.png
@@ -33,6 +36,13 @@ After the extraction or loading step, the resulting traces will open/show up on 
    :name: trace_look
 
    Exemplary single-molecule traces for a (top) two-color and (bottom) three-color FRET measurement.
+
+
+..  _manual_analysis:
+Intensity Traces
+~~~~~~~~~~~~~~~~~~~~
+
+
 
 Depending on the measurement type and amount of detection channel, up to three sub-panels will open up showing the intensity
 
@@ -80,84 +90,3 @@ The correction factors calculated from each trace are in the **FRET control** bo
 
    Correction factors based on the selected region on a trace
 
-After having all the traces categorized, you can move on to the **Histograms** tab (figure 22), choose the category you want which are the same as you defined (figure 23), and get information about your data as histograms already fitted. Information such as the total signal, background level, count-rate, signal to noise ratio, and bleaching time, figure 24. The fitting results are provided in a table on the right side.
-
-.. figure:: ./../figures/documents/Fig_22_Histogram_Tab.png
-   :width: 300
-   :alt: histogram tab
-   :align: center
-   :name: histogram tab
-
-   Histogram tab
-
-.. figure:: ./../figures/documents/Fig_23_Histogram_Tab_Categories.png
-   :width: 300
-   :alt: same categories in histogram tab
-   :align: center
-   :name: same categories in histogram tab
-
-   Categories shown on *Histogram* tab
-
-.. figure:: ./../figures/documents/Fig_24_Measurement_Histograms.png
-   :width: 450
-   :alt: histograms showing measurement details
-   :align: center
-   :name: histograms showing measurement details
-
-   Histograms showing measurement details
-
-Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
-
-.. figure:: ./../figures/documents/Fig_25_FRET_Tab.png
-   :width: 300
-   :alt: FRET tab
-   :align: center
-   :name: FRET tab
-
-   FRET tab on the GUI
-
-.. figure:: ./../figures/documents/Fig_26_FRET_Tab_Categories.png
-   :width: 500
-   :alt: FRET tab categories
-   :align: center
-   :name: choosing categories on FRET tab
-
-   Choosing desired category(ies) on *FRET* tab
-
-After choosing the category, you can select from the **Plot Mode** which plot to get. In the example shown on figure 26, you get the histogram of apparent FRET efficiency, like the one in figure 27.
-
-.. figure:: ./../figures/documents/Fig_27_Result_Histogram.png
-   :width: 400
-   :alt: apparent FRET histogram
-   :align: center
-   :name: apparent FRET histogram
-
-   An exemplary histogram of apparent FRET efficiency with two populations
-
-There are options in **Display Settings** (see figure 28) to make the frame-wise and/or molecule-wise plot visible, normalize them, and also to fit them by choosing the best fitting method. If sometimes fitting seems so wrong, you can manually insert some values based on what you roughly see on the plot, fix them and fit again. By playing around the fitting gets better, then you can uncheck the fixing boxes and let the program find the best fitting values. You can also change the color of your plot(s) by clicking on the colored rectangle and choose a desired color.
-
-.. figure:: ./../figures/documents/Fig_28_Fitting_Histogram.png
-   :width: 500
-   :alt: display settings
-   :align: center
-   :name: result display settings
-
-   Display settings for the resulting plots
-
-On the HMM tab, you can again select a category and run the HMM on it. This option works for two-color measurements at the moment. There are some other options for analysis the kinetics of a three-color measurement which will come shortly in the following parts.
-
-.. figure:: ./../figures/documents/Fig_29_HMM_Tab.png
-   :width: 300
-   :alt: HMM tab
-   :align: center
-   :name: HMM tab
-
-   HMM tab on the software GUI
-
-.. figure:: ./../figures/documents/Fig_30_HMM_Starting.png
-   :width: 450
-   :alt: starting HMM
-   :align: center
-   :name: running HMM
-
-   Starting HMM analysis on data

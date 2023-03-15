@@ -278,7 +278,7 @@ Next, specify which methods for particle detection shall be employed:
 #. **Intensity Thresholding** which takes a 2sigma difference in signal
 #. **IMregMax** + Radial C...** which takes ....
 
-And lastly, specify in the **Trace selection** panel, which traces you wish to extract. As indicated by the colors of the triangles (:numref:`doc_find_co-localization`) for each corresponding channel, you can extract either (1) all detected emitters independent of the detection channels (e.g., Donor only, acceptor only as well as FRET pairs), or (2) only co-localizing molecules as indicated by the white circles (e.g., only FRET species) or (3) extract the intensity in reference to a selected channel, which could be donor only together with FRET species. The panel **Frame selection** allows for setting the frame range, in which traces shall be extracted. In the case, you wish to export the mapped single-molecule maps display in the *Extraction* GUI before you finally extract the traces, press the *Export the Warped Image* button at bottom of the GUI, otherwise click on *Extract Traces*. *Deep-LASI* will now automatically extract traces movie-by-movie wise for the file you have selected earlier. This process can last several moments, but is fully automatically carried out. Once the extraction process is finished, save the traces via :code:`> File > Save Traces`
+And lastly, specify in the **Trace selection** panel, which traces you wish to extract. As indicated by the colors of the triangles (:numref:`doc_find_co-localization`) for each corresponding channel, you can extract either (1) all detected emitters independent of the detection channels (e.g., Donor only, acceptor only as well as FRET pairs), or (2) only co-localizing molecules as indicated by the white circles (e.g., only FRET species) or (3) extract the intensity in reference to a selected channel, which could be donor only together with FRET species. The panel **Frame selection** allows for setting the frame range, in which traces shall be extracted. In the case, you wish to export the mapped single-molecule image displayed in the *Extraction* GUI before you finally extract the traces, press the *Export the Warped Image* button on the left at bottom of the GUI. For trace extraction itself click on the right button *Extract Traces*. *Deep-LASI* will now automatically extract traces movie-by-movie wise for the file you have selected earlier. This process can last several moments, but is fully automatically carried out. Once the extraction process is finished, save the traces via :code:`> File > Save Traces`
 
 .. figure:: ./../figures/documents/Fig_16_Extraction_Settings.png
    :width: 450
@@ -288,7 +288,7 @@ And lastly, specify in the **Trace selection** panel, which traces you wish to e
 
    Starting the extraction of intensity traces
 
-.. note:: In the case, that an error occurs at the end of the data extraction, try to save the extracted traces anyway. Errors are reported for certain Windows installation, that we are currently investigating.
+.. note:: In the case, that an error occurs at the end of the data extraction, try to save the extracted traces anyway. Errors were reported for certain Windows installation, that we are currently investigating to solve the problem.
 
 *Constant excitation* |br|
 In the case of constant laser excitation, we need to consider different experimental schemes again. In the case that multiple detection channels have been employed during constant excitation with one laser source, ...
