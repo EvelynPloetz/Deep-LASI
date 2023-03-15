@@ -4,23 +4,39 @@
 
 -----------------------------------------------
 
+Single-molecule data analysis using *Deep-LASI* is carried out in an fully automatic way. However, for new experimental systems, e.g., when studying a new protein system with unknown folding behavior, it is highly advisable, to analyse the data step-wise by hand and inspect the recorded traces by eye.
+
+The following section gives, therefore, an overview first on about how to use *Deep-LASI* manually to sort, categorize and prepare single-molecule data using the sub-GUI *Traces* (:numref:`trace_gui`) for later evaluation, e.g. by Hidden-Markov analysis, etc.
+
+.. figure:: ./../figures/documents/Traces_Manual.png
+   :width: 650
+   :alt: Trace Deep-LASI
+   :align: center
+   :name: trace_gui
+
+   The sub-GUI **Traces** of *Deep-LASI* serves for data processing and pre-analysis and serves as starting point for automatic data analysis.
+
 ..  _loading_doc:
 Loading
 ~~~~~~~~~~~~~
-Having extracted all traces, or in the case you wish to re-evaluate data, load the data into the soft ware. <to be continued>
+Starting point of any data evaluation is the loading process. Once you extracted all traces from a new single-moelcule experiment, or in the case you wish to re-evaluate data, load the data into the soft ware via :code:`> File > Load Traces`. In case you recorded multiple datasets with alternating laser excitation but deviating starting frame, please first extract the traces per single movies and load the extracted traces file-wise consecutively via :code:`> File > Add Traces`.
 
 Intensity Traces
 ~~~~~~~~~~~~~~~~~~~~
 
-After the extraction step which might take a while depending on the amount of data loaded, the resulting traces will open on the next tab called **Traces** as shown on figure 18 for both two- and three-color measurements. You can see on the left side that 6100 two-color traces were extracted from the loaded data set.
+After the extraction or loading step, the resulting traces will open/show up on the sub-GUI called **Traces** as shown in :numref:`trace_look` for example for two- or three-color FRET measurements.
 
 .. figure:: ./../figures/documents/Fig_18_Trace.png
    :width: 700
    :alt: trace
    :align: center
-   :name: trace look
+   :name: trace_look
 
-   Exemplary traces for a two-color measurement on the left, and three-color on the right
+   Exemplary single-molecule traces for a (top) two-color and (bottom) three-color FRET measurement.
+
+Depending on the measurement type and amount of detection channel, up to three sub-panels will open up showing the intensity
+
+You can see on the left side that 6100 two-color traces were extracted from the loaded data set.
 
 On figure 18 on the left, you see the time trace of both donor and acceptor in the left upper panel. Because of illuminating the sample using ALEX mode, a lot of information are available on each trace. The gray plot is the total intensity on the donor channel which in theory is expected to have a stable value before a bleaching step. The green trace is the signal of donor after donor excitation, the red trace is the emission of acceptor after donor excitation (FRET), and the dark red is the emission of acceptor after acceptor excitation. You can choose which intensity trace be shown from the right box **Plot Layout** by checking or unchecking the corresponding boxes.
 
