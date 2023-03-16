@@ -88,12 +88,24 @@ You can also delete an unwanted category by clicking on the  trash can icon. Unc
 
 The next frame on the GUI comprises two sub-tabs, the *Plot Layout* tab and the *Trace tools* tab. The first one allows for hiding or displaying specific emission channels for selected excitation sources, as well as their corresponding FRET signatures, as described above. The *Trace tools* tab serves for carrying out an automated traces sorting, classification and analysis, which will be described in section :ref:`auto-analysis`.
 
-The *FRET controls* tab, serves for controling the FRET correction factors for direct excitation, leakage and detection sensitivity. Its functionality will be described in section :ref:`correction_factors`.
+The *FRET controls* tab, serves for controlling the FRET correction factors for direct excitation, leakage and detection sensitivity. Its functionality will be described in section :ref:`correction_factors`.
 
 ..  _manual_analysis:
 Trace categorization
 ~~~~~~~~~~~~~~~~~~~~
+The categorization of traces depends on the actual single-molecule experiment. In the following, we describe important steps for the analysis of a dual-color FRET experiment with alternating laser excitation as an example. Experienced users can certainly carry out different steps of the categorization and selection process in parallel, i.e. also on a single-trace basis.
 
+#. To categorize a large number of molecules in a fast manner we advice to first sort out all unwanted molecules. Create an group called for example *Trash* first. Depending on whether you want to click through the list of traces or want to use the key board, assign a letter on the keyboard to your *'Trash'* group. Now go through all traces and sort out unwanted traces. You can switch forward to the next trace by typing **D** and go backwards to the former trace, which is not categorized yet, by typing **A**.
+We additionally advice to ensure that you only keep single-molecule event. For this, please inspect the middle column on the GUI showing the the detected particle in each channel. Make sure that only one molecule is shown inside the detection mask in each channel, while no emitter is detected inside the 'background mask'. Otherwise exclude the trajectory, since the false background calculation will lead to miscalculated FRET correction factors and hence FRET efficiencies.
+
+#. Sort between *Static* and *Dynamic* molecules. Add traces to a group of dynamic or static traces. By this step you can select afterwards, which traces shall be analysed by HMM for example.
+
+#. Select regions of the trace (as described in paragraph :ref:`man-selection`.
+
+
+..  _man-selection:
+Trace selection
+~~~~~~~~~~~~~~~~~~~~
 For selecting the desired region on each trace for further analysis, you can drag the mouse to make the selected region shadowed, for example from the beginning of a trace until a bleaching step. By clicking on the trace region, the mouse turns to an active cursor for a general selection for example when all the dyes are active. *Deep-LASI* will use the first bleaching step to calculate the correction factors. If you want to select channel specific regions, press the numbers 1,2,… to indicate the channel with the same order you loaded the images, and then you can select the region by the cursor special to each channel like the example on figure 20 for the red channel as the second one. For other channels the cursor shows the other corresponding letters like B, G, and I.
 
 .. figure:: ./../figures/documents/Fig_20_Cursor_Activating.png
@@ -104,7 +116,6 @@ For selecting the desired region on each trace for further analysis, you can dra
 
    Activated cursor specific for red channel for region selection
 
-The lower panel in orange, is the time trace of FRET efficiency. You can also choose which efficiency trace to see. It especially comes handy in case of having more than one FRET pair like the case shown on the right part. In the middle column, the detected particle on each channel is shown inside the detection mask, and in addition to the trace information this can also help to decide if we have a single molecule or not. For example you should see one emitter in the middle and no particle sitting on the background ring, since it will falsify the background calculation.
 
 
 The next photo shows an example of region selection for both green and red channels. Here the FRET efficiency trace gets the selection until the first bleaching step, and this region will be added to the FRET histogram in the end.
