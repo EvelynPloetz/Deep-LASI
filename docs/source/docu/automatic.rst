@@ -4,6 +4,10 @@
 
 -----------------------------------------------
 
+..  _auto-analysis:
+Automatic Analysis
+~~~~~~~~~~~~~
+
 In case you want to save time and not go through all the analysis steps manually which might take days and even weeks especially for categorizing, you can use the automated analysis provided in the **Deep Learning** tab, Figure 31. This is an additional program using pre-trained deep neural networks incorporated into *Deep-LASI*.
 
 .. figure:: ./../figures/documents/Fig_31_TracesTab.png
