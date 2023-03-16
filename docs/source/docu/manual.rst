@@ -66,7 +66,6 @@ For a *three-color measurement*, an additional panel displays the trajectories o
 You can choose which intensity trace shall be displayed by checking or unchecking channels in the **Plot Layout** tab on the right lower corner of the GUI. This holds also true for the FRET efficiency signature, which is displayed in the lower panel. Deselecting FRET channels can become especially handy in the case of having more than one FRET pair per molecule. The **Reset Plot** button restores the default trace representation.
 
 *Trace analysis* |br|
-
 The right part of the **Traces** GUi serves for data handling. |br|
 In the *Navigation* tab, you can switch between traces via the slider.
 It displays the currently shown trajectory and the total number of extracted traces. For the 2c-ALEX example, 6100 traces were extracted from the loaded data set (:numref:`trace_look`; top). |br|
