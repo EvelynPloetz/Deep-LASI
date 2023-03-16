@@ -23,6 +23,7 @@ Overview
 - :ref:`manual_analysis`
 - :ref:`man-categorization`
 - :ref:`man-selection`
+- :ref:`correction_factors`
 - :ref:`hmm`
 - :ref:`histograms`
 - :ref:`statistics`
