@@ -28,9 +28,9 @@ Starting point of any data evaluation is the loading process from 'freshly' extr
 
 Traces GUI
 ~~~~~~~~~~~~~~~~~~~~
-After data loading, traces will open/show up on the sub-GUI called **Traces** as shown in :numref:`trace_look` for example for two- or three-color FRET measurements with alternating laser excitation. The GUI is split into two sections: the left part displays the single molecule data, the right part is dedicate for trace classification, preparation, sorting, data correction and automated data analysis, as described late in this Chapter.
+After data loading, traces will open/show up on the sub-GUI called **Traces** as shown in :numref:`trace_look` for example for two- or three-color FRET measurements with alternating laser excitation. The GUI is split into two sections: the left part displays the single molecule data, the right part is dedicated to trace classification, preparation, sorting, data correction and automated data analysis, as described later in this Chapter.
 
-.. figure:: ./../figures/documents/Fig_18_Trace.png
+.. figure:: ./../figures/documents/Fig_18_Trace_Surface.png
    :width: 700
    :alt: trace
    :align: center
@@ -42,7 +42,7 @@ After data loading, traces will open/show up on the sub-GUI called **Traces** as
 Depending on the measurement type and amount of detection channels, up to three sub-panels will open up on the left side of the **Traces** GUI showing the intensity trajectories of a multi-labeled molecule in the upper panels. Their corresponding intensity projections are shown on the right side next to the trajectories. The panel on the bottom left shows the potential FRET signature for different dye-pairs. Additionally, *Deep-LASI* shows small snippets in the column right next to the intensity traces showing the average movie projection in which multi-labeled molecules were found in the different detection channels including their corresponding area chosen for the background determination.
 
 For a *two-color FRET experiment* (:numref:`trace_look`; top), the upper left
-panel shows the time trace of both, donor and acceptor after direction excitation, as well the sensitized emission, while the corresponding FRET traces is shown on the lower panel on the left. Further more, *Deep-LASI* presents the total intensity given as the sum between the DD and DA channel as an additional dark grey/black trajectory. It should be a straight line after correcting against leakage, direct excitation and detection sensitivity as described in section XXX.
+panel shows the time trace of both, donor and acceptor after direction excitation, as well the sensitized emission, while the corresponding FRET traces is shown on the lower panel on the left. Further more, *Deep-LASI* presents the total intensity given as the sum between the DD and DA channel as an additional dark grey/black trajectory. It should be a straight line after correcting against leakage, direct excitation and detection sensitivity as described in section :ref:`correction_factors`.
 
 Depending on the selected laser excitation scheme during the extraction process, e.g., by choosing BG instead of GR, *Deep-LASI* will present dual- or triple-color FRET data in different color-schemes but with (of course) identical intensity values. The chosen color schemes are summarized in the table below. An detection channel XY refers to the emission in the channel Y after excitation with color X, i.e. the acceptor emission in the red channel after blue excitation is abbreviated with BR:
 
