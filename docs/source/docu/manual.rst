@@ -4,9 +4,9 @@
 
 -----------------------------------------------
 
-Single-molecule data analysis using *Deep-LASI* is carried out in an fully automatic way. However, for new experimental systems, e.g., when studying a new protein system with unknown folding behavior, it is highly advisable, to *not* go for an automatic analysis directly but to analyse the data manually and to inspect the recorded traces by eye.
+Single-molecule data analysis using *Deep-LASI* is carried out in a fully automatic way. However, for new experimental systems, e.g., when studying a new protein system with unknown folding behavior, it is highly advisable to *not* go for an automatic analysis directly but to analyze the data manually and inspect the recorded traces by eye.
 
-Hence, the following section gives an overview on how to use *Deep-LASI* manually to sort, categorize and prepare single-molecule data via the sub-GUI *Traces* (:numref:`trace_gui`) for later evaluation, e.g. by Hidden-Markov analysis, etc. Automatic data evaluation is described in the separate section :ref:`auto-analysis`.
+Hence, the following section gives an overview of how to use *Deep-LASI* manually to sort, categorize and prepare single-molecule data via the sub-GUI *Traces* (:numref:`trace_gui`) for later evaluation, e.g., by Hidden-Markov analysis, etc. Automatic data evaluation is described in a separate section on :ref:`auto-analysis`.
 
 .. figure:: ./../figures/documents/Traces_Manual.png
    :width: 650

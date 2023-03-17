@@ -213,9 +213,9 @@ Before data loading and trace extraction, you first need to consider which kind 
 #. multi-color measurements with constant laser excitation for a fixed number of frames
 
 *ALEX excitation* |br|
-In the case of ALEX excitation load the data files after mapping the channels, as described in detail in the :doc:`example` section. Select one *.tif-file* or multiple files via :code:`> File > Load Image Data > Channel 1` and let *Deep-LASI* read the data.
+In the case of ALEX excitation, load the data files after mapping the channels, as described in detail in the :doc:`example` section. Select one *.tif-file* or multiple files via :code:`> File > Load Image Data > Channel 1` and let *Deep-LASI* read the data.
 
-Next, specify the measurement parameters of the ALEX experiment (:numref:`doc_measurement_parameters`), such as the inter frame time and alternation cycle. The inter frame time should include the exposure time and frame transfer time, e.g., when measuring a frame transfer time of 2.2 ms for and exposure time of 50 ms by the emCCD camera, the total inter-frame time amounts to 52.2 ms.
+Next, specify the measurement parameters of the ALEX experiment (:numref:`doc_measurement_parameters`), such as the inter-frame time and alternation cycle. The inter-frame time should include the exposure time and frame transfer time, e.g., when measuring a frame transfer time of 2.2 ms and exposure time of 50 ms by the emCCD camera, the total inter-frame time amounts to 52.2 ms.
 
 .. figure:: ./../figures/documents/Fig_12_Measurement_Parameters.png
    :width: 500
@@ -225,9 +225,9 @@ Next, specify the measurement parameters of the ALEX experiment (:numref:`doc_me
 
    The window for specifying measurement parameters and excitation scheme
 
-Please specify the sequence of the laser excitation using the letters B (blue), G (green/yellow), R (red) and I (infrared) for the four excitation channels. Different excitation schemes of up to three lasers can be entered here, such as RGB, RG, GB, etc. In case of ALEX excitation, all channels are shown in the preview according to the created map and the selected channel for data read-in is highlighted by a rectangle. Move the slider to choose the start frames of your entered excitation scheme and load it into the corresponding detection channel. This slider serves for cases, in which the starting point of data acquisition varys with laser excitation. For varying acquisition, one needs to load each single *tif.-files* and select the correct alternation sequence / starting frame. The slider has 2 positions for a 2c-ALEX experiments, it automatically shows 3 positions in the case of a specified 3c-ALEX experiment.
+Please specify the sequence of the laser excitation using the letters B (blue), G (green/yellow), R (red), and I (infrared) for the four excitation channels. Different excitation schemes of up to three lasers can be entered here, such as RGB, RG, GB, etc. In the case of ALEX excitation, all channels are shown in the preview according to the created map, and the selected channel for data read-in is highlighted by a rectangle. Move the slider to choose the start frames of your entered excitation scheme and load it into the corresponding detection channel. This slider serves for movies where the starting point of data acquisition varies with laser excitation. For a varying acquisition, every single *tif.-file* needs to be loaded separately to select the correct alternation sequence / starting frame. The slider has 2 positions for a 2c-ALEX experiment. It automatically shows 3 positions in the case of a specified 3c-ALEX experiment.
 
-Next, please choose which frames you want to load on the program by using the **Load frame range** box. Depending on the experiment, you can choose the range of desired frames for detecting the particles and extracting their intensity traces. *Deep-LASI* takes all the frames by default. You can further limit the particle detection to a certain frame range, e.g., for a colocalization assay in which you used one excitation wavelength for the first 100 frames and continued with a second excitation wavelength for the rest of the measurement. As the last step here, click on the corresponding channel color from the four options to confirm the detection channel. *Deep-LASI* will open the first data file from the files that you selected, as shown in :numref:`doc_particles_detection`, and display the cumulative sum of the movie for particle detection.
+Next, please choose which frames you want to load on the program using the **Load frame range** box. Depending on the experiment, you can choose the range of desired frames for detecting the particles and extracting their intensity traces. *Deep-LASI* takes all the frames by default. You can further limit the particle detection to a certain frame range, e.g., for a colocalization assay in which you used one excitation wavelength for the first 100 frames and continued with a second excitation wavelength for the rest of the measurement. As the last step here, click on the corresponding channel color from the four options to confirm the detection channel. *Deep-LASI* will open the first data file from the files being selected, as shown in :numref:`doc_particles_detection`, and display the cumulative sum of the movie for particle detection.
 
 .. figure:: ./../figures/documents/Fig_13_Detecting_Particles.png
    :width: 500
@@ -237,9 +237,9 @@ Next, please choose which frames you want to load on the program by using the **
 
    Particle detection for the first channel data
 
-The sliders below the image allow for adjusting the brightness/contrast settings, the detection threshold to register particles and to change between detection channels during the later extraction steps. Set the slides such that you maximize the number of detected molecules. Localized particles are marked by triangles superimposed to the image, and their localization number is shown in the black box aside the image on the top right position.
+The sliders below the image allow for adjusting the brightness/contrast settings, the detection threshold to register particles, and to change between detection channels during the later extraction steps. Set the slides such that you maximize the number of detected molecules. Localized particles are marked by triangles superimposed on the image, and their localization number is shown in the black box aside from the image on the top right position.
 
-In the next steps, please repeat loading the recorded data of the other detection channels by selecting the corresponding *tif.files* or set of files via :code:`> File > Load Image Data > Channel 2` etc. Each time you load image files, the pop-up window will ask you about the detection channel color to extract the data in the correct order.
+In the next steps, please repeat loading the recorded data of the other detection channels by selecting the corresponding *.tif-files* or set of files via :code:`> File > Load Image Data > Channel 2`, etc. Each time you load image files, the pop-up window will ask you about the detection channel color to extract the data in the correct order.
 
 .. figure:: ./../figures/documents/Fig_14_Measurement_Parameters_Second_Chan.png
    :width: 500
@@ -249,7 +249,7 @@ In the next steps, please repeat loading the recorded data of the other detectio
 
    Updating measurement parameters for the next channel
 
-As shown in :numref:`doc_second_channel`, put the slider on the second half of the slider position to indicate the second channel (the same procedure works for the third channel by putting the slider to the most right position). Reasoning behind this step is again to provide the freedom to select the correct excitation. Afterward click on the red button labeled with 'R' (as specified in the alternation cycle box to confirm the acceptor channel. After a short time the average imaging of the specified, loaded frames of the second channel overlays on the image from the first one.
+As shown in :numref:`doc_second_channel`, put the slider on the second half of the slider position to indicate the second channel (the same procedure works for the third channel by putting the slider in the right position). The reasoning behind this step is again to provide the freedom to select the correct excitation. Afterward, click on the red button labeled with 'R' (as specified in the alternation cycle box to confirm the acceptor channel. After a short time the average imaging of the specified loaded frames of the second channel overlays on the image from the first one.
 
 .. figure:: ./../figures/documents/Fig_15_Detecting_Colocal.png
    :width: 500
@@ -271,7 +271,7 @@ Next, specify which methods for particle detection shall be employed:
 #. **Intensity Thresholding** which takes a 2sigma difference in signal
 #. **IMregMax** + Radial C...** which takes ....
 
-And lastly, specify in the **Trace selection** panel, which traces you wish to extract. As indicated by the colors of the triangles (:numref:`doc_find_co-localization`) for each corresponding channel, you can extract either (1) all detected emitters independent of the detection channels (e.g., Donor only, acceptor only as well as FRET pairs), or (2) only co-localizing molecules as indicated by the white circles (e.g., only FRET species) or (3) extract the intensity in reference to a selected channel, which could be donor only together with FRET species. The panel **Frame selection** allows for setting the frame range, in which traces shall be extracted. In the case, you wish to export the mapped single-molecule image displayed in the *Extraction* GUI before you finally extract the traces, press the *Export the Warped Image* button on the left at bottom of the GUI. For trace extraction itself click on the right button *Extract Traces*. *DeepLASI* will now automatically extract traces movie-by-movie wise for the file you have selected earlier. This process can last several moments, but is fully automatically carried out. Once the extraction process is finished, save the traces via :code:`> File > Save Traces`
+And lastly, specify in the **Trace selection** panel which traces you wish to extract. As indicated by the colors of the triangles (:numref:`doc_find_co-localization`) for each corresponding channel, you can extract either (1) all detected emitters independent of the detection channels (e.g., donor only, acceptor only, and FRET pairs) or (2) only co-localizing molecules as indicated by the white circles (e.g., only FRET species) or (3) extract the intensity in reference to a selected channel, which could be donor only species together with FRET species. The panel **Frame selection** allows for setting the frame range in which traces shall be extracted. In the case, you wish to export the mapped single-molecule image displayed in the *Extraction* GUI before you finally extract the traces, press the *Export the Warped Image* button on the left at the bottom of the GUI. For trace extraction itself, click on the right button *Extract Traces*. *DeepLASI* will now automatically extract traces movie-by-movie-wise for the file you selected earlier. This process can last several moments but is fully automatically carried out. Once the extraction process is finished, save the traces via :code:`> File > Save Traces`
 
 .. figure:: ./../figures/documents/Fig_16_Extraction_Settings.png
    :width: 450
@@ -281,9 +281,9 @@ And lastly, specify in the **Trace selection** panel, which traces you wish to e
 
    Starting the extraction of intensity traces
 
-.. note:: In the case, that an error occurs at the end of the data extraction, try to save the extracted traces anyway. Errors were reported for certain Windows installation, that we are currently investigating to solve the problem.
+.. note:: In the case that an error occurs at the end of the data extraction, try to save the extracted traces anyway. Errors were reported for certain Windows installations that we are currently investigating to solve the problem.
 
 *Constant excitation* |br|
-In the case of constant laser excitation, we need to consider different experimental schemes again. In the case that multiple detection channels have been employed during constant excitation with one laser source, ...
+In the case of constant laser excitation, we must consider different experimental schemes again. When multiple detection channels have been employed during constant excitation with one laser source, ...
 
 .. tip:: @Simon: Please describe here, what you implemented, and how/what we need to fill in, in order to extract traces with constant laser excitaion with different lasers for fixed frame ranges!
