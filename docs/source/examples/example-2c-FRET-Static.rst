@@ -96,14 +96,14 @@ Trace Extraction
 After generating the transformation matrix via mapping or reloading the already generated map via :code:`File > Mapping > Load Prev. Map (Ctrl + M)`, we can load the actual single-molecule data in the next step. To obtain the trajectories of individual molecules depending on the laser excitation, *Deep-LASI* can detect and extract traces on a single file basis. For this, it can read single *.tif* files and save the extracted traces in separate *.mat* files, which can be added file-by-file afterwards for further analysis. However, *Deep-LASI* also permits extracting traces from raw data files with consecutive numbering. In the presented example, we proceeded by reading in all raw *.tif* files per experiment at once, i.e., the data files *FSII1a_g30r84t200_0.tif* until *..._6.tif* or *FSII1b_g30r84t200_0.tif* until *..._6.tif* for the 'low-FRET' and 'intermediate-FRET' sample, respectively. We loaded the data of the first channel (as specified during the mapping process) via :code:`File > Load Image Data > 1st channel` for the red channel and selected the files.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_measurement_parameters.png
-   :width: 750
+   :width: 800
    :alt: Settings for extracting the different emission channels depending on the excitation cycle
    :align: center
    :name: static_2c_extraction
 
    Settings for extracting the different emission channels depending on the excitation cycle.
 
-Next, we specified the experimental settings for *Deep-LASI* (:numref:`static_2c_extraction`, A). We provided the interframe time of 250 ms, given by the exposure time and frame time, which are 250 ms and xxx ms, together. Next, we specified the excitation cycle 'RG' by typing in the ALEX sequence.
+Next, we specified the experimental settings for *Deep-LASI* (:numref:`static_2c_extraction`, A). We provided the interframe time of 400 ms, given by the exposure time and frame time, which are 400 ms and xxx ms, together. Next, we specified the excitation cycle 'RG' by typing in the ALEX sequence.
 
 .. note:: Due to coding reasons, *Deep-LASI* recognizes the letters B, G, R, and I as input for the laser excitation in the ALEX cycle. They are required for the correct selection of laser excitation cycle and visualization in multi-color experiments, later. Yellow excitation is referred to as 'green' (G) excitation and infrared excitation is abreviated with (I).
 
