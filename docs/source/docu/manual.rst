@@ -19,7 +19,7 @@ Hence, the following section gives an overview on how to use *Deep-LASI* manuall
 ..  _loading_doc:
 Loading
 ~~~~~~~~~~~~~
-Starting point of any data evaluation is the loading process from 'freshly' extracted traces, or traces that shall be re-evaluated. Please load traces via :code:`> File > Load Traces`. When you recorded multiple datasets with deviating starting frame during alternating laser excitation, please first extract traces for each single movies and then load the extracted traces file-wise via reading the traces of the first file via :code:`> File > Load Traces`. and adding traces from the other files afterwards via :code:`> File > Add Traces`.
+Starting point of any data evaluation is the loading process from 'freshly' extracted traces, or traces that shall be re-evaluated. Please load traces via :code:`> File > Load Traces`. When you recorded multiple datasets with deviating starting frame during alternating laser excitation, please first extract traces for each single movies and then load the extracted traces file-wise via reading the traces of the first file via :code:`> File > Load Traces`. and adding traces from the other files afterward via :code:`> File > Add Traces`.
 
 .. - :ref:`manual_analysis`
 .. - :ref:`man-categorization`
@@ -97,7 +97,7 @@ The categorization of traces depends on the actual single-molecule experiment. I
 #. To categorize a large number of molecules in a fast manner we advice to first sort out all unwanted molecules. Create an group called for example *Trash* first. Depending on whether you want to click through the list of traces or want to use the key board, assign a letter on the keyboard to your *'Trash'* group. Now go through all traces and sort out unwanted traces. You can switch forward to the next trace by typing **D** and go backwards to the former trace, which is not categorized yet, by typing **A**.
 We additionally advice to ensure that you only keep single-molecule event. For this, please inspect the middle column on the GUI showing the the detected particle in each channel. Make sure that only one molecule is shown inside the detection mask in each channel, while no emitter is detected inside the 'background mask'. Otherwise exclude the trajectory, since the false background calculation will lead to miscalculated FRET correction factors and hence FRET efficiencies.
 
-#. Sort between *Static* and *Dynamic* molecules. Add traces to a group of dynamic or static traces. By this step you can select afterwards, which traces shall be analysed by HMM for example.
+#. Sort between *Static* and *Dynamic* molecules. Add traces to a group of dynamic or static traces. By this step you can select afterward, which traces shall be analysed by HMM for example.
 
 #. Select regions of the trace (as described in paragraph :ref:`man-selection`.
 
