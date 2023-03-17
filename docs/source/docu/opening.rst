@@ -6,7 +6,7 @@
 
 Starting Deep-LASI
 ~~~~~~~~~~~~~~~~~
-To evaluate your experimental data with *Deep-LASI*, please open the program from the MATLAB command window by typing in :code:`>> DeepLASI`. It will open the core-program responsible for data import, trace extraction, as well as and manual selection and sorting. After a couple of seconds, the Start-GUI of the program will open as shown in :numref:`open-program`.
+To evaluate your experimental data with *Deep-LASI*, please open the program from the MATLAB command window by typing in :code:`>> DeepLASI`. It will open the core program responsible for data import, trace extraction, as well as manual selection and sorting. After a couple of seconds, the Start-GUI of the program will open as shown in :numref:`open-program`.
 
 .. figure:: ./../figures/documents/Fig_2_Tracer_FirstPage.png
    :width: 650
@@ -16,13 +16,13 @@ To evaluate your experimental data with *Deep-LASI*, please open the program fro
 
    The Main-GUI of *Deep-LASI* has six sub-windows for data processing and analysis.
 
-*Deep-LASI* shows one empty Main-GUI together with six integrated sub-windows for analyzing the data and one menubar for handling the data reading, the settings of the program, the simulation of single-molecule data and training of (new) neural networks.
+*Deep-LASI* shows one empty Main-GUI together with six integrated sub-windows for analyzing the data and one menubar for handling the data reading, the settings of the program, the simulation of single-molecule data, and training of (new) neural networks.
 
 -----------------------------------------------
 
 Menu Bar
 ~~~~~~~~~~~~~~~~~
-Basic functionalities of *Deep-LASI* such as data handling, program settings, or the training of new neural networks for data analysis are controlled via the *Menu Bar*. It has the following five drop-down menus
+Basic functionalities of *Deep-LASI*, such as data handling, program settings, or the training of new neural networks for data analysis, are controlled via the *Menu Bar*. It has the following five drop-down menus
 
 ..  csv-table:: Menu Bar Entries
    :widths: 15, 200
@@ -33,7 +33,6 @@ Basic functionalities of *Deep-LASI* such as data handling, program settings, or
    *Tools*,  "Programs for accessing/simulating single-molecule data, and training Neural Networks"
    *Help*,   "Direct link to the Documentation in case of problems"
    *Reset*,  "Restart of *Deep-LASI* and clearance of all variable of the program"
-
 
 **Dropdown Menu File.** |br|
 The dropdown menu *File* (:numref:`file-menu`) controls all steps, starting from loading the experimental data, over mapping and background correction, to trace extraction and saving of traces. Moreover, it facilitates data import and export in different formats, as described in the :ref:`data-format` section. The dropdown menu hosts seven sub-routines:
@@ -86,13 +85,13 @@ The *Plot Units* sub-tab controls the y-axis of the intensity and FRET panels fo
    *Raw Trace (no BG subtr.)*,    "Intensity without background correction"
    *Corrected FRET*,              "Display of accurate FRET instead of apparent FRET"
 
-#.  The first sub-tab, **Photons(Cam.calibrated)**, converts the intensity axis into the absolute number of photons being detected by the individual cameras during a particular excitation cycle. It updates the intensity axis of extracted single-molecule traces on the *Traces GUI$ window.
-#.  The second sub-tab, **Mean Across Particle Mask**, shows the mean emission intensity of the particle within the detection mask after trace extraction on the y-axis of the single-molecule traces on the *Traces GUI$ window.
+#.  The first sub-tab, **Photons(Cam.calibrated)**, converts the intensity axis into the absolute number of photons being detected by the individual cameras during a particular excitation cycle. It updates the intensity axis of extracted single-molecule traces on the *Traces GUI* window.
+#.  The second sub-tab, **Mean Across Particle Mask**, shows the mean emission intensity of the particle within the detection mask after trace extraction on the y-axis of the single-molecule traces on the *Traces GUI* window.
 #.  The penultimate sub-tab, **Raw Trace (no BG subtr.)**, activates the display of uncorrected, raw intensity traces, i.e., without background subtraction.
 #.  If the last option, **Corrected FRET**, is selected, *Deep-LASI* shows Accurate FRET efficiencies for each single-molecule trajectory in case the FRET correction factors have already been determined. Otherwise, the displayed FRET values between Accurate and Apparent FRET are identical.
 
 **Dropdown Menu Tools.** |br|
-The fourth dropdown menu *Tools* opens the sub-panels for simulating single-molecule traces and training of neural networks. A detailed description of its functionalities, workflow, and usage is given in the :doc:`sim` Chapter.
+The fourth dropdown menu *Tools* opens the sub-panels for simulating single-molecule traces and training neural networks. A detailed description of its functionalities, workflow, and usage is given in the :doc:`sim` Chapter.
 
 **Dropdown Menu Help.** |br|
 In the case of problems or errors, help can be found in the dropdown menu *Help*, which provides a direct link opening this Online documentation of *Deep-LASI*.
@@ -104,7 +103,7 @@ When finishing the analysis of one data set, a change to a new data set can crea
 
 Main-GUI
 ~~~~~~~~~~~~~~~~~
-Data-analysis with *Deep-LASI* involves consecutive working steps (:numref:`main-workflow`), which are accommodated in six different sub-GUIs as shown in :numref:`open-program`. The Starting-GUI incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope and maps corresponding pixels between camera onto each other (see section on  :ref:`mapping`). Next, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterwards, as described in more details in section :ref:`extraction_doc`. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. Equally, already extracted traces can be loaded into *Deep-LASI* for further data analysis.
+Data analysis with *Deep-LASI* involves consecutive working steps (:numref:`main-workflow`), which are accommodated in six different sub-GUIs, as shown in :numref:`open-program`. The Starting-GUI incorporates single molecule data at different levels. First of all, it reads movies from emCCD or sCMOS cameras, as usually acquired using a wide-field total internal reflection fluorescence (TIRF) microscope, and maps corresponding pixels between cameras onto each other (see the section on :ref:`mapping`). Next, it extracts the intensity information of single and co-localizing molecules depending on the excitation scheme and assay and saves the extracted traces afterward, as described in more detail in the section :ref:`extraction_doc`. For already recorded intensity time traces from confocal microscopy and localization microscopy, *Deep-LASI* imports the trajectories as formerly saved without additional correction. Equally, already extracted traces can be loaded into *Deep-LASI* for further data analysis.
 
 .. figure:: ./../figures/documents/Fig_5_Main_GUIs-Flow.png
    :width: 800
@@ -114,8 +113,8 @@ Data-analysis with *Deep-LASI* involves consecutive working steps (:numref:`main
 
    Workflow summarizing the generic data formats used by *Deep-LASI*, as well as supported data formats for trace import.
 
-The main data handling is carried out on the *Traces* GUI (:numref:`main-workflow`). Here, you can choose between manual or automated data analysis. Conventional data analysis, includes sorting, categorization and trace preparation (as described in section :ref:`manual_analysis`) before handing over the preselected traces for Hidden-Markov modeling on the *HMM* GUI followed by dwell time analysis and TDPs. The Sub-Window *Histograms* allows for summarizing the analyzed data via histograms with respect to, e.g., frame-, molecule-, and state-wise histograms, or the global FRET correction factors (:numref:`main-workflow`). The sub-window *Statistics* on selected molecule groups with respect to, e.g., average brightness, background, SNR etc. |br|
-The automated data analysis is carried out on the *Traces* GUI, which includes and automated selection, sorting, and categorization process prior to an automated kinetics analysis based on deep-learning. The data is afterwards automatically summarized by state-of-the-art dwell-time analysis and TDPs.
+The main data handling is carried out on the *Traces* GUI (:numref:`main-workflow`). Here, you can choose between manual or automated data analysis. Conventional data analysis includes sorting, categorization, and trace preparation (as described in the section :ref:`manual_analysis`) before handing over the preselected traces for Hidden-Markov modeling on the *HMM* GUI followed by dwell time analysis and TDPs. The sub-window *Histograms* allows for summarizing the analyzed data via histograms with respect to, e.g., frame-, molecule-, and state-wise histograms, or the global FRET correction factors (:numref:`main-workflow`). The sub-window *Statistics* on selected molecule groups with respect to, e.g., average brightness, background, SNR, etc. |br|
+The automated data analysis is carried out on the *Traces* GUI, which includes an automated selection, sorting, and categorization process prior to an automated kinetics analysis based on deep learning. The data is afterward automatically summarized by state-of-the-art dwell-time analysis and TDPs.
 
 -----------------------------------------------
 
@@ -145,7 +144,7 @@ Next, the program will ask you to choose a file which could be an image or a ser
 
    Uploading first mapping image
 
-After choosing the calibration file, *Deep-LASI* opens a window (:numref:`channel_position`), which allows you to determine the correct position of the detection channel. You can use the **Channel Layout** to select the correct half of the camera or the full width of the camera. **Rotation** and **Flip** allow you to take into account if your camera image is flipped or rotated compared to your reference channel. After selection, please confirm **OK** to open the image on the mapping tab, as shown in :numref:`channel_position`.
+After choosing the calibration file, *Deep-LASI* opens a window (:numref:`channel_position`), which allows you to determine the correct position of the detection channel. You can use the **Channel Layout** to select the correct half of the camera or the full width of the camera. **Rotation** and **Flip** allow you to take into account if your camera image is flipped or rotated compared to your reference channel. After the selection, please confirm **OK** to open the image on the mapping tab, as shown in :numref:`channel_position`.
 
 .. figure:: ./../figures/documents/Fig_8_Map_Image_Detecting.png
    :width: 500
@@ -155,9 +154,9 @@ After choosing the calibration file, *Deep-LASI* opens a window (:numref:`channe
 
    Selection of recognized emitters in the first detection channel by *Deep-LASI*
 
-After loading, use the threshold bar below the loaded image to make sure that enough points are detected (indicated by the white circle) by *Deep-LASI*. Next, continue opening the following images from other detectors by selecting the :code:`> 2nd channel`, etc., via the same procedure, as shown in :numref:`channel_position` and :numref:`mapping_gui`.
+After loading, use the threshold bar below the loaded image to make sure that enough points are detected (indicated by the white circle) by *Deep-LASI*. Next, continue opening the following images from other detectors by selecting the :code:`> 2nd channel`, etc., via the same procedure as shown in :numref:`channel_position` and :numref:`mapping_gui`.
 
-Once you have loaded all mapping images to assign the detection windows, please select afterwards which channel you prefer to be the reference channel, as shown in :numref:`mapping_start`. In most cases, the first channel is taken as the reference unless you have a special mapping plan. In the case that you experience a lot of photo-bleaching, mapping onto the channels with the most emitters might be advisable.
+Once you have loaded all mapping images to assign the detection windows, please select afterward which channel you prefer to be the reference channel, as shown in :numref:`mapping_start`. In most cases, the first channel is taken as the reference unless you have a special mapping plan. In the case that you experience a lot of photo-bleaching, mapping onto the channels with the most emitters might be advisable.
 
 .. figure:: ./../figures/documents/Fig_9_Mapping_Starting.png
    :width: 800
@@ -185,7 +184,7 @@ After a successful mapping process, the Extraction-GUI opens automatically. The 
 Trace extraction
 ~~~~~~~~~~~~~
 
-While single color data can be directly loaded into *Deep-LASI*, multi-color assays require a mapping procedure first. Once this map is available and saved, you can start to extract experimental data anytime. As shown in :numref:`extraction_idea`, *Deep-LASI* will match the fluorescence signature from your single fluorophores during different excitation cycles and detection channels (once you specified the single-molecule assay) and allows you to select which labeled molecules you actually want to evaluate. For this, you first need to step-wise read-in the experimental data, as described in the :ref:`loading_doc` section. Next, *Deep-LASI* will generate a projection for each channel, i.e. the corresponding *.tif-file*, showing the maximum intensity per pixel in the FOV. *Deep-LASI* will localize single emitters in each of the selected channels and superimpose the three maps afterwards showing the localized molecules in the individual channels. In the last step of the extraction process, *Deep-LASI* allows you to select, whether you want to export all traces (i.e., the trajectories of single-, double- or triple-labeled molecules), traces of only co-localizing molecules (i.e., molecules having the maximum number of traces) or molecules that have a specific label in a reference a channel. After a successful extraction process, you are directly forwarded to the third sub-GUI **Traces**, where you need to save the extracted traces first, before continuing with any data analysis.
+While single-color data can be directly loaded into *Deep-LASI*, multi-color assays require a mapping procedure first. Once this map is available and saved, you can start extracting experimental data anytime. As shown in :numref:`extraction_idea`, *Deep-LASI* will match the fluorescence signature from your single fluorophores during different excitation cycles and detection channels (once you have specified the single-molecule assay) and allows you to select which labeled molecules you actually want to evaluate. For this, you first need to step-wise read-in the experimental data, as described in the :ref:`loading_doc` section. Next, *Deep-LASI* will generate a projection for each channel, i.e., the corresponding *.tif-file*, showing the maximum intensity per pixel in the FOV. *Deep-LASI* will localize single emitters in each of the selected channels and superimpose the three maps afterward, showing the localized molecules in the individual channels. In the last step of the extraction process, *Deep-LASI* allows you to select whether you want to export all traces (i.e., the trajectories of single-, double- or triple-labeled molecules), traces of only co-localizing molecules (i.e., molecules having the maximum number of traces) or molecules that have a specific label in a reference a channel. After a successful extraction process, you are directly forwarded to the third sub-GUI **Traces**, where you need to save the extracted traces first before continuing with any data analysis.
 
 .. figure:: ./../figures/documents/Fig_11_Trace_Extraction.png
    :width: 500
@@ -193,7 +192,7 @@ While single color data can be directly loaded into *Deep-LASI*, multi-color ass
    :align: center
    :name: extraction_idea
 
-   Trace extraction of molecules with one, two, or three labels and selection whether trajectories for all molecules, co-localizing molecules only or molecules that show emission in a specific channel shall be generated.
+   Trace extraction of molecules with one, two, or three labels and selection of whether trajectories for all molecules, co-localizing molecules only, or molecules that show emission in a specific channel shall be generated.
 
 ..  _extraction_modes:
 Extraction modes
@@ -214,7 +213,7 @@ Before data loading and trace extraction, you first need to consider which kind 
 #. multi-color measurements with constant laser excitation for a fixed number of frames
 
 *ALEX excitation* |br|
-In the case of ALEX excitation load the data files after mapping the channels, as described in detail in the :doc:`example` section. Select one *.tif-file* or multiple files via :code:`> File > Load Image Data > Channel 1` and let *Deep-LASI* read-in the data.
+In the case of ALEX excitation load the data files after mapping the channels, as described in detail in the :doc:`example` section. Select one *.tif-file* or multiple files via :code:`> File > Load Image Data > Channel 1` and let *Deep-LASI* read the data.
 
 Next, specify the measurement parameters of the ALEX experiment (:numref:`doc_measurement_parameters`), such as the inter frame time and alternation cycle. The inter frame time should include the exposure time and frame transfer time, e.g., when measuring a frame transfer time of 2.2 ms for and exposure time of 50 ms by the emCCD camera, the total inter-frame time amounts to 52.2 ms.
 
