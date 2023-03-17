@@ -118,6 +118,7 @@ In the following, *Deep-LASI* automatically reads the raw data file-by-file, loc
 
 .. note:: In case an error occurs, try to save the extracted traces anyhow. For some Windows installations test sofar, we encounter a GUI error at the end of the extraction process, which has no influence on the prior extraction process.
 
+With the threshold settings that we used, we got in total 853 traces from the 7 data files for the 'low-FRET' DNA sample.
 
 .. _manual1:
 Manual data analysis and correction
