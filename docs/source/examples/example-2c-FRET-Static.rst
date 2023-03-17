@@ -124,6 +124,8 @@ With the threshold settings that we used, we got in total 853 traces from the 7 
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+By using the Navigation slider we clicked through all the traces one by one to check their individual features and attribute them to one or several categories created in the Classification chart. You can see the result of manual trace sorting in **classification figure**. For a detailed description of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**.
+
 .. _automatic1:
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
