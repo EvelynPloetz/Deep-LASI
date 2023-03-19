@@ -100,7 +100,7 @@ The categorization of traces depends on the actual single-molecule experiment. I
 
 #. Select regions of the trajectories (as described in the following paragraph :ref:`man-selection`), which will be evaluated later by kinetics or histogram analysis. Traces with manually selected regions will be automatically added to the **Manual Selection** category.
 
-#. Mark regions of the trajectories (as described in the following paragraph :ref:`man-selection`) in which fluorophores bleach. *Deep-LASI* will add the traces automatically to the following groups: **G Bleach**, **R Bleach**, *GR Alpha**, **GR Beta**, and **GR Gamma**.
+#. Mark regions of the trajectories (as described in the following paragraph :ref:`man-selection`) in which fluorophores bleach. *Deep-LASI* will add the traces automatically to the following groups: **G Bleach**, **R Bleach**, **GR Alpha**, **GR Beta**, and **GR Gamma**.
 
 ..  _man-selection:
 Trace selection
@@ -136,7 +136,7 @@ The selection process depends on the bleaching behavior of fluorophores and the 
 ..  _correction_factors:
 Correction factors determination
 ~~~~~~~~~~~~~~~~~~~~
-In real single-molecule FRET experiments, the intensity of the acceptor is biased from various sources. It needs to be corrected for direct excitation :math:`\alpha_{XY}` of the acceptor dye during green excitation, and spectral crosstalk :math:`\beta_{XY}` from the donor molecule into the acceptor channel. Further more, we need to correct for the differences in detection sensitivity :math:`\gamma_{XY}` between the two fluorophores. We are aware that the nomenclature by *Deep-LASI* at this stage, is not in line with the nomenclature recently introduced by a multi-laboratory benchmark study published by `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_. It will be adopted on the various GUIs of *Deep-LASI* for the next release. *Deep-LASI* denotes the correction factors as
+In realworld single-molecule FRET experiments, the intensity of the acceptor is biased from various sources. It needs to be corrected for direct excitation :math:`\alpha_{XY;DL}` of the acceptor dye *Y* during donor excitation *X*, and spectral crosstalk :math:`\beta_{XY;DL}` from the donor molecule *X* into the acceptor channel *Y*. Further more, we need to correct for the differences in detection sensitivity :math:`\gamma_{XY}` between the two fluorophores. We are aware that the nomenclature by *Deep-LASI* at this stage, is not in line yet with the nomenclature recently introduced by a multi-laboratory benchmark study published by `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_. It will be adopted on the various GUIs of *Deep-LASI* and through-out the software during the next release. *Deep-LASI* denotes the correction factors currently as
 
 ..  list-table:: Correction factors
    :widths: 50, 50, 200
@@ -145,16 +145,34 @@ In real single-molecule FRET experiments, the intensity of the acceptor is biase
     * - Correction factor employed by *Deep-LASI*
       - Correction factor employed by Hellekamp et al.
       - Description
-    * - :math:`\alpha_{XY}`
+    * - :math:`\alpha_{XY;DL}`
       - :math:`\delta_{XY}`
       - Direct excitation of the acceptor fluorophore *Y* during excitation with *X*
-    * - :math:`\beta_{XY}`
+    * - :math:`\beta_{XY;DL}`
       - :math:`\alpha_{XY}`
       - Spectral crosstalk from the fluorophore *X* in the detector channel *Y*
     * - :math:`\gamma_{XY}`
       - Compensation for difference in detection sensitivities between Channels *X* and *Y*
 
-*Deep-LASI* will use the first bleaching step to calculate the correction factors. If you want to select channel specific regions, press the numbers 1,2,… to indicate the channel with the same order you loaded the images, and then you can select the region by the cursor special to each channel like the example on figure 20 for the red channel as the second one. For other channels the cursor shows the other corresponding letters like B, G, and I.
+We denote the background-corrected intensities as :math:`I_{XY}` and the corrected intensity as :math:`I_{XY;corr}`, where *X* stands for the excitation source and *Y* for the detection channel.
+
+*Trace-wise and global correction factors*
+Depending on when individual fluorophores photo-bleach, correction factors can be derived on a trace-to-trace basis. For most of the traces, however only a subset of correction factors can be obtained for the individual trajectories. In these cases, *Deep-LASI* derives *global* correction factors, which are the *median* value of the corresponding distribution of trace-wise derived correction factors.
+
+*Deep-LASI* uses bleaching steps in single intensity trajectories to calculate possible correction factors on a trace-to-trace basis. Using traces that were presorted and categorized as **B Bleach**, **G Bleach**, **R Bleach** or **I Bleach**, trace-wise correction factors for direct excitation and spectral crosstalk between two channels can be determined.
+
+Following the definition of leakage of the donor fluorescence into the acceptor channel according to
+.. :math::
+    \beta_{XY;DL} = \left \frac{\langle I_{XY}\rangle}{\langle I_{XX} \rangle} \right\rvert_{no acceptor}
+
+**Deep-LASI** determines :math:`\beta_{XY;DL}` for acceptor bleaching steps from the static intensity in the donor channel before and after the bleaching. Here, :math:`\langle I_{XX}\rangle` refers to the mean donor intensity and :math:`\langle I_{XY}\rangle` to the mean acceptor intensity after acceptor bleaching. 
+
+If you want to select channel specific regions, press the numbers 1,2,… to indicate the channel with the same order you loaded the images, and then you can select the region by the cursor special to each channel like the example on figure 20 for the red channel as the second one. For other channels the cursor shows the other corresponding letters like B, G, and I.
+
+
+.. :math::
+    \beta_{XY;DL} = \frac{\langle E    \rangle}{1 - XXX}
+
 
 
 The correction factors calculated from each trace are in the **FRET control** box on the lower right corner. If a trace is not suitable for calculating the correction factors, then the median value of the whole data set would be applied on that.
