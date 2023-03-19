@@ -196,7 +196,7 @@ The correction factors calculated for each trace are shown in the **FRET control
 
 
 
-..  _hmm:
+..  _hmm_fret:
 Kinetics analysis by HMM
 ~~~~~~~~~~~~~~~~~~~~
 

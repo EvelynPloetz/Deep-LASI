@@ -24,10 +24,11 @@ Overview
 - :ref:`man-categorization`
 - :ref:`man-selection`
 - :ref:`correction_factors`
-- :ref:`hmm`
+- :ref:`hmm_fret`
 - :ref:`histograms`
 - :ref:`auto-analysis`
 - :ref:`statistics`
+- :ref:`hmm`
 
 --------------------------------------------------------------------
 
@@ -68,4 +69,12 @@ Automated smFRET Analysis
 Statistics
 -------------
 .. include:: docu/statistics.rst
+
+--------------------------------------------------------
+
+.. Contains section on HMM ..
+..  _statistics:
+Hidden-Markov Modeling
+-------------
+.. include:: docu/hmm.rst
 
