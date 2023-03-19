@@ -57,7 +57,7 @@ Depending on the selected laser excitation scheme during the extraction process,
    "RI", " "
    "II", " "
 
-.. top:: @Pooyeh/Simon: Please add missing colors
+.. tip:: @Pooyeh/Simon: Please add missing colors
 
 For a *three-color measurement*, an additional panel displays the trajectories of the detected emitters after excitation with the third laser. As shown in :numref:`trace_look` on the bottom for 3c FRET with BGR laser alternation, the top panel shows three intensities trajectories for the three detection channels after blue excitation, i.e., the emission of the blue dye after blue excitation (BB) in dark blue, the emission of green dye after the blue excitation (BG) in cyan, and the emission of red dye after blue excitation (BR) in magenta. The lower panel shows the emission after green and red excitation. Similar to the two-color case, the color of the different channels will vary depending on which detection channels have been chosen during data extraction. *Deep-LASI* chooses the above-mentioned color schemes.
 
@@ -69,9 +69,9 @@ In the *Navigation* tab, you can switch between traces via the slider.
 It displays the currently shown trajectory and the total number of extracted traces. For the 2c-ALEX example, 6100 traces were retrieved from the loaded data set (:numref:`trace_look`; top). |br|
 
 The *Classification* tab serves for the manual categorization of traces.
-All traces are 'by default' in the **Uncategorized** group. By clicking on the plus-sign you can add more categories. You can rename the new group according to your analysis procedure and further assign keyboard letters via the dropdown menu. The assignment of letters allows for transferring/assigning single traces to the corresponding category by simply pressing the chosen letter on the keyboard when using the keyboard during the manual sorting procedure. An example of possible sorting categories based on your analysis needs is given
-in :numref:`categorization_table`. The **Create Boolean Category** button adds an additional group to the *Navigation Tab* according to your selection criteria and will add the corresponding traces which fulfill the condition to the group.
-You can also delete an unwanted category by clicking on the trash-can icon. Unchecking the filter box hides traces that are already sorted, for example when clicking through extracted trajectories. It is especially helpful for the trash category, for example. When you assign a trace to a specific category, it will be automatically removed from the first **Uncategorized** one and added to at least one other group.
+All traces are 'by default' in the **Uncategorized** group. By clicking on the plus sign, you can add more categories. You can rename the new group according to your analysis procedure and further assign keyboard letters via the dropdown menu. The assignment of letters allows for transferring/assigning single traces to the corresponding category by simply pressing the chosen letter on the keyboard when using the keyboard during the manual sorting procedure. An example of possible sorting categories based on your analysis needs is given
+in :numref:`categorization_table`. The **Create Boolean Category** button creates an additional group to the *Navigation Tab* according to your selection criteria and adds the corresponding traces, which fulfill the condition to the group.
+You can also delete an unwanted category by clicking on the trash-can icon. Unchecking the filter box hides traces that are already sorted, for example, when clicking through extracted trajectories. It is especially helpful for the trash category, for example. When you assign a trace to a specific category, it will be automatically removed from the first **Uncategorized** one and added to at least one other group.
 
 .. figure:: ./../figures/documents/Fig_19_Categories.png
    :width: 300
@@ -81,31 +81,31 @@ You can also delete an unwanted category by clicking on the trash-can icon. Unch
 
    Navigation and categorization box
 
-.. note:: You can not assign the letters **A**, **D**, or **E** to your categories. These are the keys used to go to the previous trace (A), or the next trace (D). Pressing (E), triggers *Deep-LASI* to automatically find bleaching steps in traces, assign them to the corresponding bleaching group, and select the analysis region, as laid out in the section about :ref:`correction_factors`.
+.. note:: You can not assign the letters **A**, **D**, or **E** to your categories. These are the keys for going to the previous trace (A) or the following trace (D). Pressing (E), triggers *Deep-LASI* to automatically find bleaching steps in traces, assign them to the corresponding bleaching group, and select the analysis region, as laid out in the section about :ref:`correction_factors`.
 
-The next frame on the GUI comprises two sub-tabs, the *Plot Layout* tab, and the *Trace tools* tab. The first one allows for hiding or displaying specific emission channels for selected excitation sources, as well as their corresponding FRET signatures, as described above. The *Trace tools* tab serves for carrying out automated trace sorting, classification, and analysis, which will be described in the section :ref:`auto-analysis`.
+The next frame on the GUI comprises two sub-tabs, the *Plot Layout* tab, and the *Trace tools* tab. The first one allows for hiding or displaying specific emission channels for selected excitation sources, as well as their corresponding FRET signatures, as described above. The *Trace tools* tab serves for carrying out automated trace sorting, classification, and analysis, which will be described in :ref:`auto-analysis`.
 
-The *FRET controls* tab serves for controlling the FRET correction factors for direct excitation, leakage, and detection sensitivity. Its functionality will be described in the section about :ref:`correction_factors`.
+The *FRET controls* tab displays and controls the FRET correction factors for direct excitation, leakage, and detection sensitivity. Its functionality will be described in the section about :ref:`correction_factors`.
 
 ..  _man-categorization:
 Trace categorization
 ~~~~~~~~~~~~~~~~~~~~
-The categorization of traces depends on the actual single-molecule experiment. In the following, we describe important steps for the analysis of a dual-color FRET experiment with alternating laser excitation as an example. Experienced users can certainly carry out different steps of the categorization and selection process in parallel, i.e., also on a single-trace basis.
+The categorization of traces depends on the actual single-molecule experiment. In the following, we describe important steps for the analysis of a dual-color FRET experiment with alternating laser excitation as an example. Experienced users can certainly carry out different steps of the categorization and selection process in parallel, i.e., on a single-trace basis.
 
-#. To categorize a large number of molecules in a fast manner we advise first sorting out all unwanted molecules. Create two groups, for example, called *Trash* and *Further analysis* first. Depending on whether you want to go through the list of traces using a mouse or the keyboard, assign two separate letters on the keyboard to the two groups. Now go through all traces and sort out unwanted and useful ones traces. You can switch forward to the next trace by typing **D** and go backward to the former trace, which is not categorized yet, by typing **A**. Once a trace is already added to another group, it will no appear anylonger in the **Uncategorized** group.
+#. To fast categorize a large number of molecules, we advise first sorting out all unwanted molecules. Create two groups, for example, called *Trash* and *Further analysis* first. Depending on whether you want to go through the list of traces using a mouse or the keyboard, assign two separate letters on the keyboard to the two groups. Now go through all traces and sort out unwanted and useful ones traces. You can switch forward to the consecutive trace by typing **D** and go backward to the former trace, which is not categorized yet, by typing **A**. Once a trace is added to a group, it will not appear any longer in the **Uncategorized** group.
 
-#. We additionally advise ensuring that you only keep the single-molecule events. For this, please inspect the middle column on the GUI showing the detected particle in each channel. Make sure that only one molecule is shown inside the detection mask in each channel, while no emitter is detected inside the 'background mask'. Otherwise exclude the trajectory, since the false background calculation will lead to miscalculated FRET correction factors and hence FRET efficiencies.
+#. We additionally advise ensuring that you only keep the single-molecule events. For this, please inspect the middle column on the GUI showing the detected particle in each channel. Make sure that only one molecule is shown inside the detection mask in each channel while no emitter is detected inside the 'background mask'. Otherwise, exclude the trajectory since the false background calculation will lead to miscalculated FRET correction factors and, hence, FRET efficiencies.
 
-#. Sort between *Static* and *Dynamic* molecules. Add categories for dynamic or static traces and add each trace to one of the two groups. By this step, you can select afterward, which traces shall be analyzed by HMM, for example.
+#. Sort between *Static* and *Dynamic* molecules. Create categories for dynamic or static traces and add each trajectory to one of the two groups. By this step, you can select afterward which traces shall be analyzed by HMM, for example.
 
-#. Select regions of the trajectories (as described in the following paragraph :ref:`man-selection`) which will be evaluated later on by kinetics or histogram analysis. Traces with manually selected regions will be automatically added to the **Manual Selection** category.
+#. Select regions of the trajectories (as described in the following paragraph :ref:`man-selection`), which will be evaluated later by kinetics or histogram analysis. Traces with manually selected regions will be automatically added to the **Manual Selection** category.
 
 #. Mark regions of the trajectories (as described in the following paragraph :ref:`man-selection`) in which fluorophores bleach. *Deep-LASI* will add the traces automatically to the following groups: **G Bleach**, **R Bleach**, *GR Alpha**, **GR Beta**, and **GR Gamma**.
 
 ..  _man-selection:
 Trace selection
 ~~~~~~~~~~~~~~~~~~~~
-For selecting regions in traces either for further analysis or correction factor determination, *Deep-LASI* uses the mouse as active tool for marking different areas. *Deep-LASI* has two different types of selectors: firstly, it allows for marking marking specific areas according to the detection channel (:numref:`docu_selectors`; left), which is required to derive trace-wise correction factors and secondly, it provide one selector mode (:numref:`docu_selectors`; right), which marks the start and stop time points, in between which the kinetics and FRET states shall be evaluated.
+For selecting regions in traces, either for further analysis or correction factor determination, *Deep-LASI* uses the mouse as the active tool for marking different areas. *Deep-LASI* has two different types of selectors: firstly, it allows for choosing specific time windows according to the detection channel (:numref:`docu_selectors`; left), which is required to derive trace-wise correction factors, and secondly, it provides one selector mode (:numref:`docu_selectors`; right), which marks the starting and stopping time points, in between which the kinetics and FRET states shall be evaluated.
 
 .. figure:: ./../figures/documents/Fig_20_Selectors.png
    :width: 550
@@ -115,9 +115,11 @@ For selecting regions in traces either for further analysis or correction factor
 
    Activated selector types to manually marks areas in traces
 
-When clicking with the mouse on the trace first, the mouse turns into an active cursor for the general selection of time windows, in which the FRET states and kinetics will be evaluated (:numref:`docu_selectors`; right), e.g., by HMM later on. Detection channel specific selection is accessible, once the general selector is active, by pressing the number 1, 2, or 3 on the key board, depending how many detection channels are available. By pressing the same number again the cursor will turn into a general selector. Clicking into the **Traces** sub-GUI aside the trajectory will deactivate the selector tool again.
+When clicking with the mouse on the trace first, the mouse turns into an active cursor for a general selection of time windows, in which the FRET states and kinetics will be evaluated (:numref:`docu_selectors`; right), e.g., by HMM later on. Once the general selector is active, detection channel-specific selection is accessible by pressing the number 1, 2, or 3 on the keyboard, depending on how many detection channels are available. By pressing the same number again, the cursor will turn into a general selector again. Clicking into the **Traces** sub-GUI aside the trajectory will deactivate the selector tool.
 
-To select specific areas in traces, one needs to click into a trace with the left button of the mouse, drag the mouse to make the selected region shadowed, for example from the beginning of a trace until a bleaching step. Correction or deselection of marked areas is achieved by clicking with the right button into the trace and deselect the desired area. Pressing the *empty space* key on the keyboard, will reset all selections and permits to restart the selection process all over.
+To select specific areas in traces, one needs to click into a trace with the left button of the mouse, and drag the mouse to make the selected region shadowed, for example, from the beginning of a trace until a bleaching step. Correction or deselection of marked areas is achieved by clicking with the right button into the trace and deselecting the desired time window. Pressing the *empty space* key on the keyboard will reset all selections and permit restarting of the selection process all over.
+
+The selection process depends on the bleaching behavior of fluorophores and the trace-inherent SNR and photochemical behavior, etc. Detection channel selection is required to determine trace-depending correction factors automatically. If a correction factor can be calculated for a trace, its value will be shown in the **FRET control** box in the lower right corner. We advise employing as many recorded traces for either of the analysis purposes (FRET evaluation or background correction factors analysis) to obtain significant statistics later on for determining absolute distances after full data correction. We advise marking the time windows with active fluorophores with channel-specific selectors first. A possible FRET evaluation should be selected lastly, as it is not always possible.
 
 .. tip:: @Simon is the Selection process correctly described?
 
@@ -129,12 +131,26 @@ To select specific areas in traces, one needs to click into a trace with the lef
 
    Activated cursors for (A-B) channel-specific selection in the green channel (A), in the red channel (B) and for (C) choosing the time window by start and stop value in which the FRET states and kinetics shall be evaluated.
 
-The selection process depends on the bleaching behavior of fluorophores and the SNR and quality, etc., of the trace. Detection channel selection is required to determine trace-depending correction factors automatically. If a correction factor can be calculated for a trace, its value will be shown in the **FRET control** box on the lower right corner. We advice to employ as many recorded traces for either of the analysis purposes (FRET evaluation or background correction factors analysis) to obtain a significant statistics later on for determining absolute distances after full data correction. We advice to always mark the time windows with active fluorophores with channel specific selectors first. A possible FRET evaluation should be selected lastly, as it is not always possible. :numref:`docu_selectors` provides an example for the three selector types available to evaluate a 2c ALEX trace and the outcome of such an analysis. Using the green selector (:numref:`docu_selectors`;A) the time window was marked in which, the green dye was active. The middle panel shows the time window, in which the red fluorophore was active (:numref:`docu_selectors`;B). The general selector marks the time window for FRET evaluation. This time window is not extra visualized (:numref:`docu_selectors`;C). The FRET efficiency trace gets the selection until the first bleaching step, and this region will be added to the FRET histogram in the end.
+ :numref:`docu_selectors` provides an example of the three selector types available to evaluate a 2c ALEX trace and the outcome of such an analysis. Using the green selector (:numref:`docu_selectors`; A) the time window was marked in which, the green dye was active. The middle panel shows the time window, in which the red fluorophore was active (:numref:`docu_selectors`; B). The general selector marks the time window for FRET evaluation. This time window is not extra visualized (:numref:`docu_selectors`; C). The FRET efficiency trace gets the selection until the first bleaching step, and this region will be added to the FRET histogram in the end.
 
 ..  _correction_factors:
 Correction factors determination
 ~~~~~~~~~~~~~~~~~~~~
+In real single-molecule FRET experiments, the intensity of the acceptor is biased from various sources. It needs to be corrected for direct excitation of the acceptor dye during green excitation, and spectral crosstalk from the donor molecule into the acceptor channel. Further more, we need to correct for the difference in detection sensitivity between the two fluorophores. *Deep-LASI* denotes as correction factors :
 
+..  csv-table:: Correction factors
+   :header: "Correction factor", "Description"
+   :widths: 50, 200
+
+   ":math:`\alpha_{XY}`", "Direct excitation of the acceptor fluorophore *Y* during excitation with *X*"
+   ":math:`\beta_{XY}`" , "Spectral crosstalk from the fluorophore *X* in the detector channel *Y*"
+   ":math:`\gamma_{XY}`", "Compensation for difference in detection sensitivities between Channels *X* and *Y*"
+
+
+
+   :math:`\alpha_{XY}`
+   :math:`\beta_{XY}`
+   :math:`\gamma_{XY}`
 
 *Deep-LASI* will use the first bleaching step to calculate the correction factors. If you want to select channel specific regions, press the numbers 1,2,… to indicate the channel with the same order you loaded the images, and then you can select the region by the cursor special to each channel like the example on figure 20 for the red channel as the second one. For other channels the cursor shows the other corresponding letters like B, G, and I.
 
@@ -150,6 +166,9 @@ The correction factors calculated from each trace are in the **FRET control** bo
    Correction factors based on the selected region on a trace
 
 
+
+.. math::
+   \frac{ \sum_{t=0}^{N}f(t,k) }{N}
 
 
 
