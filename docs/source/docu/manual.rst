@@ -21,11 +21,7 @@ Loading
 ~~~~~~~~~~~~~
 Starting point of any data evaluation is the loading process from 'freshly' extracted traces or traces that shall be re-evaluated. Please load traces via :code:`> File > Load Traces`. When you recorded multiple datasets with deviating starting frames during alternating laser excitation, please first extract traces for every single movie and then load the extracted traces file-wise via reading the traces of the first file via :code:`> File > Load Traces`. and adding traces from the other files afterward via :code:`> File > Add Traces`.
 
-.. - :ref:`manual_analysis`
-.. - :ref:`man-categorization`
-.. - :ref:`man-selection`
-.. - :ref:`correction_factors`
-
+..  _manual_analysis:
 Traces GUI
 ~~~~~~~~~~~~~~~~~~~~
 After data loading, traces will open/show up on the sub-GUI called **Traces** as shown in :numref:`trace_look` for example for two- or three-color FRET measurements with alternating laser excitation. The GUI is split into two sections: the left part displays the single-molecule data, and the right part is dedicated to trace classification, preparation, sorting, data correction, and automated data analysis, as described later in this Chapter.
@@ -91,7 +87,7 @@ The next frame on the GUI comprises two sub-tabs, the *Plot Layout* tab, and the
 
 The *FRET controls* tab serves for controlling the FRET correction factors for direct excitation, leakage, and detection sensitivity. Its functionality will be described in the section about :ref:`correction_factors`.
 
-..  _manual_analysis:
+..  _man-categorization:
 Trace categorization
 ~~~~~~~~~~~~~~~~~~~~
 The categorization of traces depends on the actual single-molecule experiment. In the following, we describe important steps for the analysis of a dual-color FRET experiment with alternating laser excitation as an example. Experienced users can certainly carry out different steps of the categorization and selection process in parallel, i.e., also on a single-trace basis.
@@ -137,3 +133,12 @@ The correction factors calculated from each trace are in the **FRET control** bo
 ..  _correction_factors:
 Correction factors determination
 ~~~~~~~~~~~~~~~~~~~~
+
+..  _hmm:
+Kinetics analysis by HMM
+~~~~~~~~~~~~~~~~~~~~
+
+..  _histograms:
+Histogram Analysis
+~~~~~~~~~~~~~~~~~~~~
+

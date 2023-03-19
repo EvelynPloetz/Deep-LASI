@@ -26,8 +26,8 @@ Overview
 - :ref:`correction_factors`
 - :ref:`hmm`
 - :ref:`histograms`
-- :ref:`statistics`
 - :ref:`auto-analysis`
+- :ref:`statistics`
 
 --------------------------------------------------------------------
 
