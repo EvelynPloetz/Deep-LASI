@@ -129,7 +129,7 @@ To select specific areas in traces, one needs to click into a trace with the lef
 
    Activated cursors specific for channel-specific selection and start/stop selection
 
-The selection process depends on the bleaching behavior of fluorophores and SNR quality etc. of the trace. Detection channel selection is required to determine trace-depending correction factors automatically. We advice to employ as many recorded traces for either of the analysis purposes (FRET evaluation or background correction factors analysis) to obtain a significant statistics later on for determining absolute distances after full data correction.
+The selection process depends on the bleaching behavior of fluorophores and the SNR and quality, etc., of the trace. Detection channel selection is required to determine trace-depending correction factors automatically. We advice to employ as many recorded traces for either of the analysis purposes (FRET evaluation or background correction factors analysis) to obtain a significant statistics later on for determining absolute distances after full data correction.
 
 *Deep-LASI* will use the first bleaching step to calculate the correction factors. If you want to select channel specific regions, press the numbers 1,2,… to indicate the channel with the same order you loaded the images, and then you can select the region by the cursor special to each channel like the example on figure 20 for the red channel as the second one. For other channels the cursor shows the other corresponding letters like B, G, and I.
 
