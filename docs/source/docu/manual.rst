@@ -160,23 +160,23 @@ We denote the background-corrected intensities as :math:`I_{XY}` and the correct
 *Trace-wise and global correction factors* |br|
 Depending on when individual fluorophores photo-bleach, correction factors can be derived on a trace-to-trace basis. For most of the traces, however only a subset of correction factors can be obtained for the individual trajectories. In these cases, *Deep-LASI* derives *global* correction factors, which are the *median* value of the corresponding distribution of trace-wise derived correction factors. They can be determined from the distribution, as described :ref:`histograms` and below.
 
-*Deep-LASI* uses bleaching steps in single intensity trajectories to calculate trace-wise correction factors. These can be derived for traces containing bleaching steps, which were presorted and categorized as *B Bleach*, *G Bleach*, *R Bleach* or *I Bleach*, respectively, depending which fluorophore pairs were investigated. The correction factor for direct excitation of the acceptor during donor excitation can be derived for traces in which the donor bleached first, via
+*Deep-LASI* uses bleaching steps in single intensity trajectories to calculate trace-wise correction factors. These can be derived for traces containing bleaching steps, which were presorted and categorized as *B Bleach*, *G Bleach*, *R Bleach* or *I Bleach*, respectively, depending which fluorophore pairs were investigated. The correction factor for direct excitation of the acceptor during donor excitation can be derived for traces in which the donor bleached first or acceptor-only traces, via
 
 .. math::
-    \alpha_{XY;DL} = \left. \frac{\langle I_{XY}\rangle}{\langle I_{YY} \rangle} \right\vert_{no donor}
+    \alpha_{XY;DL} = \left. \frac{\langle I_{XY}\rangle}{\langle I_{YY} \rangle} \right\vert_{\text{no donor}}
 
 where :math:`\langle I_{XY}\rangle` and :math:`\langle I_{YY}\rangle` describe the mean acceptor intensity after donor or acceptor excitation, respectively.
 Following the definition of leakage of the donor fluorescence into the acceptor channel according to
 
 .. math::
-    \beta_{XY;DL} = \left. \frac{\langle I_{XY}\rangle}{\langle I_{XX} \rangle} \right\vert_{no acceptor}
+    \beta_{XY;DL} = \left. \frac{\langle I_{XY}\rangle}{\langle I_{XX} \rangle} \right\vert_{\text{no acceptor}}
 
-*Deep-LASI* determines :math:`\beta_{XY;DL}` at acceptor bleaching steps from the static intensity in the donor channel and acceptor channel after the bleaching. Here, :math:`\langle I_{XX}\rangle` refers to the mean donor intensity and :math:`\langle I_{XY}\rangle` to the mean acceptor intensity after acceptor bleaching.
+*Deep-LASI* determines :math:`\beta_{XY;DL}` from donor-only traces or at acceptor bleaching steps from the static intensity in the donor channel and acceptor channel after the bleaching. Here, :math:`\langle I_{XX}\rangle` refers to the mean donor intensity and :math:`\langle I_{XY}\rangle` to the mean acceptor intensity after acceptor bleaching.
 
 Lastly, the detection correction factor :math:`\gamma_{XY;DL}` is derived from traces categorized as **XY Gamma**, in which the acceptor *Y* is bleaching before the donor molecule *X*, Before determining :math:`\gamma_{XY;DL}`, the acceptor intensity :math:`I_{XY;corr}`is first corrected against direct excitation ad spectral crosstalk. Afterward, *Deep-LASI* derives the detection correction factor from the ratio of changes in the donor and acceptor emission before and after the photo-bleaching of the acceptor. The correction factor is calculated via
 
 .. math::
-    \gamma_{XY;DL} = \left. \frac{\langle \Delta I_{XY;corr}\rangle}{\langle \Delta I_{XX;corr} \rangle} \right\vert_{A bleaches}
+    \gamma_{XY;DL} = \left. \frac{\langle \Delta I_{XY;corr}\rangle}{\langle \Delta I_{XX;corr} \rangle} \right\vert_{\text{A bleaches}}
 
 with :math:`\langle \Delta I_{XX;corr}\rangle` and :math:`\langle \Delta I_{XY;corr}\rangle` being the intensity difference for the mean donor and acceptor emission after donor excitation before and after the acceptor photo-bleaches.
 
@@ -184,18 +184,15 @@ The correction factors calculated for each trace are shown in the **FRET control
 
 .. tip:: @Pooyeh please specify with two sentences above, how you derive the global correction factors and how you set the global correction factors for the traces.
 
-.. figure:: ./../figures/documents/Fig_21_Correction_Factor_Table.png
+.. figure:: ./../figures/documents/Dummy.png
    :width: 450
    :alt: correction factor box
    :align: center
    :name: correction factor box
 
-   Correction factors based on the selected region on a trace
+   Correction factors that could be derived for a trace in which (A) the donor bleaches first and (B) the acceptor bleaches first.
 
-
-
-.. math::
-   \frac{ \sum_{t=0}^{N}f(t,k) }{N}
+.. tip:: @Pooyeh: please add an image with panel A and B showing a screenshot of the global correction factor panel only.
 
 
 
