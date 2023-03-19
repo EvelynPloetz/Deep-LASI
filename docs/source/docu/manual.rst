@@ -113,28 +113,31 @@ For selecting regions in traces either for further analysis or correction factor
    :align: center
    :name: docu_selectors
 
-   Activated selector types to manually select areas in traces
+   Activated selector types to manually marks areas in traces
 
-When clicking with the mouse on the trace first, the mouse turns into an active cursor for general selection of time windows, in which the FRET states and kinetics shall be evaluated (:numref:`docu_selectors`; right). Detection channel specific selection is accessible by pressing after selector activation the number 1, 2, or 3 on the key board depending how many detection channels are available. By pressing the same number again the cursor will turn into a general selector again. Clicking into the **Traces** sub-GUI aside the trajectory will deactivate the selector tool again.
+When clicking with the mouse on the trace first, the mouse turns into an active cursor for the general selection of time windows, in which the FRET states and kinetics will be evaluated (:numref:`docu_selectors`; right), e.g., by HMM later on. Detection channel specific selection is accessible, once the general selector is active, by pressing the number 1, 2, or 3 on the key board, depending how many detection channels are available. By pressing the same number again the cursor will turn into a general selector. Clicking into the **Traces** sub-GUI aside the trajectory will deactivate the selector tool again.
 
-To select specific areas in traces, one needs to click into a trace with the left bottom of the mouse, drag the mouse to make the selected region shadowed, for example from the beginning of a trace until a bleaching step. Correction or deselection of marked areas is achieved by clicking with the right bottom into the trace and deselect the desired area. Pressing the *empty space* key on the keyboard, will reset all selections and permits to restart the selection process all over.
+To select specific areas in traces, one needs to click into a trace with the left button of the mouse, drag the mouse to make the selected region shadowed, for example from the beginning of a trace until a bleaching step. Correction or deselection of marked areas is achieved by clicking with the right button into the trace and deselect the desired area. Pressing the *empty space* key on the keyboard, will reset all selections and permits to restart the selection process all over.
 
 .. tip:: @Simon is the Selection process correctly described?
 
 .. figure:: ./../figures/documents/Fig_21_Selectors_Traces.png
-   :width: 400
+   :width: 800
    :alt: cursor example for a two color trace
    :align: center
-   :name: example of activated cursor
+   :name: example_cursor_trace
 
-   Activated cursors specific for channel-specific selection and start/stop selection
+   Activated cursors for (A-B) channel-specific selection in the green channel (A), in the red channel (B) and for (C) choosing the time window by start and stop value in which the FRET states and kinetics shall be evaluated.
 
-The selection process depends on the bleaching behavior of fluorophores and the SNR and quality, etc., of the trace. Detection channel selection is required to determine trace-depending correction factors automatically. We advice to employ as many recorded traces for either of the analysis purposes (FRET evaluation or background correction factors analysis) to obtain a significant statistics later on for determining absolute distances after full data correction.
+The selection process depends on the bleaching behavior of fluorophores and the SNR and quality, etc., of the trace. Detection channel selection is required to determine trace-depending correction factors automatically. If a correction factor can be calculated for a trace, its value will be shown in the **FRET control** box on the lower right corner. We advice to employ as many recorded traces for either of the analysis purposes (FRET evaluation or background correction factors analysis) to obtain a significant statistics later on for determining absolute distances after full data correction. We advice to always mark the time windows with active fluorophores with channel specific selectors first. A possible FRET evaluation should be selected lastly, as it is not always possible. :numref:`docu_selectors` provides an example for the three selector types available to evaluate a 2c ALEX trace and the outcome of such an analysis. Using the green selector (:numref:`docu_selectors`;A) the time window was marked in which, the green dye was active. The middle panel shows the time window, in which the red fluorophore was active (:numref:`docu_selectors`;B). The general selector marks the time window for FRET evaluation. This time window is not extra visualized (:numref:`docu_selectors`;C). The FRET efficiency trace gets the selection until the first bleaching step, and this region will be added to the FRET histogram in the end.
+
+..  _correction_factors:
+Correction factors determination
+~~~~~~~~~~~~~~~~~~~~
+
 
 *Deep-LASI* will use the first bleaching step to calculate the correction factors. If you want to select channel specific regions, press the numbers 1,2,… to indicate the channel with the same order you loaded the images, and then you can select the region by the cursor special to each channel like the example on figure 20 for the red channel as the second one. For other channels the cursor shows the other corresponding letters like B, G, and I.
 
-
-The next photo shows an example of region selection for both green and red channels. Here the FRET efficiency trace gets the selection until the first bleaching step, and this region will be added to the FRET histogram in the end.
 
 The correction factors calculated from each trace are in the **FRET control** box on the lower right corner. If a trace is not suitable for calculating the correction factors, then the median value of the whole data set would be applied on that.
 
@@ -147,9 +150,8 @@ The correction factors calculated from each trace are in the **FRET control** bo
    Correction factors based on the selected region on a trace
 
 
-..  _correction_factors:
-Correction factors determination
-~~~~~~~~~~~~~~~~~~~~
+
+
 
 ..  _hmm:
 Kinetics analysis by HMM
