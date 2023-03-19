@@ -136,21 +136,23 @@ The selection process depends on the bleaching behavior of fluorophores and the 
 ..  _correction_factors:
 Correction factors determination
 ~~~~~~~~~~~~~~~~~~~~
-In real single-molecule FRET experiments, the intensity of the acceptor is biased from various sources. It needs to be corrected for direct excitation of the acceptor dye during green excitation, and spectral crosstalk from the donor molecule into the acceptor channel. Further more, we need to correct for the difference in detection sensitivity between the two fluorophores. *Deep-LASI* denotes as correction factors :
+In real single-molecule FRET experiments, the intensity of the acceptor is biased from various sources. It needs to be corrected for direct excitation :math:`\alpha_{XY}` of the acceptor dye during green excitation, and spectral crosstalk :math:`\beta_{XY}` from the donor molecule into the acceptor channel. Further more, we need to correct for the differences in detection sensitivity :math:`\gamma_{XY}` between the two fluorophores. We are aware that the nomenclature by *Deep-LASI* at this stage, is not in line with the nomenclature recently introduced by a multi-laboratory benchmark study published by `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_. It will be adopted on the various GUIs of *Deep-LASI* for the next release. *Deep-LASI* denotes the correction factors as
 
-..  csv-table:: Correction factors
-   :header: "Correction factor", "Description"
-   :widths: 50, 200
+..  list-table:: Correction factors
+   :widths: 50, 50, 200
+   :header-row: 1
 
-   ":math:`\alpha_{XY}`", "Direct excitation of the acceptor fluorophore *Y* during excitation with *X*"
-   ":math:`\beta_{XY}`" , "Spectral crosstalk from the fluorophore *X* in the detector channel *Y*"
-   ":math:`\gamma_{XY}`", "Compensation for difference in detection sensitivities between Channels *X* and *Y*"
-
-
-
-   :math:`\alpha_{XY}`
-   :math:`\beta_{XY}`
-   :math:`\gamma_{XY}`
+    * - Correction factor employed by *Deep-LASI*
+      - Correction factor employed by Hellekamp et al.
+      - Description
+    * - :math:`\alpha_{XY}`
+      - :math:`\delta_{XY}`
+      - Direct excitation of the acceptor fluorophore *Y* during excitation with *X*
+    * - :math:`\beta_{XY}`
+      - :math:`\alpha_{XY}`
+      - Spectral crosstalk from the fluorophore *X* in the detector channel *Y*
+    * - :math:`\gamma_{XY}`
+      - Compensation for difference in detection sensitivities between Channels *X* and *Y*
 
 *Deep-LASI* will use the first bleaching step to calculate the correction factors. If you want to select channel specific regions, press the numbers 1,2,… to indicate the channel with the same order you loaded the images, and then you can select the region by the cursor special to each channel like the example on figure 20 for the red channel as the second one. For other channels the cursor shows the other corresponding letters like B, G, and I.
 
