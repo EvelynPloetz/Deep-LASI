@@ -115,7 +115,7 @@ For selecting regions in traces, either for further analysis or correction facto
 
    Activated selector types to manually marks areas in traces
 
-When clicking with the mouse on the trace first, the mouse turns into an active cursor for a general selection of time windows, in which the FRET states and kinetics will be evaluated (:numref:`docu_selectors`; right), e.g., by HMM later on. Once the general selector is active, detection channel-specific selection is accessible by pressing the number 1, 2, or 3 on the keyboard, depending on how many detection channels are available. By pressing the same number again, the cursor will turn into a general selector again. Clicking into the **Traces** sub-GUI aside the trajectory will deactivate the selector tool.
+When clicking with the mouse on the trace first, the mouse turns into an active cursor for a general selection of time windows, in which the FRET states and kinetics will be evaluated (:numref:`docu_selectors`; right), e.g., by HMM later on. Once the general selector is active, detection channel-specific selection is accessible by pressing the key 1, 2, or 3 on the keyboard, depending on how many detection channels are available. By pressing the same key again, the cursor will turn into a general selector again. Clicking into the **Traces** sub-GUI aside the trajectory will deactivate the selector tool.
 
 To select specific areas in traces, one needs to click into a trace with the left button of the mouse, and drag the mouse to make the selected region shadowed, for example, from the beginning of a trace until a bleaching step. Correction or deselection of marked areas is achieved by clicking with the right button into the trace and deselecting the desired time window. Pressing the *empty space* key on the keyboard will reset all selections and permit restarting of the selection process all over.
 
@@ -136,23 +136,24 @@ The selection process depends on the bleaching behavior of fluorophores and the 
 ..  _correction_factors:
 Correction factors determination
 ~~~~~~~~~~~~~~~~~~~~
-In realworld single-molecule FRET experiments, the intensity of the acceptor is biased from various sources. It needs to be corrected for direct excitation :math:`\alpha_{XY;DL}` of the acceptor dye *Y* during donor excitation *X*, and spectral crosstalk :math:`\beta_{XY;DL}` from the donor molecule *X* into the acceptor channel *Y*. Further more, we need to correct for the differences in detection sensitivity :math:`\gamma_{XY}` between the two fluorophores. We are aware that the nomenclature by *Deep-LASI* at this stage, is not in line yet with the nomenclature recently introduced by a multi-laboratory benchmark study published by `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_. It will be adopted on the various GUIs of *Deep-LASI* and through-out the software during the next release. *Deep-LASI* denotes the correction factors currently as
+In realworld single-molecule FRET experiments, the intensity of the acceptor is biased from various sources. It needs to be corrected for direct excitation :math:`\alpha_{XY;DL}` of the acceptor dye *Y* during donor excitation *X*, and spectral crosstalk :math:`\beta_{XY;DL}` from the donor molecule *X* into the acceptor channel *Y*. Further more, we need to correct for the differences in detection sensitivity :math:`\gamma_{XY;DL}` between the two fluorophores. We are aware that the nomenclature by *Deep-LASI* at this stage, is not in line yet with the nomenclature recently introduced by a multi-laboratory benchmark study published by `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_. It will be adopted on the various sub-GUIs of *Deep-LASI* and through-out the software during the next release rounds. *Deep-LASI* denotes the correction factors currently as
 
-..  list-table:: Correction factors
-   :widths: 50, 50, 200
-   :header-row: 1
+.. list-table:: Correction factors employed by
+   :widths: 35 50 250
+   :header-rows: 1
 
-    * - Correction factor employed by *Deep-LASI*
-      - Correction factor employed by Hellekamp et al.
-      - Description
-    * - :math:`\alpha_{XY;DL}`
-      - :math:`\delta_{XY}`
-      - Direct excitation of the acceptor fluorophore *Y* during excitation with *X*
-    * - :math:`\beta_{XY;DL}`
-      - :math:`\alpha_{XY}`
-      - Spectral crosstalk from the fluorophore *X* in the detector channel *Y*
-    * - :math:`\gamma_{XY}`
-      - Compensation for difference in detection sensitivities between Channels *X* and *Y*
+   * - *Deep-LASI*
+     - Hellekamp et al.
+     - Description
+   * - :math:`\alpha_{XY;DL}`
+     - :math:`\delta_{XY}`
+     - Direct excitation of the acceptor fluorophore *Y* during excitation with *X*
+   * - :math:`\beta_{XY;DL}`
+     - :math:`\alpha_{XY}`
+     - Spectral crosstalk from the fluorophore *X* in the detector channel *Y*
+   * - :math:`\gamma_{XY;DL}`
+     - :math:`\gamma_{XY}`
+     - Compensation for difference in detection sensitivities between Channels *X*
 
 We denote the background-corrected intensities as :math:`I_{XY}` and the corrected intensity as :math:`I_{XY;corr}`, where *X* stands for the excitation source and *Y* for the detection channel.
 
@@ -162,7 +163,8 @@ Depending on when individual fluorophores photo-bleach, correction factors can b
 *Deep-LASI* uses bleaching steps in single intensity trajectories to calculate possible correction factors on a trace-to-trace basis. Using traces that were presorted and categorized as **B Bleach**, **G Bleach**, **R Bleach** or **I Bleach**, trace-wise correction factors for direct excitation and spectral crosstalk between two channels can be determined.
 
 Following the definition of leakage of the donor fluorescence into the acceptor channel according to
-.. :math::
+
+.. math::
     \beta_{XY;DL} = \left \frac{\langle I_{XY}\rangle}{\langle I_{XX} \rangle} \right\rvert_{no acceptor}
 
 **Deep-LASI** determines :math:`\beta_{XY;DL}` for acceptor bleaching steps from the static intensity in the donor channel before and after the bleaching. Here, :math:`\langle I_{XX}\rangle` refers to the mean donor intensity and :math:`\langle I_{XY}\rangle` to the mean acceptor intensity after acceptor bleaching.
@@ -170,8 +172,8 @@ Following the definition of leakage of the donor fluorescence into the acceptor 
 If you want to select channel specific regions, press the numbers 1,2,… to indicate the channel with the same order you loaded the images, and then you can select the region by the cursor special to each channel like the example on figure 20 for the red channel as the second one. For other channels the cursor shows the other corresponding letters like B, G, and I.
 
 
-.. :math::
-    \beta_{XY;DL} = \frac{\langle E    \rangle}{1 - XXX}
+.. math::
+    \alpha_{XY;DL} = \frac{\langle E    \rangle}{1 - XXX}
 
 
 
