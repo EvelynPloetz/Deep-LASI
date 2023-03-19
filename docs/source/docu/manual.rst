@@ -108,7 +108,7 @@ Trace selection
 For selecting regions in traces, either for further analysis or correction factor determination, *Deep-LASI* uses the mouse as the active tool for marking different areas. *Deep-LASI* has two different types of selectors: firstly, it allows for choosing specific time windows according to the detection channel (:numref:`docu_selectors`; left), which is required to derive trace-wise correction factors, and secondly, it provides one selector mode (:numref:`docu_selectors`; right), which marks the starting and stopping time points, in between which the kinetics and FRET states shall be evaluated.
 
 .. figure:: ./../figures/documents/Fig_20_Selectors.png
-   :width: 550
+   :width: 450
    :alt: Selector types
    :align: center
    :name: docu_selectors
@@ -131,7 +131,7 @@ The selection process depends on the bleaching behavior of fluorophores and the 
 
    Activated cursors for (A-B) channel-specific selection in the green channel (A), in the red channel (B) and for (C) choosing the time window by start and stop value in which the FRET states and kinetics shall be evaluated.
 
- :numref:`docu_selectors` provides an example of the three selector types available to evaluate a 2c ALEX trace and the outcome of such an analysis. Using the green selector (:numref:`docu_selectors`; A) the time window was marked in which, the green dye was active. The middle panel shows the time window, in which the red fluorophore was active (:numref:`docu_selectors`; B). The general selector marks the time window for FRET evaluation. This time window is not extra visualized (:numref:`docu_selectors`; C). The FRET efficiency trace gets the selection until the first bleaching step, and this region will be added to the FRET histogram in the end.
+:numref:`docu_selectors` provides an example of the three selector types available to evaluate a 2c ALEX trace and the outcome of such an analysis. Using the green selector (:numref:`docu_selectors`; A) the time window was marked in which, the green dye was active. The middle panel shows the time window, in which the red fluorophore was active (:numref:`docu_selectors`; B). The general selector marks the time window for FRET evaluation. This time window is not extra visualized (:numref:`docu_selectors`; C). The FRET efficiency trace gets the selection until the first bleaching step, and this region will be added to the FRET histogram in the end.
 
 ..  _correction_factors:
 Correction factors determination
@@ -165,7 +165,7 @@ Following the definition of leakage of the donor fluorescence into the acceptor 
 .. :math::
     \beta_{XY;DL} = \left \frac{\langle I_{XY}\rangle}{\langle I_{XX} \rangle} \right\rvert_{no acceptor}
 
-**Deep-LASI** determines :math:`\beta_{XY;DL}` for acceptor bleaching steps from the static intensity in the donor channel before and after the bleaching. Here, :math:`\langle I_{XX}\rangle` refers to the mean donor intensity and :math:`\langle I_{XY}\rangle` to the mean acceptor intensity after acceptor bleaching. 
+**Deep-LASI** determines :math:`\beta_{XY;DL}` for acceptor bleaching steps from the static intensity in the donor channel before and after the bleaching. Here, :math:`\langle I_{XX}\rangle` refers to the mean donor intensity and :math:`\langle I_{XY}\rangle` to the mean acceptor intensity after acceptor bleaching.
 
 If you want to select channel specific regions, press the numbers 1,2,… to indicate the channel with the same order you loaded the images, and then you can select the region by the cursor special to each channel like the example on figure 20 for the red channel as the second one. For other channels the cursor shows the other corresponding letters like B, G, and I.
 
