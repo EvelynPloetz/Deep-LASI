@@ -136,7 +136,7 @@ The selection process depends on the bleaching behavior of fluorophores and the 
 ..  _correction_factors:
 Correction factors determination
 ~~~~~~~~~~~~~~~~~~~~
-In realworld single-molecule FRET experiments, the intensity of the acceptor is biased from various sources. It needs to be corrected for direct excitation :math:`\alpha_{XY;DL}` of the acceptor dye *Y* during donor excitation *X*, and spectral crosstalk :math:`\beta_{XY;DL}` from the donor molecule *X* into the acceptor channel *Y*. Further more, we need to correct for the differences in detection sensitivity :math:`\gamma_{XY;DL}` between the two fluorophores. We are aware that the nomenclature by *Deep-LASI* at this stage, is not in line yet with the nomenclature recently introduced by a multi-laboratory benchmark study published by `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_. It will be adopted on the various sub-GUIs of *Deep-LASI* and through-out the software during the next release rounds. *Deep-LASI* denotes the correction factors currently as
+In realworld single-molecule FRET experiments, the intensity of the acceptor is biased by various sources. It needs to be corrected for direct excitation :math:`\alpha_{XY;DL}` of the acceptor dye *Y* during donor excitation *X*, and spectral crosstalk :math:`\beta_{XY;DL}` from the donor molecule *X* into the acceptor channel *Y*. Further more, we need to correct for the differences in detection sensitivity :math:`\gamma_{XY;DL}` between the two fluorophores. We are aware that the nomenclature by *Deep-LASI* at this stage, is not in line yet with the nomenclature recently introduced by a multi-laboratory benchmark study published by `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_. It will be adopted on the various sub-GUIs of *Deep-LASI* and through-out the software during the next release rounds. *Deep-LASI* denotes the correction factors currently as
 
 .. list-table:: Correction factors employed by
    :widths: 35 50 250
@@ -157,27 +157,32 @@ In realworld single-molecule FRET experiments, the intensity of the acceptor is 
 
 We denote the background-corrected intensities as :math:`I_{XY}` and the corrected intensity as :math:`I_{XY;corr}`, where *X* stands for the excitation source and *Y* for the detection channel.
 
-*Trace-wise and global correction factors*
-Depending on when individual fluorophores photo-bleach, correction factors can be derived on a trace-to-trace basis. For most of the traces, however only a subset of correction factors can be obtained for the individual trajectories. In these cases, *Deep-LASI* derives *global* correction factors, which are the *median* value of the corresponding distribution of trace-wise derived correction factors.
+*Trace-wise and global correction factors* |br|
+Depending on when individual fluorophores photo-bleach, correction factors can be derived on a trace-to-trace basis. For most of the traces, however only a subset of correction factors can be obtained for the individual trajectories. In these cases, *Deep-LASI* derives *global* correction factors, which are the *median* value of the corresponding distribution of trace-wise derived correction factors. They can be determined from the distribution, as described :ref:`histograms` and below.
 
-*Deep-LASI* uses bleaching steps in single intensity trajectories to calculate possible correction factors on a trace-to-trace basis. Using traces that were presorted and categorized as **B Bleach**, **G Bleach**, **R Bleach** or **I Bleach**, trace-wise correction factors for direct excitation and spectral crosstalk between two channels can be determined.
+*Deep-LASI* uses bleaching steps in single intensity trajectories to calculate trace-wise correction factors. These can be derived for traces containing bleaching steps, which were presorted and categorized as *B Bleach*, *G Bleach*, *R Bleach* or *I Bleach*, respectively, depending which fluorophore pairs were investigated. The correction factor for direct excitation of the acceptor during donor excitation can be derived for traces in which the donor bleached first, via
 
+.. math::
+    \alpha_{XY;DL} = \left. \frac{\langle I_{XY}\rangle}{\langle I_{YY} \rangle} \right\vert_{no donor}
+
+where :math:`\langle I_{XY}\rangle` and :math:`\langle I_{YY}\rangle` describe the mean acceptor intensity after donor or acceptor excitation, respectively.
 Following the definition of leakage of the donor fluorescence into the acceptor channel according to
 
 .. math::
-    \beta_{XY;DL} = \left \frac{\langle I_{XY}\rangle}{\langle I_{XX} \rangle} \right\rvert_{no acceptor}
+    \beta_{XY;DL} = \left. \frac{\langle I_{XY}\rangle}{\langle I_{XX} \rangle} \right\vert_{no acceptor}
 
-**Deep-LASI** determines :math:`\beta_{XY;DL}` for acceptor bleaching steps from the static intensity in the donor channel before and after the bleaching. Here, :math:`\langle I_{XX}\rangle` refers to the mean donor intensity and :math:`\langle I_{XY}\rangle` to the mean acceptor intensity after acceptor bleaching.
+*Deep-LASI* determines :math:`\beta_{XY;DL}` at acceptor bleaching steps from the static intensity in the donor channel and acceptor channel after the bleaching. Here, :math:`\langle I_{XX}\rangle` refers to the mean donor intensity and :math:`\langle I_{XY}\rangle` to the mean acceptor intensity after acceptor bleaching.
 
-If you want to select channel specific regions, press the numbers 1,2,… to indicate the channel with the same order you loaded the images, and then you can select the region by the cursor special to each channel like the example on figure 20 for the red channel as the second one. For other channels the cursor shows the other corresponding letters like B, G, and I.
-
+Lastly, the detection correction factor :math:`\gamma_{XY;DL}` is derived from traces categorized as **XY Gamma**, in which the acceptor *Y* is bleaching before the donor molecule *X*, Before determining :math:`\gamma_{XY;DL}`, the acceptor intensity :math:`I_{XY;corr}`is first corrected against direct excitation ad spectral crosstalk. Afterward, *Deep-LASI* derives the detection correction factor from the ratio of changes in the donor and acceptor emission before and after the photo-bleaching of the acceptor. The correction factor is calculated via
 
 .. math::
-    \alpha_{XY;DL} = \frac{\langle E    \rangle}{1 - XXX}
+    \gamma_{XY;DL} = \left. \frac{\langle \Delta I_{XY;corr}\rangle}{\langle \Delta I_{XX;corr} \rangle} \right\vert_{A bleaches}
 
+with :math:`\langle \Delta I_{XX;corr}\rangle` and :math:`\langle \Delta I_{XY;corr}\rangle` being the intensity difference for the mean donor and acceptor emission after donor excitation before and after the acceptor photo-bleaches.
 
+The correction factors calculated for each trace are shown in the **FRET control** box on the lower right corner. If a trace is not suitable for calculating the correction factors, then the median value of the whole data set would be applied on that.  The global correction factors are set via ...
 
-The correction factors calculated from each trace are in the **FRET control** box on the lower right corner. If a trace is not suitable for calculating the correction factors, then the median value of the whole data set would be applied on that.
+.. tip:: @Pooyeh please specify with two sentences above, how you derive the global correction factors and how you set the global correction factors for the traces.
 
 .. figure:: ./../figures/documents/Fig_21_Correction_Factor_Table.png
    :width: 450
