@@ -49,7 +49,7 @@ Processing Single-Molecule Data
 
 .. Contains section on Manual Data analysis on Traces GUI ..
 ..  _manual_analysis:
-Manual data analysis
+Manual smFRET analysis
 -------------
 .. include:: docu/manual.rst
 
@@ -57,7 +57,7 @@ Manual data analysis
 
 .. Contains section on Manual Data analysis on Traces GUI ..
 ..  _automatic_analysis:
-Automated Analysis by Deep Learning
+Automated smFRET Analysis
 -------------
 .. include:: docu/automatic.rst
 

@@ -59,9 +59,9 @@ Depending on the selected laser excitation scheme during the extraction process,
 
 .. top:: @Pooyeh/Simon: Please add missing colors
 
-For a *three-color measurement*, an additional panel displays the trajectories of the detected emitters after excitation with a third laser. As shown in :numref:`trace_look` on the bottom for 3c FRET with BGR laser alternation, the top panel shows three intensities trajectories for the three detection channels after blue excitation, i.e., the emission of the blue dye after blue excitation (BB) in dark blue, the emission of green dye after the blue excitation (BG) in cyan, and the emission of red dye after blue excitation (BR) in fuchsia. The lower panel shows the emission after green and red excitation. Similar to the two-color case, the color of the different channels will vary depending on which detection channels have been chosen during data extraction. *Deep-LASI* chooses the above-mentioned color schemes.
+For a *three-color measurement*, an additional panel displays the trajectories of the detected emitters after excitation with the third laser. As shown in :numref:`trace_look` on the bottom for 3c FRET with BGR laser alternation, the top panel shows three intensities trajectories for the three detection channels after blue excitation, i.e., the emission of the blue dye after blue excitation (BB) in dark blue, the emission of green dye after the blue excitation (BG) in cyan, and the emission of red dye after blue excitation (BR) in magenta. The lower panel shows the emission after green and red excitation. Similar to the two-color case, the color of the different channels will vary depending on which detection channels have been chosen during data extraction. *Deep-LASI* chooses the above-mentioned color schemes.
 
-You can choose which intensity trace shall be displayed by checking or unchecking channels in the **Plot Layout** tab in the right lower corner of the GUI. This holds also true for the FRET efficiency signature, which is displayed in the lower panel. Deselecting FRET channels can become especially handy in the case of having more than one FRET pair per molecule. The **Reset Plot** button restores the default trace representation.
+You can choose which intensity trace shall be displayed by checking or unchecking channels in the **Plot Layout** tab in the right lower corner of the GUI. This holds also true for the FRET efficiency signature (which is displayed in the lower panel) or when selecting different regions in the traces, as described in :ref:`man-selection`. Deselecting FRET channels can become especially handy in the case of having more than one FRET pair per molecule. The **Reset Plot** button restores the default trace representation.
 
 *Trace analysis* |br|
 The right part of the **Traces** GUi serves for data handling. |br|
@@ -105,16 +105,33 @@ The categorization of traces depends on the actual single-molecule experiment. I
 ..  _man-selection:
 Trace selection
 ~~~~~~~~~~~~~~~~~~~~
-For selecting desired regions in each trace for further analysis, you can drag the mouse to make the selected region shadowed, for example from the beginning of a trace until a bleaching step. By clicking on the trace region, the mouse turns to an active cursor for a general selection for example when all the dyes are active. *Deep-LASI* will use the first bleaching step to calculate the correction factors. If you want to select channel specific regions, press the numbers 1,2,… to indicate the channel with the same order you loaded the images, and then you can select the region by the cursor special to each channel like the example on figure 20 for the red channel as the second one. For other channels the cursor shows the other corresponding letters like B, G, and I.
+For selecting regions in traces either for further analysis or correction factor determination, *Deep-LASI* uses the mouse as active tool for marking different areas. *Deep-LASI* has two different types of selectors: firstly, it allows for marking marking specific areas according to the detection channel (:numref:`docu_selectors`; left), which is required to derive trace-wise correction factors and secondly, it provide one selector mode (:numref:`docu_selectors`; right), which marks the start and stop time points, in between which the kinetics and FRET states shall be evaluated.
 
-.. figure:: ./../figures/documents/Fig_20_Cursor_Activating.png
+.. figure:: ./../figures/documents/Fig_20_Selectors.png
+   :width: 550
+   :alt: Selector types
+   :align: center
+   :name: docu_selectors
+
+   Activated selector types to manually select areas in traces
+
+When clicking with the mouse on the trace first, the mouse turns into an active cursor for general selection of time windows, in which the FRET states and kinetics shall be evaluated (:numref:`docu_selectors`; right). Detection channel specific selection is accessible by pressing after selector activation the number 1, 2, or 3 on the key board depending how many detection channels are available. By pressing the same number again the cursor will turn into a general selector again. Clicking into the **Traces** sub-GUI aside the trajectory will deactivate the selector tool again.
+
+To select specific areas in traces, one needs to click into a trace with the left bottom of the mouse, drag the mouse to make the selected region shadowed, for example from the beginning of a trace until a bleaching step. Correction or deselection of marked areas is achieved by clicking with the right bottom into the trace and deselect the desired area. Pressing the *empty space* key on the keyboard, will reset all selections and permits to restart the selection process all over.
+
+.. tip:: @Simon is the Selection process correctly described?
+
+.. figure:: ./../figures/documents/Fig_21_Selectors_Traces.png
    :width: 400
-   :alt: cursor example with two color trace
+   :alt: cursor example for a two color trace
    :align: center
    :name: example of activated cursor
 
-   Activated cursor specific for red channel for region selection
+   Activated cursors specific for channel-specific selection and start/stop selection
 
+The selection process depends on the bleaching behavior of fluorophores and SNR quality etc. of the trace. Detection channel selection is required to determine trace-depending correction factors automatically. We advice to employ as many recorded traces for either of the analysis purposes (FRET evaluation or background correction factors analysis) to obtain a significant statistics later on for determining absolute distances after full data correction.
+
+*Deep-LASI* will use the first bleaching step to calculate the correction factors. If you want to select channel specific regions, press the numbers 1,2,… to indicate the channel with the same order you loaded the images, and then you can select the region by the cursor special to each channel like the example on figure 20 for the red channel as the second one. For other channels the cursor shows the other corresponding letters like B, G, and I.
 
 
 The next photo shows an example of region selection for both green and red channels. Here the FRET efficiency trace gets the selection until the first bleaching step, and this region will be added to the FRET histogram in the end.
