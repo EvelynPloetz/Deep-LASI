@@ -124,8 +124,13 @@ Manual data analysis and correction
 
 By using the Navigation slider we clicked through all the traces one by one to check their individual features and attribute them to one or several categories created in the Classification chart. You can see the result of manual trace sorting in **classification figure**. For a detailed description of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**.
 
-Figure of categories
-Caption: Categories manually created for the two-color static 'low-FRET' DNA sample
+.. figure:: ./../../figures/examples/PA_Hellenkamp_manual_categories.png
+   :width: 400
+   :alt: Hellenkamp_categorized
+   :align: center
+   :name: Hellenkamp_categorized_manual
+   
+   Categories manually created for the static two-color 'low-FRET' DNA sample
 
 After categorization, we moved on to the *Histograms* tab to plot the results. As you can see on Fig. 67, we first chose the Dynamic category by clicking on the plus sign beside it, then for the Plot Mode we chose the FRET Efficiency (apparent) to be the x axis, and on the Display Settings we chose the histogram type to be framewise.
 
@@ -143,7 +148,7 @@ Plotting and Summary of Results
    :align: center
    :name: Hellenkamp_autocategorized
 
-   Categories created by DeepLASI for the static two-color DNA sample
+   Categories created by DeepLASI for the static two-color 'low-FRET' DNA sample
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_de_ct.png
    :width: 600
