@@ -9,7 +9,7 @@ Selected traces and categories
 <to be continued>
 
 
-After having the traces categorized, you can move on to the **Statistics** tab (:numref:`statistics_tab`), choose the category you want which are the same as you defined (:numref:``), and get information about your data as histograms already fitted. Information such as the total signal, background level, count-rate, signal to noise ratio, and bleaching time, :numref:``. The fitting results are provided in a table on the right side.
+After having the traces categorized, you can move on to the **Statistics** tab (:numref:`statistics_tab`), choose the desired category from the same table as you defined earlier (:numref:``), and get information about your data as histograms already fitted. Information such as the total signal, background level, count-rate, signal to noise ratio, and bleaching time, :numref:``. The fitting results are provided in a table on the right side.
 
 .. figure:: ./../figures/documents/PA_statistics_tab.png
    :width: 400
