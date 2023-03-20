@@ -137,6 +137,21 @@ Automatic data analysis and correction
 Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: ./../../figures/examples/PA_Hellenkamp_de_ct.png
+   :width: 600
+   :alt: Hellenkamp_autocorrection_de_ct
+   :align: center
+   :name: Hellenkamp_autocorr_de_ct
+
+   The histograms of direct excitation and spectral crosstalk correction factors reported with statistics
+
+.. figure:: ./../../figures/examples/PA_Hellenkamp_gamma.png
+   :width: 500
+   :alt: Hellenkamp_autocorrection_gamma
+   :align: center
+   :name: Hellenkamp_autocorr_gamma
+
+   The histograms of detection efficiency correction factor reported with statistics
 
 .. -----------------------------------------------------
 
