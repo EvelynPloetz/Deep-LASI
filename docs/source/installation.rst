@@ -90,7 +90,7 @@ The easiest way to install TensorFlow is to open the Terminal app (Path: /System
    
       pip install tensorflow==2.8.0
 
-You can check the successfull installation and integration into MATLAB by restarting MATLAB and entering the following command into the MATLAB Command Window, which returns TensorFlow as a Python module:
+You can check the successfully installation and integration into MATLAB by restarting MATLAB and entering the following command into the MATLAB Command Window, which returns TensorFlow as a Python module:
 
    .. code-block:: python
    
@@ -134,7 +134,7 @@ Example output for Python 3.9:
       home: 'path/to/python/environment'
       isloaded: 0
    
-If no version or path information is shown or an incompatible Python version is loaded (e.g. due to multiple Python versions installed on your computer), link Python directy by entering the path to your Python executable in your MATLAB Command Window:
+If no version or path information is shown or an incompatible Python version is loaded (e.g. due to multiple Python versions installed on your computer), link Python directly by entering the path to your Python executable in your MATLAB Command Window:
 
    .. code-block:: python
    
@@ -168,8 +168,8 @@ Please install Python with version 3.7-3.10 at https://www.python.org/downloads/
    .. note::
    
       When installing Python, check the box "Add Python 3.X to Path", choose "Customize installation", 
-      klick next and check the box "Install for all Users". This will change the installation path to "C:\ProgramFiles\PythonXX", 
-      which is neccessary for MATLAB to automatically find the Python executable.
+      click next and check the box "Install for all Users". This will change the installation path to "C:\ProgramFiles\PythonXX",
+      which is necessary for MATLAB to automatically find the Python executable.
    
 After installation you can check the MATLAB integration by entering the following command into the MATLAB Command Window:
 
@@ -177,7 +177,7 @@ After installation you can check the MATLAB integration by entering the followin
       
       pyversion
       
-If no version or path information is shown or you did not install Python for all users, link Python directy by providing the path to your Python executable:
+If no version or path information is shown or you did not install Python for all users, link Python directly by providing the path to your Python executable:
 
    .. code-block:: python
    
@@ -190,14 +190,14 @@ TensorFlow
 """"""""""
 
 For deep learning features, the TensorFlow package needs to be installed for the Python environment integrated into MATLAB.
-The easiest way to install TensorFlow is to open the windows command prompt by presssing Win + R to open the Run box, then type "cmd" and hit Enter to open it or pressing Win + X (or right-click the Start button) and choose Command Prompt from the menu. 
+The easiest way to install TensorFlow is to open the windows command prompt by pressing Win + R to open the Run box, then type "cmd" and hit Enter to open it or pressing Win + X (or right-click the Start button) and choose Command Prompt from the menu.
 Next, enter the following command:
 
    .. code-block:: python
    
       pip install tensorflow==2.8.0
 
-You can check the successfull installation and integration into MATLAB by restarting MATLAB and entering the following command into the MATLAB Command Window, which returns TensorFlow as a Python module:
+You can check the successful installation and integration into MATLAB by restarting MATLAB and entering the following command into the MATLAB Command Window, which returns TensorFlow as a Python module:
 
    .. code-block:: python
    
@@ -225,12 +225,12 @@ get in touch with us via the *Issue forum*.
 Common issues with deep learning features on Windows
 ^^^^^^^^^^
 
-If you run into errors while trying to use neural netorks, your protobuf package might need to be downgraded and/or your h5py package is incompatible. 
+If you run into errors while trying to use neural networks, your protobuf package might need to be downgraded and/or your h5py package is incompatible.
 
 Installing a compatible version of protobuf
 """"""""""
 
-Please open your windows command prompt by presssing Win + R or terminal app on Mac and enter:
+Please open your windows command prompt by pressing Win + R or terminal app on Mac and enter:
 
    .. code-block:: python
    
@@ -239,7 +239,7 @@ Please open your windows command prompt by presssing Win + R or terminal app on 
 Installing the latest version of h5py
 """"""""""
 
-Please open your windows command prompt by presssing Win + R or terminal app on Mac and enter:
+Please open your windows command prompt by pressing Win + R or terminal app on Mac and enter:
 
    .. code-block:: python
    
@@ -264,3 +264,56 @@ For both Windows and Mac systems, install the pomegranate package by typing the 
    .. code-block:: python
    
       pip install pomegranate
+
+Installing Deep-LASI
+------------
+The program can be downloaded from the `Repository <https://gitlab.com/simon71/deeplasi>`_ on *Gitlab*.
+
+This *GitLab* repository contains:
+
+* *source*: the open-source version of *Deep-LASI*
+* *standalone versions*: the compiled version for Windows and Mac
+* *demos*: Some example data the users can use to try out *Deep-LASI*'s functionalities.
+
+Installing the stand-alone version of *Deep-LASI*
+~~~~~~~~~~~~~~~
+
+#. Install the MATLAB Runtime as described in
+#. Download the compiled version of *Deep-LASI* for your Operating System (MacOS or Windows) from the `Repository <https://gitlab.com/simon71/deeplasi>`_
+#. Unpack the files.
+#. Run the *.exe*-file (Windows) or *.dmg*-file (MacOS) to start the program
+
+Installing and updating the open-source version of *Deep-LASI*
+~~~~~~~~~~~~~~~
+
+The open sourcer version of *Deep-LASI* requires a valid licence for MATLAB (2019a or newer). Some features of the program require further access to tool boxes (Curve fitting, image processing, optimization, statistics, machine learning, and parallel computing) to work.
+
+You can obtain and update *Deep-LASI* either by download from *Gitlab*, using the command line through *Git*, or by using the MATLAB *Git* integration.
+
+** Downloading from the repository **
+
+#. Download the open source version of *Deep-LASI* from the `Repository <https://gitlab.com/simon71/deeplasi>`_
+#. Save the files in the MATLAB folder
+#. Start MATLAB and navigate to the *Deep-LASI* folder
+#. Type :code:`> DeepLASI` into the MATLAB command line to start the program.
+#. Download the newest version and overwrite your former files for updating.
+
+
+** Download and update *Deep-LASI* using *Git **
+
+#. Install *Git* on your computer.
+    * MacOS has *Git* pre-installed. Try to tun *git* from the terminal. If the command fails, you can download *Git* from https://git-scm.com/ .
+    * For Windows, download and install *Git* from https://git-for-windows.github.io/ .
+#. Clone the repository of *Deep-LASI* to create a local copy in the folder *DeepLASI*
+    * For cloning a first copy, type in your terminal: :code:`git clone https://gitlab.com/simon71/deeplasi DeepLASI`
+    * For updating, simply type :code:`git pull` to obtain the latest version and changes.
+
+** Download and update *Deep-LASI* using the *MATLAB Git Integration* **
+
+#. Create a folder for *Deep-LASI*
+#. Start MATLAB and navigate to the *Deep-LASI* folder
+#. Right click the 'Current Folder' panel in MATLAB and select 'Source Control' and 'Manage Files...'.
+#. Set the 'Source control integration' to 'Git' and enter for the 'Repository path'
+   https://gitlab.com/simon71/deeplasi
+#. Click 'Retrieve' to download the files automatically.
+#. For updating *Deep-LASI* from the Repository, simply type :code:`!git pull` into the MATLAB command line.

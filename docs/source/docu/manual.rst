@@ -180,7 +180,7 @@ Lastly, the detection correction factor :math:`\gamma_{XY;DL}` is derived from t
 
 with :math:`\langle \Delta I_{XX;corr}\rangle` and :math:`\langle \Delta I_{XY;corr}\rangle` being the intensity difference for the mean donor and acceptor emission after donor excitation before and after the acceptor photo-bleaches.
 
-The correction factors calculated for each trace are shown in the **FRET control** box on the lower right corner. If a trace is not suitable for calculating the correction factors, then the median value of the whole data set would be applied on that.  The global correction factors are set via ...
+The correction factors calculated for each trace are shown in the **FRET control** box on the lower right corner. If a trace is not suitable for calculating any of the correction factors, *Deep-LASI* derives a global correction factor. It is the median value from the distribution of a specific correction factor, which summarizes values derived from suitable traces of the whole data set.  The global correction factors are set via ...
 
 .. tip:: @Pooyeh please specify with two sentences above, how you derive the global correction factors and how you set the global correction factors for the traces.
 
@@ -190,15 +190,16 @@ The correction factors calculated for each trace are shown in the **FRET control
    :align: center
    :name: correction factor box
 
-   Correction factors that could be derived for a trace in which (A) the donor bleaches first and (B) the acceptor bleaches first.
+   Correction factors that could be derived for a trace in which (A) the donor bleaches first and (B) the acceptor bleaches first. (C) distribution of alpha, beta, gamma + mean below the two cases A and B.
 
-.. tip:: @Pooyeh: please add an image with panel A and B showing a screenshot of the global correction factor panel only.
-
-
+.. tip:: @Pooyeh: please add an image with panel A and B showing a screenshot of the global correction factor panels for alpha, beta and gamma only.
 
 ..  _hmm_fret:
 Kinetics analysis by HMM
 ~~~~~~~~~~~~~~~~~~~~
+
+
+
 
 ..  _histograms:
 Histogram Analysis
