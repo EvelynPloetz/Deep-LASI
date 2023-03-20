@@ -27,13 +27,13 @@ After having the traces categorized, you can move on to the **Statistics** tab (
 
    Statistics environment with subpanels for all channels with the same categories table
 
-.. figure:: ./../figures/documents/.png
+.. figure:: ./../figures/documents/PA_statistics_updated_fit.png
    :width: 450
-   :alt: histograms showing measurement details
+   :alt: histograms showing measurement statistics
    :align: center
-   :name: histograms showing measurement details
+   :name: histograms_measurement_details
 
-   Histograms showing measurement details
+   Histograms showing measurement statisitcs with fitting results
 
 The fitting results are provided in a table on the right side.
 
