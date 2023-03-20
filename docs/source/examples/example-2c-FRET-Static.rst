@@ -77,7 +77,7 @@ Next, we need to know where double-labeled DNA molecules are detected on the two
 To retrieve the transformation matrix, which translates single molecule localizations in one channel onto the other, we first used *Deep-LASI* to generate a map. For this, we loaded the calibration file *calib20140402_0.tif* into the software. In the first step (:numref:`calib`, A), we read in the data from the **red** channel (which is on the left half of the movie) into the first channel. For this, we loaded the movie via :code:`File > Mapping > Create New Map > 1st channel`. *Deep-LASI* can handle input data with full or halved field-of-view. We chose the left half of the camera for the red data and confirmed. In the second step (:numref:`calib`, B), we load the data for the **yellow** channel via :code:`File > Mapping > Create New Map > 2nd channel` and chose the right half of the camera.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_mapping_steps.png
-   :width: 60
+   :width: 600
    :alt: Workflow to create a map between both channels
    :align: center
    :name: calib
@@ -94,7 +94,7 @@ Trace Extraction
 After generating the transformation matrix via mapping or reloading the already generated map via :code:`File > Mapping > Load Prev. Map (Ctrl + M)`, we can load the actual single-molecule data in the next step. To obtain the trajectories of individual molecules depending on the laser excitation, *Deep-LASI* can detect and extract traces on a single file basis. For this, it can read single *.tif* files and save the extracted traces in separate *.mat* files, which can be added file-by-file afterwards for further analysis. However, *Deep-LASI* also permits extracting traces from raw data files with consecutive numbering. In the presented example, we proceeded by reading in all raw *.tif* files per experiment at once, i.e., the data files *FSII1a_g30r84t200_0.tif* until *..._6.tif* or *FSII1b_g30r84t200_0.tif* until *..._6.tif* for the 'low-FRET' and 'intermediate-FRET' sample, respectively. We loaded the data of the first channel (as specified during the mapping process) via :code:`File > Load Image Data > 1st channel` for the red channel and selected the files.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_measurement_parameters.png
-   :width: 800
+   :width: 700
    :alt: Settings for extracting the different emission channels depending on the excitation cycle
    :align: center
    :name: static_2c_extraction
