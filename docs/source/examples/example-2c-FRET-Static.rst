@@ -137,6 +137,14 @@ Automatic data analysis and correction
 Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: ./../../figures/examples/PA_Hellenkamp_DL_categories.png
+   :width: 600
+   :alt: Hellenkamp_autocategorized
+   :align: center
+   :name: Hellenkamp_autocategorized
+
+   Categories created by DeepLASI for the static two-color DNA sample
+
 .. figure:: ./../../figures/examples/PA_Hellenkamp_de_ct.png
    :width: 600
    :alt: Hellenkamp_autocorrection_de_ct
