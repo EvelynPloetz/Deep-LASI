@@ -8,7 +8,7 @@ Single-molecule data analysis using *Deep-LASI* is carried out in a fully automa
 
 Hence, the following section gives an overview of how to use *Deep-LASI* manually to sort, categorize and prepare single-molecule data via the sub-GUI *Traces* (:numref:`trace_gui`) for later evaluation, e.g., by Hidden-Markov analysis, etc. Automatic data evaluation is described in a separate section on :ref:`auto-analysis`.
 
-.. figure:: ./../figures/documents/Traces_Manual.png
+.. figure:: ./../figures/documents/Fig_18_Traces_Manual.png
    :width: 650
    :alt: Trace Deep-LASI
    :align: center
@@ -26,7 +26,7 @@ Traces GUI
 ~~~~~~~~~~~~~~~~~~~~
 After data loading, traces will open/show up on the sub-GUI called **Traces** as shown in :numref:`trace_look` for example for two- or three-color FRET measurements with alternating laser excitation. The GUI is split into two sections: the left part displays the single-molecule data, and the right part is dedicated to trace classification, preparation, sorting, data correction, and automated data analysis, as described later in this Chapter.
 
-.. figure:: ./../figures/documents/Fig_18_Trace_Surface.png
+.. figure:: ./../figures/documents/Fig_19_Trace_Surface.png
    :width: 700
    :alt: trace
    :align: center
@@ -73,7 +73,7 @@ All traces are 'by default' in the **Uncategorized** group. By clicking on the p
 in :numref:`categorization_table`. The **Create Boolean Category** button creates an additional group to the *Navigation Tab* according to your selection criteria and adds the corresponding traces, which fulfill the condition to the group.
 You can also delete an unwanted category by clicking on the trash-can icon. Unchecking the filter box hides traces that are already sorted, for example, when clicking through extracted trajectories. It is especially helpful for the trash category, for example. When you assign a trace to a specific category, it will be automatically removed from the first **Uncategorized** one and added to at least one other group.
 
-.. figure:: ./../figures/documents/Fig_19_Categories.png
+.. figure:: ./../figures/documents/Fig_20_Categories.png
    :width: 300
    :alt: categorization options
    :align: center
@@ -107,7 +107,7 @@ Trace selection
 ~~~~~~~~~~~~~~~~~~~~
 For selecting regions in traces, either for further analysis or correction factor determination, *Deep-LASI* uses the mouse as the active tool for marking different areas. *Deep-LASI* has two different types of selectors: firstly, it allows for choosing specific time windows according to the detection channel (:numref:`docu_selectors`; left), which is required to derive trace-wise correction factors, and secondly, it provides one selector mode (:numref:`docu_selectors`; right), which marks the starting and stopping time points, in between which the kinetics and FRET states shall be evaluated.
 
-.. figure:: ./../figures/documents/Fig_20_Selectors.png
+.. figure:: ./../figures/documents/Fig_21_Selectors.png
    :width: 450
    :alt: Selector types
    :align: center
@@ -123,7 +123,7 @@ The selection process depends on the bleaching behavior of fluorophores and the 
 
 .. tip:: @Simon is the Selection process correctly described?
 
-.. figure:: ./../figures/documents/Fig_21_Selectors_Traces.png
+.. figure:: ./../figures/documents/Fig_22_Selectors_Traces.png
    :width: 800
    :alt: cursor example for a two color trace
    :align: center
@@ -182,15 +182,15 @@ with :math:`\langle \Delta I_{XX;corr}\rangle` and :math:`\langle \Delta I_{XY;c
 
 The correction factors calculated for each trace are shown in the **FRET control** box in the lower right corner (:numref:`categorization_table`; left). For each correction factor a pair *value 1 | value 2* is shown, which present the locally derived correction factors and the global correction factor. If a trace is not suitable for calculating any of the correction factors, of if the derived value is totally off, *Deep-LASI* permits to set a global correction factor. Clicking on the 'def.' box in the **FRET control** panel opens a sub-window (:numref:`categorization_table`; right). It provides an overview over the mean and mode value of all derived local correction factors including the number of traces, which underlies the statistics. By clicking on the 'use mean' or 'use mode' box, you can set the *global* correction factor for the trace. Otherwise, you can also set the correction factor value, by typing in its value in the **FRET control** panel.
 
-.. figure:: ./../figures/documents/Fig_22_Trace_Correction_Factors.png
+.. figure:: ./../figures/documents/Fig_23_Trace_Correction_Factors.png
    :width: 800
    :alt: correction factor box
    :align: center
-   :name: correction_factors
+   :name: correction_factor_trace
 
-   (Left) Trace-wise correction factors as shown in the **FRET control** panel. (Right) After clicking on 'def.' in the **FRET control** panel, a sub-window opens showing the average *global* correction factors determined from other traces. By clicking on the 'use mean' or 'use mode' the *global* correction factor values will be chosen instead of the locally derived ones.
+   (Left) Trace-wise correction factors. (Right) After clicking on 'def.' in the **FRET control** panel, a sub-window opens showing the average *global* correction factors determined from other traces. By clicking on 'use mean' or 'use mode' the *global* correction factor values will be employed instead of the locally derived ones.
 
-As shown in the right panel of :numref:`correction_factors`, in this data set predominantly correction factors against leakage and detection sensitivity were obtained. This is mostly the case, when only the trajectories of co-localizing molecules have been extracted, as described in the :ref:`extraction_doc` section. To obtain a higher statistics for the correction factor against direction excitation in this case, it is advisable to also extract acceptor-only traces.
+As shown in the right panel of :numref:`correction_factor_trace`, in this data set predominantly correction factors against leakage and detection sensitivity were obtained. This is mostly the case, when only the trajectories of co-localizing molecules have been extracted, as described in the :ref:`extraction_doc` section. To obtain a higher statistics for the correction factor against direction excitation in this case, it is advisable to also extract acceptor-only traces.
 
 ..  _hmm_fret:
 Kinetics analysis by HMM
@@ -200,7 +200,7 @@ Once all traces are categorized and time windows for the trace-wise data evaluat
 For an 2c HMM analysis, we first need to set the input parameters in the **HMM Input parameters** tab on the top row of the *HMM*-Gui (:numref:`hmm_fret_settings`). The procedure starts by specifying the HMM software package (as marked in blue in the very left list at the bottom) by clicking on (1) the MATLAB-based HMM package by Kevin Murphy (which works without Python-libraries) or (2) the Python-library *Pomegranate*. Next, the number of iterations per trace, and the analysis mode: (1) local or (2) global HMM analysis need to be set. The Default Convergence Threshold ist 1e-4.
 Consecutively, specify the number of observations per hidden state and the number of hidden states. Depending on the number of hidden states, the number of input fields in the tabs on the right will change. The initial emission parameters and transition probabilities can be set (1) randomly, (2) evenly distributed or (3) manually. Depending on the selection, the values in the two tabs aside the Settings list will update. In the case of a *manual input*, please type in your envisioned values in both input windows. Lastly, choose the group of selected molecules that you wish to analyse and start the HMM analysis.
 
-.. figure:: ./../figures/documents/Fig_23_HMM_Settings.png
+.. figure:: ./../figures/documents/Fig_24_HMM_Settings.png
    :width: 800
    :alt: HMM input parameters
    :align: center
@@ -210,7 +210,7 @@ Consecutively, specify the number of observations per hidden state and the numbe
 
 While *Deep-LASI* is running the HMM analysis, a green progress bar is shown on the bottom right of the GUI and the number of evaluated traces are displayed on the bottom left. Depending on the chosen input parameter, this process can last hours, in particular if a *global* HMM evaluation has been selected. Once *Deep-LASI* finished the process, the result tabs are updated (:numref:`hmm_fret_results`).
 
-.. figure:: ./../figures/documents/Fig_24_HMM_Results.png
+.. figure:: ./../figures/documents/Fig_25_HMM_Results.png
    :width: 800
    :alt: Local HMM results
    :align: center
@@ -226,7 +226,7 @@ Results for individual single-molecule traces are shown on the bottom of the *HM
 *Global HMM* |br|
 *Deep-LASI* further allow for a global analysis of the selected traces (:numref:`hmm_fret_results_global`). In this case, the number of iterations is not set per trace, but total rounds of training steps. Similar to *Local HMM*, *Deep-LASI* updates the results tables, however, it displays the transition probability matrix and emission parameters globally - and shows them on the top left corner of the **HMM results** tab, the results per single trace (on the bottom right corner) are not provided.
 
-.. figure:: ./../figures/documents/Fig_25_HMM_Results_global.png
+.. figure:: ./../figures/documents/Fig_26_HMM_Results_global.png
    :width: 800
    :alt: Global HMM results
    :align: center
@@ -243,11 +243,11 @@ Once all traces are analysed by *Deep-LASI* you can summarize the results by plo
 * accurate FRET (+/- denoising)
 * Distances
 * Stoichiometry
-* Correction factors :math:`\alpha_{XY;DL}`, :math:`\beta_{XY;DL}` and :math:`\gamma_{XY;DL}`
+* the Correction factors :math:`\alpha_{XY;DL}`, :math:`\beta_{XY;DL}` and :math:`\gamma_{XY;DL}`
 * Donor intensity
-* Bleach times.
+* Bleaching times.
 
-.. figure:: ./../figures/documents/Fig_26_Fitting_Histogram.png
+.. figure:: ./../figures/documents/Fig_27_Fitting_Histogram.png
    :width: 800
    :alt: Histogramming and Fitting of distributions
    :align: center
