@@ -182,3 +182,7 @@ Plotting and Summary of Results
 .. Example 2
 .. -----------
 
+..  _example-data2:
+Sample Design: Static L-Shaped DNA Origami
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
