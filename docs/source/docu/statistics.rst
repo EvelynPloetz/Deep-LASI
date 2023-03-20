@@ -9,31 +9,33 @@ Selected traces and categories
 <to be continued>
 
 
-After having the traces categorized, you can move on to the **Statistics** tab (:numref:`statistics_tab`), choose the desired category from the same table as you defined earlier (:numref:``), and get information about your data as histograms already fitted. Information such as the total signal, background level, count-rate, signal to noise ratio, and bleaching time, :numref:``. The fitting results are provided in a table on the right side.
+After having the traces categorized, you can move on to the **Statistics** tab (:numref:`statistics_tab`), choose the desired category from the same table as you defined earlier (:numref:`categories_in_statistics_tab`), and get information about your data as histograms already fitted. Information such as the total signal, background level, count-rate, signal to noise ratio, and bleaching time. 
 
 .. figure:: ./../figures/documents/PA_statistics_tab.png
-   :width: 400
+   :width: 500
    :alt: statistics tab
    :align: center
    :name: statistics_tab
 
    Statistics tab on the main-GUI
 
-.. figure:: ./../figures/documents/Fig_23_Histogram_Tab_Categories.png
-   :width: 300
-   :alt: same categories in histogram tab
+.. figure:: ./../figures/documents/PA_statistics_selector_table.png
+   :width: 500
+   :alt: same categories in statistics tab
    :align: center
-   :name: same categories in histogram tab
+   :name: categories_in_statistics_tab
 
-   Categories shown on *Histogram* tab
+   Statistics environment with subpanels for all channels with the same categories table
 
-.. figure:: ./../figures/documents/Fig_24_Measurement_Histograms.png
+.. figure:: ./../figures/documents/.png
    :width: 450
    :alt: histograms showing measurement details
    :align: center
    :name: histograms showing measurement details
 
    Histograms showing measurement details
+
+The fitting results are provided in a table on the right side.
 
 Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
 
