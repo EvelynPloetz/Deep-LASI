@@ -76,8 +76,8 @@ Next, we need to know where double-labeled DNA molecules are detected on the two
 
 To retrieve the transformation matrix, which translates single molecule localizations in one channel onto the other, we first used *Deep-LASI* to generate a map. For this, we loaded the calibration file *calib20140402_0.tif* into the software. In the first step (:numref:`calib`, A), we read in the data from the **red** channel (which is on the left half of the movie) into the first channel. For this, we loaded the movie via :code:`File > Mapping > Create New Map > 1st channel`. *Deep-LASI* can handle input data with full or halved field-of-view. We chose the left half of the camera for the red data and confirmed. In the second step (:numref:`calib`, B), we load the data for the **yellow** channel via :code:`File > Mapping > Create New Map > 2nd channel` and chose the right half of the camera.
 
-.. figure:: ./../../figures/examples/Static_Twoc_Sub_Figure_2_Hellekamp_DL_Map.png
-   :width: 750
+.. figure:: ./../../figures/examples/PA_Hellenkamp_mapping_steps.png
+   :width: 60
    :alt: Workflow to create a map between both channels
    :align: center
    :name: calib
