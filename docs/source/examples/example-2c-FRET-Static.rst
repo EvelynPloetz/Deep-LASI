@@ -116,13 +116,13 @@ In the following, *Deep-LASI* automatically reads the raw data file-by-file, loc
 
 .. note:: In case an error occurs, try to save the extracted traces anyhow. For some Windows installations test sofar, we encounter a GUI error at the end of the extraction process, which has no influence on the prior extraction process.
 
-With the threshold settings that we used, we got in total 853 traces from the 7 data files for the 'low-FRET' DNA sample.
+With the threshold settings that we used, we got in total 855 traces from the 7 data files for the 'low-FRET' DNA sample.
 
 .. _manual1:
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-By using the Navigation slider we clicked through all the traces one by one to check their individual features and attribute them to one or several categories created in the Classification chart. You can see the result of manual trace sorting in **classification figure**. For a detailed description of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**.
+By using the Navigation slider we clicked through all the traces one by one to check their individual features and attribute them to one or several categories created in the Classification chart. You can see the result of manual trace sorting in :numref:`Hellenkamp_categorized_manual`. For a detailed description of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_manual_categories.png
    :width: 400
@@ -132,7 +132,7 @@ By using the Navigation slider we clicked through all the traces one by one to c
    
    Categories manually created for the static two-color 'low-FRET' DNA sample
 
-After categorization, we moved on to the *Histograms* tab to plot the results. As you can see on Fig. 67, we first chose the Dynamic category by clicking on the plus sign beside it, then for the Plot Mode we chose the FRET Efficiency (apparent) to be the x axis, and on the Display Settings we chose the histogram type to be framewise.
+After categorization, we moved on to the *Histograms* tab to plot the results. As you can see on Fig. 67, we first chose the .... category by clicking on the plus sign beside it, then for the Plot Mode we chose the FRET Efficiency (apparent) to be the x axis, and on the Display Settings we chose the histogram type to be framewise.
 
 .. _automatic1:
 Automatic data analysis and correction
