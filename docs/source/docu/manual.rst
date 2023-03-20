@@ -188,22 +188,32 @@ The correction factors calculated for each trace are shown in the **FRET control
    :align: center
    :name: correction_factors
 
-   (Left) Trace-wise correction factors as shown in the **FRET control** panel. (Right) After clicking on 'def.' the *FRET control** panel, a sub-window open showing the average correction factors available. By clicking on the 'use mean' or 'use mode' the *global* correction factor values are chosen instead of locally derived ones.
+   (Left) Trace-wise correction factors as shown in the **FRET control** panel. (Right) After clicking on 'def.' in the **FRET control** panel, a sub-window opens showing the average *global* correction factors determined from other traces. By clicking on the 'use mean' or 'use mode' the *global* correction factor values will be chosen instead of the locally derived ones.
 
-As shown in the right panel of :numref:`categorization_table`, in this data set correction factors against leakage and detection sensitivity were obtained. This is predominantly the case, when only the trajectories of co-localizing molecules have been extracted, as described in the :ref:`extraction_doc` section. To obtain a higher statistics for the correction factor against direction excitation in this case, make sure you also extract acceptor-only traces.
+As shown in the right panel of :numref:`correction_factors`, in this data set predominantly correction factors against leakage and detection sensitivity were obtained. This is mostly the case, when only the trajectories of co-localizing molecules have been extracted, as described in the :ref:`extraction_doc` section. To obtain a higher statistics for the correction factor against direction excitation in this case, it is advisable to also extract acceptor-only traces.
 
 ..  _hmm_fret:
 Kinetics analysis by HMM
 ~~~~~~~~~~~~~~~~~~~~
-Once all traces are categorized and time windows for the trace-wise data evaluation are selected, *Deep-LASI* uses Hidden-Markov-Modeling to analyse the underlying FRET states and kinetics, as laid out in detail in the chapter on :ref:`hmm`. For an HMM analysis, we first need to set the input parameters in the **HMM Input parameters** tab on the top row of the *HMM* Gui. We start by specifying the HMM software package (as marked in blue in the very left list at the buttom) by clicking on (1) The MATLAB-based HMM package by Kevin Murphy (which works without Python-libraries) or (2) The Python-library *Pomegranate*. Next, one needs to set the number of iterations per trace, and the analysis mode: (1) local or (2) global HMM analysis. The Default Convergence Threshold ist 1e-4.
+Once all traces are categorized and time windows for the trace-wise data evaluation are selected, *Deep-LASI* provides two different ways to evaluate traces. For 2c FRET traces, state-of-the-art Hidden-Markov-Modeling can be used manually to analyse the underlying states and kinetics, as laid out in detail in the chapter on :ref:`hmm`. For an HMM analysis, we first need to set the input parameters in the **HMM Input parameters** tab on the top row of the *HMM*-Gui. We start by specifying the HMM software package (as marked in blue in the very left list at the bottom) by clicking on (1) The MATLAB-based HMM package by Kevin Murphy (which works without Python-libraries) or (2) The Python-library *Pomegranate*. Next, one needs to set the number of iterations per trace, and the analysis mode: (1) local or (2) global HMM analysis. The Default Convergence Threshold ist 1e-4.
 Next, specify the number of observations per hidden state and the number of hidden states. Depending on the number of hidden states, the number of input fields in the tab on the right will change.
 The initial emission parameters and transition probabilities can be set (1) randomly, (2) evenly distributed or (3). Depending on the selection, the values in the two tabs aside the Settings list will update. In the case of a *manual input*, please type in your envisioned values in both input windows. Lastly, choose the group of selected molecules that you wish to analyse and start the HMM analysis.
 
 .. figure:: ./../figures/documents/Fig_23_HMM_Settings.png
    :width: 800
-   :alt: correction factor box
+   :alt: HMM input parameters
    :align: center
-   :name: correction_factors
+   :name: hmm_fret_settings
+
+While *Deep-LASI* is carrying out the HMM analysis, a green progress bar is shown on the bottom right of the GUI and the number of evaluated traces are displayed on the bottom left. Depending on the chosen input parameter, this process can last hours, in particular if a *global* HMM evaluation has been selected. Once *Deep-LASI* finished the process, the
+
+.. figure:: ./../figures/documents/Fig_24_HMM_Results.png
+   :width: 800
+   :alt: HMM results
+   :align: center
+   :name: hmm_fret_results
+
+
 
 ..  _histograms:
 Histogram Analysis
