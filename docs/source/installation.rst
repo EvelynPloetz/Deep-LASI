@@ -299,7 +299,7 @@ You can obtain and update *Deep-LASI* either by download from *Gitlab*, using th
 #. Download the open source version of *Deep-LASI* from the `Repository <https://gitlab.com/simon71/deeplasi>`_
 #. Save the files in the MATLAB folder
 #. Start MATLAB and navigate to the *Deep-LASI* folder
-#. Type :code:`> DeepLASI` into the MATLAB command line to start the program.
+#. Type :code:`DeepLASI` into the MATLAB command line to start the program.
 #. Download the newest version and overwrite your former files for updating.
 
 
