@@ -113,7 +113,7 @@ For selecting regions in traces, either for further analysis or correction facto
    :align: center
    :name: docu_selectors
 
-   Activated selector types to manually marks areas in traces
+   Activated selector types to manually mark areas in traces
 
 When clicking with the mouse on the trace first, the mouse turns into an active cursor for a general selection of time windows, in which the FRET states and kinetics will be evaluated (:numref:`docu_selectors`; right), e.g., by HMM later on. Once the general selector is active, detection channel-specific selection is accessible by pressing the key 1, 2, or 3 on the keyboard, depending on how many detection channels are available. By pressing the same key again, the cursor will turn into a general selector again. Clicking into the **Traces** sub-GUI aside the trajectory will deactivate the selector tool.
 
@@ -129,14 +129,14 @@ The selection process depends on the bleaching behavior of fluorophores and the 
    :align: center
    :name: example_cursor_trace
 
-   Activated cursors for (A-B) channel-specific selection in the green channel (A), in the red channel (B) and for (C) choosing the time window by start and stop value in which the FRET states and kinetics shall be evaluated.
+   Activated cursors for (A-B) channel-specific selection in the green channel (A), in the red channel (B), and for (C) choosing the time window by start and stop value in which the FRET states and kinetics shall be evaluated.
 
-:numref:`docu_selectors` provides an example of the three selector types available to evaluate a 2c ALEX trace and the outcome of such an analysis. Using the green selector (:numref:`docu_selectors`; A) the time window was marked in which, the green dye was active. The middle panel shows the time window, in which the red fluorophore was active (:numref:`docu_selectors`; B). The general selector marks the time window for FRET evaluation. This time window is not extra visualized (:numref:`docu_selectors`; C). The FRET efficiency trace gets the selection until the first bleaching step, and this region will be added to the FRET histogram in the end.
+:numref:`docu_selectors` provides an example of the three selector types available to evaluate a 2c ALEX trace and the outcome of such an analysis. Using the green selector (:numref:`docu_selectors`; A), the time window was marked in which the green dye was active. The middle panel shows the time window in which the red fluorophore was active (:numref:`docu_selectors`; B). The general selector marks the time window for FRET evaluation. This time window is not extra visualized (:numref:`docu_selectors`; C). The FRET efficiency trace gets the selection until the first bleaching step, and this region will be added to the FRET histogram in the end.
 
 ..  _correction_factors:
 Correction factors determination
 ~~~~~~~~~~~~~~~~~~~~
-In realworld single-molecule FRET experiments, the intensity of the acceptor is biased by various sources. It needs to be corrected for direct excitation :math:`\alpha_{XY;DL}` of the acceptor dye *Y* during donor excitation *X*, and spectral crosstalk :math:`\beta_{XY;DL}` from the donor molecule *X* into the acceptor channel *Y*. Further more, we need to correct for the differences in detection sensitivity :math:`\gamma_{XY;DL}` between the two fluorophores. We are aware that the nomenclature by *Deep-LASI* at this stage, is not in line yet with the nomenclature recently introduced by a multi-laboratory benchmark study published by `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_. It will be adopted on the various sub-GUIs of *Deep-LASI* and through-out the software during the next release rounds. *Deep-LASI* denotes the correction factors currently as
+In real-world single-molecule FRET experiments, the intensity of the acceptor is biased by various sources. It needs to be corrected for direct excitation :math:`\alpha_{XY;DL}` of the acceptor dye *Y* during donor excitation *X* and spectral crosstalk :math:`\beta_{XY;DL}` from the donor molecule *X* into the acceptor channel *Y*. Furthermore, we need to correct for the differences in detection sensitivity :math:`\gamma_{XY;DL}` between the two fluorophores. We are aware that the nomenclature by *Deep-LASI*, at this stage, is not in line yet with the nomenclature recently introduced by a multi-laboratory benchmark study published by `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_. It will be adopted on the various sub-GUIs of *Deep-LASI* and throughout the software during the next release rounds. *Deep-LASI* denotes the correction factors currently as
 
 .. list-table:: Correction factors employed by
    :widths: 35 50 250
@@ -158,20 +158,20 @@ In realworld single-molecule FRET experiments, the intensity of the acceptor is 
 We denote the background-corrected intensities as :math:`I_{XY}` and the corrected intensity as :math:`I_{XY;corr}`, where *X* stands for the excitation source and *Y* for the detection channel.
 
 *Trace-wise and global correction factors* |br|
-Depending on when individual fluorophores photo-bleach, correction factors can be derived on a trace-to-trace basis. For most of the traces, however only a subset of correction factors can be obtained for the individual trajectories. In these cases, *Deep-LASI* derives *global* correction factors, which are the *median* value of the corresponding distribution of trace-wise derived correction factors. They can be determined from the distribution, as described :ref:`histograms` and below.
+Depending on when individual fluorophores photo-bleach, correction factors can be derived on a trace-to-trace basis. For most of the traces, however, only a subset of correction factors can be obtained for the individual trajectories. In these cases, *Deep-LASI* derives *global* correction factors, which are the *median* value of all trace-wise derived correction factors. The distribution of all three correction factors can be visualized on the **Histograms** GUI, and is described in the section :ref:`histograms` and below, respectively.
 
-*Deep-LASI* uses bleaching steps in single intensity trajectories to calculate trace-wise correction factors. These can be derived for traces containing bleaching steps, which were presorted and categorized as *B Bleach*, *G Bleach*, *R Bleach* or *I Bleach*, respectively, depending which fluorophore pairs were investigated. The correction factor for direct excitation of the acceptor during donor excitation can be derived for traces in which the donor bleached first or acceptor-only traces, via
+*Deep-LASI* uses bleaching steps in single-intensity trajectories to calculate trace-wise correction factors. These can be derived for traces containing bleaching steps, which were presorted and categorized as *B Bleach*, *G Bleach*, *R Bleach*, or *I Bleach*, respectively, depending on which fluorophore pairs were investigated. The correction factor for direct excitation of the acceptor during donor excitation can be derived for traces in which the donor bleached first or acceptor-only traces, via
 
 .. math::
     \alpha_{XY;DL} = \left. \frac{\langle I_{XY}\rangle}{\langle I_{YY} \rangle} \right\vert_{\text{no donor}}
 
-where :math:`\langle I_{XY}\rangle` and :math:`\langle I_{YY}\rangle` describe the mean acceptor intensity after donor or acceptor excitation, respectively.
+where :math:`\langle I_{XY}\rangle` and :math:`\langle I_{YY}\rangle` describes the mean acceptor intensity after donor or acceptor excitation, respectively.
 Following the definition of leakage of the donor fluorescence into the acceptor channel according to
 
 .. math::
     \beta_{XY;DL} = \left. \frac{\langle I_{XY}\rangle}{\langle I_{XX} \rangle} \right\vert_{\text{no acceptor}}
 
-*Deep-LASI* determines :math:`\beta_{XY;DL}` from donor-only traces or at acceptor bleaching steps from the static intensity in the donor channel and acceptor channel after the bleaching. Here, :math:`\langle I_{XX}\rangle` refers to the mean donor intensity and :math:`\langle I_{XY}\rangle` to the mean acceptor intensity after acceptor bleaching.
+*Deep-LASI* determines :math:`\beta_{XY;DL}` from donor-only traces or at acceptor bleaching steps from the static intensity in the donor channel and acceptor channel after the bleaching. Here, :math:`\langle I_{XX}\rangle` refers to the mean donor intensity, and :math:`\langle I_{XY}\rangle` to the mean acceptor intensity after acceptor bleaching.
 
 Lastly, the detection correction factor :math:`\gamma_{XY;DL}` is derived from traces categorized as **XY Gamma**, in which the acceptor *Y* is bleaching before the donor molecule *X*, Before determining :math:`\gamma_{XY;DL}`, the acceptor intensity :math:`I_{XY;corr}`is first corrected against direct excitation ad spectral crosstalk. Afterward, *Deep-LASI* derives the detection correction factor from the ratio of changes in the donor and acceptor emission before and after the photo-bleaching of the acceptor. The correction factor is calculated via
 
@@ -180,26 +180,30 @@ Lastly, the detection correction factor :math:`\gamma_{XY;DL}` is derived from t
 
 with :math:`\langle \Delta I_{XX;corr}\rangle` and :math:`\langle \Delta I_{XY;corr}\rangle` being the intensity difference for the mean donor and acceptor emission after donor excitation before and after the acceptor photo-bleaches.
 
-The correction factors calculated for each trace are shown in the **FRET control** box on the lower right corner. If a trace is not suitable for calculating any of the correction factors, *Deep-LASI* derives a global correction factor. It is the median value from the distribution of a specific correction factor, which summarizes values derived from suitable traces of the whole data set.  The global correction factors are set via ...
+The correction factors calculated for each trace are shown in the **FRET control** box in the lower right corner (:numref:`categorization_table`; left). For each correction factor a pair *value 1 | value 2* is shown, which present the locally derived correction factors and the global correction factor. If a trace is not suitable for calculating any of the correction factors, of if the derived value is totally off, *Deep-LASI* permits to set a global correction factor. Clicking on the 'def.' box in the **FRET control** panel opens a sub-window (:numref:`categorization_table`; right). It provides an overview over the mean and mode value of all derived local correction factors including the number of traces, which underlies the statistics. By clicking on the 'use mean' or 'use mode' box, you can set the *global* correction factor for the trace. Otherwise, you can also set the correction factor value, by typing in its value in the **FRET control** panel.
 
-.. tip:: @Pooyeh please specify with two sentences above, how you derive the global correction factors and how you set the global correction factors for the traces.
-
-.. figure:: ./../figures/documents/Dummy.png
-   :width: 450
+.. figure:: ./../figures/documents/Fig_22_Trace_Correction_Factors.png
+   :width: 800
    :alt: correction factor box
    :align: center
-   :name: correction factor box
+   :name: correction_factors
 
-   Correction factors that could be derived for a trace in which (A) the donor bleaches first and (B) the acceptor bleaches first. (C) distribution of alpha, beta, gamma + mean below the two cases A and B.
+   (Left) Trace-wise correction factors as shown in the **FRET control** panel. (Right) After clicking on 'def.' the *FRET control** panel, a sub-window open showing the average correction factors available. By clicking on the 'use mean' or 'use mode' the *global* correction factor values are chosen instead of locally derived ones.
 
-.. tip:: @Pooyeh: please add an image with panel A and B showing a screenshot of the global correction factor panels for alpha, beta and gamma only.
+As shown in the right panel of :numref:`categorization_table`, in this data set correction factors against leakage and detection sensitivity were obtained. This is predominantly the case, when only the trajectories of co-localizing molecules have been extracted, as described in the :ref:`extraction_doc` section. To obtain a higher statistics for the correction factor against direction excitation in this case, make sure you also extract acceptor-only traces.
 
 ..  _hmm_fret:
 Kinetics analysis by HMM
 ~~~~~~~~~~~~~~~~~~~~
+Once all traces are categorized and time windows for the trace-wise data evaluation are selected, *Deep-LASI* uses Hidden-Markov-Modeling to analyse the underlying FRET states and kinetics, as laid out in detail in the chapter on :ref:`hmm`. For an HMM analysis, we first need to set the input parameters in the **HMM Input parameters** tab on the top row of the *HMM* Gui. We start by specifying the HMM software package (as marked in blue in the very left list at the buttom) by clicking on (1) The MATLAB-based HMM package by Kevin Murphy (which works without Python-libraries) or (2) The Python-library *Pomegranate*. Next, one needs to set the number of iterations per trace, and the analysis mode: (1) local or (2) global HMM analysis. The Default Convergence Threshold ist 1e-4.
+Next, specify the number of observations per hidden state and the number of hidden states. Depending on the number of hidden states, the number of input fields in the tab on the right will change.
+The initial emission parameters and transition probabilities can be set (1) randomly, (2) evenly distributed or (3). Depending on the selection, the values in the two tabs aside the Settings list will update. In the case of a *manual input*, please type in your envisioned values in both input windows. Lastly, choose the group of selected molecules that you wish to analyse and start the HMM analysis.
 
-
-
+.. figure:: ./../figures/documents/Fig_23_HMM_Settings.png
+   :width: 800
+   :alt: correction factor box
+   :align: center
+   :name: correction_factors
 
 ..  _histograms:
 Histogram Analysis
