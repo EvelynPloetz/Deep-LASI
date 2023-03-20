@@ -33,13 +33,13 @@ After having the traces categorized, you can move on to the **Statistics** tab (
    :align: center
    :name: histograms_measurement_details
 
-   Histograms showing measurement statisitcs with fitting results
+   Histograms showing measurement statistics with fitting results
 
 The fitting results are provided in a table on the right side.
 
 Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
 
-.. figure:: ./../figures/documents/Fig_25_FRET_Tab.png
+.. figure:: ./../figures/documents/PA_Fig_25_FRET_Tab.png
    :width: 300
    :alt: FRET tab
    :align: center
@@ -47,7 +47,7 @@ Then you can move on to the **FRET** tab, and again choose the desired category 
 
    FRET tab on the GUI
 
-.. figure:: ./../figures/documents/Fig_26_FRET_Tab_Categories.png
+.. figure:: ./../figures/documents/PA_Fig_26_FRET_Tab_Categories.png
    :width: 500
    :alt: FRET tab categories
    :align: center
@@ -57,7 +57,7 @@ Then you can move on to the **FRET** tab, and again choose the desired category 
 
 After choosing the category, you can select from the **Plot Mode** which plot to get. In the example shown on figure 26, you get the histogram of apparent FRET efficiency, like the one in figure 27.
 
-.. figure:: ./../figures/documents/Fig_27_Result_Histogram.png
+.. figure:: ./../figures/documents/PA_Fig_27_Result_Histogram.png
    :width: 400
    :alt: apparent FRET histogram
    :align: center
@@ -67,7 +67,7 @@ After choosing the category, you can select from the **Plot Mode** which plot to
 
 There are options in **Display Settings** (see figure 28) to make the frame-wise and/or molecule-wise plot visible, normalize them, and also to fit them by choosing the best fitting method. If sometimes fitting seems so wrong, you can manually insert some values based on what you roughly see on the plot, fix them and fit again. By playing around the fitting gets better, then you can uncheck the fixing boxes and let the program find the best fitting values. You can also change the color of your plot(s) by clicking on the colored rectangle and choose a desired color.
 
-.. figure:: ./../figures/documents/Fig_28_Fitting_Histogram.png
+.. figure:: ./../figures/documents/PA_Fig_28_Fitting_Histogram.png
    :width: 500
    :alt: display settings
    :align: center
