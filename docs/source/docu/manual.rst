@@ -206,6 +206,8 @@ Consecutively, specify the number of observations per hidden state and the numbe
    :align: center
    :name: hmm_fret_settings
 
+   HMM Input parameters serve (1) for choosing the correct HMM package for global or local analysis, (2) for setting the initiation parameters, and (3) specifying the number of states and transition probabilities to analyse smFRET traces.
+
 While *Deep-LASI* is running the HMM analysis, a green progress bar is shown on the bottom right of the GUI and the number of evaluated traces are displayed on the bottom left. Depending on the chosen input parameter, this process can last hours, in particular if a *global* HMM evaluation has been selected. Once *Deep-LASI* finished the process, the result tabs are updated (:numref:`hmm_fret_results`).
 
 .. figure:: ./../figures/documents/Fig_24_HMM_Results.png
@@ -214,6 +216,7 @@ While *Deep-LASI* is running the HMM analysis, a green progress bar is shown on 
    :align: center
    :name: hmm_fret_results
 
+   HMM Results for a local analysis are summarized by showing (1) the FRET distribution, (2) the observed transitions via TDP and (3) the dwell-time per states via a dwell-time decay analysis. Local fitting results per single-molecule trace are shown on the bottom of the GUI.
 
 *Local HMM* |br|
 *Deep-LASI* summarizes the outcome of the analysis in the upper row of the *HMM Results* tab by 3 plots. It shows the state-wise histogram of all evaluated traces (:numref:`hmm_fret_results`). Next to it, the transition-density plot (TDP) is plotted summarizing all transitions being found in the evaluated traces. After selecting specific populations in the TDP with the mouse by dragging and positioning a white ellipse around it, *Deep-LASI* updates the dwell-time plot on the right and shows the distribution of residence times of single molecule being found in one state before transiting conformational into another one. If no selection was made, it shows the dwell-time distribution over all states together. The dwell-time, FRET values and selected events are summarized on average on the lower half of the dwell-time graph.
@@ -229,7 +232,25 @@ Results for individual single-molecule traces are shown on the bottom of the *HM
    :align: center
    :name: hmm_fret_results_global
 
+   For global analysis approaches, HMM Results are summarized by specifying the global transition probability matrix and emission properties besides the (1) FRET distribution, (2) TDP and (3) dwell-time analysis. Local fitting results per single-molecule trace are not provided.
+
 ..  _histograms:
 Histogram Analysis
 ~~~~~~~~~~~~~~~~~~~~
+Once all traces are analysed by *Deep-LASI* you can summarize the results by plotting the distributions of the different parameters. *Deep-LASI* provides distributions including fitting results on a trace-wise and frame-wise basis for
 
+* apparent FRET
+* accurate FRET (+/- denoising)
+* Distances
+* Stoichiometry
+* Correction factors :math:`\alpha_{XY;DL}`, :math:`\beta_{XY;DL}` and :math:`\gamma_{XY;DL}`
+* Donor intensity
+* Bleach times.
+
+.. figure:: ./../figures/documents/Fig_26_Fitting_Histogram.png
+   :width: 800
+   :alt: Histogramming and Fitting of distributions
+   :align: center
+   :name: histogram_results
+
+   Frame-wise FRET histogram of traces categorized as 'dynamic'.
