@@ -82,7 +82,7 @@ To retrieve the transformation matrix, which translates single molecule localiza
    :align: center
    :name: calib
 
-   Workflow to create a map between both detection channels.
+   Workflow to create a map between both detection channels
 
 After loading the file, *Deep-LASI* shows the averaged image for each detection channel separately and automatically detects single emitters (:numref:`calib`, C). The numbers of localization and potential mislocalization can be adopted using the slider below the two images. We chose Channel 1 (red camera) as a reference, i.e., *Deep-LASI* warps the image from the *yellow* channel onto the *red* detection channel.
 The result is afterwards shown in a side-by-side image that depicts the overlay of both channels before and after the mapping (:numref:`calib`, D). Lastly, we saved the generated map via :code:`File > Mapping > Save Map`.
@@ -186,3 +186,12 @@ Plotting and Summary of Results
 Sample Design: Static L-Shaped DNA Origami
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: ./../../figures/examples/PA_BR_mapping_steps.png
+   :width: 600
+   :alt: Workflow_mapping_BR
+   :align: center
+   :name: Workflow_mapping_BR_data
+
+   Workflow to create a map between both blue and red detection channels 
+   
+   
