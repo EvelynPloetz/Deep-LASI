@@ -20,7 +20,7 @@ After having the traces categorized, you can move on to the **Statistics** tab (
    Statistics tab on the main-GUI
 
 .. figure:: ./../figures/documents/PA_statistics_selector_table.png
-   :width: 500
+   :width: 700
    :alt: same categories in statistics tab
    :align: center
    :name: categories_in_statistics_tab
