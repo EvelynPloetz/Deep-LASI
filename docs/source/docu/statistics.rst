@@ -37,6 +37,14 @@ After having the traces categorized, you can move on to the **Statistics** tab (
 
 The fitting results are provided in a table on the right side.
 
+.. figure:: ./../figures/documents/PA_statistics_fit_results.png
+   :width: 300
+   :alt: fitting results for measurement statistics
+   :align: center
+   :name: measurement_statistics_fit_result
+
+   Fitting results table to report the details about a specific category statistics
+
 Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
 
 .. figure:: ./../figures/documents/PA_Fig_25_FRET_Tab.png
