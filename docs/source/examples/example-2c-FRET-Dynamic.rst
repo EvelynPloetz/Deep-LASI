@@ -7,9 +7,9 @@
 Dynamic 2c FRET Data
 =====
 
-Here you can see how to use DeepLASI to analyze dynamic 2-color smFRET (single-molecule Förster Resonance Energy Transfer) data measured with alternating laser excitation (ALEX). DeepLASI provides you with the options of analyzing your data either manually or automatically using the deep learning neural network. The analysis usually starts with detecting the co-localized FRET pairs within the field of view from both cameras and extracting their intensity traces, followed by sorting the traces into helpful categories, and determining the correction factors. Afterwards, you can continue the analysis steps for the kinetics of the sample system and visualize the whole data on various plots and histograms.   
+The following example describes how to use *Deep-LASI* to analyze dynamic 2-color smFRET (single-molecule Förster Resonance Energy Transfer) data measured with alternating laser excitation (ALEX). *Deep-LASI* provides you with the options of analyzing your data either manually or automatically using the deep learning neural network. The analysis starts with detecting the co-localized FRET pairs within the field of view from both cameras and extracting their intensity traces, followed by sorting the traces into helpful categories, and determining the correction factors. Afterwards, the underlying kinetics and involved FRET states are analysed, followed by summary of the analyzed data by various plots and histograms.
 
-The following part shows all the steps to analyze dynamic 2C smFRET data from L-shaped DNA origami structures with two FRET states. The example data together with further data sets are accessible in `Wanninger et al., BioArxiv (2023) <https://doi.org/10.1101/2023.01.31.526220>`_.
+The following part shows all the steps to analyze dynamic 2C smFRET data from L-shaped DNA origami structures with two FRET states. The example data together with further data sets are accessible from `Wanninger et al., BioArxiv (2023) <https://doi.org/10.1101/2023.01.31.526220>`_.
 
 Overview - Example
 ------------------
@@ -31,7 +31,7 @@ Example
 Sample Design: Dynamic L-Shaped DNA Origami
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The described data set is from smTIRF measurement with DNA origami structure as you can see on :numref:`dyn-2c-origami-3state`. The origami is labeled with Cy3B (donor) and Atto647N (acceptor).The donor is attached to the flexible tether with a 8 nt, 1 mismatch overhang binding freely between single-stranded binding sites. The energy transfer is expected between a high FRET State 1 (12 o'clock) and a low FRET State 2 (6 o'clock).   
+The described data set originates from smTIRF measurements of 2-state DNA origami structures as you can see in :numref:`dyn-2c-origami-3state`. The origami is labeled with Cy3B (donor) and Atto647N (acceptor). The donor is attached to the flexible tether, which can bind to single-stranded binding sites with a 8 nt, 1 mismatch overhang. The energy transfer is expected between a high FRET State 1 (12 o'clock) and a low FRET State 2 (6 o'clock).
 
 .. figure:: ./../../figures/examples/PA1-Dynamic_2c_Origami.png
    :width: 400
@@ -39,21 +39,19 @@ The described data set is from smTIRF measurement with DNA origami structure as 
    :align: center
    :name: dyn-2c-origami-3state
    
-   L-shaped DNA origami structure labeled with Atto647N and Cy3B. The donor is attached to a tether that can freely bind to any of the two binding strands.
+   L-shaped DNA origami structure labeled with Atto647N and Cy3B. The donor is attached to a tether that can freely bind to the two binding strands.
 
 .. _data-prep_2c_d:
 Data preparation 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The origami structures were measured on a smTIRF microscope with two separate EMCCD cameras, one for the donor and one for the acceptor. ALEX was used to excite the donor and acceptor fluorophores alternatively at an exposure time of 50 ms, also the frame transfer time of the cameras was set to 2.2 ms. The resulting data would then be videos of consecutive frames from each channel with *.tif* file format. You can find a couple of example raw data on `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_. 
-
-.. warning:: Maybe a figure here similar to what we have for static 2C to show the two cameras and excitation scheme, GR.
+The origami structures were measured on a smTIRF microscope with two separate EMCCD cameras, one for the donor and one for the acceptor. ALEX with a GR excitation cycle was used to excite the donor and acceptor fluorophores alternatively at an exposure time of 50 ms, also the frame transfer time of the cameras was set to 2.2 ms. The resulting data would then be videos of consecutive frames from each channel with *.tif* file format. You can find a couple of raw data movies on `Zenodo <https://zenodo.org/record/1249497#.Y_D1bnaZPmk>`_.
 
 .. _localization_2c_d:
 Co-Localization of Molecules 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When using two separate detection paths like the present example, there might be the chance of some discrepancy between the cameras' fields of view resulting from chromatic and spherical aberrations or cameras misalignment regarding to shifts, rotation, or magnification difference. To make sure that double-labeled species are detected, a correct linking of same molecule emitters across the detection channels is needed. DeepLASI makes a coordinate transformation map to get rid of any potential difference. For more details about mapping, please refer to the section :doc:`./examples/example-2c-FRET-Static` 
+When using two separate detection paths like the present example, there might be the chance of some discrepancy between the cameras' fields of view resulting from chromatic and spherical aberrations or cameras misalignment regarding to shifts, rotation, or magnification difference. To make sure that double-labeled species are detected, a correct linking of same molecule emitters across the detection channels is needed. *Deep-LASI* makes a coordinate transformation map to get rid of any potential difference. For more details about mapping, please refer to the section :doc:`./examples/example-2c-FRET-Static`
 
 To perform the mapping step, we used zero-mode waveguide (ZMW) as a calibration pattern which was illuminated by the wide-field lamp on the microscope. The ZMW was then imaged on both channels and with the steps shown on :numref:`mapping menu`, we opened the images one by one and used them to calibrate both channels. You can take the same steps as we did with the following instructions.  
 
@@ -65,7 +63,7 @@ From *file* menu, go to *Mapping*, and *Create New Map*, then click on *1st chan
    :align: center
    :name: mapping menu
    
-   Mapping steps on DeepLASI for loading the first channel image 
+   Mapping steps on *Deep-LASI* for loading the first channel image
 
 On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW image. Here we clicked on *Full* to load the whole camera field of view. No rotation or flipping of the image was needed, so we clicked on *OK* as you can see on :numref:`first map preview`.
 
@@ -77,7 +75,7 @@ On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW
 
    Pop-up window for adjusting the first mapping image
 
-DeepLASI shows the loaded image on the *Mapping* tab under the part *Channel1*. As you can see on :numref:`map image loaded`, the bright spots are detected with a white circle around them. You can change the detection threshold using the bar right under the image. By taking more spots into account, the mapping process would be performed more efficiently.  
+*Deep-LASI* shows the loaded image on the *Mapping* tab under the part *Channel1*. As you can see on :numref:`map image loaded`, the bright spots are detected with a white circle around them. You can change the detection threshold using the bar right under the image. By taking more spots into account, the mapping process would be performed more efficiently.
 
 .. figure:: ./../../figures/examples/PA3_map_image_loaded.png
    :width: 500
@@ -95,7 +93,7 @@ To load the corresponding image from the second camera (the acceptor channel), w
    :align: center
    :name: second map image loading
 
-   Mapping steps on DeepLASI for loading the second channel image 
+   Mapping steps on *Deep-LASI* for loading the second channel image
 
 After choosing the image file, the same *Channel Position* window will open. To have the maximum overlay to the ZMW image from the first channel, we took the whole field of view by clicking on *Full* and no rotation again. The only obvious difference is that the current image is flipped horizontally compared to the first one. You can see the mentioned difference by checking the cross sign on the already loaded image which is on the top right side (:numref:`map image flipping`, left), and compare it to the position of the cross on the new image preview, which is on the top left area (:numref:`map image flipping`, right). After checking the *Horizontal Flip* box, we clicked on *OK*.    
 
@@ -117,7 +115,7 @@ Now you can see both images on the corresponding panels, and they look having th
 
    Starting the mapping step after having both ZMW images loaded
 
-Mapping takes usually a couple seconds. Afterwards, DeepLASI opens a *Map Result* window showing the channels overlay before and after mapping. It is recommended to check the overlay quality at this point. The result is fine most of the times like the example on :numref:`check befor_after mapping`, but if the mapping result was not satisfactory, we would capture new images from the ZMW on both cameras, and repeat the mapping step. 
+Mapping takes usually a couple seconds. Afterwards, *Deep-LASI* opens a *Map Result* window showing the channels overlay before and after mapping. It is recommended to check the overlay quality at this point. The result is fine most of the times like the example on :numref:`check befor_after mapping`, but if the mapping result was not satisfactory, we would capture new images from the ZMW on both cameras, and repeat the mapping step.
 
 .. figure:: ./../../figures/examples/PA7_before_after_map.png
    :width: 600
@@ -247,7 +245,7 @@ The first step for the categorization is to make sure if we are taking the singl
    :align: center
    :name: mask checking
    
-   DeepLASI makes a mask around each emitter for intensity trace extraction and background calculation. An example of a single detected molecule is shown on the left. A molecule distribution like the case on the right, makes the whole trace worthless.
+   *Deep-LASI* makes a mask around each emitter for intensity trace extraction and background calculation. An example of a single detected molecule is shown on the left. A molecule distribution like the case on the right, makes the whole trace worthless.
 
 After ensuring that a single molecule is inside the mask and there is no interference for the background calculation, we checked the traces. A nice indicator of a single molecule trace in our experiment is to see one single bleaching step, if this is met, we continue with selecting the regions where the fluorophores are active. For region selection, we click anywhere on a trace to have the mouse as an active cursor, then we pressed the key *1* on the keyboard to have the cursor active for the first (green) channel. Then as you can see on :numref:`green-red region selection` on the left, we dragged the mouse from the beginning to the end of the trace, because the Cy3B is active throughout the whole trace. You can also see the selected region shadowed in green. Then we pressed the key *2* to indicate the second channel, and as you can see on the right side of :numref:`green-red region selection`, we selected the red region from the trace beginning until the bleaching step of Atto 647N.      
 
@@ -259,7 +257,7 @@ After ensuring that a single molecule is inside the mask and there is no interfe
    
    Selecting the trace regions where the donor or acceptor dye is active, shown on the left and right side of the figure respectively.
 
-You can see on :numref:`correction factors calculation` how the trace will look if we have both green and red regions selected. Also the FRET efficiency trace gets the selected region until the first bleaching step. A faster way of region selection that we usually do is to only activate the mouse and without pressing *1* or *2*, select the region of traces that both dyes are active. In other words, with the general cursor we start dragging the mouse from the desired beginning time until the first bleaching step. After the region selection, DeepLASI determines all correction factors possible to calculate, and updates the values in the box named *FRET controls* as you can see in the bottom right of the figure. In this example because the acceptor got bleached first, the program calculated the gamma and crosstalk correction factors. In the *Classification* box, you can see that we put the example trace in the categories of *Manual Selection*, *GR Beta*, *GR Gamma*, *G Bleach*, and *R Bleach*. We also have the option of having the program select the region by only pressing the *E* key.
+You can see on :numref:`correction factors calculation` how the trace will look if we have both green and red regions selected. Also the FRET efficiency trace gets the selected region until the first bleaching step. A faster way of region selection that we usually do is to only activate the mouse and without pressing *1* or *2*, select the region of traces that both dyes are active. In other words, with the general cursor we start dragging the mouse from the desired beginning time until the first bleaching step. After the region selection, *Deep-LASI* determines all correction factors possible to calculate, and updates the values in the box named *FRET controls* as you can see in the bottom right of the figure. In this example because the acceptor got bleached first, the program calculated the gamma and crosstalk correction factors. In the *Classification* box, you can see that we put the example trace in the categories of *Manual Selection*, *GR Beta*, *GR Gamma*, *G Bleach*, and *R Bleach*. We also have the option of having the program select the region by only pressing the *E* key.
 
 .. figure:: ./../../figures/examples/PA20_correction_factor_box.png
    :width: 550
@@ -339,7 +337,7 @@ After a short while, the left plot of :numref:`HMM resulting graphs` appears ins
    
    TDP plot with analysis options and dwell time fitting
 
-If you have been following the manual analysis steps, you might know now how much time it can take to analyze the data from one day of measurement. If such amount of time feels too much, DeepLASI offers you automatic data analysis as follows.
+If you have been following the manual analysis steps, you might know now how much time it can take to analyze the data from one day of measurement. If such amount of time feels too much, *Deep-LASI* offers you automatic data analysis as follows.
 
 ..  _automatic_2c_d:
 Automatic data analysis and correction
@@ -355,9 +353,9 @@ To perform automated analysis, we need to load already extracted traces. Meaning
    :align: center
    :name: mainGUI
    
-   The main GUI of DeepLASI on the *Traces* tab showing the loaded data traces
+   The main GUI of *Deep-LASI* on the *Traces* tab showing the loaded data traces
 
-On the opened panel as shown on :numref:`DeepLearning_tab` you can see the *Magic Button* in bright pink color. Now you can just click on it to enjoy the resulting graphs appearing one after another. So, all the results shown in the following parts would open at once in separate windows. But, because one could also achieve the same results with a several automatic analysis steps, depending on the analysis needs we can decide which analysis step the DeepLASI should perform for us. For example, sometimes we need the DeepLASI to only categorize the data, or just make the TDP plot for the dynamics of a specific category.  
+On the opened panel as shown on :numref:`DeepLearning_tab` you can see the *Magic Button* in bright pink color. Now you can just click on it to enjoy the resulting graphs appearing one after another. So, all the results shown in the following parts would open at once in separate windows. But, because one could also achieve the same results with a several automatic analysis steps, depending on the analysis needs we can decide which analysis step the *Deep-LASI* should perform for us. For example, sometimes we need the *Deep-LASI* to only categorize the data, or just make the TDP plot for the dynamics of a specific category.
 
 .. figure:: ./../../figures/examples/2_DeepLearningTab.png
    :width: 550
@@ -405,7 +403,7 @@ Plotting and Summary of Results
 
 In this section, the resulting graphs after the automatic analysis are listed and presented.
 
-After analysis gets finished, DeepLASI reports its confidence level for predicting existing states on each trace. As you can see the histogram from our data on :numref:`tracewise_state_confidence_histogram`, such confidence level of the neural network is quit high and close to 1. The statistics shown on the y axis is also quit convenient.
+After analysis gets finished, *Deep-LASI* reports its confidence level for predicting existing states on each trace. As you can see the histogram from our data on :numref:`tracewise_state_confidence_histogram`, such confidence level of the neural network is quit high and close to 1. The statistics shown on the y axis is also quit convenient.
 
 .. figure:: ./../../figures/examples/6_StateConfidence_Histogram.png
    :width: 350
@@ -413,7 +411,7 @@ After analysis gets finished, DeepLASI reports its confidence level for predicti
    :align: center
    :name: tracewise_state_confidence_histogram
    
-   The DeepLASI confidence level for determining the states on each trace
+   The *Deep-LASI* confidence level for determining the states on each trace
 
 Another resulting histogram is the apparent FRET efficiency to give a quick overview of the existing FRET populations. It is the mean FRET efficiency observed on the states found along the traces(:numref:`statewise-meanFRET_histogram`). 
 
