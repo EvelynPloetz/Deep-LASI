@@ -28,7 +28,7 @@ After having the traces categorized, you can move on to the **Statistics** tab (
    Statistics environment with subpanels for all channels with the same categories table
 
 .. figure:: ./../figures/documents/EP_Figure_Statistics.png
-   :width: 450
+   :width: 300
    :alt: histograms showing measurement statistics
    :align: center
    :name: histograms_measurement_details
