@@ -33,8 +33,6 @@ Sample Design: Dynamic L-Shaped DNA Origami
 
 The described data set is from smTIRF measurement with DNA origami structure as you can see on :numref:`dyn-2c-origami-3state`. The origami is labeled with Cy3B (donor) and Atto647N (acceptor).The donor is attached to the flexible tether with a 8 nt, 1 mismatch overhang binding freely between single-stranded binding sites. The energy transfer is expected between a high FRET State 1 (12 o'clock) and a low FRET State 2 (6 o'clock).   
 
-.. warning:: We need a 2c 2state sample image here.  
-
 .. figure:: ./../../figures/examples/PA1-Dynamic_2c_Origami.png
    :width: 400
    :alt: 2c-origami-3state
