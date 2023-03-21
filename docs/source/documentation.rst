@@ -73,7 +73,7 @@ Statistics
 --------------------------------------------------------
 
 .. Contains section on HMM ..
-..  _statistics:
+..  _hmm:
 Hidden-Markov Modeling
 -------------
 .. include:: docu/hmm.rst
