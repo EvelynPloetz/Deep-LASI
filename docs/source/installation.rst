@@ -282,19 +282,19 @@ This *GitLab* repository contains:
 Installing the stand-alone version of *Deep-LASI*
 ~~~~~~~~~~~~~~~
 
-#. Install the MATLAB Runtime as described in
+#. Install the MATLAB Runtime as described above.
 #. Download the compiled version of *Deep-LASI* for your Operating System (MacOS or Windows) from the `Repository <https://gitlab.com/simon71/deeplasi>`_
 #. Unpack the files.
-#. Run the *.exe*-file (Windows) or *.dmg*-file (MacOS) to start the program
+#. Run the *.exe*-file (Windows) or *.app*-file (MacOS) to start the program
 
 Installing and updating the open-source version of *Deep-LASI*
 ~~~~~~~~~~~~~~~
 
-The open sourcer version of *Deep-LASI* requires a valid licence for MATLAB (2019a or newer). Some features of the program require further access to tool boxes (Curve fitting, image processing, optimization, statistics, machine learning, and parallel computing) to work.
+The open source version of *Deep-LASI* requires a valid licence for MATLAB (2019a or newer). Some features of the program require further access to tool boxes (Curve fitting, image processing, optimization, statistics, machine learning, and parallel computing) to work.
 
 You can obtain and update *Deep-LASI* either by download from *Gitlab*, using the command line through *Git*, or by using the MATLAB *Git* integration.
 
-**Downloading from the repository**
+**Download and update *Deep-LASI* from the repository**
 
 #. Download the open source version of *Deep-LASI* from the `Repository <https://gitlab.com/simon71/deeplasi>`_
 #. Save the files in the MATLAB folder
@@ -303,7 +303,7 @@ You can obtain and update *Deep-LASI* either by download from *Gitlab*, using th
 #. Download the newest version and overwrite your former files for updating.
 
 
-**Download and update *Deep-LASI* using *Git***
+**Download and update *Deep-LASI* using *Git* **
 
 #. Install *Git* on your computer.
     * MacOS has *Git* pre-installed. Try to tun *git* from the terminal. If the command fails, you can download *Git* from https://git-scm.com/ .
@@ -312,7 +312,7 @@ You can obtain and update *Deep-LASI* either by download from *Gitlab*, using th
     * For cloning a first copy, type in your terminal: |br| :code:`git clone https://gitlab.com/simon71/deeplasi.git DeepLASI`
     * For updating, simply type :code:`git pull` to obtain the latest version and changes.
 
-**Download and update *Deep-LASI* using the *MATLAB Git Integration***
+**Download and update *Deep-LASI* using the *MATLAB Git Integration* **
 
 #. Create a folder for *Deep-LASI*
 #. Start MATLAB and navigate to the *Deep-LASI* folder
