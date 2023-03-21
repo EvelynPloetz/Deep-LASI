@@ -192,6 +192,43 @@ The correction factors calculated for each trace are shown in the **FRET control
 
 As shown in the right panel of :numref:`correction_factor_trace`, in this data set predominantly correction factors against leakage and detection sensitivity were obtained. This is mostly the case, when only the trajectories of co-localizing molecules have been extracted, as described in the :ref:`extraction_doc` section. To obtain a higher statistics for the correction factor against direction excitation in this case, it is advisable to also extract acceptor-only traces.
 
+Once all correction factor are determined, every trace is corrected using the local, trace-wise correction factors, when available and suitable. Otherwise, the global correction factor is used. In three-color experiments, the corrected FRET efficiency for :math:`E_{YR}` is calculated first since it is required for subsequent corrections. Upon yellow excitation, the same approach is used as for two-color FRET experiments
+
+.. math::
+    \begin{center}
+    I_{YY;corr} = I_{YY} \\
+    I_{YR;corr} = I_{YR} - \alpha_{YR} I_{YY} - \delta_{YR} I_{RR} \\
+    \end{center}
+
+The corrected FRET efficiency is then given by the ratio of both corrected intensities
+
+.. math::
+    E_{YR} = \frac{I_{YR;corr}}{\gamma_{YR}I_{YY;corr} + I_{YR;corr}}
+
+For the BY FRET pair, the fully corrected intensities after blue excitation read as
+
+.. math::
+    \begin{center}
+    I_{BB;corr} = I_{BB} \\
+    I_{BY;corr} = I_{BY} - \alpha_{BY} I_{BB} - \delta_{BY} I_{YY} \\
+    \end{center}
+
+The accurate BY FRET efficiency follows equation 5.5 with an additional term which takes into account the reduction in brightness of the yellow dye due to the FRET process between the YR pair
+
+.. math::
+    E_{BY} = \frac{I_{BY;corr}}{\gamma_{BY}I_{BB;corr}*1-E_{YR} + I_{BY;corr}}
+
+The intensity of the red fluorophore after blue excitation needs to be corrected against direct excitation, contributions of both the blue and yellow dye due to crosstalk into the red channel and due to cascading of FRET from the blue dye over the yellow dye into the red channel
+
+.. math::
+    I_{BR,corr} = I_{BR} - \delta_{BR} I_{RR} - \alpha_{BR} I_{BB} - \alpha_{YR}(I_{BY} - \alpha_{BY} I_{BB}) - \delta_{BY} E_{YR} (1-E_{YR})^{-1} I_{YY}
+
+The accurate FRET efficiency of the BR FRET pair is then given by
+
+.. math::
+    E_{BR} = \frac{I_{BR;corr} - E_{YR}(\gamma_{YR}I_{BY,corr} + I_{BR,corr})}{\gamma_{BR}I_{BB;corr} + I_{BR;corr} - E_{YR}(\gamma_{BR}I_{BB,corr} + \gamma_{YR}I_{BY,corr} + I_{BR,corr})}
+
+
 ..  _hmm_fret:
 Kinetics analysis by HMM
 ~~~~~~~~~~~~~~~~~~~~
