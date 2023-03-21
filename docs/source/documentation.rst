@@ -58,7 +58,7 @@ Manual smFRET analysis
 
 .. Contains section on Manual Data analysis on Traces GUI ..
 ..  _automatic_analysis:
-Automated smFRET Analysis
+Automated single-molecule Analysis
 -------------
 .. include:: docu/automatic.rst
 
