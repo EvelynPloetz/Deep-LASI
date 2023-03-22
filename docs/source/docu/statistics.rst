@@ -72,7 +72,8 @@ The *fit Results* table provided on the right side includes information listed o
      - The total count rate on the channel???
    * - **:math:`mu_{sig}[A.U.]`**
      - The mean value of signal
-
+   * - **:math:`sigma_{sig}[A.U.]`**
+     - The standard deviation of signal
 
 Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
 
