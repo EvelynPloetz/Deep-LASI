@@ -60,12 +60,14 @@ The *fit Results* table provided on the right side includes information listed o
 
    * - *Fit Result*
      - Definition
-   * - *File Name*
+   * - **File Name**
      - The data file name given by the user
    * - :math:`N_{files}`
      - The number of data files saved in the measurement folder
    * - **Filters**
      - ???
+   * - :math:`N_{traces}_[Total]`
+     - The total number of extracted traces
 
 
 Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
