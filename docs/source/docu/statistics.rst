@@ -62,7 +62,13 @@ The *fit Results* table provided on the right side includes information listed o
      - ???
    * - :math:`N_{traces}_`[Total]``
      - The total number of extracted traces
-
+   * - :math:`N_{traces}_`[filtered]``
+     - The number of traces in the selected category
+   * - :math:`t_{frame}_`[ms]``
+     - The sum of exposure and interframe time
+   * - :math:`A_{sig}`
+     - The number of events of the total signal
+     
 
 Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
 
