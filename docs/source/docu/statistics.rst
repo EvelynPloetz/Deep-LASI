@@ -48,6 +48,20 @@ The *fit Results* table provided on the right side includes information listed o
 
    Fitting results table to report the details about a specific category statistics
 
+..  csv-table:: Fit Results
+   :widths: 15, 200
+
+   **File Name**,   "The data file name given by the user"
+
+.. list-table:: Fit Results
+   :widths: 35 250
+   :header-rows: 1
+
+   * - *Fit Result*
+     - Definition
+   * - :math:`\N_{files}`
+     - The number of data files saved in the measurement folder
+
 
 Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
 
