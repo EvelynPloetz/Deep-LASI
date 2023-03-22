@@ -60,7 +60,7 @@ The *fit Results* table provided on the right side includes information listed o
      - The number of data files saved in the measurement folder
    * - **Filters**
      - ???
-   * - :math:`N_{traces}_`[Total]``
+   * - :math:`N_{traces}``[Total]`
      - The total number of extracted traces
    * - :math:`N_{traces}_`[filtered]``
      - The number of traces in the selected category
@@ -68,7 +68,9 @@ The *fit Results* table provided on the right side includes information listed o
      - The sum of exposure and interframe time
    * - :math:`A_{sig}`
      - The number of events of the total signal
-     
+   * - :math:`A_{1/2}`
+     - The total count rate on the channel???
+
 
 Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
 
