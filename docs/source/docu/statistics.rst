@@ -76,6 +76,8 @@ The *fit Results* table provided on the right side includes information listed o
      - The standard deviation of signal
    * - **:math:`mu_{BG}[A.U.]`**
      - The mean value of background
+   * - **:math:`sigma_{BG}[A.U.]`**
+     - The standard deviation of background
      
      
 Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
