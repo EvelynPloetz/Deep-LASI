@@ -60,7 +60,7 @@ The *fit Results* table provided on the right side includes information listed o
      - The number of data files saved in the measurement folder
    * - **Filters**
      - ???
-   * - :math:`N_{traces}``[Total]`
+   * - :math:`N_{traces}[Total]`
      - The total number of extracted traces
    * - :math:`N_{traces}_`[filtered]``
      - The number of traces in the selected category
