@@ -6,10 +6,11 @@
 Selected traces and categories
 ~~~~~~~~~~~~~~~~~~~~
 
-DeepLASI also provides statistical information about single molecule measurements. When you have traces loaded to the program, by moving on to the **Statistics** tab (:numref:`statistics_tab`), and selecting any category from the table, one can obtain information about the data quality with several histogrmas and corresponding fitting results.
+DeepLASI also provides statistical information about single molecule measurements. When you have traces loaded to the program, by moving on to the **Statistics** tab (:numref:`statistics_tab`), and selecting any category from the table, one can obtain information about the data quality with several histogrmas and corresponding fitting results, summarized in a table.
 
 As you can see on :numref:`categories_in_selector_table`, the whole GUI is devided into four columns, each representing a detection channel. For each channel, five panels are provided to report the number of events for several criteria including: *Total signal*, *Mean BG and Signal*, *Countrate*, *Signal to Noise*, and *Bleaching time*.
-After having the traces categorized, you can choose the desired category from the same sorting table as you defined earlier. for an example see the zoomed-in panel on the right side of :numref:`categories_in_selector_table`. Then the program will show the columns related to the number of channels which was previously defined, and updates histograms with fitting results. For example, for a two-channel measurement, only the first and second columns appear with histograms. With clicking on any other category, DeepLASI will immediately update the whole panels. 
+
+After having the traces loaded to DeepLASI, the *Selector Table* on the right side of the GUI gets updated showing all the same sorting table as you defined earlier, for an example see the zoomed-in panel on the right side of :numref:`categories_in_selector_table`. Also, the number of columns on the left panel, gets updated depending on the number of channels used for the experiment. For example, for a two-channel measurement, only the first and second columns appear with histograms, the other two columns will disappear automatically. You can now choose the desired category to see the histograms for each channel, and obtain the fitting results in the table *Fit Results* on the bottom right position. The fitting results will also be created in separate columns for every channel. With clicking on any other category, DeepLASI will immediately update the whole panels with the fitting results. 
 
 .. figure:: ./../figures/documents/PA_statistics_tab.png
    :width: 500
@@ -27,8 +28,10 @@ After having the traces categorized, you can choose the desired category from th
 
    Statistics environment with subpanels for all channels with the same categories table
 
+You can see an example of the created histograms and corresponding fits reported under the *Statistics* tab on :numref:`histograms_measurement_details`. the plots on each column represent the detection channel color, for example :numref:`histograms_measurement_details` shows the histograms in green, so the reported plots and values come from the green channel. 
+
 .. figure:: ./../figures/documents/EP_Figure_Statistics.png
-   :width: 300
+   :width: 250
    :alt: histograms showing measurement statistics
    :align: center
    :name: histograms_measurement_details
