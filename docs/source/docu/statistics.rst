@@ -56,11 +56,11 @@ The *fit Results* table provided on the right side includes information listed o
      - Definition
    * - **File Name**
      - The data file name given by the user
-   * - :math:`N_{files}`
+   * - **:math:`N_{files}`**
      - The number of data files saved in the measurement folder
    * - **Filters**
      - ???
-   * - :math:`N_{traces}[Total]`
+   * - **:math:`N_{traces}[Total]`**
      - The total number of extracted traces
    * - :math:`N_{traces}_`[filtered]``
      - The number of traces in the selected category
