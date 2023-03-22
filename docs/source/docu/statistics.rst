@@ -6,7 +6,7 @@
 Selected traces and categories
 ~~~~~~~~~~~~~~~~~~~~
 
-DeepLASI also provides statistical information about single molecule measurements. By moving on to the **Statistics** tab (:numref:`statistics_tab`), right after choosing any category from the category(s) table, one can obtain information about the data quality with several histogrmas and corresponding fitting results.
+DeepLASI also provides statistical information about single molecule measurements. When you have traces loaded to the program, by moving on to the **Statistics** tab (:numref:`statistics_tab`), and selecting any category from the table, one can obtain information about the data quality with several histogrmas and corresponding fitting results.
 
 As you can see on :numref:`categories_in_selector_table`, the whole GUI is devided into four columns, each representing a detection channel. For each channel, five panels are provided to report the number of events for several criteria including: *Total signal*, *Mean BG and Signal*, *Countrate*, *Signal to Noise*, and *Bleaching time*.
 After having the traces categorized, you can choose the desired category from the same sorting table as you defined earlier. for an example see the zoomed-in panel on the right side of :numref:`categories_in_selector_table`. Then the program will show the columns related to the number of channels which was previously defined, and updates histograms with fitting results. For example, for a two-channel measurement, only the first and second columns appear with histograms. With clicking on any other category, DeepLASI will immediately update the whole panels. 
