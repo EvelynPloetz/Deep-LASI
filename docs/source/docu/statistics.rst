@@ -6,10 +6,10 @@
 Selected traces and categories
 ~~~~~~~~~~~~~~~~~~~~
 
-<to be continued>
+DeepLASI also provides statistical information about single molecule measurements. By moving on to the **Statistics** tab (:numref:`statistics_tab`), right after choosing any category from the category(s) table, one can obtain information about the data quality with several histogrmas and corresponding fitting results.
 
-
-After having the traces categorized, you can move on to the **Statistics** tab (:numref:`statistics_tab`), choose the desired category from the same category table as you defined earlier (:numref:`categories_in_statistics_tab`), and get information about your data as histograms with fitting results. 
+As you can see on :numref:`categories_in_selector_table`, the whole GUI is devided into four columns, each representing a detection channel. For each channel, five panels are provided to report the number of events for several criteria including: *Total signal*, *Mean BG and Signal*, *Countrate*, *Signal to Noise*, and *Bleaching time*.
+After having the traces categorized, you can choose the desired category from the same sorting table as you defined earlier. for an example see the zoomed-in panel on the right side of :numref:`categories_in_selector_table`. Then the program will show the columns related to the number of channels which was previously defined, and updates histograms with fitting results. For example, for a two-channel measurement, only the first and second columns appear with histograms. 
 
 .. figure:: ./../figures/documents/PA_statistics_tab.png
    :width: 500
@@ -21,9 +21,9 @@ After having the traces categorized, you can move on to the **Statistics** tab (
 
 .. figure:: ./../figures/documents/PA_statistics_selector_table.png
    :width: 700
-   :alt: same categories in statistics tab
+   :alt: categories_selector_table
    :align: center
-   :name: categories_in_statistics_tab
+   :name: categories_in_selector_table
 
    Statistics environment with subpanels for all channels with the same categories table
 
