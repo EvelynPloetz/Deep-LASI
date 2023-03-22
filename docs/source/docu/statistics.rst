@@ -56,27 +56,27 @@ The *fit Results* table provided on the right side includes information listed o
      - Definition
    * - **File Name**
      - The data file name given by the user
-   * - **:math:`N_{files}`**
+   * - :math:`N_{files}`
      - The number of data files saved in the measurement folder
    * - **Filters**
      - ???
-   * - **:math:`N_{traces}[Total]`**
+   * - :math:`N_{traces}[Total]`
      - The total number of extracted traces
-   * - **:math:`N_{traces}[filtered]`**
+   * - :math:`N_{traces}[filtered]`
      - The number of traces in the selected category
-   * - **:math:`t_{frame}[ms]`**
+   * - :math:`t_{frame}[ms]`
      - The sum of exposure and interframe time
-   * - **:math:`A_{sig}`**
+   * - :math:`A_{sig}`
      - The number of events of the total signal
-   * - **:math:`A_{1/2}`**
+   * - :math:`A_{1/2}`
      - The total count rate on the channel???
-   * - **:math:`mu_{sig}[A.U.]`**
+   * - :math:`mu_{sig}[A.U.]`
      - The mean value of signal
-   * - **:math:`sigma_{sig}[A.U.]`**
+   * - :math:`sigma_{sig}[A.U.]`
      - The standard deviation of signal
-   * - **:math:`mu_{BG}[A.U.]`**
+   * - :math:`mu_{BG}[A.U.]`
      - The mean value of background
-   * - **:math:`sigma_{BG}[A.U.]`**
+   * - :math:`sigma_{BG}[A.U.]`
      - The standard deviation of background
      
      
