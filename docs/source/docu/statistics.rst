@@ -60,6 +60,8 @@ The *fit Results* table provided on the right side includes information listed o
 
    * - *Fit Result*
      - Definition
+   * - *File Name*
+     - The data file name given by the user
    * - :math:`N_{files}`
      - The number of data files saved in the measurement folder
 
