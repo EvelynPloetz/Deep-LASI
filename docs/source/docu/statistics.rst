@@ -39,7 +39,7 @@ The fitting results are provided in a table on the right side.
 
 
 .. figure:: ./../figures/documents/PA_statistics_fit_results.png
-   :width: 300
+   :width: 600
    :alt: fitting results for measurement statistics
    :align: center
    :name: measurement_statistics_fit_result
