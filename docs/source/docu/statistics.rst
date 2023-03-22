@@ -37,7 +37,6 @@ After having the traces categorized, you can choose the desired category from th
 
 The fitting results are provided in a table on the right side.
 
-
 .. figure:: ./../figures/documents/PA_statistics_fit_results.png
    :width: 600
    :alt: fitting results for measurement statistics
