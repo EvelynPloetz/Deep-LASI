@@ -62,13 +62,13 @@ The *fit Results* table provided on the right side includes information listed o
      - ???
    * - **:math:`N_{traces}[Total]`**
      - The total number of extracted traces
-   * - :math:`N_{traces}_`[filtered]``
+   * - **:math:`N_{traces}[filtered]`**
      - The number of traces in the selected category
-   * - :math:`t_{frame}_`[ms]``
+   * - **:math:`t_{frame}[ms]`**
      - The sum of exposure and interframe time
-   * - :math:`A_{sig}`
+   * - **:math:`A_{sig}`**
      - The number of events of the total signal
-   * - :math:`A_{1/2}`
+   * - **:math:`A_{1/2}`**
      - The total count rate on the channel???
 
 
