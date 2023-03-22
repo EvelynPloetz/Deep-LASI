@@ -52,7 +52,7 @@ The *fit Results* table provided on the right side includes information listed o
    :widths: 15, 180
 
    **File Name**,   "The data file name given by the user"
-   **:math:`N_{files}`**,   "The number of data files saved in the measurement folder"
+   :math:**`N_{files}`**,   "The number of data files saved in the measurement folder"
 
 .. list-table:: Fit Results
    :widths: 35 250
