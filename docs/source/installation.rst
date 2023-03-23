@@ -283,7 +283,7 @@ Installing the stand-alone version of *Deep-LASI*
 ~~~~~~~~~~~~~~~
 
 #. Install the MATLAB Runtime as described above.
-#. Download the compiled version of *Deep-LASI* for your Operating System (MacOS or Windows) from the `Repository <https://gitlab.com/simon71/deeplasi>`_
+#. Download the compiled version of *Deep-LASI* for your Operating System (MacOS or Windows) from the `Repository <https://gitlab.com/simon71/deeplasicompiled>`_
 #. Unpack the files.
 #. Run the *.exe*-file (Windows) or *.app*-file (MacOS) to start the program
 
