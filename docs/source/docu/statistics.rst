@@ -40,13 +40,13 @@ You can see an example of created histograms and corresponding fits reported und
 
 The *fit Results* table provided on the right side includes information listed on :numref:`measurement_statistics_fit_result`.
 
-.. figure:: ./../figures/documents/PA_statistics_fit_results.png
-   :width: 600
-   :alt: fitting results for measurement statistics
-   :align: center
-   :name: measurement_statistics_fit_result
+.. .. figure:: ./../figures/documents/PA_statistics_fit_results.png
+..   :width: 600
+..   :alt: fitting results for measurement statistics
+..   :align: center
+..   :name: measurement_statistics_fit_result
 
-   Fitting results table to report the details about a specific category statistics
+..  Fitting results table to report the details about a specific category statistics
 
 .. list-table:: Fit Results
    :widths: 35 200
