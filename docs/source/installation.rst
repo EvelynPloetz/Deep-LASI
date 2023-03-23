@@ -267,7 +267,7 @@ For both Windows and Mac systems, install the pomegranate package by typing the 
 
    .. code-block:: python
    
-      pip install pomegranate
+      pip install pomegranate==0.14.8
 
 Installing Deep-LASI
 ------------
