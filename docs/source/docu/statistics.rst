@@ -51,7 +51,7 @@ The *fit Results* table provided on the right side of the statistics GUI, includ
 ..  Fitting results table to report the details about a specific category statistics
 
 .. list-table:: Fit Results
-   :widths: 35 150
+   :widths: 35 200
    :header-rows: 1
    :name: Fit Results table
 
