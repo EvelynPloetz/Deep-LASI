@@ -51,12 +51,12 @@ The *fit Results* table provided on the right side of the statistics GUI, includ
 ..  Fitting results table to report the details about a specific category statistics
 
 .. list-table:: Fit Results
-   :widths: 35 160
+   :widths: 35 150
    :header-rows: 1
    :name: Fit Results table
 
    * - *Fit Result*
-     - Definition
+     - *Definition*
    * - *File Name*
      - The data file name given by the user
    * - :math:`N_{files}`
