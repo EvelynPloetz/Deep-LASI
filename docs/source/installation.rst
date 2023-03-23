@@ -109,11 +109,11 @@ If you are interested in generating simulated data and/or re-training the neural
 
    .. code-block:: python
    
-      pip install matplotlib
-      pip install numpy
-      pip install sklearn
-      pip install tqdm
-      pip install mlxtend
+      pip install matplotlib==3.5.2
+      pip install numpy==1.23.1
+      pip install sklearn==1.1.1
+      pip install tqdm==4.64.0
+      pip install mlxtend==0.20.0
 
 If you encounter any problem during the installation procedure, please
 get in touch with us via the *Issue forum*.
@@ -216,11 +216,11 @@ If you are interested in generating simulated data and/or re-training the neural
 
    .. code-block:: python
    
-      pip install matplotlib
-      pip install numpy
-      pip install sklearn
-      pip install tqdm
-      pip install mlxtend
+      pip install matplotlib==3.5.2
+      pip install numpy==1.23.1
+      pip install sklearn==1.1.1
+      pip install tqdm==4.64.0
+      pip install mlxtend==0.20.0
 
 If you encounter any problem during the installation procedure, please
 get in touch with us via the *Issue forum*.
