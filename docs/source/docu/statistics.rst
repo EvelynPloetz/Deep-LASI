@@ -70,13 +70,13 @@ The *fit Results* table provided on the right side includes information listed o
      - The number of events of the total signal
    * - :math:`A_{1/2}`
      - The total count rate on the channel???
-   * - :math:`mu_{sig}[A.U.]`
+   * - :math:`\mu_{sig}[A.U.]`
      - The mean value of signal
-   * - :math:`sigma_{sig}[A.U.]`
+   * - :math:`\sigma_{sig}[A.U.]`
      - The standard deviation of signal
-   * - :math:`mu_{BG}[A.U.]`
+   * - :math:`\mu_{BG}[A.U.]`
      - The mean value of background
-   * - :math:`sigma_{BG}[A.U.]`
+   * - :math:`\sigma_{BG}[A.U.]`
      - The standard deviation of background
      
      
