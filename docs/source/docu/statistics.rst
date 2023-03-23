@@ -78,7 +78,18 @@ The *fit Results* table provided on the right side includes information listed o
      - The mean value of background
    * - :math:`\sigma_{BG}[A.U.]`
      - The standard deviation of background
-     
+   * - :math:`\mu_{CR}[kHz]`
+     - The mean value of count rate
+   * - :math:`\sigma_{CR}[kHz]`
+     - The standard deviation of count rate
+   * - :math:`\mu_{SNR}`
+     - The mean value of signal to noise ratio
+   * - :math:`\sigma_{SNR}`
+     - The standard deviation of signal to noise ratio
+   * - :math:`A_{bleach}`
+     - The number of events of observed bleaching times
+   * - :math:`t_{bleach,1/2}[s]`
+     - The time interval before dye bleaching???
      
 Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
 
