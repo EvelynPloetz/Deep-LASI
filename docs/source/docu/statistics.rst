@@ -10,7 +10,7 @@ DeepLASI also provides statistical information about single molecule measurement
 
 As you can see on :numref:`categories_in_selector_table`, the whole GUI is devided into four columns, each representing a detection channel. For each channel, five panels are provided to report the number of events for several criteria including: *Total signal*, *Mean BG and Signal*, *Countrate*, *Signal to Noise*, and *Bleaching time*.
 
-After having the traces loaded to DeepLASI, the *Selector Table* on the right side of the GUI gets updated showing the same sorting table as the user has defined earlier, for an example see the zoomed-in panel on the right side of :numref:`categories_in_selector_table`. Also, the number of columns on the left panel, gets updated depending on the number of channels used for the experiment. For example, for a two-channel measurement, only the first and second columns show histograms, the other two columns will disappear automatically. You can now choose the desired category to see the histograms for each channel, and obtain the fitting results in the table *Fit Results* on the bottom right position. The fitting results table will also be created in separate columns for every channel. With clicking on any other category, DeepLASI will immediately update the whole panels with the fitting results. 
+After having the traces loaded to DeepLASI, the *Selector Table* on the right side of the GUI gets updated showing the same sorting table as the user has defined earlier, for an example see the zoomed-in panel on the right side of :numref:`categories_in_selector_table`. Also, the number of columns on the left panel, gets updated depending on the number of channels used for the experiment. For example, for a two-channel measurement, only the first and second columns show histograms, the other two columns will disappear automatically.
 
 .. figure:: ./../figures/documents/PA_statistics_tab.png
    :width: 500
@@ -18,7 +18,7 @@ After having the traces loaded to DeepLASI, the *Selector Table* on the right si
    :align: center
    :name: statistics_tab
 
-   Statistics tab on the main-GUI
+   Statistics tab on the main-GUI of DeepLASI
 
 .. figure:: ./../figures/documents/PA_statistics_selector_table.png
    :width: 700
@@ -28,7 +28,9 @@ After having the traces loaded to DeepLASI, the *Selector Table* on the right si
 
    Statistics environment with subpanels for all channels with the same categories table
 
-You can see an example of created histograms and corresponding fits reported under the *Statistics* tab on :numref:`histograms_measurement_details`. the plots on each column represent the detection channel color, for example :numref:`histograms_measurement_details` shows the histograms in green, so the reported plots and values come from the green channel. 
+You can now choose the desired category to see the histograms for each channel, and obtain the fitting results in the table *Fit Results* on the bottom right position. The fitting results table will also be devided in separate columns depending on the number of used channels. With clicking on any other category, DeepLASI will immediately update the whole panels with the fitting results. 
+
+An example of created histograms and corresponding fits under the *Statistics* tab is depicted on :numref:`histograms_measurement_details`. The plots on each column represent the detection channel color, for example :numref:`histograms_measurement_details` shows the histograms in green, so the reported plots and values are from the data on green channel. 
 
 .. figure:: ./../figures/documents/EP_Figure_Statistics.png
    :width: 250
@@ -36,9 +38,9 @@ You can see an example of created histograms and corresponding fits reported und
    :align: center
    :name: histograms_measurement_details
 
-   Histograms showing measurement statistics with fitting results
+   Histograms showing measurement statistics for green channel
 
-The *fit Results* table provided on the right side includes information listed on :numref:`Fit Results table`.
+The *fit Results* table provided on the right side of the statistics GUI, includes measurement criteria listed on :numref:`Fit Results table`.
 
 .. .. figure:: ./../figures/documents/PA_statistics_fit_results.png
 ..   :width: 600
@@ -55,11 +57,11 @@ The *fit Results* table provided on the right side includes information listed o
 
    * - *Fit Result*
      - Definition
-   * - **File Name**
+   * - *File Name*
      - The data file name given by the user
    * - :math:`N_{files}`
      - The number of data files saved in the measurement folder
-   * - **Filters**
+   * - *Filters*
      - ???
    * - :math:`N_{traces}[Total]`
      - The total number of extracted traces
