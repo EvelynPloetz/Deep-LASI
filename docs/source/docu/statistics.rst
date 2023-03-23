@@ -6,9 +6,9 @@
 Selected traces and categories
 ~~~~~~~~~~~~~~~~~~~~
 
-To get more information about the system under study, DeepLASI provides statistical information about single molecule measurements. When having traces loaded to the program, by moving on to the **Statistics** tab (:numref:`statistics_tab`), and selecting any category from the table, one can obtain information about the data quality with several histograms and corresponding fitting results, regarding to flourophores behaviour with brightness, photo-activity time range, and signal to noise ratio. It is especially helpful with knowing about the effects of different parameters in experiments such as the influence of buffer or various background sources. 
+To get more information about the system under study, DeepLASI provides statistical information about single molecule measurements. When having traces loaded to the program, by moving on to the **Statistics** tab (:numref:`statistics_tab`), and selecting any category from the table, one can obtain information about the data quality with several histograms and corresponding fitting results, regarding to fluorophores behavior with brightness, photo-activity time range, and signal to noise ratio. It is especially helpful with knowing about the effects of different parameters in experiments such as the influence of buffer or various background sources. 
 
-As you can see on :numref:`categories_in_selector_table`, the whole GUI is devided into four columns, each representing a detection channel. For each channel, five panels are provided to report the number of events for several criteria including: *Total signal*, *Mean BG and Signal*, *Countrate*, *Signal to Noise*, and *Bleaching time*.
+As you can see on :numref:`categories_in_selector_table`, the whole GUI is divided into four columns, each representing a detection channel. For each channel, five panels are provided to report the number of events for several criteria including: *Total signal*, *Mean BG and Signal*, *Countrate*, *Signal to Noise*, and *Bleaching time*.
 
 After having the traces loaded to DeepLASI, the *Selector Table* on the right side of the GUI gets updated showing the same sorting table as the user has defined earlier, for an example see the zoomed-in panel on the right side of :numref:`categories_in_selector_table`. Also, the number of columns on the left panel, gets updated depending on the number of channels used for the experiment. For example, for a two-channel measurement, only the first and second columns show histograms, the other two columns will disappear automatically.
 
@@ -28,7 +28,7 @@ After having the traces loaded to DeepLASI, the *Selector Table* on the right si
 
    Statistics environment with subpanels for all channels with the same categories table
 
-You can now choose the desired category to see the histograms for each channel, and obtain the fitting results in the table *Fit Results* on the bottom right position. The fitting results table will also be devided in separate columns depending on the number of used channels. With clicking on any other category, DeepLASI will immediately update the whole panels with the fitting results. 
+You can now choose the desired category to see the histograms for each channel, and obtain the fitting results in the table *Fit Results* on the bottom right position. The fitting results table will also be divided in separate columns depending on the number of used channels. With clicking on any other category, DeepLASI will immediately update the whole panels with the fitting results. 
 
 An example of created histograms and corresponding fits under the *Statistics* tab is depicted on :numref:`histograms_measurement_details`. The plots on each column represent the detection channel color, for example :numref:`histograms_measurement_details` shows the histograms in green, so the reported plots and values are from the data on green channel. 
 
