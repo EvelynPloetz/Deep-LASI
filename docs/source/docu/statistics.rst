@@ -49,7 +49,7 @@ The *fit Results* table provided on the right side includes information listed o
 ..  Fitting results table to report the details about a specific category statistics
 
 .. list-table:: Fit Results
-   :widths: 35 200
+   :widths: 35 160
    :header-rows: 1
    :name: Fit Results table
 
