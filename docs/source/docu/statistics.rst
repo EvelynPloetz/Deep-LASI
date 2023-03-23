@@ -92,7 +92,7 @@ The *fit Results* table provided on the right side of the statistics GUI, includ
    * - :math:`A_{bleach}`
      - The number of events of observed bleaching times
    * - :math:`t_{bleach,1/2}[s]`
-     - The time interval before the flourophore photo-bleaching
+     - The time interval before the photo-bleaching of flourophore 
      
 Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
 
