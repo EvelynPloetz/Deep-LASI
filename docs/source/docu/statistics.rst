@@ -38,7 +38,7 @@ You can see an example of created histograms and corresponding fits reported und
 
    Histograms showing measurement statistics with fitting results
 
-The *fit Results* table provided on the right side includes information listed on :numref:`measurement_statistics_fit_result`.
+The *fit Results* table provided on the right side includes information listed on :numref:`Fit Results`.
 
 .. .. figure:: ./../figures/documents/PA_statistics_fit_results.png
 ..   :width: 600
