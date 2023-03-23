@@ -6,7 +6,7 @@
 Selected traces and categories
 ~~~~~~~~~~~~~~~~~~~~
 
-To get more information about the system under study, DeepLASI provides statistical information about single molecule measurements. When having traces loaded to the program, by moving on to the **Statistics** tab (:numref:`statistics_tab`), and selecting any category from the table, one can obtain information about the data quality with several histograms and corresponding fitting results, regarding to flourophores behaviour with brightness, photo-activity time range, and signal to noise ratio. It is especially helpful with knowing about the effects of different parameters in experiments such as the influence of buffer and various background sources. 
+To get more information about the system under study, DeepLASI provides statistical information about single molecule measurements. When having traces loaded to the program, by moving on to the **Statistics** tab (:numref:`statistics_tab`), and selecting any category from the table, one can obtain information about the data quality with several histograms and corresponding fitting results, regarding to flourophores behaviour with brightness, photo-activity time range, and signal to noise ratio. It is especially helpful with knowing about the effects of different parameters in experiments such as the influence of buffer or various background sources. 
 
 As you can see on :numref:`categories_in_selector_table`, the whole GUI is devided into four columns, each representing a detection channel. For each channel, five panels are provided to report the number of events for several criteria including: *Total signal*, *Mean BG and Signal*, *Countrate*, *Signal to Noise*, and *Bleaching time*.
 
