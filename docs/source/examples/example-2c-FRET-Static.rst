@@ -154,17 +154,17 @@ After categorization, we moved on to the *Histograms* tab to plot the results. A
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _summary1:
-Plotting and Summary of Results
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. figure:: ./../../figures/examples/PA_Hellenkamp_DL_categories.png
-   :width: 600
+   :width: 400
    :alt: Hellenkamp_autocategorized
    :align: center
    :name: Hellenkamp_autocategorized
 
    Categories created by DeepLASI for the static two-color 'low-FRET' DNA sample
+
+.. _summary1:
+Plotting and Summary of Results
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    
 .. figure:: ./../../figures/examples/PA_Hellenkamp_tracewise_state_prediction.png
    :width: 500
