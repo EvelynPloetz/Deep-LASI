@@ -165,6 +165,14 @@ Plotting and Summary of Results
    :name: Hellenkamp_autocategorized
 
    Categories created by DeepLASI for the static two-color 'low-FRET' DNA sample
+   
+ .. figure:: ./../../figures/examples/PA_Hellenkamp_tracewise_state_prediction.png
+   :width: 500
+   :alt: Hellenkamp_autom_states
+   :align: center
+   :name: Hellenkamp_autom_state_prediction
+
+   The Deep-LASI confidence level for determining the number of states and each state on traces
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_de_ct.png
    :width: 600
