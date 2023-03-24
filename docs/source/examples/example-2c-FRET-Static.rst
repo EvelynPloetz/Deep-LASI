@@ -135,7 +135,7 @@ By using the Navigation slider we clicked through all the traces one by one to c
 After categorization, we moved on to the *Histograms* tab to plot the results. As you can see on Fig. 67, we first chose the .... category by clicking on the plus sign beside it, then for the Plot Mode we chose the FRET Efficiency (apparent) to be the x axis, and on the Display Settings we chose the histogram type to be framewise.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_manual_corr_factors.png
-   :width: 500
+   :width: 700
    :alt: Hellenkamp_corr_factors
    :align: center
    :name: Hellenkamp_manual_corr_factors
@@ -143,7 +143,7 @@ After categorization, we moved on to the *Histograms* tab to plot the results. A
    Correction factors plotted and fitted after manual categorization and region selecting. From left to right, direct excitation, spectral crosstalk, and detection efficiency correction factors.
    
 .. figure:: ./../../figures/examples/PA_Hellenkamp_manual_app_corr_fret.png
-   :width: 500
+   :width: 550
    :alt: Hellenkamp_manual_fret
    :align: center
    :name: Hellenkamp_manual_app_corr_fret
