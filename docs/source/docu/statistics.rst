@@ -72,7 +72,7 @@ The *fit Results* table provided on the right side of the statistics GUI, includ
    * - :math:`A_{sig}`
      - The number of events of the total signal
    * - :math:`A_{1/2}`
-     - The total count rate on the channel???
+     - The total counts on the channel
    * - :math:`\mu_{sig}[A.U.]`
      - The mean value of signal
    * - :math:`\sigma_{sig}[A.U.]`
@@ -92,7 +92,7 @@ The *fit Results* table provided on the right side of the statistics GUI, includ
    * - :math:`A_{bleach}`
      - The number of events of observed bleaching times
    * - :math:`t_{bleach,1/2}[s]`
-     - The time interval before the photo-bleaching of flourophore 
+     - The time interval before a flourophore photo-bleaching   
      
 Then you can move on to the **FRET** tab, and again choose the desired category by clicking on the plus sign beside the list.
 
