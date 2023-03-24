@@ -166,7 +166,7 @@ Plotting and Summary of Results
 
    Categories created by DeepLASI for the static two-color 'low-FRET' DNA sample
    
- .. figure:: ./../../figures/examples/PA_Hellenkamp_tracewise_state_prediction.png
+.. figure:: ./../../figures/examples/PA_Hellenkamp_tracewise_state_prediction.png
    :width: 500
    :alt: Hellenkamp_autom_states
    :align: center
@@ -174,7 +174,7 @@ Plotting and Summary of Results
 
    The Deep-LASI confidence level for determining the number of states and each state on traces
    
- .. figure:: ./../../figures/examples/PA_Hellenkamp_autom_fret_hist.png
+.. figure:: ./../../figures/examples/PA_Hellenkamp_autom_fret_hist.png
    :width: 500
    :alt: Hellenkamp_autom_fret
    :align: center
