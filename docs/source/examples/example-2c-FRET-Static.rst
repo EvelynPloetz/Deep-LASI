@@ -142,7 +142,14 @@ After categorization, we moved on to the *Histograms* tab to plot the results. A
    
    Correction factors plotted and fitted after manual categorization and region selecting. From left to right, direct excitation, spectral crosstalk, and detection efficiency correction factors.
    
-
+.. figure:: ./../../figures/examples/PA_Hellenkamp_manual_app_corr_fret.png
+   :width: 500
+   :alt: Hellenkamp_manual_fret
+   :align: center
+   :name: Hellenkamp_manual_app_corr_fret
+   
+   Apparent and corrected FRET efficiency histograms with the fitting result after manual categorization and region selecting 
+   
 .. _automatic1:
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -173,8 +180,8 @@ Plotting and Summary of Results
    :align: center
    :name: Hellenkamp_autocorr_gamma
 
-   The histograms of detection efficiency correction factor reported with statistics
-
+   The histograms of detection efficiency correction factor reported with statistics   
+   
 .. -----------------------------------------------------
 
 .. Overview - Example 2
