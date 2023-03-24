@@ -173,6 +173,14 @@ Plotting and Summary of Results
    :name: Hellenkamp_autom_state_prediction
 
    The Deep-LASI confidence level for determining the number of states and each state on traces
+   
+ .. figure:: ./../../figures/examples/PA_Hellenkamp_autom_fret_hist.png
+   :width: 500
+   :alt: Hellenkamp_autom_fret
+   :align: center
+   :name: Hellenkamp_autom_fret_histogram
+
+   The histogram of apparent FRET efficiency averaged for each state
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_de_ct.png
    :width: 600
