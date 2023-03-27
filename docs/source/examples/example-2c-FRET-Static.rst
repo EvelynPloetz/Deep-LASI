@@ -122,7 +122,7 @@ With the threshold settings that we used, we got in total 855 traces from the 7 
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-By using the Navigation slider we clicked through all the traces one by one to check their individual features and attribute them to one or several categories created in the Classification chart. You can see the result of manual trace sorting in :numref:`Hellenkamp_categorized_manual`. For a detailed description of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**.
+By using the Navigation slider we clicked through all the traces one by one to check their individual features and attribute them to one or several categories created in the *Classification* chart. You can see the result of manual trace sorting on :numref:`Hellenkamp_categorized_manual`. For a detailed description of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_manual_sorted.png
    :width: 400
@@ -132,7 +132,8 @@ By using the Navigation slider we clicked through all the traces one by one to c
    
    Categories manually created for the static two-color 'low-FRET' DNA sample
 
-After categorization, we moved on to the *Histograms* tab to plot the results. As you can see on Fig. 67, we first chose the .... category by clicking on the plus sign beside it, then for the Plot Mode we chose the FRET Efficiency (apparent) to be the x axis, and on the Display Settings we chose the histogram type to be framewise.
+After categorization, we moved on to the *Histograms* tab to plot the results especially the apparent and corrected FRET efficiencies to compare them with the published results. For this, we first plotted and fitted correction factors as you can see on :numref:`Hellenkamp_manual_corr_factors`. For each of the plots, we chose the corresponding categoy from the *Data Selection* panel by clicking on the category first and the plus sign beside it, followed by selecting the desired correction factor from the *Plot Mode*.
+we chose the FRET Efficiency (apparent) to be the x axis, and on the Display Settings we chose the histogram type to be framewise.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_manual_corr_factors.png
    :width: 700
