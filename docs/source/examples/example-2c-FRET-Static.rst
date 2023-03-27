@@ -133,7 +133,6 @@ By using the Navigation slider we clicked through all the traces one by one to c
    Categories manually created for the static two-color 'low-FRET' DNA sample
 
 After categorization, we moved on to the *Histograms* tab to plot the results especially the apparent and corrected FRET efficiencies to compare them with the published results. For this, we first plotted and fitted correction factors as you can see on :numref:`Hellenkamp_manual_corr_factors`. For each of the plots, we chose the corresponding categoy from the *Data Selection* panel by clicking on the plus sign beside its name, followed by selecting the desired correction factor from the *Plot Mode*. So, we first chose the category *G Alpha* and then on the *Plot Mode*, we clicked on *Direct Excitation Factor (Alpha)*. For the *Fit Method*, we chose *Gauss1*, and clicking on *Fit Plots*, we got the plot with fitting results (:numref:`Hellenkamp_manual_corr_factors`, left). We took similar steps for the other two correction factors. So, we chose the category *RR Beta* for plotting *Spectral crosstalk corr. factor (Beta)*, and *RR Gamma* for *Detection efficiency corr. factor (Gamma)* respectively. You can see the resulting plots and values for correction factors on the middle and right panels of :numref:`Hellenkamp_manual_corr_factors`.   
-we chose the FRET Efficiency (apparent) to be the x axis, and on the Display Settings we chose the histogram type to be framewise.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_manual_corr_factors.png
    :width: 700
@@ -142,7 +141,11 @@ we chose the FRET Efficiency (apparent) to be the x axis, and on the Display Set
    :name: Hellenkamp_manual_corr_factors
    
    Correction factors plotted and fitted after manual categorization and region selecting. From left to right, direct excitation, spectral crosstalk, and detection efficiency correction factors.
-   
+
+The values we obtained for correction factors for this published data set through manual analysis are 0.064 for the direct excitation, 0.077 for the spectral crosstalk, and 0.792 for detection efficiency.
+
+Next, we plotted the FRET Efficiency histograms to get the final value for corrected FRET efficiency and calculate the distance between the two fluorophores. For this we selected the category *Manual Selection* which consists of all the traces with high enough quality for final analysis. Then we plotted apparent and corrected framewise *FRET Efficiency* on the *Plot Mode* respectively, and fitted the plots in each case. As you can see on :numref:`Hellenkamp_manual_app_corr_fret`, the apparent and corrected FRET efficiencies obtained via manual analysis are 0.22 and 0.18 respectively.
+
 .. figure:: ./../../figures/examples/PA_Hellenkamp_manual_app_corr_fret.png
    :width: 550
    :alt: Hellenkamp_manual_fret
