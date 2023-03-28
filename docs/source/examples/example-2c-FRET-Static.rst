@@ -171,14 +171,16 @@ In the following section you will see the automatic analysis results for the sta
 .. _summary1:
 Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   
+
+The first two plots created by Deep-LASI are the confidence level distribution for determining the number of states and states prediction with a tracewise manner resulting from the state classifier(:numref:`Hellenkamp_autom_state_prediction`).
+
 .. figure:: ./../../figures/examples/PA_Hellenkamp_tracewise_state_prediction.png
    :width: 500
    :alt: Hellenkamp_autom_states
    :align: center
    :name: Hellenkamp_autom_state_prediction
 
-   The Deep-LASI confidence level for determining the number of states and each state on traces
+   The Deep-LASI confidence level for determining the number of states and state values on traces
    
 .. figure:: ./../../figures/examples/PA_Hellenkamp_autom_fret_hist.png
    :width: 500
