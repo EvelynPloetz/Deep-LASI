@@ -202,6 +202,8 @@ Finally, we get all correction factors as histograms with their mean, median, an
 
    The histograms of direct excitation and spectral crosstalk correction factors reported with statistics
 
+Also the detection efficiency correction factor (gamma factor) calculated based on the mean, median, and mode values of direct excitation and spectral crosstalk factors is shown on :numref:`Hellenkamp_autocorr_gamma`. Comparing the resulting factors with what we obtained from manual analysis shows that the median values of correction factors are usually a better estimation for our data set.
+
 .. figure:: ./../../figures/examples/PA_Hellenkamp_gamma.png
    :width: 500
    :alt: Hellenkamp_autocorrection_gamma
@@ -209,6 +211,16 @@ Finally, we get all correction factors as histograms with their mean, median, an
    :name: Hellenkamp_autocorr_gamma
 
    The histograms of detection efficiency correction factor reported with statistics   
+
+Having all correction factors, we can move on to the *Histograms* tab to plot the corrected FRET efficiency and accordingly calculate the distance between the dyes. So, choosing the category *Static* with 255 traces (:numref:`Hellenkamp_autocategorized`), selecting the *FRET Efficiency (corrected)* on the *Plot Mode* panel, and setting the *Histogram Type* to be framewise, we continued with histogram normalization to *Unary (Max = 1)*, and *Gauss1* fitting. The resulting histogram is shown on :numref:``.
+
+.. figure:: ./../../figures/examples/PA_Hellenkamp_autom_corr_fret.png
+   :width: 500
+   :alt: Hellenkamp_autocorr_FRET
+   :align: center
+   :name: Hellenkamp_autocorr_FRET_Eff
+
+   Corrected FRET efficiency histogram with the fitting result after using the *Magic Button*
    
 .. -----------------------------------------------------
 
