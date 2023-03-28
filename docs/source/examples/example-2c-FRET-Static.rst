@@ -185,7 +185,7 @@ The first two plots created by Deep-LASI are the confidence level distribution f
 The next plot as shown on :numref:`Hellenkamp_autom_fret_histogram` is the FRET efficiency histogram based on observed states. At a first glance, it might seem that there are two FRET populations. This can happen because of the poor amount of statistics. If we could have more measured data, in the order of a couple thousands of single molecule traces for example, for sure the histogram will look more like consisting of only one FRET population. 
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_autom_fret_hist.png
-   :width: 500
+   :width: 400
    :alt: Hellenkamp_autom_fret
    :align: center
    :name: Hellenkamp_autom_fret_histogram
