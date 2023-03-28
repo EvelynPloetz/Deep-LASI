@@ -158,7 +158,7 @@ Next, we plotted the FRET Efficiency histograms to get the final value for corre
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the following section you will see the automatic analysis results for the static two-color ‘low-FRET’ DNA sample. For a detailed description of automatic analysis steps please see the section **Automatic data analysis and correction, 2c-FRET-Dynamic, linking**. We first need to have the traces loaded on the program, then from the *Deep Learning* tab, we clicked on *Magic Button*. The traces were categorized by the program as shown on :numref:`Hellenkamp_autocategorized`. 
+In the following section you will see the automatic analysis results for the static two-color ‘low-FRET’ DNA sample. For a detailed description of automatic analysis steps please see the section **Automatic data analysis and correction, 2c-FRET-Dynamic, linking**. We first need to have the traces loaded on the program, then from the *Deep Learning* tab, we clicked on *Magic Button*. The traces were categorized by the program as shown on :numref:`Hellenkamp_autocategorized`. The resulting histograms and FRET efficiencies are reported on the following section. 
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_DL_categories.png
    :width: 400
