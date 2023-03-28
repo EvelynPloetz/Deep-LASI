@@ -226,21 +226,22 @@ Now, knowing that the corrected FRET efficiancy is 0.164, we can calculate the d
 
 One can conclude that in the case of this published data set, the automized *Deep Learning* approach gives a more accurate result compared to the published value than manual analysis. It could be due to the fact that, especially in case of more noisy traces, manual analysis is done with some error in recognizing the correct bleaching steps or region selection to build up the correction factors and FRET efficiency histograms. Deep-LASI can give a more acceptable final result based on the more exact analysis approach of frame-wise correction factors determination.
 
-.. -----------------------------------------------------
+-----------------------------------------------------
 
- Overview - Example 2
- ------------------
- - :ref:`example-data2`
- - :ref:`data-prep2`
- - :ref:`extraction2`
- - :ref:`automatic2`
- - :ref:`manual2`
- - :ref:`summary2`
+Overview - Example 2
+------------------
+- :ref:`example-data2`
+- :ref:`data-prep2`
+- :ref:`localization2`
+- :ref:`extraction2`
+- :ref:`manual2`
+- :ref:`automatic2`
+- :ref:`summary2`
 
- -----------------------------------------------------
+--------------------------------------------------------------------
 
- Example 2
- -----------
+Example 2
+-----------
 
 ..  _example-data2:
 Sample Design: Static L-Shaped DNA Origami
