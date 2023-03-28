@@ -253,4 +253,26 @@ Sample Design: Static L-Shaped DNA Origami
 
    Workflow to create a map between both blue and red detection channels 
    
-   
+.. _data-prep2:
+Data preparation 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   
+
+.. _localization2:
+Co-Localization of Molecules
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _extraction2:
+Trace Extraction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _manual2:
+Manual data analysis and correction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _automatic2:
+Automatic data analysis and correction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _summary2:
+Plotting and Summary of Results
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
