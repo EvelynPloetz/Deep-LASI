@@ -228,19 +228,19 @@ One can conclude that in the case of this published data set, the automized *Dee
 
 .. -----------------------------------------------------
 
-.. Overview - Example 2
-.. ------------------
-.. - :ref:`example-data2`
-.. - :ref:`data-prep2`
-.. - :ref:`extraction2`
-.. - :ref:`automatic2`
-.. - :ref:`manual2`
-.. - :ref:`summary2`
+ Overview - Example 2
+ ------------------
+ - :ref:`example-data2`
+ - :ref:`data-prep2`
+ - :ref:`extraction2`
+ - :ref:`automatic2`
+ - :ref:`manual2`
+ - :ref:`summary2`
 
-.. -----------------------------------------------------
+ -----------------------------------------------------
 
-.. Example 2
-.. -----------
+ Example 2
+ -----------
 
 ..  _example-data2:
 Sample Design: Static L-Shaped DNA Origami
