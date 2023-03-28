@@ -221,7 +221,9 @@ Having all correction factors, we can move on to the *Histograms* tab to plot th
    :name: Hellenkamp_autocorr_FRET_Eff
 
    Corrected FRET efficiency histogram with the fitting result after using the *Magic Button*
-   
+
+Now, knowing that the corrected FRET efficiancy is 0.164, we can calculate the distance using the same reported :math:`R_{0}` value of 62.6  A\ :sup:`o`\. 
+
 .. -----------------------------------------------------
 
 .. Overview - Example 2
