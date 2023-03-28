@@ -192,6 +192,8 @@ The next plot as shown on :numref:`Hellenkamp_autom_fret_histogram` is the FRET 
 
    The histogram of apparent FRET efficiency averaged for each state
 
+Finally, we get all correction factors as histograms with their mean, median, and mode values reported. As you can see on :numref:`Hellenkamp_autocorr_de_ct`, the moleculewise direct excitation and spectral crosstalk are shown on the left and right panel of the figure respectively.
+
 .. figure:: ./../../figures/examples/PA_Hellenkamp_de_ct.png
    :width: 600
    :alt: Hellenkamp_autocorrection_de_ct
