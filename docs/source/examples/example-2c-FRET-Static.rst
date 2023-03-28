@@ -147,7 +147,7 @@ The values we obtained for correction factors for this published data set throug
 Next, we plotted the FRET Efficiency histograms to get the final value for corrected FRET efficiency and calculate the distance between the two fluorophores. For this we selected the category *Manual Selection* which consists of all the traces with high enough quality for final analysis. Then we plotted apparent and corrected framewise *FRET Efficiency* on the *Plot Mode* respectively, and fitted the plots in each case. As you can see on :numref:`Hellenkamp_manual_app_corr_fret`, the apparent and corrected FRET efficiencies obtained via manual analysis are 0.22 and 0.18 respectively. Based on `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_, the corrected FRET efficiency is expected to be 0.15 ± 0.02, and the value of 0.18 that we got from the manual analysis is close enough considering the quality of traces. Using the reported :math:`R_{0}` value of 62.6  A\ :sup:`o`\, we calculated the distance to be 80.6 A\ :sup:`o`\.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_manual_app_corr_fret.png
-   :width: 550
+   :width: 600
    :alt: Hellenkamp_manual_fret
    :align: center
    :name: Hellenkamp_manual_app_corr_fret
@@ -175,7 +175,7 @@ Plotting and Summary of Results
 The first two plots created by Deep-LASI are the confidence level distribution for determining the number of states and states prediction with a tracewise manner resulting from the state classifier (:numref:`Hellenkamp_autom_state_prediction`).
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_tracewise_state_prediction.png
-   :width: 500
+   :width: 550
    :alt: Hellenkamp_autom_states
    :align: center
    :name: Hellenkamp_autom_state_prediction
@@ -205,7 +205,7 @@ Finally, we get all correction factors as histograms with their mean, median, an
 Also the detection efficiency correction factor (gamma factor) calculated based on the mean, median, and mode values of direct excitation and spectral crosstalk factors is shown on :numref:`Hellenkamp_autocorr_gamma`. Comparing the resulting factors with what we obtained from manual analysis shows that the median values of correction factors are usually a better estimation for our data set.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_gamma.png
-   :width: 500
+   :width: 550
    :alt: Hellenkamp_autocorrection_gamma
    :align: center
    :name: Hellenkamp_autocorr_gamma
@@ -215,7 +215,7 @@ Also the detection efficiency correction factor (gamma factor) calculated based 
 Having all correction factors, we can move on to the *Histograms* tab to plot the corrected FRET efficiency and accordingly calculate the distance between the dyes. So, choosing the category *Static* with 255 traces (:numref:`Hellenkamp_autocategorized`), selecting the *FRET Efficiency (corrected)* on the *Plot Mode* panel, and setting the *Histogram Type* to be framewise, we continued with histogram normalization to *Unary (Max = 1)*, and *Gauss1* fitting. The resulting histogram is shown on :numref:``.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_autom_corr_fret.png
-   :width: 500
+   :width: 300
    :alt: Hellenkamp_autocorr_FRET
    :align: center
    :name: Hellenkamp_autocorr_FRET_Eff
