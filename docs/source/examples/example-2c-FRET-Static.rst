@@ -244,7 +244,7 @@ Example 2
 ..  _example-data2:
 Sample Design: Static L-Shaped DNA Origami
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The described data set in this section is from smTIRF measurements of 2-state DNA origami structures as shown on :numref:``. The origami is labeled with Atto488 (donor) and Atto647N (acceptor). Both the donor and acceptor are directly attached to the origami structure. The flexible tether, which can bind to single-stranded binding sites (on 6 and 12 o’clock positions) that has a 8 nt, 1 mismatch overhang, should not affect the energy transfer between the two fluorophores. 
+The described data set in this section is from smTIRF measurements of 2-state DNA origami structures as shown on :numref:`BR_origami_structure`. The origami is labeled with Atto488 (donor) and Atto647N (acceptor) which are both attached to the origami structure. The flexible tether, which can freely bind to single-stranded binding sites (on 6 and 12 o’clock positions) has a 8 nt, 1 mismatch overhang, and should not affect the energy transfer between the two fluorophores. 
 
 .. figure:: ./../../figures/examples/PA_BR_origami_structure.png
    :width: 450
