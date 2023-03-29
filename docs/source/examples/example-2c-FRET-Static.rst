@@ -275,7 +275,9 @@ To perform the mapping step, we used zero-mode waveguide (ZMW) as a calibration 
 
    Workflow to create a map between both blue and red detection channels 
 
-We loaded the ZMW image from the blue channel through :code:`File > Mapping > Create New Map > 1st channel`. On the opened window (:numref:`Workflow_mapping_BR_data`,A), we clicked on *Full* and *OK*. We took similar steps to open the ZMW image from the red camera. So after loading the file via :code:`File > Mapping > Create New Map > 2nd channel`(:numref:`Workflow_mapping_BR_data`,B), and checking the pattern on the preview, we clicked on *Full* and *Horizontal Flip*, and confirmed. 
+We loaded the ZMW image from the blue channel through :code:`File > Mapping > Create New Map > 1st channel`. On the opened window (:numref:`Workflow_mapping_BR_data`, A), we clicked on *Full* and *OK*. We took similar steps to open the ZMW image from the red camera. So after loading the file via :code:`File > Mapping > Create New Map > 2nd channel`(:numref:`Workflow_mapping_BR_data`, B), and checking the pattern on the preview, we clicked on *Full* and *Horizontal Flip*, and confirmed. 
+
+After loading the files, Deep-LASI shows the averaged image for each detection channel separately and automatically detects single emitters (:numref:`Workflow_mapping_BR_data`, C). The numbers of localization and potential mislocalization can be adopted using the slider below the two images. We chose Channel 1 (blue camera) as a reference, i.e., Deep-LASI warps the image from the red channel onto the blue detection channel. The result is afterwards shown in a side-by-side image that depicts the overlay of both channels before and after the mapping (:numref:`Workflow_mapping_BR_data`, D). Lastly, we saved the generated map via :code:`File > Mapping > Save Map .
 
 .. _extraction2:
 Trace Extraction
