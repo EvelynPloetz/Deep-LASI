@@ -254,13 +254,6 @@ The described data set in this section is from smTIRF measurements of 2-state DN
 
    L-shaped DNA origami structure labeled with Atto488 and Atto647N. The tether that can freely move around and bind to the two binding strands should not have an effect on the energy transfer between the blue and red dyes.
 
-.. figure:: ./../../figures/examples/PA_BR_mapping_steps.png
-   :width: 600
-   :alt: Workflow_mapping_BR
-   :align: center
-   :name: Workflow_mapping_BR_data
-
-   Workflow to create a map between both blue and red detection channels 
    
 .. _data-prep2:
 Data preparation 
@@ -269,6 +262,14 @@ Data preparation
 .. _localization2:
 Co-Localization of Molecules
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ./../../figures/examples/PA_BR_mapping_steps.png
+   :width: 600
+   :alt: Workflow_mapping_BR
+   :align: center
+   :name: Workflow_mapping_BR_data
+
+   Workflow to create a map between both blue and red detection channels 
 
 .. _extraction2:
 Trace Extraction
