@@ -252,7 +252,7 @@ The described data set in this section is from smTIRF measurements of 2-state DN
    :align: center
    :name: BR_origami_structure
 
-   L-shaped DNA origami structure labeled with Atto488 and Atto647N. The tether that can freely move around and bind to the two binding strands should not have an effect on the energy transfer between the blue and red dyes.
+   L-shaped DNA origami structure labeled with Atto488 and Atto647N. The tether that can freely move around and bind to either of the two binding strands should not have an effect on the energy transfer between the blue and red dyes.
 
    
 .. _data-prep2:
