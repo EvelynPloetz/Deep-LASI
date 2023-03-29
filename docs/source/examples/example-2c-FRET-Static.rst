@@ -284,7 +284,7 @@ Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ./../../figures/examples/PA_BR_measurement_parameters.png
-   :width: 500
+   :width: 700
    :alt: static_BR_extraction_parameters
    :align: center
    :name: static_BR_extraction
