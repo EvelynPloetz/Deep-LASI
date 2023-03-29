@@ -212,7 +212,7 @@ Also the detection efficiency correction factor (gamma factor) calculated based 
 
    The histograms of detection efficiency correction factor reported with statistics   
 
-Having all correction factors, we can move on to the *Histograms* tab to plot the corrected FRET efficiency and accordingly calculate the distance between the dyes. So, choosing the category *Static* with 255 traces (:numref:`Hellenkamp_autocategorized`), selecting the *FRET Efficiency (corrected)* on the *Plot Mode* panel, and setting the *Histogram Type* to be framewise, we continued with histogram normalization to *Unary (Max = 1)*, and *Gauss1* fitting. The resulting histogram is shown on :numref:``.
+Having all correction factors, we can move on to the *Histograms* tab to plot the corrected FRET efficiency and accordingly calculate the distance between the dyes. So, choosing the category *Static* with 255 traces (:numref:`Hellenkamp_autocategorized`), selecting the *FRET Efficiency (corrected)* on the *Plot Mode* panel, and setting the *Histogram Type* to be framewise, we continued with histogram normalization to *Unary (Max = 1)*, and *Gauss1* fitting. The resulting histogram is shown on :numref:`Hellenkamp_autocorr_FRET_Eff`.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_autom_corr_fret.png
    :width: 300
@@ -340,6 +340,8 @@ The next plot as shown on :numref:`static_BR_autom_fret_hist` is the FRET effici
 
    The histogram of apparent FRET efficiency averaged for each state
 
+Finally, we get all correction factors as histograms with their mean, median, and mode values reported. As you can see on :numref:`static_BR_autom_de_ct`, the moleculewise direct excitation and spectral crosstalk are shown on the left and right panel of the figure respectively.
+
 .. figure:: ./../../figures/examples/PA_BR_de_ct.png
    :width: 450
    :alt: static_BR_de_ct
@@ -347,7 +349,9 @@ The next plot as shown on :numref:`static_BR_autom_fret_hist` is the FRET effici
    :name: static_BR_autom_de_ct
 
    The histograms of direct excitation and spectral crosstalk correction factors reported with statistics
-   
+
+Also the detection efficiency correction factor (gamma factor) calculated based on the mean, median, and mode values of direct excitation and spectral crosstalk factors is shown on :numref:`static_BR_autom_gamma`.
+
 .. figure:: ./../../figures/examples/PA_BR_gamma.png
    :width: 450
    :alt: static_BR_gamma
@@ -355,7 +359,9 @@ The next plot as shown on :numref:`static_BR_autom_fret_hist` is the FRET effici
    :name: static_BR_autom_gamma
 
    The histograms of detection efficiency correction factor reported with statistics
-   
+
+Having all correction factors, we can move on to the Histograms tab to plot the corrected FRET efficiency. So, choosing the category Static with 304 traces (:numref:`static_BR_DL_sorted`), selecting the *FRET Efficiency (corrected)* on the *Plot Mode* panel, and setting the *Histogram Type* to be framewise, we continued with histogram normalization to *Unary (Max = 1)*, and *Gauss1* fitting. The resulting histogram is shown on :numref:`static_BR_autom_corr_fret`.
+
 .. figure:: ./../../figures/examples/PA_BR_autom_corr_fret.png
    :width: 400
    :alt: static_BR_corr_fret
