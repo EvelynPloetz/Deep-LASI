@@ -293,7 +293,9 @@ Next, we specified the experimental settings for Deep-LASI. We provided the inte
    :name: static_BR_extraction
 
    Settings for extracting the different emission channels depending on the excitation cycle.
-   
+
+In the second step, we loaded the data of the red detection channel via :code:`File > Load Image Data > 2nd channel` and selected the files. Next, we provided the experimental settings (:numref:`static_BR_extraction`, B) leaving the specified interframe time of 52.2 ms and the excitation cycle of BR unchanged. We chose the red excitation cycle by selecting the right position of the slider, and finished the read-in process by selecting the red detection channel by pressing the R button.
+
 .. _manual2:
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
