@@ -308,6 +308,14 @@ Manual data analysis and correction
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: ./../../figures/examples/PA_BR_autom_categories.png
+   :width: 400
+   :alt: static_BR_autom_sort
+   :align: center
+   :name: static_BR_DL_sorted
+
+   Categories created by DeepLASI for the static two-color DNA origami sample
+   
 .. _summary2:
 Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
