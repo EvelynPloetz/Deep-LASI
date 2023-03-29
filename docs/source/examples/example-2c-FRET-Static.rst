@@ -329,10 +329,26 @@ Plotting and Summary of Results
    The Deep-LASI confidence level for determining the number of states and state values on traces
    
 .. figure:: ./../../figures/examples/PA_BR_autom_fret_hist.png
-   :width: 600
+   :width: 400
    :alt: static_BR_autom_fret
    :align: center
    :name: static_BR_autom_fret_hist
 
    The histogram of apparent FRET efficiency averaged for each state
+   
+.. figure:: ./../../figures/examples/PA_BR_de_ct.png
+   :width: 400
+   :alt: static_BR_de_ct
+   :align: center
+   :name: static_BR_autom_de_ct
+
+   The histograms of direct excitation and spectral crosstalk correction factors reported with statistics
+   
+.. figure:: ./../../figures/examples/PA_BR_gamma.png
+   :width: 400
+   :alt: static_BR_gamma
+   :align: center
+   :name: static_BR_autom_gamma
+
+   The histograms of detection efficiency correction factor reported with statistics
    
