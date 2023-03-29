@@ -319,3 +319,12 @@ Automatic data analysis and correction
 .. _summary2:
 Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ./../../figures/examples/PA_BR_tracewise_state_prediction.png
+   :width: 400
+   :alt: static_BR_state
+   :align: center
+   :name: static_BR_state_prediction
+
+   The Deep-LASI confidence level for determining the number of states and state values on traces
+   
