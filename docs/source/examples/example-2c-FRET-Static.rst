@@ -352,3 +352,11 @@ Plotting and Summary of Results
 
    The histograms of detection efficiency correction factor reported with statistics
    
+.. figure:: ./../../figures/examples/PA_BR_autom_corr_fret.png
+   :width: 400
+   :alt: static_BR_corr_fret
+   :align: center
+   :name: static_BR_autom_corr_fret
+
+   Corrected FRET efficiency histogram with the fitting result after using the Magic Button
+   
