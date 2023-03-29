@@ -282,6 +282,7 @@ After loading the files, Deep-LASI shows the averaged image for each detection c
 .. _extraction2:
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+After the mapping step, we can load the actual single-molecule data in the next step. Since Deep-LASI permits trace extraction from raw data files with consecutive numbering, to obtain the trajectories of individual molecules depending on the laser excitation, we proceeded by reading in all raw .tif files from the experiment at once. We loaded the data of the first channel (the blue, as specified during the mapping process) via :code:`File > Load Image Data > 1st channel` and selected all the files.
 
 .. figure:: ./../../figures/examples/PA_BR_measurement_parameters.png
    :width: 700
