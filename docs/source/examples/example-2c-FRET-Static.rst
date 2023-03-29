@@ -328,3 +328,11 @@ Plotting and Summary of Results
 
    The Deep-LASI confidence level for determining the number of states and state values on traces
    
+.. figure:: ./../../figures/examples/PA_BR_autom_fret_hist.png
+   :width: 400
+   :alt: static_BR_autom_fret
+   :align: center
+   :name: static_BR_autom_fret_hist
+
+   The histogram of apparent FRET efficiency averaged for each state
+   
