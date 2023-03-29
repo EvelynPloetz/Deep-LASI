@@ -309,7 +309,7 @@ Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ./../../figures/examples/PA_BR_autom_categories.png
-   :width: 400
+   :width: 350
    :alt: static_BR_autom_sort
    :align: center
    :name: static_BR_DL_sorted
