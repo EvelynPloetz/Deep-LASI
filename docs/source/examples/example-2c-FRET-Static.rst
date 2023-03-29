@@ -337,7 +337,7 @@ Plotting and Summary of Results
    The histogram of apparent FRET efficiency averaged for each state
    
 .. figure:: ./../../figures/examples/PA_BR_de_ct.png
-   :width: 400
+   :width: 450
    :alt: static_BR_de_ct
    :align: center
    :name: static_BR_autom_de_ct
@@ -345,7 +345,7 @@ Plotting and Summary of Results
    The histograms of direct excitation and spectral crosstalk correction factors reported with statistics
    
 .. figure:: ./../../figures/examples/PA_BR_gamma.png
-   :width: 400
+   :width: 450
    :alt: static_BR_gamma
    :align: center
    :name: static_BR_autom_gamma
