@@ -282,7 +282,7 @@ After loading the files, Deep-LASI shows the averaged image for each detection c
 .. _extraction2:
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-After the mapping step, we can load the actual single-molecule data in the next step. Since Deep-LASI permits trace extraction from raw data files with consecutive numbering, to obtain the trajectories of individual molecules depending on the laser excitation, we proceeded by reading in all raw .tif files from the experiment at once. We loaded the data of the first channel (the blue, as specified during the mapping process) via :code:`File > Load Image Data > 1st channel` and selected all the files.
+After the mapping step, we can load the actual single-molecule data in the next step. Since Deep-LASI permits trace extraction from raw data files with consecutive numbering, to obtain the trajectories of individual molecules depending on the laser excitation, we proceeded by reading in all raw .tif files from the experiment at once. For more details about trace extraction, please refer to the section **./examples/example-2c-FRET-Static,linking**. We loaded the data of the first channel (the blue, as specified during the mapping process) via :code:`File > Load Image Data > 1st channel` and selected all the files.
 
 Next, we specified the experimental settings for Deep-LASI. We provided the interframe time of 52.2 ms, given by the exposure time (50 ms) and frame time (2.2 ms) together  (:numref:`static_BR_extraction`, A). Next, we specified the excitation cycle ‘BR’ by typing it in the ALEX sequence box. On the activated slider, we chose the blue excitation cycle by selecting the left position of the slider. *Previously defined frame range* is set automatically to the whole number of frames during the meaurement, but for *Limit particle detection*, we started the frame range from the 2nd one, because in our setup for the cameras triggering adjustments, the first frame is always a dark one. We finished the read-in process by selecting the blue detection channel by pressing the B button (:numref:`static_BR_extraction`, A).
 
@@ -295,6 +295,8 @@ Next, we specified the experimental settings for Deep-LASI. We provided the inte
    Settings for extracting the different emission channels depending on the excitation cycle.
 
 In the second step, we loaded the data of the red detection channel via :code:`File > Load Image Data > 2nd channel` and selected the files. Next, we provided the experimental settings (:numref:`static_BR_extraction`, B) leaving the specified interframe time of 52.2 ms and the excitation cycle of BR unchanged. We chose the red excitation cycle by selecting the right position of the slider, and finished the read-in process by selecting the red detection channel by pressing the R button.
+
+then, Deep-LASI automatically reads the raw data file-by-file, localizes molecules in the donor channel, identifies molecules in the acceptor channel by mapping, and extracts the trajectories of every molecule found depending on the excitation cycle. This process is carried out iteratively for the number of files specified and can take a while.
 
 .. _manual2:
 Manual data analysis and correction
