@@ -320,7 +320,7 @@ In the following section you will see the automatic analysis results for the sta
 .. _summary2:
 Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The first two plots created by Deep-LASI are the confidence level distribution for determining the number of states and states prediction with a tracewise manner resulting from the state classifier (:numref:`static_BR_state_prediction`).
+The first two plots created by Deep-LASI are the confidence level distribution for determining the number of states and states prediction with a tracewise manner resulting from the state classifier (:numref:`static_BR_state_prediction`). As you can see the occurence on the y axis on both graphs, having more than 1 state in the data set is negligible, and it means that we have one state, as we expected based on the DNA origami strucure. 
 
 .. figure:: ./../../figures/examples/PA_BR_tracewise_state_prediction.png
    :width: 600
