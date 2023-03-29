@@ -283,6 +283,14 @@ After loading the files, Deep-LASI shows the averaged image for each detection c
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: ./../../figures/examples/PA_BR_measurement_parameters.png
+   :width: 500
+   :alt: static_BR_extraction_parameters
+   :align: center
+   :name: static_BR_extraction
+
+   Settings for extracting the different emission channels depending on the excitation cycle.
+   
 .. _manual2:
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
