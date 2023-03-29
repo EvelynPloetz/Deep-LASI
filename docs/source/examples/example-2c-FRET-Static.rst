@@ -320,6 +320,7 @@ In the following section you will see the automatic analysis results for the sta
 .. _summary2:
 Plotting and Summary of Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The first two plots created by Deep-LASI are the confidence level distribution for determining the number of states and states prediction with a tracewise manner resulting from the state classifier (:numref:`static_BR_state_prediction`).
 
 .. figure:: ./../../figures/examples/PA_BR_tracewise_state_prediction.png
    :width: 600
@@ -330,7 +331,7 @@ Plotting and Summary of Results
    The Deep-LASI confidence level for determining the number of states and state values on traces
    
 .. figure:: ./../../figures/examples/PA_BR_autom_fret_hist.png
-   :width: 400
+   :width: 350
    :alt: static_BR_autom_fret
    :align: center
    :name: static_BR_autom_fret_hist
