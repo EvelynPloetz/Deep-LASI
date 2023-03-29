@@ -298,6 +298,8 @@ In the second step, we loaded the data of the red detection channel via :code:`F
 
 then, Deep-LASI automatically reads the raw data file-by-file, localizes molecules in the donor channel, identifies molecules in the acceptor channel by mapping, and extracts the trajectories of every molecule found depending on the excitation cycle. This process is carried out iteratively for the number of files specified and can take a while.
 
+With the threshold settings that we used, in total 7758 traces were extracted from the 99 data files for the DNA origami sample. The manual and automatic analysis steps and results are explained in the following sections. To avoid repeating the same explained analysis steps, we explain the different cases only. For a more detailed description, please refer to the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**.
+
 .. _manual2:
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
