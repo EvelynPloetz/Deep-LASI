@@ -263,6 +263,9 @@ The origami structures were measured on a smTIRF microscope with two separate EM
 .. _localization2:
 Co-Localization of Molecules
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+When using two separate detection paths like the present example, there might be the chance of some discrepancy between the cameras’ fields of view resulting from chromatic and spherical aberrations or cameras misalignment regarding to shifts, rotation, or magnification difference. To make sure that double-labeled species are detected, a correct linking of same molecule emitters across the detection channels is needed. Deep-LASI makes a coordinate transformation map to get rid of any potential difference. For more details about mapping, please refer to the section **./examples/example-2c-FRET-Static,linking**
+
+To perform the mapping step, we used zero-mode waveguide (ZMW) as a calibration pattern which was illuminated by the wide-field lamp on the microscope. The ZMW was then imaged on both channels and with the steps shown on :numref:`Workflow_mapping_BR_data`, we opened the images one by one and used them to calibrate both channels. You can take the same steps as we did with the following instructions.
 
 .. figure:: ./../../figures/examples/PA_BR_mapping_steps.png
    :width: 600
@@ -271,6 +274,8 @@ Co-Localization of Molecules
    :name: Workflow_mapping_BR_data
 
    Workflow to create a map between both blue and red detection channels 
+
+We loaded the ZMW image from the blue channel through :code:`File > Mapping > Create New Map > 1st channel`. On the opened window (:numref:`Workflow_mapping_BR_data`,A), we clicked on *Full* and *OK*. We took similar steps to open the ZMW image from the red camera. So after loading the file via :code:`File > Mapping > Create New Map > 2nd channel`(:numref:`Workflow_mapping_BR_data`,B), and checking the pattern on the preview, we clicked on *Full* and *Horizontal Flip*, and confirmed. 
 
 .. _extraction2:
 Trace Extraction
