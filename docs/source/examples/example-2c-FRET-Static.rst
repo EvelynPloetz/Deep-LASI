@@ -329,7 +329,9 @@ The first two plots created by Deep-LASI are the confidence level distribution f
    :name: static_BR_state_prediction
 
    The Deep-LASI confidence level for determining the number of states and state values on traces
-   
+
+The next plot as shown on :numref:`static_BR_autom_fret_hist` is the FRET efficiency histogram based on observed states. It shows a broad distribution of apparent FRET efficiencies around the value 0.6. This broad distribution could be due to the rather high level of noise within the current data, and it can lead to false state detection during the analysis.
+
 .. figure:: ./../../figures/examples/PA_BR_autom_fret_hist.png
    :width: 350
    :alt: static_BR_autom_fret
@@ -337,7 +339,7 @@ The first two plots created by Deep-LASI are the confidence level distribution f
    :name: static_BR_autom_fret_hist
 
    The histogram of apparent FRET efficiency averaged for each state
-   
+
 .. figure:: ./../../figures/examples/PA_BR_de_ct.png
    :width: 450
    :alt: static_BR_de_ct
