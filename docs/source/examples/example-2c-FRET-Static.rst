@@ -268,7 +268,7 @@ When using two separate detection paths like the present example, there might be
 To perform the mapping step, we used zero-mode waveguide (ZMW) as a calibration pattern which was illuminated by the wide-field lamp on the microscope. The ZMW was then imaged on both channels and with the steps shown on :numref:`Workflow_mapping_BR_data`, we opened the images one by one and used them to calibrate both channels. You can take the same steps as we did with the following instructions.
 
 .. figure:: ./../../figures/examples/PA_BR_mapping_steps.png
-   :width: 600
+   :width: 700
    :alt: Workflow_mapping_BR
    :align: center
    :name: Workflow_mapping_BR_data
