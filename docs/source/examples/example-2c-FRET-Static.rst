@@ -307,6 +307,7 @@ Manual data analysis and correction
 .. _automatic2:
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In the following section you will see the automatic analysis results for the static two-color DNA origami sample. After loading all the traces on the program, from the Deep Learning tab, we clicked on Magic Button. The traces were categorized by the program as shown on :numref:`static_BR_DL_sorted`. The resulting histograms and FRET efficiencies are reported on the following section.
 
 .. figure:: ./../../figures/examples/PA_BR_autom_categories.png
    :width: 350
