@@ -132,7 +132,7 @@ By using the Navigation slider we clicked through all the traces one by one to c
    
    Categories manually created for the static two-color 'low-FRET' DNA sample
 
-After categorization, we moved on to the *Histograms* tab to plot the results especially the apparent and corrected FRET efficiencies to compare them with the published results. For this, we first plotted and fitted correction factors as you can see on :numref:`Hellenkamp_manual_corr_factors`. For each of the plots, we chose the corresponding categoy from the *Data Selection* panel by clicking on the plus sign beside its name, followed by selecting the desired correction factor from the *Plot Mode* table. So, we first chose the category *G Alpha* and then on the *Plot Mode*, we clicked on *Direct Excitation Factor (Alpha)*. For the *Fit Method*, we chose *Gauss1*, and clicking on *Fit Plots*, we got the plot with fitting results (:numref:`Hellenkamp_manual_corr_factors`, left). We took similar steps for the other two correction factors. So, we chose the category *RR Beta* for plotting *Spectral crosstalk corr. factor (Beta)*, and *RR Gamma* for *Detection efficiency corr. factor (Gamma)* respectively. You can see the resulting plots and values for correction factors on the middle and right panels of :numref:`Hellenkamp_manual_corr_factors`.   
+After categorization, we moved on to the *Histograms* tab to plot the results especially the apparent and corrected FRET efficiencies to compare them with the published results. For this, we first plotted and fitted correction factors as you can see on :numref:`Hellenkamp_manual_corr_factors`. For each of the plots, we chose the corresponding category from the *Data Selection* panel by clicking on the plus sign beside its name, followed by selecting the desired correction factor from the *Plot Mode* table. So, we first chose the category *G Alpha* and then on the *Plot Mode*, we clicked on *Direct Excitation Factor (Alpha)*. For the *Fit Method*, we chose *Gauss1*, and clicking on *Fit Plots*, we got the plot with fitting results (:numref:`Hellenkamp_manual_corr_factors`, left). We took similar steps for the other two correction factors. So, we chose the category *RR Beta* for plotting *Spectral crosstalk corr. factor (Beta)*, and *RR Gamma* for *Detection efficiency corr. factor (Gamma)* respectively. You can see the resulting plots and values for correction factors on the middle and right panels of :numref:`Hellenkamp_manual_corr_factors`.   
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_manual_corr_factors.png
    :width: 700
@@ -306,29 +306,11 @@ With the threshold settings that we used, in total 7758 traces were extracted fr
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-By using the Navigation slider we clicked through all the traces one by one to check their individual features and attribute them to one or several categories created in the *Classification* chart. For a detailed description of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**.
+By using the Navigation slider we clicked through the first 2500 traces one by one to check their individual features and attribute them to one or several categories created in the *Classification* chart. For a detailed description of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**.
 
-After categorization, we moved on to the *Histograms* tab to plot the results especially the apparent and corrected FRET efficiencies. For this, we first plotted and fitted correction factors as you can see on :numref:`xx`. For each of the plots, we chose the corresponding categoy from the *Data Selection* panel by clicking on the plus sign beside its name, followed by selecting the desired correction factor from the *Plot Mode* table. So, we first chose the category *B Alpha* and then on the *Plot Mode*, we clicked on *Direct Excitation Factor (Alpha)*. For the *Fit Method*, we chose *Gauss1*, and clicking on *Fit Plots*, we got the plot with fitting results (:numref:`xx`, left). We took similar steps for the other two correction factors. So, we chose the category *RR Beta* for plotting *Spectral crosstalk corr. factor (Beta)*, and *RR Gamma* for *Detection efficiency corr. factor (Gamma)* respectively. You can see the resulting plots and values for correction factors on the middle and right panels of :numref:`xx`.   
+After categorization, we moved on to the *Histograms* tab to plot the results especially the apparent and corrected FRET efficiencies. For this, we first plotted and fitted correction factors. For each of the plots, we chose the corresponding category from the *Data Selection* panel by clicking on the plus sign beside its name, followed by selecting the desired correction factor from the *Plot Mode* table. So, we first chose the category *R Alpha* and then on the *Plot Mode*, we clicked on *Direct Excitation Factor (Alpha)*. For the *Fit Method*, we chose *Gauss1*, and clicking on *Fit Plots*. We took similar steps for the other two correction factors. So, we chose the category *BR Beta* for plotting *Spectral crosstalk corr. factor (Beta)*, and *BR Gamma* for *Detection efficiency corr. factor (Gamma)* respectively. Unfortunately, with 2500 traces, there were not enough statistics for the correction factors due to the noisy data set, and also unstablitiy of Atto488 dye. So, one has to click through all traces to get better histograms, but for the sake of time, we used the advantages of Deep-LASI to obtain the correction factors, and FRET efficiency as you can see on the following section.    
 
-.. figure:: ./../../figures/examples/.png
-   :width: 700
-   :alt: _corr_factors
-   :align: center
-   :name: _manual_corr_factors
-   
-   Correction factors plotted and fitted after manual categorization and region selection. From left to right, direct excitation, spectral crosstalk, and detection efficiency correction factors.
-
-The values we obtained for correction factors for this data set through manual analysis are xx for the direct excitation, xx for the spectral crosstalk, and xx for detection efficiency.
-
-Next, we plotted the FRET Efficiency histograms to get the final value for corrected FRET efficiency. For this we selected the category *Manual Selection* which consists of all the traces with high enough quality for final analysis. Then we plotted apparent and corrected framewise *FRET Efficiency* on the *Plot Mode* respectively, and fitted the plots in each case. As you can see on :numref:`xx`, the apparent and corrected FRET efficiencies obtained via manual analysis are xx and xx respectively.
-
-.. figure:: ./../../figures/examples/.png
-   :width: 600
-   :alt: _manual_fret
-   :align: center
-   :name: _manual_app_corr_fret
-   
-   Apparent and corrected FRET efficiency histograms with the fitting result after manual categorization and region selection 
+:warning: If the complete manual analysis is needed for this data, please let me know 
    
 .. _automatic2:
 Automatic data analysis and correction
