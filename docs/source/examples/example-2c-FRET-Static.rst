@@ -310,7 +310,7 @@ By using the Navigation slider we clicked through the first 2500 traces one by o
 
 After categorization, we moved on to the *Histograms* tab to plot the results especially the apparent and corrected FRET efficiencies. For this, we first plotted and fitted correction factors. For each of the plots, we chose the corresponding category from the *Data Selection* panel by clicking on the plus sign beside its name, followed by selecting the desired correction factor from the *Plot Mode* table. So, we first chose the category *R Alpha* and then on the *Plot Mode*, we clicked on *Direct Excitation Factor (Alpha)*. For the *Fit Method*, we chose *Gauss1*, and clicking on *Fit Plots*. We took similar steps for the other two correction factors. So, we chose the category *BR Beta* for plotting *Spectral crosstalk corr. factor (Beta)*, and *BR Gamma* for *Detection efficiency corr. factor (Gamma)* respectively. Unfortunately, with 2500 traces, there were not enough statistics for the correction factors due to the noisy data set, and also unstablitiy of Atto488 dye. So, one has to click through all traces to get better histograms, but for the sake of time, we used the advantages of Deep-LASI to obtain the correction factors, and FRET efficiency as you can see on the following section.    
 
-:warning: If the complete manual analysis is needed for this data, please let me know 
+:warning: If the complete manual analysis is needed for this data, please let me know:) 
    
 .. _automatic2:
 Automatic data analysis and correction
