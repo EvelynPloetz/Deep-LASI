@@ -284,10 +284,3 @@ Once all traces are analysed by *Deep-LASI* you can summarize the results by plo
 * Donor intensity
 * Bleaching times.
 
-.. figure:: ./../figures/documents/Fig_27_Fitting_Histogram.png
-   :width: 800
-   :alt: Histogramming and Fitting of distributions
-   :align: center
-   :name: histogram_results
-
-   Frame-wise FRET histogram of traces categorized as 'Dynamic'.
