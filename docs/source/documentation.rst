@@ -28,6 +28,7 @@ Overview
 - :ref:`histograms`
 - :ref:`auto-analysis`
 - :ref:`statistics`
+- :ref:`histograms`
 - :ref:`hmm`
 
 --------------------------------------------------------------------
@@ -69,6 +70,14 @@ Automated single-molecule Analysis
 Statistics
 -------------
 .. include:: docu/statistics.rst
+
+--------------------------------------------------------
+
+.. Contains section on Histograms ..
+..  _histograms:
+Histograms
+-------------
+.. include:: docu/histograms.rst
 
 --------------------------------------------------------
 
