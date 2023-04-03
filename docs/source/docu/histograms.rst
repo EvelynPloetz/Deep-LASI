@@ -25,4 +25,15 @@ As shown on :numref:`Histograms_tab_GUI`, the provided tab consists of several p
 
    The *Histogram*-GUI of Deep-LASI has several sub-windows for plotting data and fitting
 
-On the panel *Display Settings* one can choose how to show the results considering the various options provided for plotting and fitting ().
+On the panel *Display Settings* one can choose how to show the results considering the various options provided for plotting and fitting (:numref:`display-settings`).
+
+.. figure:: ./../figures/documents/PA_display_settings.png
+   :width: 500
+   :alt: histogram settings
+   :align: center
+   :name: display-settings
+
+Several options for plotting and fitting histograms on the panel *Display Settings*
+
+
+   
