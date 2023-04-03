@@ -33,7 +33,7 @@ On the panel *Display Settings* one can choose how to show the results consideri
    :align: center
    :name: display-settings
 
-Several options for plotting and fitting histograms on the panel *Display Settings*
+   Several options for plotting and fitting histograms on the panel *Display Settings*
 
 
    
