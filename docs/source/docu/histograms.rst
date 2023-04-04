@@ -25,7 +25,7 @@ As shown on :numref:`Histograms_tab_GUI`, the provided tab consists of several p
 
    The *Histogram*-GUI of Deep-LASI has several sub-windows for plotting data and fitting
 
-On the panel *Display Settings* one can choose how to show the results considering the various options provided for plotting and fitting (:numref:`display-settings`). When creating a plot including the FRET efficiency, you can choose the histogram manner to be displayed framewise, moleculewise, or both at the same time.
+On the panel *Display Settings* one can choose how to show the results considering the various options provided for plotting and fitting (:numref:`display-settings`). When creating a plot including the FRET efficiency, you can choose the histogram type to be framewise, moleculewise, or both at the same time. A framewise histogram consists of all the FRET efficiencies observed from all the detected molecules on each frame gathered from the whole measured frames, whereas a moleculewise histogram shows the distribution of average FRET efficiencies for each molecule during all the measured frames. Comparing these two types of graphs can give a hint about the presence of conformational changes in the system under study. 
 
 .. figure:: ./../figures/documents/PA_display_settings.png
    :width: 600
