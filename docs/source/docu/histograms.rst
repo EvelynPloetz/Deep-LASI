@@ -25,7 +25,7 @@ As shown on :numref:`Histograms_tab_GUI`, the provided tab consists of several p
 
    The *Histogram*-GUI of Deep-LASI has several sub-windows for plotting data and fitting
 
-On the panel *Display Settings* one can choose how to show the results considering the various options provided for plotting and fitting (:numref:`display-settings`). When creating a plot including the FRET efficiency, you can choose the histogram type to be framewise, moleculewise, or both at the same time. A framewise histogram consists of all the FRET efficiencies observed from all the detected molecules on each frame gathered from the whole measured frames, whereas a moleculewise histogram shows the distribution of average FRET efficiencies for each molecule during all the measured frames. Comparing these two types of graphs can give a hint about the presence of conformational changes in the system under study. 
+On the panel *Display Settings* one can choose how to show the results considering the various options provided for plotting and fitting (:numref:`display-settings`). When creating a plot including the FRET efficiency, you can choose the histogram type from a drop-down menu to be framewise, moleculewise, or both at the same time. A framewise histogram consists of all the FRET efficiencies observed from all the detected molecules on each frame gathered from the whole measured frames, whereas a moleculewise histogram shows the distribution of average FRET efficiencies for each molecule during all the measured frames. Comparing these two types of graphs can give a hint about the presence of conformational changes in the system under study. 
 
 .. figure:: ./../figures/documents/PA_display_settings.png
    :width: 600
@@ -35,5 +35,5 @@ On the panel *Display Settings* one can choose how to show the results consideri
 
    Various options for plotting and fitting histograms on the panel *Display Settings*
 
-
+The second drop-down menu on :numref:`display-settings` includes options about plot normalization. Depending on your purpose of data visualization, you can decide on showing the *Y* axis without any change, so reporting the number of occurrences as the default. You could also normalize the histogram in two different modes. 
    
