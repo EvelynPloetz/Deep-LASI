@@ -35,5 +35,6 @@ On the panel *Display Settings* one can choose how to show the results consideri
 
    Various options for plotting and fitting histograms on the panel *Display Settings*
 
-The second drop-down menu on :numref:`display-settings` includes options about plot normalization. Depending on your purpose of data visualization, you can decide on showing the *Y* axis without any change, so reporting the number of occurrences as the default. You could also normalize the histogram in two different modes. 
+The second drop-down menu on :numref:`display-settings` includes options about plot normalization. Depending on your purpose of data visualization, you can decide on showing the *Y* axis without any change, so reporting the number of occurrences without normalization as the default option. You could also normalize the histogram in two different modes. With normalization regarding to probability, the sum of all the possible occurrences is set to one, and we get a probability distribution for the measured values. On the other hand, with the *Unary* normalization, the highest occurrence will be set to one, and the rest of the values will be shown proportionate to that maximum one. 
+
    
