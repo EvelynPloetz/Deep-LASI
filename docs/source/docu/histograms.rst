@@ -37,4 +37,8 @@ On the panel *Display Settings* one can choose how to show the results consideri
 
 The second drop-down menu on :numref:`display-settings` includes options about plot normalization. Depending on your purpose of data visualization, you can decide on showing the *Y* axis without any change, so reporting the number of occurrences without normalization as the default option. You could also normalize the histogram in two different modes. With normalization regarding to probability, the sum of all the possible occurrences is set to one, and we get a probability distribution for the measured values. On the other hand, with the *Unary* normalization, the highest occurrence will be set to one, and the rest of the values will be shown proportionate to that maximum one. 
 
-   
+On the *Fit Method* drop-down menu, a long list of fitting options is provided to cover a wide range of distribution functions and describe the measured system more precisely. The default is always set to *No fit*, and the first option is to fit the histogram with a Gaussian function up to three populations. Single and double exponential functions, polynomial function up to five degrees, Weibull distribution, and also first and second power functions are the other fitting options provided (:numref:`display-settings`).
+
+
+
+
