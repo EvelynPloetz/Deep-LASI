@@ -54,7 +54,7 @@ With all the settings, you can click on *Fit Plots* and get the fitting results 
 When you create a plot, the table *Plot Settings* on the left bottom of the window (:numref:`plot-settings-table`) also gets updated. It shows any category that you selected for plotting from which you can choose to be on the plot by checking or unchecking the filtering box on the left side. The third column is to show the number of traces in the present category. The fourth column is to determine the desired color for each plot. By clicking on the colored box, you can set the color as you wish.  
 
 .. figure:: ./../figures/documents/PA_plot_settings_table.png
-   :width: 450
+   :width: 500
    :alt: plot settings
    :align: center
    :name: plot-settings-table
@@ -64,7 +64,7 @@ When you create a plot, the table *Plot Settings* on the left bottom of the wind
 Clicking on the colored box, opens a window like the left one on :numref:`plot-color_settings`, letting the user choose a color from the standard ones offered by the program. The recently used colors and a preview of the current choice are also displayed. In case one likes to set a color different from the provided one, by clicking on the top right corner, the window for custom colors will open with various options. You can use any of the sliders to choose a desired region of colors. There is also a drop-down menu with four options including: RGB with the scale 0 to 1 which is the default, RGB with the scale 0 to 255, Hex, and HSV. In each selected case, the user has the freedom to set different coloring values or codes.  
 
 .. figure:: ./../figures/documents/PA_plot_color.png
-   :width: 400
+   :width: 450
    :alt: plot color
    :align: center
    :name: plot-color_settings
