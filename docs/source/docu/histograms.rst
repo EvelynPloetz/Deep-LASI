@@ -54,7 +54,7 @@ With all the settings, you can click on *Fit Plots* and get the fitting results 
 When you create a plot, the table *Plot Settings* on the left bottom of the window (:numref:`plot-settings-table`) also gets updated.
 
 .. figure:: ./../figures/documents/PA_plot_settings_table.png
-   :width: 300
+   :width: 450
    :alt: plot settings
    :align: center
    :name: plot-settings-table
