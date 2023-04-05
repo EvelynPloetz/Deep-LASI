@@ -51,7 +51,7 @@ With all the settings, you can click on *Fit Plots* and get the fitting results 
 
    The fitting results table at the bottom of the histograms tab main-GUI
 
-When you create a plot, the table *Plot Settings* on the left bottom of the window (:numref:`plot-settings-table`) also gets updated.
+When you create a plot, the table *Plot Settings* on the left bottom of the window (:numref:`plot-settings-table`) also gets updated. It shows any category that you selected for plotting from which you can choose to be on the plot by checking or unchecking the filtering box on the left side. The third column is to show the number of traces in the present category. The fourth column is to determine the desired color for each plot. By clicking on the colored box, you can set the color as you wish.  
 
 .. figure:: ./../figures/documents/PA_plot_settings_table.png
    :width: 450
@@ -61,3 +61,4 @@ When you create a plot, the table *Plot Settings* on the left bottom of the wind
 
    The table for adjusting plot settings 
    
+
