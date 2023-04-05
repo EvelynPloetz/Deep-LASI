@@ -39,6 +39,6 @@ The second drop-down menu on :numref:`display-settings` includes options about p
 
 On the *Fit Method* drop-down menu, a long list of fitting options is provided to cover a wide range of distribution functions and describe the measured system more precisely. The default is always set to *No fit*, and the first option is to fit the histogram with a Gaussian function up to three populations. Single and double exponential functions, polynomial function up to five degrees, Weibull distribution, and also first and second power functions are the other fitting options provided (:numref:`display-settings`).
 
-
+When you have the fitting method selected, the next step is to set the *Fit Interval*, which you can usually use the default range set to infinite numbers unless you have a particular range of values in mind.
 
 
