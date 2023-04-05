@@ -60,5 +60,13 @@ When you create a plot, the table *Plot Settings* on the left bottom of the wind
    :name: plot-settings-table
 
    The table for adjusting plot settings 
-   
 
+
+.. figure:: ./../figures/documents/PA_plot_color.png
+   :width: 400
+   :alt: plot color
+   :align: center
+   :name: plot-color_settings
+
+   The GUI to choose the desired colors for plotting
+   
