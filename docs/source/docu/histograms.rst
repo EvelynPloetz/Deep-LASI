@@ -51,13 +51,13 @@ With all the settings, you can click on *Fit Plots* and get the fitting results 
 
    The fitting results table at the bottom of the histograms tab main-GUI
 
-When you create a plot, the table *Plot Settings* on the left bottom of the window (:numref:``) also gets updated.
+When you create a plot, the table *Plot Settings* on the left bottom of the window (:numref:`plot-settings-table`) also gets updated.
 
-.. figure:: ./../figures/documents/.png
+.. figure:: ./../figures/documents/PA_plot_settings_table.png
    :width: 300
    :alt: plot settings
    :align: center
    :name: plot-settings-table
 
-   The
+   The table for adjusting plot settings 
    
