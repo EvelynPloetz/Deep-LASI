@@ -41,4 +41,6 @@ On the *Fit Method* drop-down menu, a long list of fitting options is provided t
 
 When you have the fitting method selected, the next step is to set the *Fit Interval*, which you can usually use the default range set to infinite numbers unless you have a particular range of values in mind.
 
+Finally, you can change the number of bins for plotted histogram(s) depending on the statistics you got. All the options provided on this whole GUI can be updated any time later while handling and fitting the plots. 
+
 
