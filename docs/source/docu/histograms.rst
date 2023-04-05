@@ -41,8 +41,14 @@ On the *Fit Method* drop-down menu, a long list of fitting options is provided t
 
 When you have the fitting method selected, the next step is to set the *Fit Interval*, which you can usually use the default range set to infinite numbers unless you have a particular range of values in mind. Finally, you can change the number of bins for plotted histogram(s) depending on the statistics you get. 
 
-With all the settings, you can click on *Fit Plots* and get the fitting results on the allocated panel as you can see on :numref:`Histograms_tab_GUI` on the bottom. Sometimes fitting does not happen successfully at first, meaning that the software might fail to fit on the first attempt. In such a case, based on the fitting method and the approximate values visible on the plot, we can guide the fitting closer to the correct values, and then let Deep-LASI do it more exactly. As an example, if you had chosen *Gauss1*, a table like :numref:`Histograms_tab_GUI` would be produced to report the fitting results. In case fitting was not performed, you will get a message as *Fit failed*, and you can try to fix this issue manually.
+With all the settings, you can click on *Fit Plots* and get the fitting results on the allocated panel as you can see on :numref:`Histograms_tab_GUI` at the bottom. Sometimes fitting does not happen successfully at first, meaning that the software might fail to fit on the first attempt. In such a case, based on the fitting method and the approximate values visible on the plot, we can guide the fitting closer to the correct values, and then let Deep-LASI do it more exactly. As an example, if you had chosen *Gauss1*, a table like :numref:`Histograms_tab_GUI` would be produced to report the fitting results. In case fitting was not performed, you will get a message as *Fit failed*, and you can try to fix this issue manually.
 
+.. figure:: ./../figures/documents/PA_fitting_result_table.png
+   :width: 400
+   :alt: fitting parameters
+   :align: center
+   :name: fitting-parameters-table
 
+   The fitting results table at the bottom of the histograms tab main-GUI
 
 
