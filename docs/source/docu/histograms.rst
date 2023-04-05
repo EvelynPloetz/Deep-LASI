@@ -15,7 +15,7 @@ After having traces categorized with selected regions on each trace, in order to
 
    The *Histograms* tab on the main-GUI of DeepLASI
 
-As shown on :numref:`Histograms_tab_GUI`, the provided tab consists of several panels. The panel *Plots* displays any created graph(s), and in case of fitting them, also fitting results attached to the plot(s).   
+As shown on :numref:`Histograms_tab_GUI`, the provided tab consists of several panels. The panel *Plots* displays any created graph(s), and in case of fitting them, also fitting results attached to the plot(s). The panel *Data Selection* shows the same categories created before with the number of traces on each category. On the section *Plot Mode*, you can choose the desired parameter to be plotted. The provided list of parameters includes apparent and corrected FRET efficiencies, detection efficiency correction factor (gamma), spectral crosstalk and direct excitation correction factors, and stoichiometry in the both apparent and corrected FRET efficiency cases. All the options provided on this whole GUI can be updated any time later while handling and fitting the plots.   
 
 .. figure:: ./../figures/documents/PA_histogram_GUI.png
    :width: 600
@@ -23,9 +23,7 @@ As shown on :numref:`Histograms_tab_GUI`, the provided tab consists of several p
    :align: center
    :name: Histograms_tab_GUI
 
-   The *Histogram*-GUI of Deep-LASI has several sub-windows for plotting data and fitting
-
-The panel *Data Selection* shows the same categories created before with the number of traces on each category. On the section *Plot Mode*, you can choose the desired parameter to be plotted. The provided list of parameters includes apparent and corrected FRET efficiencies, detection efficiency correction factor (gamma), spectral crosstalk and direct excitation correction factors, and stoichiometry in the both apparent and corrected FRET efficiency cases. All the options provided on this whole GUI can be updated any time later while handling and fitting the plots. 
+   The *Histogram*-GUI of Deep-LASI has several sub-windows for plotting data and fitting 
 
 On the panel *Display Settings* one can choose how to show the results considering the various options provided for plotting and fitting (:numref:`display-settings`). When creating a plot including the FRET efficiency, you can choose the histogram type from a drop-down menu to be framewise, moleculewise, or both at the same time. A framewise histogram consists of all the FRET efficiencies observed from all the detected molecules on each frame gathered from the whole measured frames, whereas a moleculewise histogram shows the distribution of average FRET efficiencies for each molecule during all the measured frames. Comparing these two types of graphs can give a hint about the presence of conformational changes in the system under study. 
 
@@ -53,4 +51,13 @@ With all the settings, you can click on *Fit Plots* and get the fitting results 
 
    The fitting results table at the bottom of the histograms tab main-GUI
 
+When you create a plot, the table *Plot Settings* on the left bottom of the window (:numref:``) also gets updated.
 
+.. figure:: ./../figures/documents/.png
+   :width: 300
+   :alt: plot settings
+   :align: center
+   :name: plot-settings-table
+
+   The
+   
