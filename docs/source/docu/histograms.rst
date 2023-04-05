@@ -69,5 +69,5 @@ Clicking on the colored box, opens a window like the left one on :numref:`plot-c
    :align: center
    :name: plot-color_settings
 
-   The GUI to choose the desired colors for plotting
+   The GUI for setting the desired colors for plotting
    
