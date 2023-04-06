@@ -276,8 +276,8 @@ The program can be downloaded from the `Repository <https://gitlab.com/simon71/d
 This *GitLab* repository contains:
 
 * *source*: the open-source version of *Deep-LASI*
-* *standalone versions*: the compiled version for Windows and Mac
-* *demos*: Some example data the users can use to try out *Deep-LASI*'s functionalities.
+* *standalone versions*: the compiled versions for Windows and Mac
+* *demos*: Some example data that users can use to try out *Deep-LASI*'s functionalities.
 
 Installing the stand-alone version of *Deep-LASI*
 ~~~~~~~~~~~~~~~
