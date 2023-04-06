@@ -33,7 +33,7 @@ one or multiple detection channels for different laser excitation schemes. Choos
 
 **Hierarchical Data Format 5 (.hdf5)**
 
-To analyze data files from localization microscopy extracted and generated with `Picasso <https://picassosr.readthedocs.io/en/latest/index.html>`_, we extended *Deep-LASI* also to read in the binary file format Photon-HDF5 (*.hdf5*) as described on `http://photon-hdf5.github.io <http://photon-hdf5.github.io>`_. For every localization event the raw photon stream is loaded while missing localizations default to 0 intensity.
+To analyze data files from localization microscopy extracted and generated with `Picasso <https://picassosr.readthedocs.io/en/latest/index.html>`_, we extended *Deep-LASI* also to read in the binary file format Photon-HDF5 (*.hdf5*) as described on `http://photon-hdf5.github.io <http://photon-hdf5.github.io>`_. For every localization event the raw photon stream is loaded, while missing localizations set the default to 0 intensity.
 
 ..  _custom-files:
 **Custom file formats**
