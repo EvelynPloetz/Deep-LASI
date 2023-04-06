@@ -310,7 +310,7 @@ You can obtain and update *Deep-LASI* either by download from *Gitlab*, using th
     * For Windows, download and install *Git* from https://git-for-windows.github.io/ .
 #. Clone the repository of *Deep-LASI* to create a local copy in the folder *DeepLASI*
     * For cloning a first copy, type in your terminal: |br| :code:`git clone https://gitlab.com/simon71/deeplasi.git DeepLASI`
-    * For updating, simply type :code:`git pull` to obtain the latest version and changes.
+    * For updating, simply type :code:`!git pull` to obtain the latest version and changes.
 
 **Download and update *Deep-LASI* using the *MATLAB Git Integration* **
 
