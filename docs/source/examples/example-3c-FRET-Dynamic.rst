@@ -91,7 +91,7 @@ Then on the *Extraction* tab the detected particles will be marked inside blue t
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In order to extract the traces, we continued like the section **Trace Extraction, 2c-FRET-Dynamic, linking**, with the only difference in the *Frame Selection* part, that we left it to be from 2 to 3000, and in total 7990 traces were extracted. An example of the extracted traces is shown on :numref:`3c_trace_n2665`. Here you can see three panels, the upper two ones are fluorescence intensity traces, and the lowest one is the trace of FRET efficiency.
+In order to extract the traces, we continued like the section :ref:`extraction_2c_d`, with the only difference in the *Frame Selection* part, that we left it to be from 2 to 3000, and in total 7990 traces were extracted. An example of the extracted traces is shown on :numref:`3c_trace_n2665`. Here you can see three panels, the upper two ones are fluorescence intensity traces, and the lowest one is the trace of FRET efficiency.
 
 .. figure:: ./../../figures/examples/4_3c_trace_2665.png
    :width: 750
@@ -107,7 +107,7 @@ The first panel shows the intensity traces from all channels after blue laser ex
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For a detailed description of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**. The analysis steps are mostly the same, and if there is any special case for the three-color data, it will be explained here, otherwise the final results will be shown. As explained for the two-color data, you can select the active region for each dye on each trace by pressing 1, 2, and 3 because of having three individual channels now, and then drag the cursor to select the desired region. You can see an example of a 3C trace with the regions selected on the upper two panels on :numref:`3c_trace_regions`. The FRET efficiency trace is automatically shadowed during the time range that all the three dyes are active. Pressing the *E* key also works for region selection and categorization by the program.  
+For a detailed description of manual analysis steps please see the section :ref:`manual_2c_d`. The analysis steps are mostly the same, and if there is any special case for the three-color data, it will be explained here, otherwise the final results will be shown. As explained for the two-color data, you can select the active region for each dye on each trace by pressing 1, 2, and 3 because of having three individual channels now, and then drag the cursor to select the desired region. You can see an example of a 3C trace with the regions selected on the upper two panels on :numref:`3c_trace_regions`. The FRET efficiency trace is automatically shadowed during the time range that all the three dyes are active. Pressing the *E* key also works for region selection and categorization by the program.  
 
 .. figure:: ./../../figures/examples/5_3c_trace_regions.png
    :width: 750
@@ -133,7 +133,7 @@ The HMM tab on the DeepLASI works properly for the two-color data. In the case o
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the following section you can see the automated analysis steps for dynamic 3-color smFRET data. This part is also very similar to the section **Automatic data analysis and correction, 2c-FRET-Dynamic, linking**, so please have a look at that part first, and try to take the similar steps to analyze the current data. Although, any difference between the 2 and 3 color cases will be explained here.
+In the following section you can see the automated analysis steps for dynamic 3-color smFRET data. This part is also very similar to the section :ref:`automatic_2c_d`, so please have a look at that part first, and try to take the similar steps to analyze the current data. Although, any difference between the 2 and 3 color cases will be explained here.
 
 So, we first load the extracted traces to be analyzed. To start the automatic analysis, we first clicked on the button *Deep Learning*. You can now click on *Magic Button*, or perform the automatic analysis in several separate steps. For the latter case, the program will ask you to choose the neural network model like :numref:`3c_categorization_model`. As shown on the figure, we selected the *3-color ALEX* and clicked on *OK*.
 
