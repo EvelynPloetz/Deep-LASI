@@ -224,6 +224,7 @@ Depending on the data size, the extraction step might take some time from a coup
    Exemplary trace for a two-color smTIRF measurement, and all different panels on the *Traces* tab
    
 ..  _manual_2c_d:
+
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
