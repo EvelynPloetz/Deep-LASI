@@ -25,7 +25,6 @@ Overview
 - :ref:`man-selection`
 - :ref:`correction_factors`
 - :ref:`hmm_fret`
-- :ref:`histograms`
 - :ref:`auto-analysis`
 - :ref:`statistics`
 - :ref:`histograms`
