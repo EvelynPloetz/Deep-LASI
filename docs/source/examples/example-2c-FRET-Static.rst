@@ -300,13 +300,13 @@ In the second step, we loaded the data of the red detection channel via :code:`F
 
 then, Deep-LASI automatically reads the raw data file-by-file, localizes molecules in the donor channel, identifies molecules in the acceptor channel by mapping, and extracts the trajectories of every molecule found depending on the excitation cycle. This process is carried out iteratively for the number of files specified and can take a while.
 
-With the threshold settings that we used, in total 7758 traces were extracted from the 99 data files for the DNA origami sample. The manual and automatic analysis steps and results are explained in the following sections. To avoid repeating the same explained analysis steps, we explain the different cases only. For a more detailed description, please refer to the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**.
+With the threshold settings that we used, in total 7758 traces were extracted from the 99 data files for the DNA origami sample. The manual and automatic analysis steps and results are explained in the following sections. To avoid repeating the same explained analysis steps, we explain the different cases only
 
 .. _manual2:
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-By using the Navigation slider we clicked through the first 2500 traces one by one to check their individual features and attribute them to one or several categories created in the *Classification* chart. For a detailed description of manual analysis steps please see the section **Manual data analysis and correction, 2c-FRET-Dynamic, linking**.
+By using the Navigation slider we clicked through the first 2500 traces one by one to check their individual features and attribute them to one or several categories created in the *Classification* chart. For a detailed description of manual analysis steps please see the section :ref:`manual_2c_d`.
 
 After categorization, we moved on to the *Histograms* tab to plot the results especially the apparent and corrected FRET efficiencies. For this, we first plotted and fitted correction factors. For each of the plots, we chose the corresponding category from the *Data Selection* panel by clicking on the plus sign beside its name, followed by selecting the desired correction factor from the *Plot Mode* table. So, we first chose the category *R Alpha* and then on the *Plot Mode*, we clicked on *Direct Excitation Factor (Alpha)*. For the *Fit Method*, we chose *Gauss1*, and clicking on *Fit Plots*. We took similar steps for the other two correction factors. So, we chose the category *BR Beta* for plotting *Spectral crosstalk corr. factor (Beta)*, and *BR Gamma* for *Detection efficiency corr. factor (Gamma)* respectively. Unfortunately, with 2500 traces, there were not enough statistics for the correction factors due to the noisy data set, and also unstablitiy of Atto488 dye. So, one has to click through all traces to get better histograms, but for the sake of time, we used the advantages of Deep-LASI to obtain the correction factors, and FRET efficiency as you can see on the following section.    
 
