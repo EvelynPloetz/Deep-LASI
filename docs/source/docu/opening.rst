@@ -16,7 +16,7 @@ To evaluate your experimental data with *Deep-LASI*, please open the program fro
 
    The Main-GUI of *Deep-LASI* has six sub-windows for data processing and analysis.
 
-*Deep-LASI* shows one empty Main-GUI together with six integrated sub-windows for analyzing the data and one menubar for handling the data reading, the settings of the program, the simulation of single-molecule data, and training of (new) neural networks.
+*Deep-LASI* shows one empty Main-GUI together with six integrated sub-windows for analyzing the data and one menubar for handling the data reading, the settings of the program, the simulation of single-molecule data, and training (new) neural networks.
 
 -----------------------------------------------
 
