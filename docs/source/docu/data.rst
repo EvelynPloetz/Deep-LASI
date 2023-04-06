@@ -55,7 +55,7 @@ For data import and storage, *Deep-LASI* saves and handles three further file ty
    *.npz,   "File containing simulated traces"
 
 Files ending with *.mat* contain extracted or already imported traces. Mat-Files are the standard format by *Deep-LASI* using the MATLAB Data format.
-How to access and, or read, this data externally is described in more detail in :ref:`data-structure`.
+How to access and/or read, this data externally is described in more detail in :ref:`data-structure`.
 
 Files ending with *.tdat are generated after mapping different detection channels. They contain information about how camera images between different channels refer to each other, i.e., about potential translational and rotational offsets, as well as differences in magnification. :ref:`mapping` files are generated before trace extraction, usually via a separate movie showing a calibration pattern or multi-labeled particles, and used for matching single-molecule co-localizations between different channels.
 
