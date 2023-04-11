@@ -158,13 +158,13 @@ After loading, use the threshold bar below the loaded image to make sure that en
 
 Once you have loaded all mapping images to assign the detection windows, please select afterward which channel you prefer to be the reference channel, as shown in :numref:`mapping_start`. In most cases, the first channel is taken as the reference unless you have a special mapping plan. In the case that you experience a lot of photo-bleaching, mapping onto the channels with the most emitters might be advisable.
 
-.. figure:: ./../figures/documents/Fig_9_Mapping_Starting.png
+.. figure:: ./../figures/documents/mapping_starting.png
    :width: 800
    :alt: start mapping
    :align: center
    :name: mapping_start
 
-   Performing the mapping step.
+   Performing the mapping step
 
 Once you confirm your selection by clicking on **Start Mapping**, *Deep-LASI* aligns the different channels compared to the chosen reference channel and warps the presented images. *Deep-LASI* describes this mapping process by an affine transformation matrix, taking translation, rotation, and scaling into account.
 
