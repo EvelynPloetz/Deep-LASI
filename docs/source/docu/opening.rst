@@ -229,7 +229,7 @@ Please specify the sequence of the laser excitation using the letters B (blue), 
 
 Next, please choose which frames you want to load on the program using the **Load frame range** box. Depending on the experiment, you can choose the range of desired frames for detecting the particles and extracting their intensity traces. *Deep-LASI* takes all the frames by default. You can further limit the particle detection to a certain frame range, e.g., for a colocalization assay in which you used one excitation wavelength for the first 100 frames and continued with a second excitation wavelength for the rest of the measurement. As the last step here, click on the corresponding channel color to confirm the detection channel. *Deep-LASI* will open the first data file from the files being selected, as shown in :numref:`doc_particles_detection`, and display the cumulative sum of the movie for particle detection.
 
-.. figure:: ./../figures/documents/Fig_13_Detecting_Particles.png
+.. figure:: ./../figures/documents/detecting_particles.png
    :width: 500
    :alt: first channel detection
    :align: center
