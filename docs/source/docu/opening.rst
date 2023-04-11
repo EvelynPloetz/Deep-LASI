@@ -136,15 +136,15 @@ For mapping the different channels onto each other, please go to the dropdown me
 
 Next, the program will ask you to choose a file which could be an image or a series of images as a video file. This reference data should contain structures or emitters with multiple co-localization on the various cameras. This could be, for example, a cover slide with multi-colored beads or DNA origami structures with multiple labels. The emitters should be dense (but well separated) and widely spread over the entire FOV, such that aberrations in all areas of the FOV can be correctly translated between the different detection channels.
 
-.. figure:: ./../figures/documents/Fig_7_Map_Image_Uploading.png
+.. figure:: ./../figures/documents/map_image_uploading.png
    :width: 500
    :alt: map uploading
    :align: center
-   :name: channel_position
+   :name: map_image_upload
 
    Uploading first mapping image
 
-After choosing the calibration file, *Deep-LASI* opens a window (:numref:`channel_position`), which allows you to determine the correct position of the detection channel. You can use the **Channel Layout** to select the correct half of the camera or the full width of the camera. **Rotation** and **Flip** allow you to take into account if your camera image is flipped or rotated compared to your reference channel. After the selection, please confirm **OK** to open the image on the mapping tab, as shown in :numref:`channel_position`.
+After choosing the calibration file, *Deep-LASI* opens a window (:numref:`map_image_upload`), which allows you to determine the correct position of the detection channel. You can use the **Channel Layout** to select the correct half of the camera or the full width of the camera. **Rotation** and **Flip** allow you to take into account if your camera image is flipped or rotated compared to your reference channel. After the selection, please confirm **OK** to open the image on the mapping tab, as shown in :numref:`map_image_upload`.
 
 .. figure:: ./../figures/documents/Fig_8_Map_Image_Detecting.png
    :width: 500
