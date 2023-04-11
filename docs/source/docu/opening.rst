@@ -168,7 +168,7 @@ Once you have loaded all mapping images to assign the detection windows, please 
 
 Once you confirm your selection by clicking on **Start Mapping**, *Deep-LASI* aligns the different channels compared to the chosen reference channel and warps the presented images. *Deep-LASI* describes this mapping process by an affine transformation matrix, taking translation, rotation, and scaling into account.
 
-.. figure:: ./../figures/documents/Fig_10_Map_Before_After.png
+.. figure:: ./../figures/documents/map_before_after.png
    :width: 500
    :alt: check mapping
    :align: center
