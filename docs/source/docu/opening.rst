@@ -137,7 +137,7 @@ For mapping the different channels onto each other, please go to the dropdown me
 Next, the program will ask you to choose a file which could be an image or a series of images as a video file. This reference data should contain structures or emitters with multiple co-localization on the various cameras. This could be, for example, a cover slide with multi-colored beads or DNA origami structures with multiple labels. The emitters should be dense (but well separated) and widely spread over the entire FOV, such that aberrations in all areas of the FOV can be correctly translated between the different detection channels.
 
 .. figure:: ./../figures/documents/map_image_uploading.png
-   :width: 450
+   :width: 500
    :alt: map uploading
    :align: center
    :name: map_image_upload
