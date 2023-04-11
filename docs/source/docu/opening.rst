@@ -54,7 +54,7 @@ The dropdown menu *File* (:numref:`file-menu`) controls all steps, starting from
 #. **Quit** terminates the program.
 
 .. figure:: ./../figures/documents/DeepLASI_file_Menu.png
-   :width: 300
+   :width: 400
    :alt: Open file menu
    :align: center
    :name: file-menu
