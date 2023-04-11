@@ -75,7 +75,7 @@ The dropdown menu *Settings* (:numref:`settings-menu`) opens a sub-window for en
 **Dropdown Menu View.** |br|
 The third dropdown menu *View* controls the appearance and settings of the graphical interfaces on the different GUI sub-windows of *Deep-LASI*. |br|
 The sub-tab *Colormap* changes the color palette in 3D plots, e.g., on the Trace GUI surface (which shows small zoomed-in areas of 24x24 pixels) or the Extraction GUI surface (which shows the average projection of localized molecules). In both cases, localized molecules are highlighted. The default colormap is *jet*, which can be exchanged by other standard color maps from MATLAB. |br|
-The *Plot Units* sub-tab controls the y-axis of the intensity and FRET panels for individual single-molecule trajectories. Checking/unchecking the different sub-tabs immediately updates the graphical interface and the way how a single-molecule trace is displayed. The sub-tab **Plot Units** provides the following seven different settings for displaying intensities and FRET trajectories:
+The *Plot Units* sub-tab controls the y-axis of the intensity and FRET panels for individual single-molecule trajectories. Checking/unchecking the different sub-tabs immediately updates the graphical interface and the way how a single-molecule trace is displayed. The sub-tab **Plot Units** provides the following four different settings for displaying intensities and FRET trajectories:
 
 ..  csv-table:: Plot Units Entries
    :widths: 15, 200
