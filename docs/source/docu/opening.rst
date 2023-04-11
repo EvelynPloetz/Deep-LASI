@@ -267,16 +267,16 @@ Next, specify which methods for particle detection shall be employed:
 #. **Intensity Thresholding** (spatial bandpass denoising and extraction of centroids based on intensity)
 #. **Regional Maxima** (intensity thresholding with additional radial center refinement using the in-built imregionalmax function)
 
-All particle detection methods undergo a center offset refinement using gaussian filtering with a 3 pixel tolerance.
-Lastly, specify in the **Trace selection** panel which traces you wish to extract. As indicated by the colors of the triangles (:numref:`doc_find_co-localization`) for each corresponding channel, you can extract either (1) all detected emitters independent of the detection channels (e.g., donor only, acceptor only, and FRET pairs) or (2) only co-localizing molecules as indicated by the white circles (e.g., only FRET species) or (3) extract the intensity in reference to a selected channel, which could be donor only species together with FRET species. The panel **Frame selection** allows for setting the frame range in which traces shall be extracted. In the case, you wish to export the mapped single-molecule image displayed in the *Extraction* GUI before you finally extract the traces, press the *Export the Warped Image* button on the left at the bottom of the GUI. For trace extraction itself, click on the right button *Extract Traces*. *DeepLASI* will now automatically extract traces movie-by-movie-wise for the file(s) you selected earlier. This process can last several moments but is fully automatically carried out. Once the extraction process is finished, the traces are saved automatically to last used directory. You can change all following analysis states via :code:`> File > Save Traces / State`
-
-.. figure:: ./../figures/documents/Fig_16_Extraction_Settings.png
+.. figure:: ./../figures/documents/mask_settings.png
    :width: 450
    :alt: start extraction
    :align: center
    :name: doc_extraction_settings
 
-   Starting the extraction of intensity traces
+   Determining the mask settings and trace extraction method
+
+All particle detection methods undergo a center offset refinement using gaussian filtering with a 3 pixel tolerance.
+Lastly, specify in the **Trace selection** panel which traces you wish to extract. As indicated by the colors of the triangles (:numref:`doc_find_co-localization`) for each corresponding channel, you can extract either (1) all detected emitters independent of the detection channels (e.g., donor only, acceptor only, and FRET pairs) or (2) only co-localizing molecules as indicated by the white circles (e.g., only FRET species) or (3) extract the intensity in reference to a selected channel, which could be donor only species together with FRET species. The panel **Frame selection** allows for setting the frame range in which traces shall be extracted. In the case, you wish to export the mapped single-molecule image displayed in the *Extraction* GUI before you finally extract the traces, press the *Export the Warped Image* button on the left at the bottom of the GUI. For trace extraction itself, click on the right button *Extract Traces*. *DeepLASI* will now automatically extract traces movie-by-movie-wise for the file(s) you selected earlier. This process can last several moments but is fully automatically carried out. Once the extraction process is finished, the traces are saved automatically to last used directory. You can change all following analysis states via :code:`> File > Save Traces / State`
 
 .. note:: In the case that an error occurs at the end of the data extraction, try to save the extracted traces anyway. Errors were reported for certain Windows installations that we are currently investigating to solve the problem.
 
