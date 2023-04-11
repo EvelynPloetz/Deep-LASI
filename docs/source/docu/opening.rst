@@ -199,8 +199,8 @@ Extraction modes
 ~~~~~~~~~~~~~
 To start the extraction process, reload the earlier derived map via :code:`> File > Mapping > Open Map`. Once the map is successfully loaded, you are directly forwarded to the sub-GUI **Extraction** showing a detection mask created like the one shown on the top right part of :numref:`screenshot_extraction`. Alternatively, you were directly forwarded after the :ref:`mapping` process (please don't forget to save the generated map in this case before proceeding with the extraction).
 
-.. figure:: ./../figures/documents/Fig_11_Map_Saving.png
-   :width: 800
+.. figure:: ./../figures/documents/saving_map.png
+   :width: 600
    :alt: Extraction GUI Screenshot
    :align: center
    :name: screenshot_extraction
