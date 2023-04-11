@@ -237,7 +237,7 @@ Next, please choose which frames you want to load on the program using the **Loa
 
    Particle detection for the first channel data
 
-The sliders below the image allow for adjusting the brightness/contrast settings, the detection threshold to register particles, and to change between detection channels during the later extraction steps. Set the slides such that you maximize the number of detected molecules. Localized particles are marked by triangles superimposed on the image, and their localization number is shown in the black box aside from the image on the top right position.
+The sliders below the image allow for adjusting the brightness/contrast settings, the detection threshold to register particles, and to change between detection channels during the later extraction steps. Set the slides such that you maximize the number of detected molecules. Localized particles are marked by triangles superimposed on the image, and their localization number is shown in the black box aside from the image on the top right position(:numref:`doc_particles_detection`).
 
 In the next steps, please repeat loading the recorded data of the other detection channels by selecting the corresponding *.tif-files* or set of files via :code:`> File > Load Image Data > Channel 2`, etc. Each time you load image files, the pop-up window will ask you about the detection channel color to extract the data in the correct order.
 
