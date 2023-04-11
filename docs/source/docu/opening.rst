@@ -251,7 +251,7 @@ In the next steps, please repeat loading the recorded data of the other detectio
 
 As shown in :numref:`doc_second_channel`, put the slider on the second half of the slider position to indicate the second channel (the same procedure works for the third channel by putting the slider in the right position). The reasoning behind this step is again to provide the freedom to select the correct excitation. Afterward, click on the red button labeled with 'R' (as specified in the alternation cycle box to confirm the acceptor channel. After a short time the average imaging of the specified loaded frames of the second channel overlays on the image from the first one.
 
-.. figure:: ./../figures/documents/Fig_15_Detecting_Colocal.png
+.. figure:: ./../figures/documents/detecting_colocalization.png
    :width: 500
    :alt: detection of co-localization
    :align: center
