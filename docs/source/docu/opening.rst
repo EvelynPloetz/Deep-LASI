@@ -146,7 +146,7 @@ Next, the program will ask you to choose a file which could be an image or a ser
 
 After choosing the calibration file, *Deep-LASI* opens a window (:numref:`map_image_upload`), which allows you to determine the correct position of the detection channel. You can use the **Channel Layout** to select the correct half of the camera or the full width of the camera. **Rotation** and **Flip** allow you to take into account if your camera image is flipped or rotated compared to your reference channel. After the selection, please confirm **OK** to open the image on the mapping tab, as shown in :numref:`mapping_gui`.
 
-.. figure:: ./../figures/documents/Fig_8_Map_Image_Detecting.png
+.. figure:: ./../figures/documents/map_image_detecting.png
    :width: 500
    :alt: map detection
    :align: center
