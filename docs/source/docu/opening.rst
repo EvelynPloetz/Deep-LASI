@@ -154,7 +154,7 @@ After choosing the calibration file, *Deep-LASI* opens a window (:numref:`map_im
 
    Selection of recognized emitters in the first detection channel by *Deep-LASI*
 
-After loading, use the threshold bar below the loaded image to make sure that enough points are detected (indicated by the white circle) by *Deep-LASI*. Next, continue opening the following images from other detectors by selecting the :code:`> 2nd channel`, etc., via the same procedure as shown in :numref:`channel_position` and :numref:`mapping_gui`.
+After loading, use the threshold bar below the loaded image to make sure that enough points are detected (indicated by the white circle) by *Deep-LASI*. Next, continue opening the following images from other detectors by selecting the :code:`> 2nd channel`, etc., via the same procedure as shown in :numref:`map_image_upload` and :numref:`mapping_gui`.
 
 Once you have loaded all mapping images to assign the detection windows, please select afterward which channel you prefer to be the reference channel, as shown in :numref:`mapping_start`. In most cases, the first channel is taken as the reference unless you have a special mapping plan. In the case that you experience a lot of photo-bleaching, mapping onto the channels with the most emitters might be advisable.
 
