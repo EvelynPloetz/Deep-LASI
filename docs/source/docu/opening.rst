@@ -218,7 +218,7 @@ In the case of ALEX excitation, load the data files after mapping the channels, 
 Next, specify the measurement parameters of the ALEX experiment (:numref:`doc_measurement_parameters`), such as the inter-frame time and alternation cycle. The inter-frame time should include the exposure time and frame transfer time, e.g., when measuring a frame transfer time of 2.2 ms and exposure time of 50 ms by the emCCD camera, the total inter-frame time amounts to 52.2 ms.
 
 .. figure:: ./../figures/documents/measurement_parameters.png
-   :width: 400
+   :width: 500
    :alt: inserting measurement parameters
    :align: center
    :name: doc_measurement_parameters
