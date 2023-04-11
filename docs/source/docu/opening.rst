@@ -241,7 +241,7 @@ The sliders below the image allow for adjusting the brightness/contrast settings
 
 In the next steps, please repeat loading the recorded data of the other detection channels by selecting the corresponding *.tif-files* or set of files via :code:`> File > Load Image Data > Channel 2`, etc. Each time you load image files, the pop-up window will ask you about the detection channel color to extract the data in the correct order.
 
-.. figure:: ./../figures/documents/Fig_14_Measurement_Parameters_Second_Chan.png
+.. figure:: ./../figures/documents/measurement_parameters_second_chann.png
    :width: 500
    :alt: inserting second measurement parameters
    :align: center
