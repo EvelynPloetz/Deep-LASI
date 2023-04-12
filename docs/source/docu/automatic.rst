@@ -8,17 +8,9 @@
 Automatic smFRET Analysis
 ~~~~~~~~~~~~~
 
-In case you want to save time and not go through all the analysis steps manually which might take days and even weeks especially for categorizing, you can use the automated analysis provided in the **Deep Learning** tab, Figure 31. This is an additional program using pre-trained deep neural networks incorporated into *Deep-LASI*.
+In case you want to save time and not go through all the analysis steps manually which might take days and even weeks especially for categorizing, you can use the automated analysis provided in the **Deep Learning** tab (:numref:`magic button`). This is an additional program using pre-trained deep neural networks incorporated into *Deep-LASI*.
 
-.. figure:: ./../figures/documents/Fig_31_TracesTab.png
-   :width: 400
-   :alt: Deep learning tab
-   :align: center
-   :name: Deep learning tab
-
-   The automated analysis tab, **Deep Learning**
-
-The simplest way to get your final results is to click on **Magic Button** (figure 32) and the program will do all the steps of categorization, correction, and dynamics analysis for you! All neural network models are chosen automatically dependent on the number of channels in your data set. The first step is the categorization of all traces. Note, that only dynamic traces reaching the confidence threshold (editable the deep learning tab) will be included in the category 'Dynamic (filtered)' and further analyzed. The **Magic Button** carries out a series of analysis steps which you can also perform individually via the Buttons in the deep learning tab, namely:
+The simplest way to get your final results is to click on **Magic Button** (:numref:`magic button`) and the program will do all the steps of categorization, correction, and dynamics analysis for you! All neural network models are chosen automatically depending on the number of channels in your data set. The first step is the categorization of all traces. Note, that only dynamic traces reaching the confidence threshold (editable in the deep learning tab) will be included in the category 'Dynamic (filtered)' and further analyzed. The **Magic Button** carries out a series of analysis steps which you can also perform individually via the Buttons in the deep learning tab, namely:
 
 #. **Categorize Traces** (Sort all frames and traces into categories, e.g. 'Dynamic', 'Static', 'Bleached')
 #. **Autocorrect** (Extract all correction factors and calculate the corrected intensities/FRET)
