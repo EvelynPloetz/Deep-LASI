@@ -54,7 +54,7 @@ After trace classification and correction, the number of states classifier will 
 
    Number of states confidence for each trace
 
-The predictions of the number of states classifier are used for model selection of the state transition classifier, which subsequently sort all frames in the dynamic traces into state occupancy. Figures 35 and 36 show a histogram of state-wise FRET efficiency and trace-wise state confidence, respectively.
+The predictions of the number of states classifier are used for model selection of the state transition classifier, which subsequently sort all frames in the dynamic traces into state occupancy. :numref:`state prediction confidence` and :numref:`Statewise mean FRET histogram` show a histogram of trace-wise state confidence and state-wise FRET efficiency respectively.
 
 .. figure:: ./../figures/documents/Fig_35_state_transition_confidence.png
    :width: 300
