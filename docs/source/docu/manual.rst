@@ -52,10 +52,10 @@ Depending on the selected laser excitation scheme during the extraction process,
    "BI", " "
    "GG", "dark green"
    "GR", "orange"
-   "GI", "black :)"
+   "GI", "black"
    "RR", "dark red"
-   "RI", " "
-   "II", "black :)"
+   "RI", "black"
+   "II", "black"
 
 .. tip:: @Pooyeh/Simon: Please add missing colors
 
