@@ -92,5 +92,5 @@ The *fit Results* table provided on the right side of the statistics GUI, includ
    * - :math:`A_{bleach}`
      - The number of events of observed bleaching times
    * - :math:`t_{bleach,1/2}[s]`
-     - The time interval before a flourophore photo-bleaching   
+     - The time interval before a flourophore photo-bleaches  
      
