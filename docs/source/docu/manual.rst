@@ -74,7 +74,7 @@ in :numref:`categorization_table`. The **Create Boolean Category** button create
 You can also delete an unwanted category by clicking on the trash-can icon. Unchecking the filter box hides traces that are already sorted, for example, when clicking through extracted trajectories. It is especially helpful for the trash category, for example. When you assign a trace to a specific category, it will be automatically removed from the first **Uncategorized** one and added to at least one other group.
 
 .. figure:: ./../figures/documents/categories_GR_data.png
-   :width: 300
+   :width: 350
    :alt: categorization options
    :align: center
    :name: categorization_table
