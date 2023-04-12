@@ -28,7 +28,7 @@ After having the traces loaded to Deep-LASI, the *Selector Table* on the right s
 
    Statistics environment with subpanels for all channels with the same categories table
 
-You can now choose the desired category to see the histograms for each channel, and obtain the fitting results in the table *Fit Results* on the bottom right position. The fitting results table will also be divided in separate columns depending on the number of used channels. With clicking on any other category, DeepLASI will immediately update the whole panels with the fitting results. 
+You can now choose the desired category to see the histograms for each channel, and obtain the fitting results in the table *Fit Results* on the bottom right position. The fitting results table will also be divided in separate columns depending on the number of used channels. With clicking on any other category, Deep-LASI will immediately update the whole panels with the fitting results. 
 
 An example of created histograms and corresponding fits under the *Statistics* tab is depicted on :numref:`histograms_measurement_details`. The plots on each column represent the detection channel color, for example :numref:`histograms_measurement_details` shows the histograms in green, so the reported plots and values are from the data on green channel. 
 
