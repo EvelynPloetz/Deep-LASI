@@ -323,7 +323,7 @@ In the following section you will see the automatic analysis results for the sta
    :align: center
    :name: static_BR_DL_sorted
 
-   Categories created by DeepLASI for the static two-color DNA origami sample
+   Categories created by Deep-LASI for the static two-color DNA origami sample
    
 .. _summary2:
 Plotting and Summary of Results
