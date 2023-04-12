@@ -182,7 +182,7 @@ Following the definition of leakage of the donor fluorescence into the acceptor 
 
 *Deep-LASI* determines :math:`\beta_{XY;DL}` from donor-only traces or at acceptor bleaching steps from the static intensity in the donor channel and acceptor channel after the bleaching. Here, :math:`\langle I_{XX}\rangle` refers to the mean donor intensity, and :math:`\langle I_{XY}\rangle` to the mean acceptor intensity after acceptor bleaching.
 
-Lastly, the detection correction factor :math:`\gamma_{XY;DL}` is derived from traces categorized as **XY Gamma**, in which the acceptor *Y* is bleaching before the donor molecule *X*, Before determining :math:`\gamma_{XY;DL}`, the acceptor intensity :math:`I_{XY;corr}`is first corrected against direct excitation ad spectral crosstalk. Afterward, *Deep-LASI* derives the detection correction factor from the ratio of changes in the donor and acceptor emission before and after the photo-bleaching of the acceptor. The correction factor is calculated via
+Lastly, the detection correction factor :math:`\gamma_{XY;DL}` is derived from traces categorized as **XY Gamma**, in which the acceptor *Y* is bleaching before the donor molecule *X*. Before determining :math:`\gamma_{XY;DL}`, the acceptor intensity :math:`I_{XY;corr}` is first corrected against direct excitation and spectral crosstalk. Afterward, *Deep-LASI* derives the detection correction factor from the ratio of changes in the donor and acceptor emission before and after the photo-bleaching of the acceptor. The correction factor is calculated via
 
 .. math::
     \gamma_{XY;DL} = \left. \frac{\langle \Delta I_{XY;corr}\rangle}{\langle \Delta I_{XX;corr} \rangle} \right\vert_{\text{A bleaches}}
