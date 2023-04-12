@@ -61,7 +61,7 @@ When you create a plot, the table *Plot Settings* on the left bottom of the wind
 
    The table for adjusting plot settings 
 
-Clicking on the colored box, opens a window like the left one on :numref:`plot-color_settings`, letting the user choose a color from the standard ones offered by the program. The recently used colors and a preview of the current choice are also displayed. In case one likes to set a color different from the provided one, by clicking on the top right corner, the window for custom colors will open with various options. You can use any of the sliders to choose a desired region of colors. There is also a drop-down menu with four options including: RGB with the scale 0 to 1 which is the default, RGB with the scale 0 to 255, Hex, and HSV. In each selected case, the user has the freedom to set different coloring values or codes.  
+Clicking on the colored box, opens a window like the left one on :numref:`plot-color_settings`, letting the user choose a color from the standard ones offered by the program. The recently used colors and a preview of the current choice are also displayed. In case one likes to set a color different from the provided ones, by clicking on the top right corner, the window for custom colors will open with various options. You can use any of the two sliders to choose a desired region of colors. There is also a drop-down menu with four options including: RGB with the scale 0 to 1 which is the default, RGB with the scale 0 to 255, Hex, and HSV. In each selected case, the user has the freedom to set different coloring values or codes.  
 
 .. figure:: ./../figures/documents/PA_plot_color.png
    :width: 450
