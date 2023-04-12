@@ -92,4 +92,14 @@ After all neural network predictions are completed, the program asks you to choo
 
 When the TDP is generated like the example shown on :numref:`TDP`, by clicking on **Select ROI**, you can choose a cluster and obtain dynamic information about it. The mean values of dwell time, initial and final FRET, and the number of transitions appear on the next box to the right. The live fit panel below fits the selected dwell times with an exponential function. By choosing the **Fit Selection**, **Fit Upper Triangle** or **Fit Lower Triangle** you can fit the dwell times using the Curve Fitting Toolbox™ from MATLAB (not available in compiled programs!). **Plot Dwell times** will plot the dwell times of the selected transitions in a histogram. **Plot FRET** and **Plot corr. FRET** show you the histogrammed apparent and corrected FRET efficiency of the selection, respectively. In case of 3-color FRET data, the FRET efficiencies of all other dye pairs are shown as well.
 
-Magic button is the fully automated step. You may also intend to take separate and different analysis steps without the magic button. For that, you first need to load a neural network from the same table of **Trace Tools**, figure 41. First choose the closest option to your measurement from the drop-down menu on the right, and then click on **Load Neural Network**. Then with the options provided you can do the necessary analysis on your data and get the results within a couple of minutes. Note that to do the autocorrect, you should first click on **Categorize** and then click on **Autocorrect**. After having the categories made by the software, you always have the option of going through the traces, make any changes, and save the current status of the data set.
+Magic button is the fully automated step. You may also intend to take automatic but still separate and different analysis steps without the magic button. That is why a couple buttons are provided on the same table of *Deep Learning* (:numref:`magic button`). For example, if you would only like to categorize your traces, you can click on the button *Categorize Traces*. Then with the options provided (:numref:`neural_models`) you can select the closest feature of your measurement.
+analysis on your data and get the results within a couple of minutes. Note that to do the autocorrect, you should first click on **Categorize** and then click on **Autocorrect**. After having the categories made by the software, you always have the option of going through the traces, make any changes, and save the current status of the data set.
+
+.. figure:: ./../figures/documents/neural_models.png
+   :width: 300
+   :alt: neural models
+   :align: center
+   :name: neural_models
+
+   The options for selecting the closest neural model to the data under analysis 
+   
