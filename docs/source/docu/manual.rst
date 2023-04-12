@@ -82,9 +82,17 @@ You can also delete an unwanted category by clicking on the trash-can icon. Unch
 
 .. note:: You can not assign the letters **A**, **D**, or **E** to your categories. These are the keys for going to the previous trace (A) or the following trace (D). Pressing (E), triggers *Deep-LASI* to automatically find bleaching steps in traces, assign them to the corresponding bleaching group, and select the analysis region, as laid out in the section about :ref:`correction_factors`.
 
-The next frame on the GUI comprises two sub-tabs, the *Plot Layout* tab, and the *Trace tools* tab. The first one allows for hiding or displaying specific emission channels for selected excitation sources, as well as their corresponding FRET signatures, as described above. The *Trace tools* tab serves for carrying out automated trace sorting, classification, and analysis, which will be described in :ref:`auto-analysis`.
+The next frame on the GUI comprises two sub-tabs beside the *Plot Layout* tab, the *Deep Learning* and *Trace tools* tabs. The first one allows for hiding or displaying specific emission channels for selected excitation sources, as well as their corresponding FRET signatures, as described above. The *Deep Learning* tab serves for carrying out automated trace sorting, classification, and analysis, which will be described in :ref:`auto-analysis`. The *Trace Tools* tab provides you with options regarding to implement corrections on a current or the whole traces :numref:`trace_tools_table`.
 
-The *FRET controls* tab displays and controls the FRET correction factors for direct excitation, leakage, and detection sensitivity. Its functionality will be described in the section about :ref:`correction_factors`.
+.. figure:: ./../figures/documents/Trace_Tools.png
+   :width: 350
+   :alt: Trace tools
+   :align: center
+   :name: trace_tools_table
+
+   The tab *Trace Tools* provides options about implementing correction factors.
+
+The *FRET Controls* tab displays and controls the FRET correction factors for direct excitation, leakage, and detection sensitivity. Its functionality will be described in the section about :ref:`correction_factors`.
 
 ..  _man-categorization:
 Trace categorization
