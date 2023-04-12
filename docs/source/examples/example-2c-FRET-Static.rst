@@ -166,7 +166,7 @@ In the following section you will see the automatic analysis results for the sta
    :align: center
    :name: Hellenkamp_autocategorized
 
-   Categories created by DeepLASI for the static two-color 'low-FRET' DNA sample
+   Categories created by Deep-LASI for the static two-color 'low-FRET' DNA sample
 
 .. _summary1:
 Plotting and Summary of Results
