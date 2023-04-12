@@ -276,7 +276,7 @@ Next, specify which methods for particle detection shall be employed:
    Determining the mask settings and trace extraction method
 
 .. figure:: ./../figures/documents/trace_extraction_options.png
-   :width: 400
+   :width: 500
    :alt: start extraction options
    :align: center
    :name: extraction_options
