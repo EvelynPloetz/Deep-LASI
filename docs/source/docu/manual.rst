@@ -270,7 +270,7 @@ While *Deep-LASI* is running the HMM analysis, a green progress bar is shown on 
 Results for individual single-molecule traces are shown on the bottom of the *HMM*-GUI. On the left side of :numref:`hmm_fret_results`, the overlay between single FRET traces and obtained Viterbi paths is depicted. The trace-wise values for the transition probability matrix and the emission parameters are specified next to it on the right.
 
 *Global HMM* |br|
-*Deep-LASI* further allow for a global analysis of the selected traces (:numref:`hmm_fret_results_global`). In this case, the number of iterations is not set per trace, but total rounds of training steps. Similar to *Local HMM*, *Deep-LASI* updates the results tables, however, it displays the transition probability matrix and emission parameters globally - and shows them on the top left corner of the **HMM results** tab, the results per single trace (on the bottom right corner) are not provided.
+*Deep-LASI* further allows for a global analysis of the selected traces (:numref:`hmm_fret_results_global`). In this case, the number of iterations is not set per trace, but total rounds of training steps. Similar to *Local HMM*, *Deep-LASI* updates the results tables, however, it displays the transition probability matrix and emission parameters globally - and shows them on the top left corner of the **HMM results** tab, the results per single trace (on the bottom right corner) are not provided.
 
 .. figure:: ./../figures/documents/Fig_26_HMM_Results_global.png
    :width: 800
