@@ -82,7 +82,7 @@ You can also delete an unwanted category by clicking on the trash-can icon. Unch
 
 .. note:: You can not assign the letters **A**, **D**, or **E** to your categories. These are the keys for going to the previous trace (A) or the following trace (D). Pressing (E), triggers *Deep-LASI* to automatically find bleaching steps in traces, assign them to the corresponding bleaching group, and select the analysis region, as laid out in the section about :ref:`correction_factors`.
 
-The next frame on the GUI comprises two sub-tabs beside the *Plot Layout* tab, the *Deep Learning* and *Trace tools* tabs. The first one allows for hiding or displaying specific emission channels for selected excitation sources, as well as their corresponding FRET signatures, as described above. The *Deep Learning* tab serves for carrying out automated trace sorting, classification, and analysis, which will be described in :ref:`auto-analysis`. The *Trace Tools* tab provides you with options regarding to implement corrections on a current or the whole traces :numref:`trace_tools_table`.
+The next frame on the GUI comprises two sub-tabs beside the *Plot Layout* tab, the *Deep Learning* and *Trace tools* tabs. The first one allows for hiding or displaying specific emission channels for selected excitation sources, as well as their corresponding FRET signatures, as described above. The *Deep Learning* tab serves for carrying out automated trace sorting, classification, and analysis, which will be described in :ref:`auto-analysis`. The *Trace Tools* tab provides you with options regarding to implement correction factors on a current trace or the whole traces :numref:`trace_tools_table`. Apart from correcting traces, by clicking on *Reset Trace*, you can reset all the corresponding correction factors, meaning that all correction factors will be canceled on the trace, and the trace will be left as the uncorrected one. *Set Median* button, will set all the correction factors as the global median value calculated by Deep-LASI. It is helpful in case of traces that yield no correction factors themselves.   
 
 .. figure:: ./../figures/documents/Trace_Tools.png
    :width: 350
@@ -91,6 +91,8 @@ The next frame on the GUI comprises two sub-tabs beside the *Plot Layout* tab, t
    :name: trace_tools_table
 
    The tab *Trace Tools* provides options about implementing correction factors.
+
+Using the boxes *Plot X-Limit* and *Plot Y-Limit*, one can set a maximum threshold for visualizing the traces. For example, if traces are 100 seconds long on X axis, and you are interested in the first 50 seconds of it, you can type 50 in the *Plot X-Limit* box, and by pressing enter, the trace will be shown until the X value of 50. The same procedure works for the Y axis. 
 
 The *FRET Controls* tab displays and controls the FRET correction factors for direct excitation, leakage, and detection sensitivity. Its functionality will be described in the section about :ref:`correction_factors`.
 
