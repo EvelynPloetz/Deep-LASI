@@ -44,7 +44,7 @@ After trace classification, auto calculation of all available correction factors
 
    Correction factors histograms
 
-After trace classification and correction, the number of states classifier will predict the most probable number of states for each trace. The corresponding confidence values will be shown in a pop up histogram.
+After trace classification and correction, the number of states classifier will predict the most probable number of states for each trace. The corresponding confidence values will be shown in a pop up histogram like :numref:`state number`.
 
 .. figure:: ./../figures/documents/Fig_34_number_of_states_confidence.png
    :width: 300
