@@ -96,7 +96,7 @@ Magic button is the fully automated step. You may also intend to take automatic 
 analysis on your data and get the results within a couple of minutes. Note that to do the autocorrect, you should first click on **Categorize** and then click on **Autocorrect**. After having the categories made by the software, you always have the option of going through the traces, make any changes, and save the current status of the data set.
 
 .. figure:: ./../figures/documents/neural_models.png
-   :width: 300
+   :width: 250
    :alt: neural models
    :align: center
    :name: neural_models
