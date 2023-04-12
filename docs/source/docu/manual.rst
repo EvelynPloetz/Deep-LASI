@@ -61,7 +61,7 @@ Depending on the selected laser excitation scheme during the extraction process,
 
 For a *three-color measurement*, an additional panel displays the trajectories of the detected emitters after excitation with the third laser. As shown in :numref:`trace_look` on the bottom for 3c FRET with BGR laser alternation, the top panel shows three intensities trajectories for the three detection channels after blue excitation, i.e., the emission of the blue dye after blue excitation (BB) in dark blue, the emission of green dye after the blue excitation (BG) in cyan, and the emission of red dye after blue excitation (BR) in magenta. The lower panel shows the emission after green and red excitation. Similar to the two-color case, the color of the different channels will vary depending on which detection channels have been chosen during data extraction. *Deep-LASI* chooses the above-mentioned color schemes.
 
-You can choose which intensity trace shall be displayed by checking or unchecking channels in the **Plot Layout** tab in the right lower corner of the GUI. This holds also true for the FRET efficiency signature (which is displayed in the lower panel) or when selecting different regions in the traces, as described in :ref:`man-selection`. Deselecting FRET channels can become especially handy in the case of having more than one FRET pair per molecule. The **Reset Plot** button restores the default trace representation.
+You can choose which intensity trace shall be displayed by checking or unchecking channels in the **Plot Layout** tab in the right lower corner of the GUI. This holds also true for the FRET efficiency signature (which is displayed in the lower panel) or when selecting different regions in the traces, as described in :ref:`man-selection`. Deselecting FRET channels can become especially handy in the case of having more than one FRET pair per molecule. The **Reset Layout** button restores the default trace representation.
 
 *Trace analysis* |br|
 The right part of the **Traces** GUi serves for data handling. |br|
@@ -73,7 +73,7 @@ All traces are 'by default' in the **Uncategorized** group. By clicking on the p
 in :numref:`categorization_table`. The **Create Boolean Category** button creates an additional group to the *Navigation Tab* according to your selection criteria and adds the corresponding traces, which fulfill the condition to the group.
 You can also delete an unwanted category by clicking on the trash-can icon. Unchecking the filter box hides traces that are already sorted, for example, when clicking through extracted trajectories. It is especially helpful for the trash category, for example. When you assign a trace to a specific category, it will be automatically removed from the first **Uncategorized** one and added to at least one other group.
 
-.. figure:: ./../figures/documents/Fig_20_Categories.png
+.. figure:: ./../figures/documents/categories_GR_data.png
    :width: 300
    :alt: categorization options
    :align: center
