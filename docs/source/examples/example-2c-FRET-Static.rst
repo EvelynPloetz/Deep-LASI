@@ -125,7 +125,7 @@ Manual data analysis and correction
 By using the Navigation slider we clicked through all the traces one by one to check their individual features and attribute them to one or several categories created in the *Classification* chart. You can see the result of manual trace sorting on :numref:`Hellenkamp_categorized_manual`. For a detailed description of manual analysis steps please see the section :ref:`manual_2c_d`.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_manual_sorted.png
-   :width: 400
+   :width: 350
    :alt: Hellenkamp_categorized
    :align: center
    :name: Hellenkamp_categorized_manual
