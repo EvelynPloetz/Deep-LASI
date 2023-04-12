@@ -28,7 +28,7 @@ For the prediction of state transitions you have more freedom if you call the fu
 
    Deep Learning Tab with Magic Button
 
-After trace classification, auto calculation of all available correction factors is performed. Figure 33 shows the histograms of the extracted direct excitation, crosstalk and gamma factors with the corresponding median, mean, and mode values. Gamma factors are calculated 3-fold for median, mean and mode values of direct excitation and crosstalk to show you the influence of these globally used correction factors on the gamma factor. The total number of traces and frames used for the calculation of each correction factor is displayed above the histograms.
+After trace classification, auto calculation of all available correction factors is performed. :numref:`gamma factor` shows the histograms of the extracted direct excitation, crosstalk and gamma factors with the corresponding median, mean, and mode values. Gamma factors are calculated 3-fold for median, mean and mode values of direct excitation and crosstalk to show you the influence of these globally used correction factors on the gamma factor. The total number of traces and frames used for the calculation of each correction factor is displayed above the histograms.
 
 .. figure:: ./../figures/documents/Fig_33_ct_dir_autocalc.png
    :width: 300
