@@ -72,7 +72,7 @@ The predictions of the number of states classifier are used for model selection 
 
    Statewise mean FRET histogram
 
-After all neural network predictions are completed, the program asks you to choose the number of bins, the confidence threshold and the number of states categories to include in the TDP (Transition Density Plot).
+After all neural network predictions are completed, the program asks you to choose the number of bins, the confidence threshold and the number of states categories to include in the TDP (Transition Density Plot), as shown on :numref:`TDP input`.
 
 .. figure:: ./../figures/documents/Fig_37_DL_TDP_input.png
    :width: 300
