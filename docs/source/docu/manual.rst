@@ -199,9 +199,9 @@ The correction factors calculated for each trace are shown in the **FRET control
 
    (Left) Trace-wise correction factors. (Right) After clicking on 'def.' in the **FRET control** panel, a sub-window opens showing the average *global* correction factors determined from other traces. By clicking on 'use mean' or 'use mode' the *global* correction factor values will be employed instead of the locally derived ones.
 
-As shown in the right panel of :numref:`correction_factor_trace`, in this data set predominantly correction factors against leakage and detection sensitivity were obtained. This is mostly the case, when only the trajectories of co-localizing molecules have been extracted, as described in the :ref:`extraction_doc` section. To obtain a higher statistics for the correction factor against direction excitation in this case, it is advisable to also extract acceptor-only traces.
+As shown in the right panel of :numref:`correction_factor_trace`, in this data set predominantly correction factors against leakage and detection sensitivity were obtained. This is mostly the case, when only the trajectories of co-localizing molecules have been extracted, as described in the :ref:`extraction_doc` section. To obtain a higher statistics for the correction factor against direct excitation in this case, it is advisable to also extract acceptor-only traces.
 
-Once all correction factor are determined, every trace is corrected using the local, trace-wise correction factors, when available and suitable. Otherwise, the global correction factor is used. In three-color experiments, the corrected FRET efficiency for :math:`E_{YR}` is calculated first since it is required for subsequent corrections. Upon yellow excitation, the same approach is used as for two-color FRET experiments
+Once all correction factors are determined, every trace is corrected using the local, trace-wise correction factors, when available and suitable. Otherwise, the global correction factor is used. In three-color experiments, the corrected FRET efficiency for :math:`E_{YR}` is calculated first since it is required for subsequent corrections. Upon yellow excitation, the same approach is used as for two-color FRET experiments
 
 .. math::
    \begin{eqnarray}
