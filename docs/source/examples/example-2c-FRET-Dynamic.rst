@@ -51,19 +51,9 @@ The origami structures were measured on a smTIRF microscope with two separate EM
 Co-Localization of Molecules 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When using two separate detection paths like the present example, there might be the chance of some discrepancy between the cameras' fields of view resulting from chromatic and spherical aberrations or cameras misalignment regarding to shifts, rotation, or magnification difference. To make sure that double-labeled species are detected, a correct linking of same molecule emitters across the detection channels is needed. *Deep-LASI* makes a coordinate transformation map to get rid of any potential difference.
+When using two separate detection paths like the present example, there might be the chance of some discrepancy between the cameras' fields of view resulting from chromatic and spherical aberrations or cameras misalignment regarding to shifts, rotation, or magnification difference. To make sure that double-labeled species are detected, a correct linking of same molecule emitters across the detection channels is needed. *Deep-LASI* makes a coordinate transformation map to get rid of any potential difference. For more details about mapping, please refer to the section :ref:`mapping`.
 
-To perform the mapping step, we used zero-mode waveguide (ZMW) as a calibration pattern which was illuminated by the wide-field lamp on the microscope. The ZMW was then imaged on both channels and with the steps shown on :numref:`mapping menu`, we opened the images one by one and used them to calibrate both channels. You can take the same steps as we did with the following instructions.  
-
-From *file* menu, go to *Mapping*, and *Create New Map*, then click on *1st channel*. With the opened window, you can open the zmw image saved from the first channel which in our case is the *.tif* file from the donor or green camera.
-
-.. figure:: ./../../figures/examples/PA1_mapping_menu.png
-   :width: 550
-   :alt: mapping menu
-   :align: center
-   :name: mapping menu
-   
-   Mapping steps on *Deep-LASI* for loading the first channel image
+To perform the mapping step, we used a zero-mode waveguide (ZMW) as a calibration pattern which was illuminated by the wide-field lamp on the microscope. The ZMW was then imaged on both channels. Through the steps :code:`File > Mapping > Create New Map > 1st channel`, we loaded the zmw image saved from the first channel which in our case is the *.tif* file from the donor or green camera.
 
 On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW image. Here we clicked on *Full* to load the whole camera field of view. No rotation or flipping of the image was needed, so we clicked on *OK* as you can see on :numref:`first map preview`.
 
