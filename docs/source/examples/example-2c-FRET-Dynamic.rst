@@ -81,25 +81,9 @@ Now you can see both images on the corresponding panels, and they look having th
 
    Starting the mapping step after having both ZMW images loaded
 
-Mapping takes usually a couple seconds. Afterwards, *Deep-LASI* opens a *Map Result* window showing the channels overlay before and after mapping. It is recommended to check the overlay quality at this point. The result is fine most of the times like the example on :numref:`check befor_after mapping`, but if the mapping result was not satisfactory, we would capture new images from the ZMW on both cameras, and repeat the mapping step.
+Mapping takes usually a couple seconds. Afterwards, *Deep-LASI* opens a *Map Result* window showing the channels overlay before and after mapping. It is recommended to check the overlay quality at this point. The result is fine most of the times, but if the mapping result was not satisfactory, we would capture new images from the ZMW on both cameras, and repeat the mapping step.
 
-.. figure:: ./../../figures/examples/PA7_before_after_map.png
-   :width: 600
-   :alt: check mapping
-   :align: center
-   :name: check befor_after mapping 
-   
-   Mapping result showing the channels overlay before and after mapping
-
-After mapping is successfully finished, we go to mapping menu to save the map file in the data folder by clicking on *Save Map*. You can see the path on :numref:`save map file`. At a later time, if the map is needed, we can simply go to mapping menu and click on *Load Prev. Map* to open a previously saved one.  
-
-.. figure:: ./../../figures/examples/PA8_save_map.png
-   :width: 400
-   :alt: save map
-   :align: center
-   :name: save map file
-   
-   The mapping menu to save the created map or loading a previously saved one
+After mapping is successfully finished, we go to mapping menu to save the map file in the data folder through :code:`File > Mapping > Save Map`. At a later time, if the map is needed, we can simply go to mapping menu and click on :code:`File > Mapping > Load Prev. Map` to open a previously saved one, or use the shortcut *Ctrl+M*. 
    
 ..  _loading-data_2c_d:
 Loading the Data
