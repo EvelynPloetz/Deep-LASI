@@ -69,17 +69,9 @@ On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW
 
 To load the corresponding image from the second camera (the acceptor channel), we took the same steps from the file menu, this time for the second channel via :code:`File > Mapping > Create New Map > 2nd channel`. 
 
-After choosing the image file, the same *Channel Position* window will open. To have the maximum overlay to the ZMW image from the first channel, we took the whole field of view by clicking on *Full* and no rotation again. The only obvious difference is that the current image is flipped horizontally compared to the first one. You can see the mentioned difference by checking the cross sign on the already loaded image which is on the top right side (:numref:`map image flipping`, left), and compare it to the position of the cross on the new image preview, which is on the top left area (:numref:`map image flipping`, right). After checking the *Horizontal Flip* box, we clicked on *OK*.    
+After choosing the image file, the same *Channel Position* window will open. To have the maximum overlay to the ZMW image from the first channel, we took the whole field of view by clicking on *Full* and no rotation again. The only obvious difference was that the current image was flipped horizontally compared to the first one. After checking the *Horizontal Flip* box, we clicked on *OK*.    
 
-.. figure:: ./../../figures/examples/PA5_map_image_flipping.png
-   :width: 500
-   :alt: map image flip
-   :align: center
-   :name: map image flipping
-
-   Comparing and adjusting the second mapping image to the first one
-
-Now you can see both images on the corresponding panels, and they look having the same pattern at least by eye. It means that the criteria chosen for loading the mapping images were correct. On the *Mapping Controls* panel (:numref:`start 2C mapping`), we did not change the reference channel, so by default it assumes the first (donor) channel to be the reference, and will map the second channel based on the first one. Then, we clicked on *Start Mapping*. 
+Now you can see both images on the corresponding panels, and they look having the same pattern at least by eye (:numref:`start 2C mapping`). It means that the criteria chosen for loading the mapping images were correct. On the *Mapping Controls* panel, we did not change the reference channel, so by default it assumes the first (donor) channel to be the reference, and will map the second channel based on the first one. Then, we clicked on *Start Mapping*. 
 
 .. figure:: ./../../figures/examples/PA6_start_mapping.png
    :width: 500
