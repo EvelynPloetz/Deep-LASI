@@ -58,7 +58,7 @@ To perform the mapping step, we used a zero-mode waveguide (ZMW) as a calibratio
 On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW image. Here we clicked on *Full* to load the whole camera field of view. No rotation or flipping of the image was needed, so we clicked on *OK* as you can see on :numref:`first map preview`.
 
 .. figure:: ./../../figures/examples/PA2_map_image_loading.png
-   :width: 500
+   :width: 400
    :alt: map image preview
    :align: center
    :name: first map preview
