@@ -315,7 +315,7 @@ After categorization, we moved on to the *Histograms* tab to plot the results es
 .. _automatic2:
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In the following section you will see the automatic analysis results for the static two-color DNA origami sample. After loading all the traces on the program, from the Deep Learning tab, we clicked on Magic Button. The traces were categorized by the program as shown on :numref:`static_BR_DL_sorted`. The resulting histograms and FRET efficiencies are reported on the following section.
+In the following section you will see the automatic analysis results for the static two-color DNA origami sample. In case you are interested in more details about automatic analysis, please check the section :ref:`auto-analysis`. After loading all the traces on the program, from the Deep Learning tab, we clicked on Magic Button. The traces were categorized by the program as shown on :numref:`static_BR_DL_sorted`. The resulting histograms and FRET efficiencies are reported on the following section.
 
 .. figure:: ./../../figures/examples/PA_BR_autom_categories.png
    :width: 350
