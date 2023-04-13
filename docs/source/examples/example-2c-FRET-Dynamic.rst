@@ -121,15 +121,15 @@ The red emitters from the first data file appear on the same particle detection 
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-With the data files being loaded to the program, one can extract traces as the next step. For more details about trace extraction, please refer to the section :ref:`extraction_doc`. On the *Mask Settings* panel we did not change anything. For the *Method* part, we used *wavelet* for the *Particle Detection*, *Colocalized only* for the *Trace Selection*, and also left the frame range to be 2 to 2000 for the *Frame Selection*. Then we clicked on *Extract Traces*.
+With the data files being loaded to the program, one can extract traces as the next step. For more details about trace extraction, please refer to the section :ref:`extraction_doc`. On the *Mask Settings* panel we did not change anything (:numref:`extraction begin`). For the *Method* part, we used *wavelet* for the *Particle Detection*, *Colocalized only* for the *Trace Selection*, and also left the frame range to be 2 to 2000 for the *Frame Selection*. Then we clicked on *Extract Traces*.
 
-.. figure:: ./../../figures/examples/PA15_mask_and_start_extract.png
+.. figure:: ./../../figures/examples/mask_and_start_extract.png
    :width: 500
    :alt: extracting
    :align: center
    :name: extraction begin
    
-   The mask created for intensity traces extraction with adjustment options (top), and trace extraction settings (low)
+   The box for adjusting options for the detection mask, and settings for trace extraction
 
 Depending on the data size, the extraction step might take some time from a couple of minutes to hours. When it is done, a final data file with the format *.tdat* will be saved in the data folder by the program, and the first trace appears on the *Traces* tab. As you can see on :numref:`2c trace look`, the intensity-time panel shows the following four intensity traces: The total intensity in the green channel in gray, the donor emission after donor excitation in green, the acceptor emission after donor excitation in bright red, and the acceptor emission after acceptor excitation in dark red. On the middle panel you can see the mask surrounding every detected molecule across every channel. On the right you can see a total number of 6100 traces were extracted from the loaded data. Everything is now ready for us to start the manual analysis by categorizing the traces first.     
 
