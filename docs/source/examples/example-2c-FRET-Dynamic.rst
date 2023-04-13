@@ -282,8 +282,8 @@ We first clicked on *Categorize Traces*, then a window like the one on :numref:`
 
 After a short while the traces get categorized as shown on :numref:`categorized_traces`, and if you click through the traces, you can see the regions on each trace being selected by the program. The user can always go through the traces after automatically been analyzed to make desired changes, and save the changes on the data file. With automatic categorization, the bleaching steps and consequently the correction factors would also be defined in the program.  
 
-.. figure:: ./../../figures/examples/4_CategorizedTraces.png
-   :width: 600
+.. figure:: ./../../figures/examples/Automat_CategorizedTraces.png
+   :width: 500
    :alt: after_categorization
    :align: center
    :name: categorized_traces
