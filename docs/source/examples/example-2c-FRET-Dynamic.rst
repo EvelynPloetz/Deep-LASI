@@ -121,7 +121,7 @@ The red emitters from the first data file appear on the same particle detection 
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-On the *Mask Settings* panel we did not change anything (:numref:`extraction begin`). On the *Method* part, we selected *wavelet* for the *Particle Detection*, *Colocalized only* for the *Trace Selection*, and also left the frame range to be 2 to 2000 for the *Frame Selection*. Then we clicked on *Extract Traces*.
+With the data files being loaded to the program, one can extract traces as the next step. For more details about trace extraction, please refer to the section :ref:`extraction_doc`.On the *Mask Settings* panel we did not change anything (:numref:`extraction begin`). On the *Method* part, we selected *wavelet* for the *Particle Detection*, *Colocalized only* for the *Trace Selection*, and also left the frame range to be 2 to 2000 for the *Frame Selection*. Then we clicked on *Extract Traces*.
 
 .. figure:: ./../../figures/examples/PA15_mask_and_start_extract.png
    :width: 500
