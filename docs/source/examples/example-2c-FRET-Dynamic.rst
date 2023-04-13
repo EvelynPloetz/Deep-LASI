@@ -238,7 +238,7 @@ To get dynamic information about the sample, we went to *HMM* tab, selected the 
    
    Steps for running HMM on dynamic data 
 
-After a short while, the left plot of :numref:`HMM resulting graphs` appears inside the panel *Transition Density Plot*. Then we clicked on the button *Select ROI* to encircle the desired region of interest. You can draw any circle around a cluster on the plot by dragging the mouse around it as we did on the lower cluster showing transitions from high to low FRET efficiencies. On the most right panel the dwell time graph with its fit will appear giving all the fitting values. The dwell time based on the transitions cluster we selected are then 3.1 s. 
+After a short while, the left plot of :numref:`HMM resulting graphs` appears inside the panel *Transition Density Plot*. Then we clicked on the button *Select ROI* to encircle the desired region of interest. You can draw any circle around a cluster on the plot by dragging the mouse around it as we did on the upper cluster showing transitions from low to high FRET efficiencies. On the most right panel the dwell time graph with its fit will appear giving all the fitting values. The dwell time based on the transitions cluster we selected are then 3.1 s. 
 
 .. figure:: ./../../figures/examples/PA26_TDP_dwell_time.png
    :width: 600
@@ -248,7 +248,7 @@ After a short while, the left plot of :numref:`HMM resulting graphs` appears ins
    
    TDP plot with analysis options and dwell time fitting
 
-If you have been following the manual analysis steps, you might know now how much time it can take to analyze the data from one day of measurement. If such amount of time feels too much, *Deep-LASI* offers you automatic data analysis as follows.
+If you have been following the manual analysis steps, you might know now how much time it can take to analyse the data from one day of measurement. If such amount of time feels too much, *Deep-LASI* offers you automatic data analysis as follows.
 
 ..  _automatic_2c_d:
 Automatic data analysis and correction
