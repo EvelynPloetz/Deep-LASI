@@ -146,15 +146,7 @@ Depending on the data size, the extraction step might take some time from a coup
 Manual data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-By using the *Navigation* slider we clicked through the traces one by one to check their individual features and attribute them to one or several categories created in the *Classification* chart (:numref:`categorization chart`). 
-
-.. figure:: ./../../figures/examples/PA17_categorization.png
-   :width: 400
-   :alt: categorize
-   :align: center
-   :name: categorization chart
-   
-   Navigation and categorization box for traces navigation and categorization 
+For a detailed description of manual analysis steps please see the section :ref:`manual_analysis`. By using the *Navigation* slider we clicked through the traces one by one to check their individual features and attribute them to one or several categories created in the *Classification* chart. 
 
 The first step for the categorization is to make sure if we are taking the single molecule traces into account. We usually get a first hint by just looking at the masks. A single molecule being detected in the middle of the mask like the one on :numref:`mask checking` on the left is what we consider as a single molecule, and keep the corresponding trace in categories helpful for further analysis. But if you check the example on the right side of the figure, you see there are more than one molecule in the middle, also molecules sitting on the background ring will mess up with the background calculation. Either of these is enough for us to trash the trace extracted from this spot.  
 
