@@ -221,7 +221,7 @@ To get the corrected FRET efficiencies, we plotted each correction factor by cho
 To plot the corrected FRET efficiency, we selected the category *Dynamic* again, clicked on the *FRET Efficiency (corrected)*, fitted the plot with *Gauss2* fitting method, and normalized it. You can see the resulting plot on :numref:`corrected FRET hist` with the two final values of 0.141 and 0.810 for the two FRET efficiencies. 
 
 .. figure:: ./../../figures/examples/PA24_corr_FRET.png
-   :width: 400
+   :width: 300
    :alt: corr FRET
    :align: center
    :name: corrected FRET hist
