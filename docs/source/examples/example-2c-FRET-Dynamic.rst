@@ -256,17 +256,9 @@ Automatic data analysis and correction
 
 In the following section you will be guided through the automated analysis steps for dynamic 2-color smFRET data. This is an additional program using pre-trained deep neural networks which makes your analysis time way shorter and more joyful! In case you are interested in more details about automatic analysis, please check the section :ref:`auto-analysis`.
 
-To perform automated analysis, we need to load already extracted traces. Meaning that the steps described in the manual analysis section from mapping to trace extraction would be all the same. On :numref:`mainGUI` you can see the traces that were extracted and manually analyzed in the above sections. Here all the 6100 traces are in the *Uncategorized* category meaning that no analysis was performed on them. To start the automatic analysis, we first clicked on the button *Deep Learning*.   
+To perform automated analysis, we need to load already extracted traces. Meaning that the steps described in the manual analysis section from mapping to trace extraction would be all the same. So, in the present case, all the 6100 traces exist in the *Uncategorized* category meaning that no analysis was performed on them. To start the automatic analysis, we first clicked on the button *Deep Learning* on the main GUI under the tab *Traces*.
 
-.. figure:: ./../../figures/examples/1_MainGUI_click.png
-   :width: 550
-   :alt: mainGUI
-   :align: center
-   :name: mainGUI
-   
-   The main GUI of *Deep-LASI* on the *Traces* tab showing the loaded data traces
-
-On the opened panel as shown on :numref:`DeepLearning_tab` you can see the *Magic Button* in bright pink color. Now you can just click on it to enjoy the resulting graphs appearing one after another. So, all the results shown in the following parts would open at once in separate windows. But, because one could also achieve the same results with a several automatic analysis steps, depending on the analysis needs we can decide which analysis step the *Deep-LASI* should perform for us. For example, sometimes we need the *Deep-LASI* to only categorize the data, or just make the TDP plot for the dynamics of a specific category.
+On the opened panel as shown on :numref:`DeepLearning_tab` you can see the *Magic Button* in bright pink color. Now you can just click on it to enjoy the resulting graphs appearing one after another. So, all the results shown in the following parts would open at once in separate windows. But, because one could also achieve the same results with a several automatic analysis steps, depending on the analysis needs we can decide which analysis step the *Deep-LASI* should perform for us. For example, sometimes we need the *Deep-LASI* to only categorize the data, or just make the TDP plot for the dynamic information of a specific category.
 
 .. figure:: ./../../figures/examples/2_DeepLearningTab.png
    :width: 550
