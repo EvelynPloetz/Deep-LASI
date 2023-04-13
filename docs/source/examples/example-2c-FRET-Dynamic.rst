@@ -316,7 +316,7 @@ After analysis gets finished, *Deep-LASI* reports its confidence level for predi
    
    The *Deep-LASI* confidence level for determining the states on each trace
 
-Another resulting histogram is the apparent FRET efficiency to give a quick overview of the existing FRET populations. It is the mean FRET efficiency observed on the states found along the traces(:numref:`statewise-meanFRET_histogram`). 
+Another resulting histogram is the apparent FRET efficiency to give a quick overview of the existing FRET populations. It is the mean FRET efficiency observed on the states found along the traces (:numref:`statewise-meanFRET_histogram`). 
 
 .. figure:: ./../../figures/examples/7_Statewise_MeanFRET.png
    :width: 350
@@ -326,7 +326,7 @@ Another resulting histogram is the apparent FRET efficiency to give a quick over
    
    The histogram of apparent FRET efficiency averaged for each state
 
-Before the program generates the TDP plot, a window like :numref:`TDP_input` pops up to take in the desired number of bins and confidence threshold from the user. We set the number of bins to 100 and the threshold on 0, then clicked on *Generate Transition Density Plot*.
+Before the program generates the TDP plot, a window like :numref:`TDP_input` pops up to take in the desired number of bins and confidence threshold from the user. We left the number of bins to 100 and the threshold on 0, then clicked on *Generate Transition Density Plot*.
 
 .. figure:: ./../../figures/examples/8_TDP_Input_click.png
    :width: 350
@@ -339,7 +339,7 @@ Before the program generates the TDP plot, a window like :numref:`TDP_input` pop
 Then the TDP is generated like :numref:`TDP_generated`. To select the upper cluster, we first clicked on *Select ROI*, and dragged the mouse around the cluster. 
 
 .. figure:: ./../../figures/examples/9_TDP_generated_click.png
-   :width: 400
+   :width: 350
    :alt: TDP_generated
    :align: center
    :name: TDP_generated
