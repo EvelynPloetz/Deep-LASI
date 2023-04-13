@@ -147,7 +147,7 @@ The values we obtained for correction factors for this published data set throug
 Next, we plotted the FRET Efficiency histograms to get the final value for corrected FRET efficiency and calculate the distance between the two fluorophores. For this we selected the category *Manual Selection* which consists of all the traces with high enough quality for final analysis. Then we plotted apparent and corrected framewise *FRET Efficiency* on the *Plot Mode* respectively, and fitted the plots in each case. As you can see on :numref:`Hellenkamp_manual_app_corr_fret`, the apparent and corrected FRET efficiencies obtained via manual analysis are 0.22 and 0.18 respectively. Based on `Hellekamp et al., Nat. Meth (2018) <https://www.nature.com/articles/s41592-018-0085-0>`_, the corrected FRET efficiency is expected to be 0.15 ± 0.02, and the value of 0.18 that we got from the manual analysis is close enough considering the quality of traces. Using the reported :math:`R_{0}` value of 62.6  A\ :sup:`o`\, we calculated the distance to be 80.6 A\ :sup:`o`\.
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_manual_app_corr_fret.png
-   :width: 600
+   :width: 550
    :alt: Hellenkamp_manual_fret
    :align: center
    :name: Hellenkamp_manual_app_corr_fret
@@ -161,7 +161,7 @@ Automatic data analysis and correction
 In the following section you will see the automatic analysis results for the static two-color ‘low-FRET’ DNA sample. For a detailed description of automatic analysis steps please see the section :ref:`auto-analysis`. We first need to have the traces loaded on the program, then from the *Deep Learning* tab, we clicked on *Magic Button*. The traces were categorized by the program as shown on :numref:`Hellenkamp_autocategorized`. The resulting histograms and FRET efficiencies are reported on the following section. 
 
 .. figure:: ./../../figures/examples/PA_Hellenkamp_DL_categories.png
-   :width: 400
+   :width: 350
    :alt: Hellenkamp_autocategorized
    :align: center
    :name: Hellenkamp_autocategorized
@@ -341,7 +341,7 @@ The first two plots created by Deep-LASI are the confidence level distribution f
 The next plot as shown on :numref:`static_BR_autom_fret_hist` is the FRET efficiency histogram based on observed states. It shows a broad distribution of apparent FRET efficiencies around the value 0.6. This broad distribution could be due to the rather high level of noise within the current data, and it can lead to false state detection during the analysis.
 
 .. figure:: ./../../figures/examples/PA_BR_autom_fret_hist.png
-   :width: 350
+   :width: 300
    :alt: static_BR_autom_fret
    :align: center
    :name: static_BR_autom_fret_hist
@@ -371,7 +371,7 @@ Also the detection efficiency correction factor (gamma factor) calculated based 
 Having all correction factors, we can move on to the Histograms tab to plot the corrected FRET efficiency. So, choosing the category Static with 304 traces (:numref:`static_BR_DL_sorted`), selecting the *FRET Efficiency (corrected)* on the *Plot Mode* panel, and setting the *Histogram Type* to be framewise, we continued with histogram normalization to *Unary (Max = 1)*, and *Gauss1* fitting. The resulting histogram is shown on :numref:`static_BR_autom_corr_fret`.
 
 .. figure:: ./../../figures/examples/PA_BR_autom_corr_fret.png
-   :width: 400
+   :width: 350
    :alt: static_BR_corr_fret
    :align: center
    :name: static_BR_autom_corr_fret
