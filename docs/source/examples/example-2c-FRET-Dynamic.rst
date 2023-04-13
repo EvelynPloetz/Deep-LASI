@@ -65,25 +65,9 @@ On the *Channel Position* pop-up window, you can see a preview of the loaded ZMW
 
    Pop-up window for adjusting the first mapping image
 
-*Deep-LASI* shows the loaded image on the *Mapping* tab under the part *Channel1*. As you can see on :numref:`map image loaded`, the bright spots are detected with a white circle around them. You can change the detection threshold using the bar right under the image. By taking more spots into account, the mapping process would be performed more efficiently.
+*Deep-LASI* shows the loaded image on the *Mapping* tab under the part *Channel1*. As described in :ref:`mapping` section, you can change the detection threshold using the bar right under the image. By taking more spots into account, the mapping process would be performed more efficiently.
 
-.. figure:: ./../../figures/examples/PA3_map_image_loaded.png
-   :width: 500
-   :alt: map image loaded
-   :align: center
-   :name: map image loaded
-
-   The mapping image from the first channel loaded on the *Mapping* tab 
-
-To load the corresponding image from the second camera (the acceptor channel), we took the same steps from the file menu, as you can see on :numref:`second map image loading`. This time under the menu *Create New Map*, we chose the *2nd Channel*. 
-
-.. figure:: ./../../figures/examples/PA4_map_image_loading1.png
-   :width: 500
-   :alt: map image loading
-   :align: center
-   :name: second map image loading
-
-   Mapping steps on *Deep-LASI* for loading the second channel image
+To load the corresponding image from the second camera (the acceptor channel), we took the same steps from the file menu, this time for the second channel via :code:`File > Mapping > Create New Map > 2nd channel`. 
 
 After choosing the image file, the same *Channel Position* window will open. To have the maximum overlay to the ZMW image from the first channel, we took the whole field of view by clicking on *Full* and no rotation again. The only obvious difference is that the current image is flipped horizontally compared to the first one. You can see the mentioned difference by checking the cross sign on the already loaded image which is on the top right side (:numref:`map image flipping`, left), and compare it to the position of the cross on the new image preview, which is on the top left area (:numref:`map image flipping`, right). After checking the *Horizontal Flip* box, we clicked on *OK*.    
 
