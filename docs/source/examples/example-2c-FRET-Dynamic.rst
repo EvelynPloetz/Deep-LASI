@@ -260,8 +260,8 @@ To perform automated analysis, we need to load already extracted traces. Meaning
 
 On the opened panel as shown on :numref:`DeepLearning_tab` you can see the *Magic Button* in bright pink color. Now you can just click on it to enjoy the resulting graphs appearing one after another. So, all the results shown in the following parts would open at once in separate windows. But, because one could also achieve the same results with a several automatic analysis steps, depending on the analysis needs we can decide which analysis step the *Deep-LASI* should perform for us. For example, sometimes we need the *Deep-LASI* to only categorize the data, or just make the TDP plot for the dynamic information of a specific category.
 
-.. figure:: ./../../figures/examples/2_DeepLearningTab.png
-   :width: 550
+.. figure:: ./../../figures/examples/deep_lerning_tab.png
+   :width: 500
    :alt: DeepLearning_tab
    :align: center
    :name: DeepLearning_tab
