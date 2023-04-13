@@ -131,10 +131,10 @@ With the data files being loaded to the program, one can extract traces as the n
    
    The box for adjusting options for the detection mask, and settings for trace extraction
 
-Depending on the data size, the extraction step might take some time from a couple of minutes to hours. When it is done, a final data file with the format *.tdat* will be saved in the data folder by the program, and the first trace appears on the *Traces* tab. As you can see on :numref:`2c trace look`, the intensity-time panel shows the following four intensity traces: The total intensity in the green channel in gray, the donor emission after donor excitation in green, the acceptor emission after donor excitation in bright red, and the acceptor emission after acceptor excitation in dark red. On the middle panel you can see the mask surrounding every detected molecule across every channel. On the right you can see a total number of 6100 traces were extracted from the loaded data. Everything is now ready for us to start the manual analysis by categorizing the traces first.     
+Depending on the data size, the extraction step might take some time from a couple of minutes to hours. When it is done, a final data file with the format *.tdat* will be saved in the data folder by the program, and the first trace appears on the *Traces* tab. As you can see on :numref:`2c trace look`, the intensity-time panel shows the following four intensity traces: The total intensity in the green channel in gray, the donor emission after donor excitation in green, the acceptor emission after donor excitation in bright red, and the acceptor emission after acceptor excitation in dark red. On the middle panel you can see the mask surrounding every detected molecule across every channel. On the right you can see a total number of 6100 traces were extracted from the loaded data. Everything is now ready for us to start the analysis steps with categorizing the traces first.     
 
 .. figure:: ./../../figures/examples/PA16_trace_look.png
-   :width: 600
+   :width: 550
    :alt: 2c trace
    :align: center
    :name: 2c trace look
