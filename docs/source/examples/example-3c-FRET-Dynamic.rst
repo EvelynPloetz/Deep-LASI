@@ -67,7 +67,7 @@ Mapping the three channels is quite similar to the two-channel procedure. In ord
 Loading the Data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-After having the cameras mapped with respect to the first channel, we continued with loading the data files. Similar to the mapping step, loading the raw data from three cameras is similar to that from two cameras with some little differences that are explained here. To see how to load the data please first check the section :ref:`loading-data_2c_d`. After selecting all the data files, on the first *Measurement Parameters* window opened, we first filled in the boxes like :numref:`3c_measurement_parameters1` to clarify the experimental details. The *Interframe time* is still 52.2 ms. The ALEX sequence is BGR in the current example because the three lasers were alternating one after another. Then we set the slider to the very left side to determine the first detection channel. After selecting the desired frame range, we clicked on **B** for the detection color.
+After having the cameras mapped with respect to the first channel, we continued with loading the data files. Similar to the mapping step, loading the raw data from three cameras is similar to that from two cameras with some little differences that are explained here. To see how to load the data please first check the section :ref:`extraction_doc`. We loaded the data of the first channel (the blue, as specified during the mapping process) via :code:`File > Load Image Data > 1st channel` and selected all the files. On the first *Measurement Parameters* window opened, we filled in the boxes like the left box of :numref:`3c_measurement_parameters1` to clarify the experimental details. The *Interframe time* is still 52.2 ms. The ALEX sequence is BGR in the current example because the three lasers were alternating one after another. Then we set the slider to the very left side to determine the first detection channel. After selecting the desired frame range starting from 2 until the end, we clicked on **B** for the detection color.
 
 .. figure:: ./../../figures/examples/3c_measurement_parameters.png
    :width: 700
@@ -77,10 +77,10 @@ After having the cameras mapped with respect to the first channel, we continued 
    
    Setting the measurement parameters to load the data from the first (blue) channel  
 
-Then on the *Extraction* tab the detected particles will be marked inside blue triangles. We continued with loading the data files from the second and third channels followed by moving the slider on the *Measurement Parameters* window one step to the right each time, and also choosing the proper detection color, meaning clicking on **G** and **R** with the corresponding position of the slider (middle and most right respectively). The detected particles across each channel will be inside triangles with matching colors to the channels, and all the co-localized ones will be inside white circles representing the structures with all three dyes on them, :numref:`3c_all_particle_detected`.  
+Then on the *Extraction* tab the detected particles will be marked inside blue triangles. We continued with loading the data files from the second and third channels (via :code:`File > Load Image Data > 2nd channel`, and :code:`File > Load Image Data > 3rd channel` respectively) followed by moving the slider on the *Measurement Parameters* window one step to the right each time, and also choosing the proper detection color, meaning clicking on **G** and **R** with the corresponding position of the slider (middle and most right respectively). The detected particles across each channel will be inside triangles with matching colors to the channels, and all the co-localized ones will be inside white circles representing the structures with all three dyes on them, :numref:`3c_all_particle_detected`.  
 
 .. figure:: ./../../figures/examples/3_3c_all_particle_detection.png
-   :width: 700
+   :width: 600
    :alt: 3c_particle_detection
    :align: center
    :name: 3c_all_particle_detected
