@@ -91,7 +91,7 @@ Then on the *Extraction* tab the detected particles will be marked inside blue t
 Trace Extraction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In order to extract the traces, we continued like the section :ref:`extraction_2c_d`, with the only difference in the *Frame Selection* part, that we left it to be from 2 to 3000, and in total 7990 traces were extracted. An example of the extracted traces is shown on :numref:`3c_trace_n2665`. Here you can see three panels, the upper two ones are fluorescence intensity traces, and the lowest one is the trace of FRET efficiency.
+In order to extract the traces, we continued like the section :ref:`extraction_doc`. On the *Mask Settings* panel we did not change anything (:numref:`extraction begin`). For the *Method* part, we used *wavelet* for the *Particle Detection*, *Colocalized only* for the *Trace Selection*, and left the frame range to be 2 to 3000 for the *Frame Selection*. Then we clicked on *Extract Traces*. An example of the extracted traces is shown on :numref:`3c_trace_n2665`. Here you can see three panels, the upper two ones are fluorescence intensity traces, and the lowest one is the trace of FRET efficiency.
 
 .. figure:: ./../../figures/examples/4_3c_trace_2665.png
    :width: 750
