@@ -133,9 +133,9 @@ The HMM tab on the DeepLASI works properly for the two-color data. In the case o
 Automatic data analysis and correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the following section you can see the automated analysis steps for dynamic 3-color smFRET data. This part is also very similar to the section :ref:`automatic_2c_d`, so please have a look at that part first, and try to take the similar steps to analyze the current data. Although, any difference between the 2 and 3 color cases will be explained here.
+In the following section you can see the automated analysis steps for dynamic 3-color smFRET data. This type of analysis is explained in detail in the section :ref:`auto-analysis`, so please have a look at that part first, and try to take the similar steps to analyse the current data. Although, any difference between the 2 and 3 color cases will be explained here.
 
-So, we first load the extracted traces to be analyzed. To start the automatic analysis, we first clicked on the button *Deep Learning*. You can now click on *Magic Button*, or perform the automatic analysis in several separate steps. For the latter case, the program will ask you to choose the neural network model like :numref:`3c_categorization_model`. As shown on the figure, we selected the *3-color ALEX* and clicked on *OK*.
+So, we first load the extracted traces to be analysed. To start the automatic analysis, we first clicked on the button *Deep Learning*. You can now click on *Magic Button*, or perform the automatic analysis in several separate steps which usually begins with categorization. For the latter case, the program will ask you to choose the neural network model like :numref:`3c_categorization_model`. As shown on the figure, we selected the *3-color ALEX* and clicked on *OK*.
 
 .. figure:: ./../../figures/examples/14_3c_categorization_model.png
    :width: 250
@@ -154,7 +154,7 @@ In this section, the resulting graphs and information after the automatic analys
 One of the first results that DeepLASI reports is the confidence level in predicting the number of states in the traces, as you can see for the current data on :numref:`3c_confidence level`. 
 
 .. figure:: ./../../figures/examples/6_3c_confidence_results.png
-   :width: 650
+   :width: 600
    :alt: confidence level
    :align: center
    :name: 3c_confidence level
@@ -171,7 +171,7 @@ The resulting histograms of the apparent FRET efficiency to give a quick overvie
    
    The histograms of apparent FRET efficiency averaged for each state, labeled for each FRET pair
 
-To generate the TDP plot, on the window like :numref:`3c_TDP_generating_option` popping up to take in the desired number of bins and confidence threshold from the user. We left the number of bins to 100 and the threshold on 0, selected the *3 states*, and then clicked on *Generate Transition Density Plot*.
+To generate the TDP plot, on the window like :numref:`3c_TDP_generating_option` popping up to take in the desired number of bins and confidence threshold from the user, we left the number of bins to 100 and the threshold on 0, selected the *3 states*, and then clicked on *Generate Transition Density Plot*.
 
 .. figure:: ./../../figures/examples/8_3c_TDP_options.png
    :width: 300
@@ -191,7 +191,7 @@ As you can see on :numref:`3c_TDPs_generated`, the TDP for each dye pair is gene
    
    The generated TDP opened in separated windows for the existing FRET pairs
 
-You can see an example of the kinetic information extracted for the YR FRET pair on :numref:`3c_YR_dwell_time` with the selected cluster on the right side of the graph. The fitted dwell time for these transitions is calculated as 0.67 s.
+You can see an example of the kinetic information extracted for the YR FRET pair on :numref:`3c_YR_dwell_time` with the selected cluster on the right side of the graph showing the transitions from high to low FRET efficiencies corresponding to the tether movement from state 1 to state 3. The fitted dwell time for these transitions is calculated as 0.67 s.
 
 .. figure:: ./../../figures/examples/10_3c_dwell_time_fit.png
    :width: 500
