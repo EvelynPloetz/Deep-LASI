@@ -53,10 +53,10 @@ Co-Localization of Molecules
 
 When using three separate cameras like the example described here, there might be the chance of some discrepancy among the cameras’ fields of view resulting from aberrations or cameras misalignment. To make sure that triple-labeled species are detected, a correct linking of same molecule emitters across the detection channels is needed. DeepLASI makes a coordinate transformation map to get rid of any potential difference.
 
-Mapping the three channels is quite similar to the two-channel procedure. In order to map all cameras, please follow the steps explained in the section :ref:`localization_2c_d` , because the necessary workflow for loading the ZMW images are the same until :numref:`map image flipping`. The difference would be that you do not need to flip the image from the second camera (as you would clearly recognize by looking at it), and you need to continue loading the ZMW image also from the third channel (now with horizontal flipping). If you have loaded the mapping images correctly, you will see the three panels similar to :numref:`three zmw loaded`. Then you can click on *Start Mapping* like we did. Please also follow the final steps in :ref:`localization_2c_d` to check the mapping quality and save the created map.     
+Mapping the three channels is quite similar to the two-channel procedure. In order to map all cameras, please follow the steps explained in the section :ref:`mapping` , because the necessary workflow for loading the ZMW images are the same. The difference would be that you do not need to flip the image from the second (green) camera (as you would clearly recognize by looking at its image pattern), and you need to continue loading the ZMW image also from the third channel (now with horizontal flipping). If you have loaded the mapping images correctly, you will see the three panels similar to :numref:`three zmw loaded`. Then you can click on *Start Mapping* like we did. Please also follow the final steps in :ref:`mapping` to check the mapping quality and save the created map.     
 
 .. figure:: ./../../figures/examples/1_3c_three_zmw_loaded.png
-   :width: 600
+   :width: 500
    :alt: 3_zmw loaded
    :align: center
    :name: three zmw loaded
