@@ -117,17 +117,17 @@ For a detailed description of manual analysis steps please see the section :ref:
    
    Selected regions on the intensity and FRET efficiency traces for the example trace shown above 
 
-After categorization of all traces, we continued with plotting the FRET efficiencies for each dye pair on the origami structure, and also extracted the dynamic information of the system. :numref:`3c_trace_regions` shows the apparent and corrected FRET efficiencies for each dye pair (BY, BR, and YR) with the fitting results. 
+After categorization of all traces, we continued with plotting the FRET efficiencies for each dye pair on the origami structure, and also extracted the dynamic information of the system. :numref:`3c_apparent_corrected_FRET` shows the apparent and corrected FRET efficiencies for each dye pair (BY, BR, and YR) with the fitting results. 
 
 .. figure:: ./../../figures/examples/15_3c_app_and_corr_fret.png
-   :width: 700
+   :width: 600
    :alt: 3c app_corr fret 
    :align: center
    :name: 3c_apparent_corrected_FRET
    
    Apparent FRET efficiency (top row), and corrected FRET efficiency histograms with the fitting result
 
-The HMM tab on the DeepLASI works properly for the two-color data. In the case of three-color data, we can get the dynamic results from the neural network inserted in the program, so you can see the resulting kinetic information on the automatic analysis section which follows. 
+The HMM tab on the DeepLASI works properly for the two-color data. In the case of three-color data, we can get the dynamic results from the neural network inserted into the program, so you can see the resulting kinetic information on the automatic analysis section which follows. 
 
 ..  _automatic_3c:
 Automatic data analysis and correction
