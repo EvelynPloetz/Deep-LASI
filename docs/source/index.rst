@@ -2,20 +2,20 @@ Welcome to Deep-LASI's documentation!
 ===================================
 
 **Deep-LASI** (/dēp'lā-zē/) is a MATLAB program using Python libraries
-for automatized, multi-color single molecule data analysis.
+for automatized, multi-color single-molecule intensity trajectory analysis.
 
 **Deep-LASI** – *Deep-Learning Assisted Single-molecule Imaging* analysis provides a tool 
 for image processing and automated, unbiased analysis of single-molecule data.
 Deep-LASI comprises a collection of methods to characterize single molecule data 
 with up to 3 channels in an automated fashion. The algorithms provided are routinely 
-used to analyze data arising from multi-color single-molecule TIRF and Confocal data. 
+used to analyze data arising from multi-color single-molecule fluorescence experiments using TIRF or Confocal microscopy. 
 Deep-LASI is based on the program TRacer, dedicated to finding single molecules, 
-colocalizing molecules between different imaging channels, and extracting their fluorescence 
-signatures depending on the excitation and detection scheme. The downstream analysis of 
+colocalizing molecules between different imaging channels, extracting their fluorescence 
+signatures depending on the excitation and detection scheme and correcting the intensities for background signal depending on user-selected masks. The downstream analysis of 
 single-molecule traces can be carried out manually as well as automatically using advanced 
-deep-learning-assisted methods. Deep-LASI allows determining correction factors required for 
-accurate FRET measurements and concomitantly distances between 2 up to 3 fluorophores.
-Moreover, it identifies underlying conformational states and interconverting kinetics. 
+deep-learning-assisted methods. Deep-LASI allows the determination of correction factors required for 
+accurate FRET measurements and concomitantly distances between 2 or 3 fluorophores.
+Moreover, it identifies underlying conformational states and kinetics. 
 Deep-LASI provides an architecture to process the initial raw data and summarize the analyzed 
 data in final plots based on MATLAB and libraries using Python. Please cite the following 
 papers if you use Deep-LASI in your own work, so we can continue development and support:
