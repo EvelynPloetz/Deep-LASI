@@ -26,9 +26,11 @@ If you have access to a MATLAB license, please download and install MATLAB at ht
 
 For downloading MATLAB directly from MathWorks, you require an account. After signing in, link the account with your licence number (Step 1). In the next step you can download the MATLAB version associated with your licence (Step 2). Save the licence on your PC/Mac and download MATLAB. The licence file will be required during the local installation process.
 
-.. image:: ./../figures/installation/matlab_download.png
+.. figure:: ./../figures/installation/matlab_download.png
    :width: 500
    :alt: Matlab Download
+   :align: center
+   :name: matlab_download
 
    Selection steps for downloading MATLAB from MathWorks.
 
