@@ -31,8 +31,10 @@ For downloading MATLAB directly from MathWorks, you require an account. After si
    Please make sure you install a compatible version of Python 3.7-3.10 that can be handeled by MATLAB, otherwise Deep-LASI will only provide basic functionalities and will not be able call Python-based libraries for Automated data analysis.
 
 .. image:: ./../figures/installation/matlab_download.png
-   :width: 300
+   :width: 500
    :alt: Matlab Download
+
+   Selection steps for downloading MATLAB from MathWorks.
 
 If you plan to use the compiled standalone version of Deep-LASI, please download and install MATLAB Runtime R2022b for your system at https://de.mathworks.com/products/compiler/matlab-runtime.html
 
