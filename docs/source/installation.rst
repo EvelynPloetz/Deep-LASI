@@ -26,15 +26,15 @@ If you have access to a MATLAB license, please download and install MATLAB at ht
 
 For downloading MATLAB directly from MathWorks, you require an account. After signing in, link the account with your licence number (Step 1). In the next step you can download the MATLAB version associated with your licence (Step 2). Save the licence on your PC/Mac and download MATLAB. Deep-LASI is tested for MATLAB version between R2019a and R2022b. The licence file will be required during the local installation process.
 
-.. note::
-
-   Please make sure you install a compatible version of Python 3.7-3.10 that can be handeled by MATLAB, otherwise Deep-LASI will only provide basic functionalities and will not be able call Python-based libraries for Automated data analysis.
-
 .. image:: ./../figures/installation/matlab_download.png
    :width: 500
    :alt: Matlab Download
 
    Selection steps for downloading MATLAB from MathWorks.
+
+.. note::
+
+   Please make sure you install a compatible version of Python 3.7-3.10 that can be handeled by MATLAB, otherwise Deep-LASI will only provide basic functionalities and will not be able call Python-based libraries for Automated data analysis.
 
 If you plan to use the compiled standalone version of Deep-LASI, please download and install MATLAB Runtime R2022b for your system at https://de.mathworks.com/products/compiler/matlab-runtime.html
 
