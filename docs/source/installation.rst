@@ -58,7 +58,7 @@ To run Deep-LASI on Mac OS, the following software packages are required:
 
 * Python 3.7-3.10 (https://www.python.org/downloads/)
 * Xcode (https://apps.apple.com/us/app/xcode/id497799835?mt=12)
-* TensorFlow 2.8.0 (Python package)
+* TensorFlow 2.8.0 (Python package, https://www.tensorflow.org)
 
 
 Python installation on Intel Macs
@@ -175,7 +175,7 @@ To run Deep-LASI on Windows, the following software packages are required:
 
 * Python 3.7-3.10 (https://www.python.org/downloads/)
 * Microsoft Visual C++ (https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
-* TensorFlow 2.8.0 (Python package)
+* TensorFlow 2.8.0 (Python package, https://www.tensorflow.org)
 
 
 Python installation and integration into MATLAB (Windows)
@@ -240,10 +240,10 @@ If you encounter any problem during the installation procedure, please
 get in touch with us via the *Issue forum*.
 
 
-Common issues with deep learning features on Windows
-^^^^^^^^^^
+Issues with installing deep learning features
+__________
 
-If you run into errors while trying to use neural networks, your protobuf package might need to be downgraded and/or your h5py package is incompatible.
+If you run into errors while importing tensorflow, your protobuf package may need to be downgraded and/or your h5py package is incompatible.
 
 Installing a compatible version of protobuf
 """"""""""
@@ -253,7 +253,9 @@ Please open your windows command prompt by pressing Win + R or terminal app on M
    .. code-block:: python
    
       pip install protobuf==3.20.*
-      
+
+After successfull installation, restart your MATLAB session.
+
 Installing the latest version of h5py
 """"""""""
 
@@ -263,8 +265,9 @@ Please open your windows command prompt by pressing Win + R or terminal app on M
    
       pip install h5py --force-reinstall
 
+After successfull installation, restart your MATLAB session.
 
-Common issues with installing python packages on Windows
+Common issue with installing python packages on Windows
 """"""""""
 
 You may run into errors regarding access rights when installing packages with pip. If your access is denied please make the installation of the Python package a user install by adding the --user option:
