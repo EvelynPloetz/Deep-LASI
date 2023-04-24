@@ -128,6 +128,7 @@ If you are interested in generating simulated data and/or re-training the neural
       pip install sklearn==1.1.1
       pip install tqdm==4.64.0
       pip install mlxtend==0.20.0
+      pip install pomegranate==0.14.8
 
 If you encounter any problem during the installation procedure, please
 get in touch with us via the *Issue forum*.
@@ -235,13 +236,14 @@ If you are interested in generating simulated data and/or re-training the neural
       pip install sklearn==1.1.1
       pip install tqdm==4.64.0
       pip install mlxtend==0.20.0
+      pip install pomegranate==0.14.8
 
 If you encounter any problem during the installation procedure, please
 get in touch with us via the *Issue forum*.
 
 
 Issues with installing deep learning features
-__________
+------------
 
 If you run into errors while importing tensorflow, your protobuf package may need to be downgraded and/or your h5py package is incompatible.
 
