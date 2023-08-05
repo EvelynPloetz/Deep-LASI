@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'Deep-LASI'
-copyright = '2022, Fablab'
+copyright = '2023, Fablab'
 author = 'Ploetz'
 
 release = '0.1'
