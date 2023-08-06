@@ -339,4 +339,4 @@ You can obtain and update *Deep-LASI* either by download from *Gitlab*, using th
 #. Set the 'Source control integration' to 'Git' and enter for the 'Repository path'
    https://gitlab.com/simon71/deeplasi
 #. Click 'Retrieve' to download the files automatically.
-#. For updating *Deep-LASI* from the Repository, simply type :code:`!git pull` into the MATLAB command line.
+#. For updating *Deep-LASI* from the Repository, simply type :code:`!git pull` into the MATLAB command line while your inside the target-folder :code:`DeepLASI`.
