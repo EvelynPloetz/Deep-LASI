@@ -70,14 +70,14 @@ Please install Python version 3.7-3.10 at https://www.python.org/downloads/ and 
 Python installation on ARM Macs (M1/M2)
 ^^^^^^^^^^^^^^^^^^^^
 
-Since a native MATLAB version for ARM Macs is still in development, MATLAB and all dependencies have to be installed and executed via the rosetta environment. While this is done automatically for all MATLAB versions, it must be done manually for Python. First, download and install Conda by typing the following commands in your Terminal app:
+Since a native MATLAB version for ARM Macs is still in development, MATLAB and all dependencies have to be installed and executed via the rosetta environment. While this is done automatically for all MATLAB versions, it must be done manually for Python. First, download and install mambaforge by typing the following commands in your Terminal app:
 
    .. code-block:: python
    
       curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
       bash Mambaforge-$(uname)-$(uname -m).sh
       
-or download and install from the Miniconda website: https://docs.conda.io/en/latest/miniconda.html
+or download and install mambaforge from github (Installer: OS X arm64 (Apple Silicon)): https://github.com/conda-forge/miniforge
 
 Next, create a new environment (here: rosetta) by typing the following commands with the MATLAB compatible Python version (here: 3.9):
 
