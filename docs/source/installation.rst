@@ -78,6 +78,13 @@ Since a native MATLAB version for ARM Macs is still in development, MATLAB and a
       bash Mambaforge-$(uname)-$(uname -m).sh
       
 or download and install mambaforge from github (Installer: OS X arm64 (Apple Silicon)): https://github.com/conda-forge/miniforge
+If you downloaded the installer, you should run the following commands for the next steps to work:
+
+.. code-block:: python
+      source "${HOME}/conda/etc/profile.d/conda.sh"
+      source "${HOME}/conda/etc/profile.d/mamba.sh"
+
+In case you have issues with the installation, please visit https://github.com/conda-forge/miniforge for alternatives and detailed documentation.
 
 Next, create a new environment (here: rosetta) by typing the following commands with the MATLAB compatible Python version (here: 3.9):
 
