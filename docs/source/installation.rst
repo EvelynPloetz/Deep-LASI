@@ -11,7 +11,7 @@ DeepLASI is a MATLAB program that uses deep learning for automated data analysis
 In order to use the automated data analysis with the pretrained deep neural networks make sure you installed the required software packages below.
 We recommend running DeepLASI with a MATLAB license and only use the compiled version if no license is available.
 The source code is more frequently updated than the standalone version and certain features like generating new training data sets and training new models are not supported in the standalone version.
-Download the source code from the `Repository <https://gitlab.com/simon71/deeplasi>`_. In MATLAB, change your current folder to the source folder and start DeepLASI via right-click on DeepLASI.m and Run or by typing `DeepLASI` into the MATLAB command window. For the deep learning features, please follow the detailed instructions below. 
+Download the source code from the `Repository <https://gitlab.com/simon71/deeplasi>`_. In MATLAB, change your current folder to the source folder and start DeepLASI via right-click on DeepLASI.m and Run or by typing `DeepLASI` into the MATLAB command window.
 
 System compatibility
 ------------
@@ -45,7 +45,61 @@ The earliest MATLAB version required is R2019a.
 
 The latest MATLAB version DeepLASI is tested on is R2022b.
 
-Installation on Mac
+Installing Deep-LASI
+------------
+The program can be downloaded from the `Repository <https://gitlab.com/simon71/deeplasi>`_ on *Gitlab*.
+
+This *GitLab* repository contains:
+
+* *source*: the open-source version of *Deep-LASI*
+* *demos*: Some example data that users can use to try out *Deep-LASI*'s functionalities.
+
+Installing the stand-alone version of *Deep-LASI*
+~~~~~~~~~~~~~~~
+
+#. Install the MATLAB Runtime as described above.
+#. Download the compiled version of *Deep-LASI* for your Operating System (MacOS or Windows) from the `Repository <https://gitlab.com/simon71/deeplasicompiled>`_
+#. Unpack the files.
+#. Run the *.exe*-file (Windows) or *.app*-file (MacOS) to start the program
+
+Installing and updating the open-source version of *Deep-LASI*
+~~~~~~~~~~~~~~~
+
+The open source version of *Deep-LASI* requires a valid licence for MATLAB (2019a or newer). Some features of the program require further access to tool boxes (Curve fitting, image processing, optimization, statistics, machine learning, and parallel computing) to work.
+
+You can obtain and update *Deep-LASI* either by download from *Gitlab*, using the command line through *Git*, or by using the MATLAB *Git* integration.
+
+**Download and update *Deep-LASI* from the repository**
+
+#. Download the open source version of *Deep-LASI* from the `Repository <https://gitlab.com/simon71/deeplasi>`_
+#. Save the files in the MATLAB folder
+#. Start MATLAB and navigate to the *Deep-LASI* folder
+#. Type :code:`DeepLASI` into the MATLAB command line to start the program.
+#. Download the newest version and overwrite your former files for updating.
+
+
+**Download and update *Deep-LASI* using *Git* **
+
+#. Install *Git* on your computer.
+    * MacOS has *Git* pre-installed. Try to tun *git* from the terminal. If the command fails, you can download *Git* from https://git-scm.com/ .
+    * For Windows, download and install *Git* from https://git-for-windows.github.io/ .
+#. Clone the repository of *Deep-LASI* to create a local copy in the folder *DeepLASI*
+    * For cloning a first copy, type in your terminal: |br| :code:`git clone https://gitlab.com/simon71/deeplasi.git DeepLASI`
+    * For updating, simply type :code:`!git pull` to obtain the latest version and changes.
+
+**Download and update *Deep-LASI* using the *MATLAB Git Integration* **
+
+#. Create a folder for *Deep-LASI*
+#. Start MATLAB and navigate to the *Deep-LASI* folder
+#. Right click the 'Current Folder' panel in MATLAB and select 'Source Control' and 'Manage Files...'.
+#. Set the 'Source control integration' to 'Git' and enter for the 'Repository path'
+   https://gitlab.com/simon71/deeplasi
+#. Click 'Retrieve' to download the files automatically.
+#. For updating *Deep-LASI* from the Repository, simply type :code:`!git pull` into the MATLAB command line while your inside the target-folder :code:`DeepLASI`.
+
+For the deep learning features, please follow the detailed instructions below.
+
+Deep learning features on Mac
 ------------
 
 Requirements for Mac
@@ -168,7 +222,7 @@ If no version or path information is shown or an incompatible Python version is 
       pyversion 'your/path/to/python/python.exe'
 
 
-Installation on Windows
+Deep learning features on Windows
 ------------
 
 Requirements for Windows
