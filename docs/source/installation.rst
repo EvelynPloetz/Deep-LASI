@@ -11,7 +11,7 @@ DeepLASI is a MATLAB program that uses deep learning for automated data analysis
 In order to use the automated data analysis with the pretrained deep neural networks make sure you installed the required software packages below.
 We recommend running DeepLASI with a MATLAB license and only use the compiled version if no license is available.
 The source code is more frequently updated than the standalone version and certain features like generating new training data sets and training new models are not supported in the standalone version.
-Download the source code from the `Repository <https://gitlab.com/simon71/deeplasi>`_. In MATLAB, change your current folder to the source folder and start DeepLASI via right-click on DeepLASI.m and Run or by typing `DeepLASI` into the MATLAB command window.
+Download the source code from the `Repository <https://gitlab.com/simon71/deeplasi>`_. In MATLAB, change your current folder to the source folder and start DeepLASI via right-click on DeepLASI.m and Run or by typing `DeepLASI` into the MATLAB command window. For the deep learning features, please follow the detailed instructions below. 
 
 System compatibility
 ------------
@@ -250,7 +250,7 @@ If you encounter any problem during the installation procedure, please
 get in touch with us via the *Issue forum*.
 
 
-Issues with installing deep learning features
+Common issues with installing deep learning features
 ------------
 
 If you run into errors while importing tensorflow, your protobuf package may need to be downgraded and/or your h5py package is incompatible.
