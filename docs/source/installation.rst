@@ -133,7 +133,7 @@ If you are interested in generating simulated data and/or re-training the neural
    
       pip install matplotlib==3.5.2
       pip install numpy==1.23.1
-      pip install sklearn==1.1.1
+      pip install scikit-learn==1.1.1
       pip install tqdm==4.64.0
       pip install mlxtend==0.20.0
       pip install pomegranate==0.14.8
@@ -241,7 +241,7 @@ If you are interested in generating simulated data and/or re-training the neural
    
       pip install matplotlib==3.5.2
       pip install numpy==1.23.1
-      pip install sklearn==1.1.1
+      pip install scikit-learn==1.1.1
       pip install tqdm==4.64.0
       pip install mlxtend==0.20.0
       pip install pomegranate==0.14.8
