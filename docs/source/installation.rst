@@ -37,65 +37,67 @@ For downloading MATLAB directly from MathWorks, you require an account. After si
 
 .. note::
 
-   Deep-LASI is tested for MATLAB version between R2019a and R2022b. Please make sure you install a compatible version of Python 3.7-3.10 that can be handeled by MATLAB, otherwise Deep-LASI will only provide basic functionalities and will not be able call Python-based libraries for Automated data analysis.
+   DeepLASI is tested for MATLAB version between R2019a and R2022b. Please make sure you install a compatible version of Python 3.7-3.10 that can be handeled by MATLAB, otherwise DeepLASI will only provide basic functionalities and will not be able call Python-based libraries for Automated data analysis.
 
-If you plan to use the compiled standalone version of Deep-LASI, please download and install MATLAB Runtime R2022b for your system at https://de.mathworks.com/products/compiler/matlab-runtime.html
+If you plan to use the compiled standalone version of DeepLASI, please download and install MATLAB Runtime R2022b for your system at https://de.mathworks.com/products/compiler/matlab-runtime.html
 
 The earliest MATLAB version required is R2019a.
 
 The latest MATLAB version DeepLASI is tested on is R2022b.
 
-Installing Deep-LASI
+Installing DeepLASI
 ------------
-The program can be downloaded from the `Repository <https://gitlab.com/simon71/deeplasi>`_ on *Gitlab*.
 
-This *GitLab* repository contains:
+The easiest way to use DeepLASI and stay updated is to clone the repository from *Gitlab* using git. Open your command window or terminal in your desired folder location and enter:
 
-* *source*: the open-source version of *Deep-LASI*
-* *demos*: Some example data that users can use to try out *Deep-LASI*'s functionalities.
+   .. code-block:: python
+   
+      git clone https://gitlab.com/simon71/deeplasi.git
 
-Installing the stand-alone version of *Deep-LASI*
+Alternatively, the source code of DeepLASI can be downloaded from the `Repository <https://gitlab.com/simon71/deeplasi>`_ on *Gitlab*.
+
+Installing the stand-alone version of *DeepLASI*
 ~~~~~~~~~~~~~~~
 
 #. Install the MATLAB Runtime as described above.
-#. Download the compiled version of *Deep-LASI* for your Operating System (MacOS or Windows) from the `Repository <https://gitlab.com/simon71/deeplasicompiled>`_
+#. Download the compiled version of *DeepLASI* for your Operating System (MacOS or Windows) from the `Repository <https://gitlab.com/simon71/deeplasicompiled>`_
 #. Unpack the files.
 #. Run the *.exe*-file (Windows) or *.app*-file (MacOS) to start the program
 
-Installing and updating the open-source version of *Deep-LASI*
+Installing and updating the open-source version of *DeepLASI*
 ~~~~~~~~~~~~~~~
 
-The open source version of *Deep-LASI* requires a valid licence for MATLAB (2019a or newer). Some features of the program require further access to tool boxes (Curve fitting, image processing, optimization, statistics, machine learning, and parallel computing) to work.
+The open source version of *DeepLASI* requires a valid licence for MATLAB (2019a or newer). Some features of the program require further access to tool boxes (Curve fitting, image processing, optimization, statistics, machine learning, and parallel computing) to work.
 
-You can obtain and update *Deep-LASI* either by download from *Gitlab*, using the command line through *Git*, or by using the MATLAB *Git* integration.
+You can obtain and update *DeepLASI* either by download from *Gitlab*, using the command line through *Git*, or by using the MATLAB *Git* integration.
 
-**Download and update *Deep-LASI* from the repository**
+**Download and update *DeepLASI* from the repository**
 
-#. Download the open source version of *Deep-LASI* from the `Repository <https://gitlab.com/simon71/deeplasi>`_
+#. Download the open source version of *DeepLASI* from the `Repository <https://gitlab.com/simon71/deeplasi>`_
 #. Save the files in the MATLAB folder
-#. Start MATLAB and navigate to the *Deep-LASI* folder
+#. Start MATLAB and navigate to the *DeepLASI* folder
 #. Type :code:`DeepLASI` into the MATLAB command line to start the program.
 #. Download the newest version and overwrite your former files for updating.
 
 
-**Download and update *Deep-LASI* using *Git* **
+**Download and update *DeepLASI* using *Git* **
 
 #. Install *Git* on your computer.
     * MacOS has *Git* pre-installed. Try to tun *git* from the terminal. If the command fails, you can download *Git* from https://git-scm.com/ .
     * For Windows, download and install *Git* from https://git-for-windows.github.io/ .
-#. Clone the repository of *Deep-LASI* to create a local copy in the folder *DeepLASI*
+#. Clone the repository of *DeepLASI* to create a local copy in the folder *DeepLASI*
     * For cloning a first copy, type in your terminal: |br| :code:`git clone https://gitlab.com/simon71/deeplasi.git DeepLASI`
     * For updating, simply type :code:`!git pull` to obtain the latest version and changes.
 
-**Download and update *Deep-LASI* using the *MATLAB Git Integration* **
+**Download and update *DeepLASI* using the *MATLAB Git Integration* **
 
-#. Create a folder for *Deep-LASI*
-#. Start MATLAB and navigate to the *Deep-LASI* folder
+#. Create a folder for *DeepLASI*
+#. Start MATLAB and navigate to the *DeepLASI* folder
 #. Right click the 'Current Folder' panel in MATLAB and select 'Source Control' and 'Manage Files...'.
 #. Set the 'Source control integration' to 'Git' and enter for the 'Repository path'
    https://gitlab.com/simon71/deeplasi
 #. Click 'Retrieve' to download the files automatically.
-#. For updating *Deep-LASI* from the Repository, simply type :code:`!git pull` into the MATLAB command line while your inside the target-folder :code:`DeepLASI`.
+#. For updating *DeepLASI* from the Repository, simply type :code:`!git pull` into the MATLAB command line while your inside the target-folder :code:`DeepLASI`.
 
 For the deep learning features, please follow the detailed instructions below.
 
@@ -109,7 +111,7 @@ Requirements for Mac
    :width: 50
    :alt: Mac OS Logo
 
-To run Deep-LASI on Mac OS, the following software packages are required:
+To run DeepLASI on Mac OS, the following software packages are required:
 
 * Python 3.7-3.10 (https://www.python.org/downloads/)
 * Xcode (https://apps.apple.com/us/app/xcode/id497799835?mt=12)
@@ -176,7 +178,7 @@ You can check the successfully installation and integration into MATLAB by resta
    
       py.importlib.import_module("tensorflow")
 
-You are now ready to use Deep-LASI.
+You are now ready to use DeepLASI.
 
 Packages for simulations and training new neural network models
 ^^^^^^^^^^^^^^^^^^^^
@@ -232,9 +234,9 @@ Requirements for Windows
    :width: 50
    :alt: Windows Logo
 
-To run Deep-LASI on your local windows computer please follow the 
+To run DeepLASI on your local windows computer please follow the 
 installation process in the following order:
-To run Deep-LASI on Windows, the following software packages are required:
+To run DeepLASI on Windows, the following software packages are required:
 
 * Python 3.7-3.10 (https://www.python.org/downloads/)
 * Microsoft Visual C++ (https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
@@ -284,7 +286,7 @@ You can check the successful installation and integration into MATLAB by restart
    
       py.importlib.import_module("tensorflow")
 
-You are now ready to use Deep-LASI.
+You are now ready to use DeepLASI.
 
 Packages for simulations and training new neural network models
 """"""""""
