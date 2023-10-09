@@ -54,9 +54,9 @@ You can obtain and update *DeepLASI* either by download from *GitLab*, using the
 
 **Download and update *DeepLASI* from the repository**
 
-#. Download the open source version of *DeepLASI* from the `Repository <https://gitlab.com/simon71/deeplasi>`_
-#. Save the files in the MATLAB folder
-#. Start MATLAB and navigate to the *DeepLASI* folder
+#. Download the open source version of *DeepLASI* from the `Repository <https://gitlab.com/simon71/deeplasi>`_.
+#. Save the files in the MATLAB folder.
+#. Start MATLAB and navigate to the *DeepLASI* folder.
 #. Type :code:`DeepLASI` into the MATLAB command line to start the program.
 #. Download the newest version and overwrite your former files for updating.
 
@@ -66,17 +66,17 @@ You can obtain and update *DeepLASI* either by download from *GitLab*, using the
 #. Install *Git* on your computer.
     * MacOS has *Git* pre-installed. Try to tun *git* from the terminal. If the command fails, you can download *Git* from https://git-scm.com/ .
     * For Windows, download and install *Git* from https://git-for-windows.github.io/ .
-#. Clone the repository of *DeepLASI* to create a local copy in the folder *DeepLASI*
-    * For cloning a first copy, type in your terminal: |br| :code:`git clone https://gitlab.com/simon71/deeplasi.git DeepLASI`
+#. Clone the repository of *DeepLASI* to create a local copy in the folder *DeepLASI*.
+    * For cloning a first copy, type in your terminal: |br| :code:`git clone https://gitlab.com/simon71/deeplasi.git DeepLASI`.
     * For updating, simply type :code:`!git pull` to obtain the latest version and changes.
 
 **Download and update *DeepLASI* using the *MATLAB Git Integration* **
 
-#. Create a folder for *DeepLASI*
-#. Start MATLAB and navigate to the *DeepLASI* folder
+#. Create a folder for *DeepLASI*.
+#. Start MATLAB and navigate to the *DeepLASI* folder.
 #. Right click the 'Current Folder' panel in MATLAB and select 'Source Control' and 'Manage Files...'.
 #. Set the 'Source control integration' to 'Git' and enter for the 'Repository path'
-   https://gitlab.com/simon71/deeplasi
+   https://gitlab.com/simon71/deeplasi .
 #. Click 'Retrieve' to download the files automatically.
 #. For updating *DeepLASI* from the Repository, simply type :code:`!git pull` into the MATLAB command line while your inside the target-folder :code:`DeepLASI`.
 
@@ -92,7 +92,7 @@ Requirements for Mac
    :width: 50
    :alt: Mac OS Logo
 
-To run DeepLASI on Mac OS, installing miniforge3installing the following software packages are required:
+To run DeepLASI on Mac OS, installing Mambaforge (Conda) is highly recommended, as it allows a straightforward installation of python packages and creation of a separate environment for DeepLASI. The following software packages are required:
 
 * Python 3.7-3.10 (`Python 3.10 https://www.python.org/ftp/python/3.10.0/python-3.10.0post2-macos11.pkg`_, `)
   - `Download Python 3.10 https://www.python.org/ftp/python/3.10.0/python-3.10.0post2-macos11.pkg`_
@@ -102,21 +102,13 @@ To run DeepLASI on Mac OS, installing miniforge3installing the following softwar
 * Xcode (https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 * TensorFlow 2.8.0 (Python package, https://www.tensorflow.org)
 
-Python installation on Intel Macs
-^^^^^^^^^^^^^^^^^^^^
-
-Please install Python version 3.7-3.10 at https://www.python.org/downloads/ and check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version. If you have Conda installed, you can also create a new python environment with the specified Python version.
-
-Python installation on ARM Macs (M1/M2)
-^^^^^^^^^^^^^^^^^^^^
-
-Since a native MATLAB version for ARM Macs is still in development, MATLAB and all dependencies have to be installed and executed via the rosetta environment. While this is done automatically for all MATLAB versions, it must be done manually for Python. First, download and install mambaforge by typing the following commands in your Terminal app:
+If you do not have Conda installed, open your terminal app and enter the following:
 
    .. code-block:: python
    
       curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
       bash Mambaforge-$(uname)-$(uname -m).sh
-      
+
 or download and install mambaforge from github (Installer: OS X arm64 (Apple Silicon)): https://github.com/conda-forge/miniforge
 If you downloaded the installer, you should run the following commands for the next steps to work:
 
@@ -126,15 +118,32 @@ If you downloaded the installer, you should run the following commands for the n
 
 In case you have issues with the installation, please visit https://github.com/conda-forge/miniforge for alternatives and detailed documentation.
 
-Next, create a new environment (here: rosetta) by typing the following commands with the MATLAB compatible Python version (here: 3.9):
+Python installation on Intel Macs
+^^^^^^^^^^^^^^^^^^^^
+
+Check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version.
+Create a new environment with a specific python version and activate it using Conda. Type in your terminal:
+
+.. code-block:: python
+   
+      conda create -n 'your_environment_name' python==3.10
+      conda activate your_environment_name
+
+Otherwise, please download and install Python version 3.7-3.10 manually via the python website (listed above).
+
+Python installation on ARM Macs (M1/M2)
+^^^^^^^^^^^^^^^^^^^^
+
+Since all MATLAB versions below version 2023b are not natively available for ARM Macs, MATLAB and all dependencies have to be installed and executed via the rosetta environment. While this is done automatically for MATLAB, it must be done manually for Python.
+First, install mambaforge (see above for details) and create a new environment (here: rosetta) by typing the following commands with the MATLAB compatible Python version (here: 3.10):
 
    .. code-block:: python
    
-      CONDA_SUBDIR=osx-64 conda create -n rosetta python=3.9
+      CONDA_SUBDIR=osx-64 conda create -n rosetta python=3.10
       conda activate rosetta
       conda config --env --set subdir osx-64
       
-Finally, install all needed Python packages using the conda command instead of pip, e.g.:
+Finally, install all needed Python packages using the conda command (not pip!), e.g.:
 
    .. code-block:: python
    
@@ -150,19 +159,33 @@ TensorFlow
 ^^^^^^^^^^^^^^^^^^^^
 
 For deep learning features, the TensorFlow package needs to be installed for the Python environment integrated into MATLAB.
-The easiest way to install TensorFlow is to open the Terminal app (Path: /System/Applications/Utilities/Terminal.app) and enter the following command:
+Install TensorFlow by opening the Terminal app, activate your environment created by conda and install tensorflow in that environment:
 
    .. code-block:: python
-   
-      pip install tensorflow==2.8.0
 
-You can check the successfully installation and integration into MATLAB by restarting MATLAB and entering the following command into the MATLAB Command Window, which returns TensorFlow as a Python module:
+      conda activate your_environment_name
+      conda install tensorflow==2.8.0
+
+Start MATLAB and link MATLAB to the python version in you conda environment. Find the correct python path by typing in your activated conda environment:
+
+   .. code-block:: python
+
+      which python
+
+The path should look something like '/Users/your_name/mambaforge/envs/your_environment/bin/python'
+Copy the path, open MATLAB and type in your MATLAB command window:
+
+   .. code-block:: python
+
+      pyversion '/Users/your_name/mambaforge/envs/your_environment/bin/python'
+
+You can check the successfully installation and integration into MATLAB by entering the following command into the MATLAB Command Window, which returns TensorFlow as a Python module:
 
    .. code-block:: python
    
       py.importlib.import_module("tensorflow")
 
-You are now ready to use DeepLASI.
+You are now ready to use DeepLASI and its neural networks.
 
 Packages for simulations and training new neural network models
 ^^^^^^^^^^^^^^^^^^^^
@@ -180,7 +203,6 @@ If you are interested in generating simulated data and/or re-training the neural
 
 If you encounter any problem during the installation procedure, please
 get in touch with us via the *Issue forum*.
-
 
 Checking for correct integration into MATLAB
 ^^^^^^^^^^^^^^^^^^^^
@@ -223,6 +245,10 @@ installation process in the following order:
 To run DeepLASI on Windows, the following software packages are required:
 
 * Python 3.7-3.10 (https://www.python.org/downloads/)
+  - `Download Python 3.10 https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe`_
+  - `Download Python 3.9 https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe`_
+  - `Download Python 3.8 https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe`_
+  - `Download Python 3.7 https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe`_
 * Microsoft Visual C++ (https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 * TensorFlow 2.8.0 (Python package, https://www.tensorflow.org)
 
@@ -230,7 +256,7 @@ To run DeepLASI on Windows, the following software packages are required:
 Python installation and integration into MATLAB (Windows)
 ^^^^^^^^^^^^^^^^^^^^
 
-Please install Python with version 3.7-3.10 at https://www.python.org/downloads/ and check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version.
+Please check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version and install Python with version 3.7-3.10.
 
    .. note::
    
