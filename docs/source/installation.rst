@@ -43,33 +43,14 @@ If you plan to use the compiled standalone version of DeepLASI, please download 
 
 The earliest MATLAB version required is R2019a.
 
-The latest MATLAB version DeepLASI is tested on is R2022b.
-
-Installing DeepLASI
-------------
-
-The easiest way to use DeepLASI and stay updated is to clone the repository from *Gitlab* using git. Open your command window or terminal in your desired folder location and enter:
-
-   .. code-block:: python
-   
-      git clone https://gitlab.com/simon71/deeplasi.git
-
-Alternatively, the source code of DeepLASI can be downloaded from the `Repository <https://gitlab.com/simon71/deeplasi>`_ on *Gitlab*.
-
-Installing the stand-alone version of *DeepLASI*
-~~~~~~~~~~~~~~~
-
-#. Install the MATLAB Runtime as described above.
-#. Download the compiled version of *DeepLASI* for your Operating System (MacOS or Windows) from the `Repository <https://gitlab.com/simon71/deeplasicompiled>`_
-#. Unpack the files.
-#. Run the *.exe*-file (Windows) or *.app*-file (MacOS) to start the program
+The latest MATLAB version DeepLASI is tested on is R2023b.
 
 Installing and updating the open-source version of *DeepLASI*
 ~~~~~~~~~~~~~~~
 
-The open source version of *DeepLASI* requires a valid licence for MATLAB (2019a or newer). Some features of the program require further access to tool boxes (Curve fitting, image processing, optimization, statistics, machine learning, and parallel computing) to work.
+The open source version of *DeepLASI* requires a valid licence for MATLAB (2019a or newer). Some features of thae program require further access to tool boxes (Curve fitting, image processing, optimization, statistics, machine learning, and parallel computing) to work.
 
-You can obtain and update *DeepLASI* either by download from *Gitlab*, using the command line through *Git*, or by using the MATLAB *Git* integration.
+You can obtain and update *DeepLASI* either by download from *GitLab*, using the command line through *Git*, or by using the MATLAB *Git* integration.
 
 **Download and update *DeepLASI* from the repository**
 
@@ -111,12 +92,15 @@ Requirements for Mac
    :width: 50
    :alt: Mac OS Logo
 
-To run DeepLASI on Mac OS, the following software packages are required:
+To run DeepLASI on Mac OS, installing miniforge3installing the following software packages are required:
 
-* Python 3.7-3.10 (https://www.python.org/downloads/)
+* Python 3.7-3.10 (`Python 3.10 https://www.python.org/ftp/python/3.10.0/python-3.10.0post2-macos11.pkg`_, `)
+  - `Download Python 3.10 https://www.python.org/ftp/python/3.10.0/python-3.10.0post2-macos11.pkg`_
+  - `Download Python 3.9 https://www.python.org/ftp/python/3.9.0/python-3.9.0-macosx10.9.pkg`_
+  - `Download Python 3.8 https://www.python.org/ftp/python/3.8.0/python-3.8.0-macosx10.9.pkg`_
+  - `Download Python 3.7 https://www.python.org/ftp/python/3.7.0/python-3.7.0-macosx10.9.pkg`_
 * Xcode (https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 * TensorFlow 2.8.0 (Python package, https://www.tensorflow.org)
-
 
 Python installation on Intel Macs
 ^^^^^^^^^^^^^^^^^^^^
