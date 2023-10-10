@@ -8,7 +8,7 @@ DeepLASI is a MATLAB program that uses deep learning for automated data analysis
 In order to use the automated data analysis with the pretrained deep neural networks make sure you installed the required software packages below.
 We recommend running DeepLASI with a MATLAB license and only use the compiled version if no license is available.
 The source code is more frequently updated than the standalone version and certain features like generating new training data sets and training new models are not supported in the standalone version.
-Download or clone the source code from the `Repository <https://gitlab.com/simon71/deeplasi>`_. In MATLAB, change your current folder to the installation directory and start DeepLASI via right-click on DeepLASI.m and Run or by typing `DeepLASI` into the MATLAB command window.
+Download or clone the source code from the `Repository <https://gitlab.com/simon71/deeplasi>`_. In MATLAB, change your current folder to the installation directory and start DeepLASI via right-click on DeepLASI.m and Run or by typing :code:`DeepLASI` into the MATLAB command window.
 
 ********************
 System compatibility
@@ -67,7 +67,7 @@ You can obtain and update DeepLASI either by download from *GitLab*, using the c
     * MacOS has *Git* pre-installed. Try to tun *git* from the terminal. If the command fails, you can download *Git* from https://git-scm.com/ .
     * For Windows, download and install *Git* from https://git-for-windows.github.io/ .
 #. Clone the repository of *DeepLASI* to create a local copy in the folder *DeepLASI*.
-    * For cloning a first copy, type in your terminal: |br| :code:`git clone https://gitlab.com/simon71/deeplasi.git DeepLASI`.
+    * For cloning a first copy, type in your terminal: :code:`git clone https://gitlab.com/simon71/deeplasi.git DeepLASI`.
     * For updating, simply type :code:`!git pull` to obtain the latest version and changes.
 
 **Download and update DeepLASI using the MATLAB Git Integration**
@@ -164,7 +164,7 @@ Start MATLAB and link MATLAB to the python version in you conda environment. Fin
 
       which python
 
-The path should look something like '/Users/your_name/mambaforge/envs/your_environment/bin/python'
+The path should look something like '/Users/your_name/mambaforge/envs/your_environment/bin/python'.
 Copy the path, open MATLAB and type in your MATLAB command window:
 
    .. code-block:: python
