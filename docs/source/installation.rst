@@ -12,7 +12,7 @@ In order to use the automated data analysis with the pretrained deep neural netw
 We recommend running DeepLASI with a MATLAB license and only use the compiled version if no license is available.
 The source code is more frequently updated than the standalone version and certain features like generating new training data sets and training new models are not supported in the standalone version.
 For ARM Macs (M1/M2), we strongly recommend installing MATLAB 2023b, which is natively available for ARM Macs.
-Download or clone the source code from the `Repository <https://gitlab.com/simon71/deeplasi>`_. In MATLAB, change your current folder to the DeepLASI folder and start DeepLASI via right-click on DeepLASI.m and Run or by typing `DeepLASI` into the MATLAB command window.
+Download or clone the source code from the `Repository <https://gitlab.com/simon71/deeplasi>`_. In MATLAB, change your current folder to the installation directory and start DeepLASI via right-click on DeepLASI.m and Run or by typing `DeepLASI` into the MATLAB command window.
 
 System compatibility
 ------------
@@ -62,7 +62,7 @@ You can obtain and update *DeepLASI* either by download from *GitLab*, using the
 #. Download the newest version and overwrite your former files for updating.
 
 
-**Download and update *DeepLASI* using *Git* **
+**Download and update *DeepLASI* using *Git***
 
 #. Install *Git* on your computer.
     * MacOS has *Git* pre-installed. Try to tun *git* from the terminal. If the command fails, you can download *Git* from https://git-scm.com/ .
@@ -71,7 +71,7 @@ You can obtain and update *DeepLASI* either by download from *GitLab*, using the
     * For cloning a first copy, type in your terminal: |br| :code:`git clone https://gitlab.com/simon71/deeplasi.git DeepLASI`.
     * For updating, simply type :code:`!git pull` to obtain the latest version and changes.
 
-**Download and update *DeepLASI* using the *MATLAB Git Integration* **
+**Download and update *DeepLASI* using the *MATLAB Git Integration***
 
 #. Create a folder for *DeepLASI*.
 #. Start MATLAB and navigate to the *DeepLASI* folder.
