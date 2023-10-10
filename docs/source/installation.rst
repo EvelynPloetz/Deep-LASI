@@ -101,17 +101,18 @@ To run DeepLASI on Mac OS, installing Mambaforge (Conda) is highly recommended, 
 
 If you do not have Conda installed, open your terminal app and enter the following:
 
-   .. code-block:: python
+.. code-block:: python
    
-      curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
-      bash Mambaforge-$(uname)-$(uname -m).sh
+   curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
+   bash Mambaforge-$(uname)-$(uname -m).sh
 
 or download and install mambaforge directly from github: https://github.com/conda-forge/miniforge
 If you downloaded the installer, you should run the following commands for the next steps to work:
 
 .. code-block:: python
-      source "${HOME}/conda/etc/profile.d/conda.sh"
-      source "${HOME}/conda/etc/profile.d/mamba.sh"
+
+   source "${HOME}/conda/etc/profile.d/conda.sh"
+   source "${HOME}/conda/etc/profile.d/mamba.sh"
 
 In case you have issues with the installation, please visit https://github.com/conda-forge/miniforge for alternatives and detailed documentation.
 
@@ -124,8 +125,8 @@ Create a new environment with a specific python version and activate it. Type in
 
 .. code-block:: python
    
-      conda create -n 'your_environment_name' python==3.10
-      conda activate your_environment_name
+   conda create -n 'your_environment_name' python==3.10
+   conda activate your_environment_name
 
 If you do not want to install Conda, please download and install Python version 3.7-3.10 manually via the python website (listed above) and proceed to TensorFlow installation using 'pip' instead of 'conda'.
 
@@ -135,17 +136,17 @@ Workaround for ARM Macs (M1/M2) and MATLAB Versions below 2023b
 Since all MATLAB versions below version 2023b are not natively available for ARM Macs, MATLAB and all dependencies have to be installed and executed via the rosetta environment. While this is done automatically for MATLAB, it must be done manually for Python.
 First, install mambaforge (see above for details) and create a new environment (here: rosetta) by typing the following commands with the MATLAB compatible Python version (here: 3.10):
 
-   .. code-block:: python
+.. code-block:: python
    
-      CONDA_SUBDIR=osx-64 conda create -n rosetta python=3.10
-      conda activate rosetta
-      conda config --env --set subdir osx-64
+   CONDA_SUBDIR=osx-64 conda create -n rosetta python=3.10
+   conda activate rosetta
+   conda config --env --set subdir osx-64
       
 If you close your terminal during the installation process or want to install additional packages, reactivate your environment first:
 
-   .. code-block:: python
+.. code-block:: python
 
-      conda activate rosetta
+   conda activate rosetta
 
 TensorFlow installation
 -----------------------
@@ -153,29 +154,29 @@ TensorFlow installation
 For deep learning features, the TensorFlow package needs to be installed for the Python environment integrated into MATLAB.
 Install TensorFlow by opening the Terminal app, activate your environment created by conda and install tensorflow in that environment:
 
-   .. code-block:: python
+.. code-block:: python
 
-      conda activate your_environment_name
-      conda install tensorflow==2.8.0
+   conda activate your_environment_name
+   conda install tensorflow==2.8.0
 
 Start MATLAB and link MATLAB to the python version in you conda environment. Find the correct python path by typing in your activated conda environment:
 
-   .. code-block:: python
+.. code-block:: python
 
-      which python
+   which python
 
 The path should look something like '/Users/your_name/mambaforge/envs/your_environment/bin/python'.
 Copy the path, open MATLAB and type in your MATLAB command window:
 
-   .. code-block:: python
+.. code-block:: python
 
-      pyversion '/Users/your_name/mambaforge/envs/your_environment/bin/python'
+   pyversion '/Users/your_name/mambaforge/envs/your_environment/bin/python'
 
 You can check the successfully installation and integration into MATLAB by entering the following command into the MATLAB Command Window, which returns TensorFlow as a Python module:
 
-   .. code-block:: python
+.. code-block:: python
    
-      py.importlib.import_module("tensorflow")
+   py.importlib.import_module("tensorflow")
 
 You are now ready to use DeepLASI and its neural networks.
 
@@ -184,14 +185,14 @@ Packages for simulations and training
 
 If you are interested in generating simulated data and/or re-training the neural network models, additional Python packages are required and installed by entering the following commands into the terminal application:
 
-   .. code-block:: python
+.. code-block:: python
    
-      pip install matplotlib==3.5.2
-      pip install numpy==1.23.1
-      pip install scikit-learn==1.1.1
-      pip install tqdm==4.64.0
-      pip install mlxtend==0.20.0
-      pip install pomegranate==0.14.8
+   pip install matplotlib==3.5.2
+   pip install numpy==1.23.1
+   pip install scikit-learn==1.1.1
+   pip install tqdm==4.64.0
+   pip install mlxtend==0.20.0
+   pip install pomegranate==0.14.8
 
 If you encounter any problem during the installation procedure, please
 get in touch with us via the *Issue forum*.
@@ -201,25 +202,25 @@ Checking for correct integration into MATLAB
 
 After installation you can check the MATLAB integration by entering the following command into the MATLAB Command Window:
 
-   .. code-block:: python
+.. code-block:: python
       
-      pyversion
+   pyversion
       
 Example output for Python 3.9:
 
-   .. code-block:: python
+.. code-block:: python
    
-      version: '3.9'
-      executable: 'path/to/python/executable/python3'
-      library: 'path/to/python/library/3.9/lib/libpython3.9.dylib'
-      home: 'path/to/python/environment'
-      isloaded: 0
+   version: '3.9'
+   executable: 'path/to/python/executable/python3'
+   library: 'path/to/python/library/3.9/lib/libpython3.9.dylib'
+   home: 'path/to/python/environment'
+   isloaded: 0
    
 If no version or path information is shown or an incompatible Python version is loaded (e.g. due to multiple Python versions installed on your computer), link Python directly by entering the path to your Python executable in your MATLAB Command Window:
 
-   .. code-block:: python
+.. code-block:: python
    
-      pyversion 'your/path/to/python/python.exe'
+   pyversion 'your/path/to/python/python.exe'
 
 
 Deep learning features on Windows
@@ -247,23 +248,23 @@ Python installation and integration into MATLAB (Windows)
 
 Please check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version and install Python with version 3.7-3.10.
 
-   .. note::
+.. note::
    
-      When installing Python, check the box "Add Python 3.X to Path", choose "Customize installation", 
-      click next and check the box "Install for all Users". This will change the installation path to "C:\ProgramFiles\PythonXX",
-      which is necessary for MATLAB to automatically find the Python executable.
+   When installing Python, check the box "Add Python 3.X to Path", choose "Customize installation", 
+   click next and check the box "Install for all Users". This will change the installation path to "C:\ProgramFiles\PythonXX",
+   which is necessary for MATLAB to automatically find the Python executable.
    
 After installation you can check the MATLAB integration by entering the following command into the MATLAB Command Window:
 
-   .. code-block:: python
+.. code-block:: python
       
-      pyversion
+   pyversion
       
 If no version or path information is shown or you did not install Python for all users, link Python directly by providing the path to your Python executable:
 
-   .. code-block:: python
+.. code-block:: python
    
-      pyversion 'your/path/to/python/python.exe'
+   pyversion 'your/path/to/python/python.exe'
 
 
 TensorFlow Installation
@@ -273,15 +274,15 @@ For deep learning features, the TensorFlow package needs to be installed for the
 The easiest way to install TensorFlow is to open the windows command prompt by pressing Win + R to open the Run box, then type "cmd" and hit Enter to open it or pressing Win + X (or right-click the Start button) and choose Command Prompt from the menu.
 Next, enter the following command:
 
-   .. code-block:: python
+.. code-block:: python
    
-      pip install tensorflow==2.8.0
+   pip install tensorflow==2.8.0
 
 You can check the successful installation and integration into MATLAB by restarting MATLAB and entering the following command into the MATLAB Command Window, which returns TensorFlow as a Python module:
 
-   .. code-block:: python
+.. code-block:: python
    
-      py.importlib.import_module("tensorflow")
+   py.importlib.import_module("tensorflow")
 
 You are now ready to use DeepLASI and its neural networks.
 
@@ -290,14 +291,14 @@ Packages for simulations and training
 
 If you are interested in generating simulated data and/or re-training the neural network models, additional Python packages are required and installed by entering the following commands into the terminal application:
 
-   .. code-block:: python
+.. code-block:: python
    
-      pip install matplotlib==3.5.2
-      pip install numpy==1.23.1
-      pip install scikit-learn==1.1.1
-      pip install tqdm==4.64.0
-      pip install mlxtend==0.20.0
-      pip install pomegranate==0.14.8
+   pip install matplotlib==3.5.2
+   pip install numpy==1.23.1
+   pip install scikit-learn==1.1.1
+   pip install tqdm==4.64.0
+   pip install mlxtend==0.20.0
+   pip install pomegranate==0.14.8
 
 If you encounter any problem during the installation procedure, please
 get in touch with us via the *Issue forum*.
@@ -313,9 +314,9 @@ Installing a compatible version of protobuf
 
 Please open your windows command prompt by pressing Win + R or terminal app on Mac and enter:
 
-   .. code-block:: python
+.. code-block:: python
    
-      pip install protobuf==3.20.*
+   pip install protobuf==3.20.*
 
 After successfull installation, restart your MATLAB session.
 
@@ -324,9 +325,9 @@ Installing the latest version of h5py
 
 Please open your windows command prompt by pressing Win + R or terminal app on Mac and enter:
 
-   .. code-block:: python
+.. code-block:: python
    
-      pip install h5py --force-reinstall
+   pip install h5py --force-reinstall
 
 After successfull installation, restart your MATLAB session.
 
@@ -335,9 +336,9 @@ Common issue with installing python packages on Windows
 
 You may run into errors regarding access rights when installing packages with pip. If your access is denied please make the installation of the Python package a user install by adding the --user option:
 
-   .. code-block:: python
+.. code-block:: python
    
-      pip install name_of_python_package --user
+   pip install name_of_python_package --user
 
 
 Hidden Markov Model features
@@ -346,6 +347,6 @@ Hidden Markov Model features
 DeepLASI comes with in-built HMM capabilities originally written by Kevin Murphy. You also have the option to use the python package *pomegranate*. So far, three-color FRET HMM is only available using the *pomegranate* package.
 For both Windows and Mac systems, install *pomegranate* in your environment by typing the following into the Command Prompt/Terminal:
 
-   .. code-block:: python
+.. code-block:: python
    
-      pip install pomegranate==0.14.8
+   pip install pomegranate==0.14.8
