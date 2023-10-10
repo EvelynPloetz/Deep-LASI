@@ -17,7 +17,7 @@ Download or clone the source code from the `Repository <https://gitlab.com/simon
 System compatibility
 ------------
 
-DeepLasi is compatible with Windows and Mac OS. It has been extensively tested for Mac OS x86 systems. For new Macs using the M1 or M2 CPUs, please follow the instructions in the 'Installation on ARM Macs (M1/M2)'.
+DeepLASI is compatible with Windows and Mac OS. It has been extensively tested for Mac OS x86 systems. For new Macs using the M1 or M2 CPUs, please follow the instructions in the 'Installation on ARM Macs (M1/M2)'.
 DeepLASI has not been installed on a Linux systems so far. If you encounter any problem, please
 get in touch with us via the *Issue forum*.
 
@@ -46,23 +46,23 @@ The earliest MATLAB version required is R2019a.
 
 The latest MATLAB version DeepLASI is tested on is R2023b.
 
-Installing and updating the open-source version of *DeepLASI*
+Installing and updating the open-source version of DeepLASI
 ~~~~~~~~~~~~~~~
 
-The open source version of *DeepLASI* requires a valid licence for MATLAB (2019a or newer). Some features of thae program require further access to tool boxes (Curve fitting, image processing, optimization, statistics, machine learning, and parallel computing) to work.
+The open source version of DeepLASI requires a valid licence for MATLAB (2019a or newer). Some features of thae program require further access to tool boxes (Curve fitting, image processing, optimization, statistics, machine learning, and parallel computing) to work.
 
-You can obtain and update *DeepLASI* either by download from *GitLab*, using the command line through *Git*, or by using the MATLAB *Git* integration.
+You can obtain and update DeepLASI either by download from *GitLab*, using the command line through *Git*, or by using the MATLAB *Git* integration.
 
-**Download and update *DeepLASI* from the repository**
+**Download and update DeepLASI from the repository**
 
-#. Download the open source version of *DeepLASI* from the `Repository <https://gitlab.com/simon71/deeplasi>`_.
+#. Download the open source version of DeepLASI from the `Repository <https://gitlab.com/simon71/deeplasi>`_.
 #. Save the files in the MATLAB folder.
-#. Start MATLAB and navigate to the *DeepLASI* folder.
+#. Start MATLAB and navigate to the DeepLASI folder.
 #. Type :code:`DeepLASI` into the MATLAB command line to start the program.
 #. Download the newest version and overwrite your former files for updating.
 
 
-**Download and update *DeepLASI* using *Git***
+**Download and update DeepLASI using Git**
 
 #. Install *Git* on your computer.
     * MacOS has *Git* pre-installed. Try to tun *git* from the terminal. If the command fails, you can download *Git* from https://git-scm.com/ .
@@ -71,10 +71,10 @@ You can obtain and update *DeepLASI* either by download from *GitLab*, using the
     * For cloning a first copy, type in your terminal: |br| :code:`git clone https://gitlab.com/simon71/deeplasi.git DeepLASI`.
     * For updating, simply type :code:`!git pull` to obtain the latest version and changes.
 
-**Download and update *DeepLASI* using the *MATLAB Git Integration***
+**Download and update DeepLASI using the MATLAB Git Integration**
 
-#. Create a folder for *DeepLASI*.
-#. Start MATLAB and navigate to the *DeepLASI* folder.
+#. Create a folder for DeepLASI.
+#. Start MATLAB and navigate to the DeepLASI folder.
 #. Right click the 'Current Folder' panel in MATLAB and select 'Source Control' and 'Manage Files...'.
 #. Set the 'Source control integration' to 'Git' and enter for the 'Repository path'
    https://gitlab.com/simon71/deeplasi .
