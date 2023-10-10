@@ -96,10 +96,10 @@ Requirements for Mac
 To run DeepLASI on Mac OS, installing Mambaforge (Conda) is highly recommended, as it allows a straightforward installation of python packages and creation of a separate environment for DeepLASI. The following software packages are required:
 
 * Python 3.7-3.10 (https://www.python.org/downloads/)
-  - `Direct Download Python 3.10 https://www.python.org/ftp/python/3.10.0/python-3.10.0post2-macos11.pkg`_
-  - `Direct Download Python 3.9 https://www.python.org/ftp/python/3.9.0/python-3.9.0-macosx10.9.pkg`_
-  - `Direct Download Python 3.8 https://www.python.org/ftp/python/3.8.0/python-3.8.0-macosx10.9.pkg`_
-  - `Direct Download Python 3.7 https://www.python.org/ftp/python/3.7.0/python-3.7.0-macosx10.9.pkg`_
+  - `Direct Download Python 3.10 <https://www.python.org/ftp/python/3.10.0/python-3.10.0post2-macos11.pkg>`_
+  - `Direct Download Python 3.9 <https://www.python.org/ftp/python/3.9.0/python-3.9.0-macosx10.9.pkg>`_
+  - `Direct Download Python 3.8 <https://www.python.org/ftp/python/3.8.0/python-3.8.0-macosx10.9.pkg>`_
+  - `Direct Download Python 3.7 <https://www.python.org/ftp/python/3.7.0/python-3.7.0-macosx10.9.pkg>`_
 * Xcode (https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 * TensorFlow 2.8.0 (Python package, https://www.tensorflow.org)
 
@@ -241,10 +241,10 @@ installation process in the following order:
 To run DeepLASI on Windows, the following software packages are required:
 
 * Python 3.7-3.10 (https://www.python.org/downloads/)
-  - `Direct Download Python 3.10 https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe`_
-  - `Direct Download Python 3.9 https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe`_
-  - `Direct Download Python 3.8 https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe`_
-  - `Direct Download Python 3.7 https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe`_
+  - `Direct Download Python 3.10 <https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe>`_
+  - `Direct Download Python 3.9 <https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe>`_
+  - `Direct Download Python 3.8 <https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe>`_
+  - `Direct Download Python 3.7 <https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe>`_
 * Microsoft Visual C++ (https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 * TensorFlow 2.8.0 (Python package, https://www.tensorflow.org)
 
