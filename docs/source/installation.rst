@@ -11,6 +11,7 @@ DeepLASI is a MATLAB program that uses deep learning for automated data analysis
 In order to use the automated data analysis with the pretrained deep neural networks make sure you installed the required software packages below.
 We recommend running DeepLASI with a MATLAB license and only use the compiled version if no license is available.
 The source code is more frequently updated than the standalone version and certain features like generating new training data sets and training new models are not supported in the standalone version.
+For ARM Macs (M1/M2), we strongly recommend installing MATLAB 2023b, which is natively available for ARM Macs.
 Download or clone the source code from the `Repository <https://gitlab.com/simon71/deeplasi>`_. In MATLAB, change your current folder to the DeepLASI folder and start DeepLASI via right-click on DeepLASI.m and Run or by typing `DeepLASI` into the MATLAB command window.
 
 System compatibility
@@ -24,7 +25,7 @@ MATLAB Installation
 --------
 
 If you have access to a MATLAB license, please download and install MATLAB at https://de.mathworks.com/products/matlab.html.
-
+For ARM Macs (M1/M2), we strongly recommend installing MATLAB 2023b, which is natively available for ARM Macs.
 For downloading MATLAB directly from MathWorks, you require an account. After signing in, link the account with your licence number (Step 1). In the next step you can download the MATLAB version associated with your licence (Step 2). Save the licence on your PC/Mac and download MATLAB. The licence file will be required during the local installation process.
 
 .. figure:: ./../figures/installation/matlab_download.png
@@ -94,11 +95,11 @@ Requirements for Mac
 
 To run DeepLASI on Mac OS, installing Mambaforge (Conda) is highly recommended, as it allows a straightforward installation of python packages and creation of a separate environment for DeepLASI. The following software packages are required:
 
-* Python 3.7-3.10 (`Python 3.10 https://www.python.org/ftp/python/3.10.0/python-3.10.0post2-macos11.pkg`_, `)
-  - `Download Python 3.10 https://www.python.org/ftp/python/3.10.0/python-3.10.0post2-macos11.pkg`_
-  - `Download Python 3.9 https://www.python.org/ftp/python/3.9.0/python-3.9.0-macosx10.9.pkg`_
-  - `Download Python 3.8 https://www.python.org/ftp/python/3.8.0/python-3.8.0-macosx10.9.pkg`_
-  - `Download Python 3.7 https://www.python.org/ftp/python/3.7.0/python-3.7.0-macosx10.9.pkg`_
+* Python 3.7-3.10 (https://www.python.org/downloads/)
+  - `Direct Download Python 3.10 https://www.python.org/ftp/python/3.10.0/python-3.10.0post2-macos11.pkg`_
+  - `Direct Download Python 3.9 https://www.python.org/ftp/python/3.9.0/python-3.9.0-macosx10.9.pkg`_
+  - `Direct Download Python 3.8 https://www.python.org/ftp/python/3.8.0/python-3.8.0-macosx10.9.pkg`_
+  - `Direct Download Python 3.7 https://www.python.org/ftp/python/3.7.0/python-3.7.0-macosx10.9.pkg`_
 * Xcode (https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 * TensorFlow 2.8.0 (Python package, https://www.tensorflow.org)
 
@@ -109,7 +110,7 @@ If you do not have Conda installed, open your terminal app and enter the followi
       curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
       bash Mambaforge-$(uname)-$(uname -m).sh
 
-or download and install mambaforge from github (Installer: OS X arm64 (Apple Silicon)): https://github.com/conda-forge/miniforge
+or download and install mambaforge directly from github: https://github.com/conda-forge/miniforge
 If you downloaded the installer, you should run the following commands for the next steps to work:
 
 .. code-block:: python
@@ -118,11 +119,12 @@ If you downloaded the installer, you should run the following commands for the n
 
 In case you have issues with the installation, please visit https://github.com/conda-forge/miniforge for alternatives and detailed documentation.
 
-Python installation on Intel Macs
+Python installation on Mac
 ^^^^^^^^^^^^^^^^^^^^
 
 Check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version.
-Create a new environment with a specific python version and activate it using Conda. Type in your terminal:
+It is strongly recommended to create a new Python environment using Mambaforge (Conda). Otherwise, install Python version 3.7-3.10 manually via the python website (listed above).
+Create a new environment with a specific python version and activate it. Type in your terminal:
 
 .. code-block:: python
    
@@ -131,8 +133,8 @@ Create a new environment with a specific python version and activate it using Co
 
 Otherwise, please download and install Python version 3.7-3.10 manually via the python website (listed above).
 
-Python installation on ARM Macs (M1/M2)
-^^^^^^^^^^^^^^^^^^^^
+Workaround for ARM Macs (M1/M2) and MATLAB Versions below 2023b
+""""""""""""""""""""""""""
 
 Since all MATLAB versions below version 2023b are not natively available for ARM Macs, MATLAB and all dependencies have to be installed and executed via the rosetta environment. While this is done automatically for MATLAB, it must be done manually for Python.
 First, install mambaforge (see above for details) and create a new environment (here: rosetta) by typing the following commands with the MATLAB compatible Python version (here: 3.10):
@@ -143,19 +145,13 @@ First, install mambaforge (see above for details) and create a new environment (
       conda activate rosetta
       conda config --env --set subdir osx-64
       
-Finally, install all needed Python packages using the conda command (not pip!), e.g.:
-
-   .. code-block:: python
-   
-      conda install tensorflow==2.8.0
-      
 If you close your terminal during the installation process or want to install additional packages, reactivate your environment first:
 
    .. code-block:: python
 
       conda activate rosetta
 
-TensorFlow
+TensorFlow installation
 ^^^^^^^^^^^^^^^^^^^^
 
 For deep learning features, the TensorFlow package needs to be installed for the Python environment integrated into MATLAB.
@@ -245,10 +241,10 @@ installation process in the following order:
 To run DeepLASI on Windows, the following software packages are required:
 
 * Python 3.7-3.10 (https://www.python.org/downloads/)
-  - `Download Python 3.10 https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe`_
-  - `Download Python 3.9 https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe`_
-  - `Download Python 3.8 https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe`_
-  - `Download Python 3.7 https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe`_
+  - `Direct Download Python 3.10 https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe`_
+  - `Direct Download Python 3.9 https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe`_
+  - `Direct Download Python 3.8 https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe`_
+  - `Direct Download Python 3.7 https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe`_
 * Microsoft Visual C++ (https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 * TensorFlow 2.8.0 (Python package, https://www.tensorflow.org)
 
@@ -276,11 +272,9 @@ If no version or path information is shown or you did not install Python for all
    
       pyversion 'your/path/to/python/python.exe'
 
-Installation of deep learning features on Windows
-^^^^^^^^^^
 
-TensorFlow
-""""""""""
+TensorFlow Installation
+^^^^^^^^^^
 
 For deep learning features, the TensorFlow package needs to be installed for the Python environment integrated into MATLAB.
 The easiest way to install TensorFlow is to open the windows command prompt by pressing Win + R to open the Run box, then type "cmd" and hit Enter to open it or pressing Win + X (or right-click the Start button) and choose Command Prompt from the menu.
@@ -296,10 +290,10 @@ You can check the successful installation and integration into MATLAB by restart
    
       py.importlib.import_module("tensorflow")
 
-You are now ready to use DeepLASI.
+You are now ready to use DeepLASI and its neural networks.
 
 Packages for simulations and training new neural network models
-""""""""""
+^^^^^^^^^^
 
 If you are interested in generating simulated data and/or re-training the neural network models, additional Python packages are required and installed by entering the following commands into the terminal application:
 
