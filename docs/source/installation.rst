@@ -83,7 +83,7 @@ You can obtain and update *DeepLASI* either by download from *GitLab*, using the
 
 For the deep learning features, please follow the detailed instructions below.
 
-Deep learning features on Mac
+Deep Learning Features on Mac
 ------------
 
 Requirements for Mac
@@ -119,11 +119,11 @@ If you downloaded the installer, you should run the following commands for the n
 
 In case you have issues with the installation, please visit https://github.com/conda-forge/miniforge for alternatives and detailed documentation.
 
-Python installation on Mac
+Python Installation on Mac
 ^^^^^^^^^^^^^^^^^^^^
 
 Check https://de.mathworks.com/support/requirements/python-compatibility.html for the compatibility with your MATLAB version.
-It is strongly recommended to create a new Python environment using Mambaforge (Conda). Otherwise, install Python version 3.7-3.10 manually via the python website (listed above).
+It is strongly recommended to create a new Python environment using Mambaforge (Conda).
 Create a new environment with a specific python version and activate it. Type in your terminal:
 
 .. code-block:: python
@@ -131,7 +131,7 @@ Create a new environment with a specific python version and activate it. Type in
       conda create -n 'your_environment_name' python==3.10
       conda activate your_environment_name
 
-Otherwise, please download and install Python version 3.7-3.10 manually via the python website (listed above).
+If you do not want to install Conda, please download and install Python version 3.7-3.10 manually via the python website (listed above) and proceed to TensorFlow installation using 'pip' instead of 'conda'.
 
 Workaround for ARM Macs (M1/M2) and MATLAB Versions below 2023b
 """"""""""""""""""""""""""
